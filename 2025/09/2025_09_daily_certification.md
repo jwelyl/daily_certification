@@ -93,3 +93,6 @@ BOJ 10852 Carpets (Implementation, Backtracking, Recursion), BOJ 17178 줄서기
 
 ### [2025.09.28](https://github.com/jwelyl/daily_certification/blob/main/2025/09/28/25_09_28_daily_certification.md)
 BOJ 17612 쇼핑몰 (Priority Queue)
+
+### [2025.09.29](https://github.com/jwelyl/daily_certification/blob/main/2025/09/29/25_09_29_daily_certification.md)
+BOJ 2461 대표 선수 (Sorting, Two Pointer), BOJ 24511 queuestack (Stack, Queue)
