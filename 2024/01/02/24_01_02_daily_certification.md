@@ -1,19 +1,61 @@
 # 24_01_02_tue_daily_certification
 
+# Side Project
+
+## Tech Stack
+
+프로젝트를 통해 반드시 숙달하고 싶은 지식 정하기
+
+### Back-end
+
+- Java, Kotlin
+- SpringFramework, Springboot
+- JPA 또는 MyBatis
+
+### Front-end
+
+- Javascript, Typescript
+- React
+- Redux 또는 mobX
+
+# Computer Network
+
+## Network Edge vs Network Core
+
+### Network Edge (Applications, Hosts)
+
+- TCP (Connection Oriented)
+    - Reliable
+    - Flow-Control
+    - Congestion-Control
+    - Expensive
+- UDP
+    - Un-Reliable
+    - No Flow-Control
+    - No Congestion-Control
+    - Cheap
+
+### Network Core (Routers)
+
+- Circuit Switching
+- Packet Switching (Internet)
+    - Processing Delay
+    - **Queueing Delay**
+        - Packet Loss
+        - TCP 재전송 (Network Edge에서)
+    - Transmission Delay
+    - Propagation Delay
+
 # Git
 
-**Git Branch**
+## Git Branch
 
-[Git 브랜치](https://git-scm.com/book/ko/v2/Git-%EB%B8%8C%EB%9E%9C%EC%B9%98-%EB%B8%8C%EB%9E%9C%EC%B9%98%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80)
+[Git - 브랜치란 무엇인가](https://git-scm.com/book/ko/v2/Git-브랜치-브랜치란-무엇인가)
 
-**브랜치란 무엇인가?**
-
-**merge, conflict**
-
-**remoter branch**
-
-**rebase vs merge**
-
+- 브랜치란 무엇인가?
+- Merge, Conflict
+- Remote Branch
+- Rebase vs Merge
 
 # Problem Solving (Algorithm & SQL)
 
@@ -25,9 +67,9 @@
 
 Kruskal 알고리즘을 이용해 mst에 포함되는 간선을 찾는다. 이 때, 간선을 graph에 추가하여 트리를 실제로 만든다.
 
-mst를 구한 후 해당 트리의 지름을 구한다. 임의의 정점에서 DFS를 하여 가장 먼 정점을 구하고, 그 정점에서 다시 한번 DFS를 하여 가장 먼 정점을 구한다. 그 때 가장 먼 정점까지의 거리가 트리의 지름이다.
+mst를 구한 후 해당 트리의 지름을 구한다. 임의의 정점에서 dfs를 하여 가장 먼 정점을 구하고, 그 정점에서 다시 한번 dfs를 하여 가장 먼 정점을 구한다. 그 때 가장 먼 정점까지의 거리가 트리의 지름이다.
 
-두 번째 DFS 할 때 방문 상태를 초기화해줘야 한다.
+두 번째 dfs를 할 때 방문 상태를 초기화해줘야 한다.
 
 **코드**
 
