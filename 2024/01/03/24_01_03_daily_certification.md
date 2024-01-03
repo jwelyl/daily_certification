@@ -1,5 +1,49 @@
 # 24_01_03_daily_certification
 
+# Computer Network
+
+## TCP/IP 5 Layers
+
+각 layer의 대표 프로토콜
+
+- Application Layer - HTTP
+- Transport Layer - TCP/UDP
+- Network Layer - IP
+- Link Layer - WiFi, LTE/3G, Ethernet
+
+## Application Layer
+
+### Client-Server Architecture
+
+- server
+    - client의 요청 대기
+    - permanent IP address
+- client
+    - communication 시작
+    - dynamic IP address
+    - server를 통해 다른 client와 통신
+
+### IP Address, Port
+
+- IP Address : 어떤 컴퓨터인지
+- Port : 어떤 Process인지 (Port에 물린 Socket 찾음)
+
+### Sockets
+
+### HTTP
+
+- HyperText Transfer Protocol
+- TCP Connection 사용 - Data Integrity 제공
+- stateless
+- non-persistent HTTP
+    
+    한 번의 TCP 연결에 최대 하나의 object만 전송 가능, 전송 후 연결 종료
+    
+- persistent HTTP
+    
+    한 번의 TCP 연결로 여러 개의 object 주고 받기 가능
+    
+
 # Problem Solving (Algorithm & SQL)
 
 **BOJ 12763 지각하면 안 돼**
