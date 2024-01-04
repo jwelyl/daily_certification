@@ -6,6 +6,8 @@
 
 각 layer의 대표 프로토콜
 
+![IMG_9A9AE4548417-1.jpeg](24_01_03_daily_certification%2010674ac5fedb4ca4bc47985d1481de40/IMG_9A9AE4548417-1.jpeg)
+
 - Application Layer - HTTP
 - Transport Layer - TCP/UDP
 - Network Layer - IP
