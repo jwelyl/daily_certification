@@ -1,11 +1,22 @@
 # 24_01_04_daily_certification
 
-```
-[koreii] #4 데일리인증
-20240104
-알고리즘
-- 트리 & 트리 순회 | 깊이우선탐색 문제 풀이 + 난이도 기여
-```
+# Computer Network
+
+## Socket
+
+OS가 Application과 Network (Transport Layer) 사이에 제공하는 Interface
+
+- TCP Socket
+- UDP Socket
+- Sockets API
+- Socket Server vs Client
+
+## Multiplexing vs Demultiplexing
+
+![IMG_A1BEF1DAA789-1.jpeg](24_01_04_daily_certification%203e21439f6c6243a5a6eba34065906f32/IMG_A1BEF1DAA789-1.jpeg)
+
+- TCP Demux (보충 필요)
+- UDP Demux (보충 필요)
 
 # Problem Solving (Algorithm & SQL)
 
