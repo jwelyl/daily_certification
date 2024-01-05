@@ -1,5 +1,16 @@
 # 24_01_05_daily_certification
 
+```
+[koreii] #5 데일리인증
+20240105
+Compuer Network
+- TCP/UDP Demultiplexing 보충
+- UDP Header 필드 학습
+- RDT Protocol 학습
+알고리즘
+- 그래프 이론 (단순 경로, 사이클, 트리) & DFS로 사이클에 속한 정점 찾기 문제 해결 + 난이도 기여
+```
+
 # Computer Network
 
 ## Multiplexing vs Demultiplexing (보충)
@@ -28,9 +39,9 @@
 
 UDP도 최소한 mux/demux와 Error Checking은 함. 메시지를 받았다면 에러가 없음은 보장 가능
 
-### TCP Header
+![IMG_0080.jpg](24_01_05_daily_certification%20e96e233e549b49cea76bd8a6521cc788/IMG_0080.jpg)
 
-- 
+### Reliable Data Transfer (RDT) Protocol
 
 # Problem Solving (Algorithm & SQL)
 
