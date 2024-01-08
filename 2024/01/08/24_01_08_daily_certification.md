@@ -22,7 +22,7 @@
   <name>Archetype - ex1-hello-jpa</name>
   <url>http://maven.apache.org</url>
 
-  **<build>
+  <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -33,7 +33,7 @@
         </configuration>
       </plugin>
     </plugins>
-  </build>**
+  </build>
 
   <dependencies>
     <!-- JPA 하이버네이트 -->
@@ -93,9 +93,9 @@ main/resource/META-INF에 persistence.xml을 추가해야 한다.
 ```java
 public class JpaMain {
   public static void main(String[] args) {
-    **EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");**
-	  // ...
-		**emf.close();**
+    EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
+    // ...
+    emf.close();
   }
 }
 ```
@@ -109,9 +109,9 @@ public class JpaMain {
   public static void main(String[] args) {
     EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
 
-    **EntityManager em = emf.createEntityManager();
-		//  DB 접근 코드
-    em.close();**
+    EntityManager em = emf.createEntityManager();
+    //  DB 접근 코드
+    em.close();
 
     emf.close();
   }
@@ -131,15 +131,15 @@ public class JpaMain {
 
     EntityTransaction tx = em.getTransaction();
 
-		**tx.begin();  // 트랜잭션 시작
-		try {
-			// DB 변경 코드
-			tx.commit();   // 변경 성공 시 commit
-		} catch(Exception e) {
-			tx.rollback(); // 변경 실패 시 rollback
-		} finally {
-			em.close();;  //  entity manager는 DB connection 물고 있으므로 사용 끝나면 닫아줘야 함
-		}**
+    tx.begin();  // 트랜잭션 시작
+    try {
+        // DB 변경 코드
+        tx.commit();   // 변경 성공 시 commit
+    } catch(Exception e) {
+        tx.rollback(); // 변경 실패 시 rollback
+    } finally {
+        em.close();;  //  entity manager는 DB connection 물고 있으므로 사용 끝나면 닫아줘야 함
+    }
 
     emf.close();
   }
