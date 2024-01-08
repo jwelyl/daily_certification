@@ -22,7 +22,7 @@
   <name>Archetype - ex1-hello-jpa</name>
   <url>http://maven.apache.org</url>
 
-  <build>
+  **<build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -33,7 +33,7 @@
         </configuration>
       </plugin>
     </plugins>
-  </build>
+  </build>**
 
   <dependencies>
     <!-- JPA 하이버네이트 -->
@@ -94,8 +94,8 @@ main/resource/META-INF에 persistence.xml을 추가해야 한다.
 public class JpaMain {
   public static void main(String[] args) {
     EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
-    // ...
-    emf.close();
+	  // ...
+		emf.close();
   }
 }
 ```
@@ -110,7 +110,7 @@ public class JpaMain {
     EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");
 
     EntityManager em = emf.createEntityManager();
-    //  DB 접근 코드
+		//  DB 접근 코드
     em.close();
 
     emf.close();
@@ -131,15 +131,15 @@ public class JpaMain {
 
     EntityTransaction tx = em.getTransaction();
 
-    tx.begin();  // 트랜잭션 시작
-    try {
-        // DB 변경 코드
-        tx.commit();   // 변경 성공 시 commit
-    } catch(Exception e) {
-        tx.rollback(); // 변경 실패 시 rollback
-    } finally {
-        em.close();;  //  entity manager는 DB connection 물고 있으므로 사용 끝나면 닫아줘야 함
-    }
+		tx.begin();  // 트랜잭션 시작
+		try {
+			// DB 변경 코드
+			tx.commit();   // 변경 성공 시 commit
+		} catch(Exception e) {
+			tx.rollback(); // 변경 실패 시 rollback
+		} finally {
+			em.close();;  //  entity manager는 DB connection 물고 있으므로 사용 끝나면 닫아줘야 함
+		}
 
     emf.close();
   }
@@ -172,10 +172,107 @@ try {
 
 # Problem Solving (Algorithm & SQL)
 
-**BOJ** 
+**BOJ 13016 내 왼손에는 흑염룡이 잠들어 있다**
+
+[13016번: 내 왼손에는 흑염룡이 잠들어 있다](https://www.acmicpc.net/problem/13016)
+
+트리의 지름 응용 문제다.
+
+트리에서 임의의 정점에서 가장 먼 정점은 해당 트리의 지름의 양 끝 점 중 하나이다.
+
+트리의 지름을 구하는 과정에서 DFS 두 번, 구한 양 끝 정점에서 다른 정점까지의 거리를 구하기 위한 DFS 각각 1번, 총 4번의 DFS로 문제를 해결할 수 있다.
+
+브루트포스로 해결할 수 없음은 쉽게 파악 가능하므로 트리의 지름 또는 트리 DP를 활용하는 방법을 생각해봐야 한다.
+
+트리 DP로도 해결해봐야겠다.
 
 **코드**
 
 ```kotlin
+import java.util.*
+import java.io.*
 
+class BOJ_13016 {
+    private val br = BufferedReader(InputStreamReader(System.`in`))
+    private val sb = StringBuilder()
+    private lateinit var tokens: StringTokenizer
+
+    private var n = 0
+    private lateinit var tree : Array<MutableList<Node>>
+    private lateinit var visited : BooleanArray
+    private var diameter = 0
+    private var v1 = 1  //  지름의 한쪽 끝 점
+    private var v2 = 1  //  지름의 다른 한쪽 끝 점
+    private lateinit var dist1 : IntArray   //  v1에서 각 정점까지의 거리
+    private lateinit var dist2 : IntArray   //  v2에서 각 정점까지의 거리
+
+    fun solve() {
+        n = br.readLine().toInt()
+
+        tree = Array(n + 1) { mutableListOf() }
+        visited = BooleanArray(n + 1)
+        dist1 = IntArray(n + 1)
+        dist2 = IntArray(n + 1)
+
+        repeat(n - 1) {
+            tokens = StringTokenizer(br.readLine())
+
+            val v1 = tokens.nextToken().toInt()
+            val v2 = tokens.nextToken().toInt()
+            val dist = tokens.nextToken().toInt()
+
+            tree[v1].add(Node(v2, dist))
+            tree[v2].add(Node(v1, dist))
+        }
+
+        dfs(v1, 0)
+        v1 = v2
+        diameter = 0
+        Arrays.fill(visited, false)
+        dfs(v1, 0)
+
+        findDist(v1, 0, dist1)
+        findDist(v2, 0, dist2)
+
+        for(i in 1 .. n)
+            sb.append("${dist1[i].coerceAtLeast(dist2[i])}\n")
+
+        print(sb)
+    }
+
+    private fun findDist(v : Int, dist : Int, distArr : IntArray) {
+        distArr[v] = dist
+
+        for(next in tree[v]) {
+            val nv = next.v
+            val ndist = next.dist
+
+            if(distArr[nv] == 0)
+                findDist(nv, dist + ndist, distArr)
+        }
+    }
+
+    private fun dfs(v : Int, dist : Int) {
+        visited[v] = true
+
+        if(diameter < dist) {
+            diameter = dist
+            v2 = v
+        }
+
+        for(next in tree[v]) {
+            val nv = next.v
+            val ndist = next.dist
+
+            if(!visited[nv])
+                dfs(nv, dist + ndist)
+        }
+    }
+
+    private class Node(val v : Int, val dist : Int)
+}
+
+fun main() {
+    BOJ_13016().solve()
+}
 ```
