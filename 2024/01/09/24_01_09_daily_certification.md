@@ -1,5 +1,40 @@
 # 24_01_09_daily_certification
 
+# Computer Network
+
+## TCP
+
+![IMG_36BF62561979-1.jpeg](24_01_09_daily_certification%206dafa71316b14434b18dde79b1a6b00e/IMG_36BF62561979-1.jpeg)
+
+- Point-to-Point
+- Reliable, In-order byte stream
+- pipelined
+- send & receive buffer
+- full duplex data
+- connection-oriented
+- flow controll
+- congestion control
+
+## TCP Header
+
+![IMG_57B1D105EE92-1.jpeg](24_01_09_daily_certification%206dafa71316b14434b18dde79b1a6b00e/IMG_57B1D105EE92-1.jpeg)
+
+- Sequence number
+- Acknowlegement number
+    - 다음에 받을 segment의 byte stream number
+    - cumulative ACK
+
+## TCP Reliable Data Transfer
+
+- Pipelined segments
+- Cumulative acks
+- TCP uses single retransmission timer
+    
+    ![IMG_300303065906-1.jpeg](24_01_09_daily_certification%206dafa71316b14434b18dde79b1a6b00e/IMG_300303065906-1.jpeg)
+    
+    ![IMG_FE4A5086F68C-1.jpeg](24_01_09_daily_certification%206dafa71316b14434b18dde79b1a6b00e/IMG_FE4A5086F68C-1.jpeg)
+    
+
 # Problem Solving (Algorithm & SQL)
 
 **BOJ 18251 내 생각에 A번인 단순 dfs 문제가 이 대회에서 E번이 되어버린 건에 관하여 (Easy)**
