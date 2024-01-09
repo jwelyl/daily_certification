@@ -1,5 +1,19 @@
 # 24_01_09_daily_certification
 
+```
+[koreii] #9 데일리인증
+20240109
+Computer Network
+- TCP
+	- TCP 특징 (TCP Reliable Data Transfer)
+  - TCP Segment Header 구조 학습
+Spring
+- Spring Container에 Bean 등록, 조회, 상속 관계 Bean 조회
+- XML로 Bean 설정, BeanDefinition 학습
+알고리즘
+- 중위 순회로 이진트리 좌표 정하기 + Kadene 알고리즘으로 최대 부분직사각형 구하기 + 난이도 기여
+```
+
 # Computer Network
 
 ## TCP
@@ -34,6 +48,23 @@
     
     ![IMG_FE4A5086F68C-1.jpeg](24_01_09_daily_certification%206dafa71316b14434b18dde79b1a6b00e/IMG_FE4A5086F68C-1.jpeg)
     
+
+# Spring
+
+## Spring Container, Bean
+
+- ApplicationContext
+    - XML 기반으로 생성 가능
+    - **Annotation 기반으로 생성 가능**
+- Spring Container에 등록된 Bean 조회
+    - 등록된 모든 Bean 조회 (Spring 자체 Bean 포함)
+    - Application Bean 조회
+    - 타입으로 Bean 조회 vs 타입 + 이름으로 Bean 조회
+    - 동일한 타입을 가진 모든 Bean 조회
+    - 상속 관계 Bean 조회 - 부모 타입의 Bean을 조회하면 자식 타입의 Bean도 같이 조회된다.
+- BeanFactory vs ApplicationContext
+- **AnnotationConfigApplicationContext** vs GenericXmlApplicationContext
+- BeanDefinition
 
 # Problem Solving (Algorithm & SQL)
 
