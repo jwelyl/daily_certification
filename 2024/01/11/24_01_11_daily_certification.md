@@ -1,14 +1,5 @@
 # 24_01_11_daily_certification
 
-```
-[koreii] #11 데일리인증
-20240111
-Computer Network
-- TCP
-	- TCP Flow Control
-  - TCP Congestion Management (3-Way Handshake, 4-Way handshake) 
-```
-
 # Computer Network
 
 ## TCP Flow Control
