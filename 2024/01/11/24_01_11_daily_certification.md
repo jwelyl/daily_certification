@@ -157,6 +157,8 @@ public MemberRepository memberRepository() {
 
 따라서 Singleton을 보장할 수 있다.
 
+@Configuration 어노테이션이 없으면 @Bean이 붙은 객체들은 Spring Bean으로 등록은 되지만 Singleton을 보장하지 않는다.
+
 # Computer Network
 
 ## TCP Flow Control
