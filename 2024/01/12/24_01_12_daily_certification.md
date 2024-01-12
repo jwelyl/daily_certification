@@ -3,9 +3,37 @@
 ```
 [koreii] #12 데일리인증
 20240111
+Compuer Network
+- HTTP 복습
+ - Client vs Server
+ - Non-persistent HTTP vs Persistent HTTP
+- TCP, UDP 복습
+ - TCP, UDP Header
+ - 3-Way Handshake
+- Network Layer Overview
 알고리즘
 - 정뱡향 그래프, 역방향 그래프로 나누어 탐색하기 + 난이도 기여
 ```
+
+# Computer Network
+
+## Network Layer
+
+![IMG_21227AB80530-1.jpeg](24_01_12_daily_certification%207738034c0c624c9580c5ad63e35ec3f2/IMG_21227AB80530-1.jpeg)
+
+### Network Layer
+
+HTTP Message가 TCP Segment에 담겨서 IP Packet에 담긴 후 보내지면, Router가 Packet을 알맞은 목적지로 보내줌
+
+Router가 어떻게, 어떤 경로로 Packet을 보낼지 (Routing Algorithm)
+
+src부터 dst까지 어떤 경로로 Packet을 잘 보내줄지 정하는 것이 Network Layer가 할 일
+
+### Forwarding vs Routing
+
+Forwarding Table을 만드는 것 → Routing (Routing Algorithm)ß
+
+Forwarding Table을 참조해서 Packet을 전달하는 것 → Forwarding
 
 # Problem Solving (Algorithm & SQL)
 
