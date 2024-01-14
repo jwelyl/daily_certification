@@ -1,11 +1,98 @@
 # 24_01_14_daily_certification
 
+# Spring
+
+## ComponentScan
+
+```java
+
+@ComponentScan
+public class AutoAppConfig {
+  @Bean(name = "memoryMemberRepository")
+  MemberRepository memberRepository() {
+    return new MemoryMemberRepository();
+  }
+}
 ```
-[koreii] #14 데일리인증
-20240114
-알고리즘
-- 트리의 지름을 활용 & 테스트케이스 별로 초기화하는 문제 + 난이도 ㅣㄱ여
+
+기존 설정 정보인 AppConfig처럼 Spring Bean을 수동으로 등록하지 않아도 @ComponentScan 어노테이션을 붙이면 자동으로 Spring Bean을 찾아서 등록해준다.
+
+Component Scan의 대상이 되기 위해서는 클래스에 **@Component 어노테이션을  붙여준다.**
+
+```java
+@Component
+public class OrderServiceImpl implements OrderService {
+    private final MemberRepository memberRepository;
+    private final DiscountPolicy discountPolicy;
+
+    @Autowired  //  자동 의존관계 주입
+    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+        this.memberRepository = memberRepository;
+        this.discountPolicy = discountPolicy;
+    }
+		...
+}
 ```
+
+이전 AppConfig와 다르게 의존 관계 주입도 Component Scan의 대상이 되는 클래스 안에서 해결해야 한다.
+
+@Autowired는 의존 관계를 자동으로 주입한다.
+
+![IMG_E282AD5716FF-1.jpeg](24_01_14_daily_certification%2057c7aa5a94a347048ea4063334e14232/IMG_E282AD5716FF-1.jpeg)
+
+![IMG_A13D809CD05F-1.jpeg](24_01_14_daily_certification%2057c7aa5a94a347048ea4063334e14232/IMG_A13D809CD05F-1.jpeg)
+
+## Filter
+
+### includeFilters
+
+컴포넌트 스캔에 포함할 컴포넌트 (거의 사용 x)
+
+### excludeFilters
+
+컴포넌트 스캔에서 제외할 컴포넌트 (많이 사용 x)
+
+## 자동 Bean 등록 vs 수동 Bean 등록
+
+```java
+@ComponentScan
+public class AutoAppConfig {
+  @Bean(name = "memoryMemberRepository") // 수동 Bean 등록
+  MemberRepository memberRepository() {
+    return new MemoryMemberRepository();
+  }
+}
+```
+
+```java
+package inflearn.core.member;
+
+import org.springframework.stereotype.Component;
+
+import java.util.HashMap;
+import java.util.Map;
+
+@Component // 자동 Bean 등록
+public class MemoryMemberRepository implements MemberRepository{
+    private static Map<Long, Member> store = new HashMap<>();
+
+    @Override
+    public void save(Member member) {
+        store.put(member.getId(), member);
+    }
+
+    @Override
+    public Member findById(Long memberId) {
+        return store.get(memberId);
+    }
+}
+```
+
+SpringFramework에서는 수동 등록한 Bean과 자동 등록한 Bean이 충돌할 경우 수동 등록한 Bean이 자동 등록한 Bean을 overriding한다.
+
+**하지만 SpringBoot에서는 수동 등록한 Bean과 자동 등록한 Bean이 충돌할 경우, 기본적으로 오류가 발생한다.**
+
+자동 등록한 Bean과 자동 등록한 Bean이 충돌할 경우에는 SpringFramework에서도 오류가 발생한다. 
 
 # Problem Solving (Algorithm & SQL)
 
