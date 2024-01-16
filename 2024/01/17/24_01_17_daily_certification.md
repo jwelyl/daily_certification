@@ -45,7 +45,8 @@ DNS, HTTP 모두 Application Protocol이므로 Transport Layer의 서비스를 �
 - DNS에서 주고 받는 데이터는 Host Name, IP Address로 매우 작다. 유실될 확률도 작고 유실되도 타격이 적다. (HTTP는 주고 받는 데이터가 크므로 유실되면 타격이 큼)
 - IP Address를 빨리 얻어와야 한다. HTTP 통신을 하기 위해서
 
-[](https://chat.openai.com/share/52a83e51-561d-4ab5-84a3-bb3a3cacdee5)
+[DNS가 UDP 사용하는 이유](https://chat.openai.com/share/52a83e51-561d-4ab5-84a3-bb3a3cacdee5)
+
 
 # Problem Solving (Algorithm & SQL)
 
