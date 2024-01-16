@@ -1,5 +1,52 @@
 # 24_01_17_daily_certification
 
+# Computer Network
+
+## Application Layer
+
+### Conditional GET
+
+Web Caches (Proxy Server)에서 일관성 문제를 해결하기 위함
+
+![1.jpeg](24_01_17_daily_certification%20cf749d24b171441ab413256144f8b61c/1.jpeg)
+
+### DNS (Domain Name System)
+
+전화번호부 (친구 이름 - 전화번호)
+
+(Host Name - IP Address)
+
+![2.jpeg](24_01_17_daily_certification%20cf749d24b171441ab413256144f8b61c/2.jpeg)
+
+**DNS**
+- Distributed Database (분산)
+- Hierarchical Database (계층화)
+    
+    ![3.jpeg](24_01_17_daily_certification%20cf749d24b171441ab413256144f8b61c/3.jpeg)
+    
+- Top-Level Domain (TLD) Server
+- Authoritative DNS Server
+- Local DNS Name Server
+- DNS Caching, TTL
+
+### DNS Records
+
+![4.jpeg](24_01_17_daily_certification%20cf749d24b171441ab413256144f8b61c/4.jpeg)
+
+### DNS는 UDP를 사용
+
+HTTP Request, Response를 주고 받기 위해 IP Address가 필요한데 IP Address를 얻기 위해, Host Name을 IP Address로 얻기 위해 DNS가 필요하다. DNS는 HTTP를 위한 사전 작업 느낌
+
+DNS, HTTP 모두 Application Protocol이므로 Transport Layer의 서비스를 받는데 HTTP는 TCP를 사용하는 것과 달리 DNS는 UDP를 사용한다.
+
+**DNS가 UDP를 사용하는 이유?**
+
+- UDP는 빠르다.
+- DNS에서 주고 받는 데이터는 Host Name, IP Address로 매우 작다. 유실될 확률도 작고 유실되도 타격이 적다. (HTTP는 주고 받는 데이터가 크므로 유실되면 타격이 큼)
+- IP Address를 빨리 얻어와야 한다. HTTP 통신을 하기 위해서
+
+[](https://chat.openai.com/share/52a83e51-561d-4ab5-84a3-bb3a3cacdee5)
+
 # Problem Solving (Algorithm & SQL)
 
 **BOJ 2642 전개도**
