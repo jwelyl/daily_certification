@@ -1,5 +1,156 @@
 # 24_01_17_daily_certification
 
+# Spring
+
+## Dependency Injection 방법
+
+- **Constructor**
+- Setter
+- Field
+- Method
+
+### Constructor (생성자 주입)
+
+가장 많이 쓰이고 가장 권장되는 의존성 주입 방법
+
+생성자 호출 시점에 딱 1번 호출된느 것이 보장된다.
+
+불변, 필수 의존관계에 사용된다.
+
+필드에 **final 키워드**를 사용할 수 있어, 필수적으로 초기화 및 불변성이 보장된다.
+
+```java
+@Component
+public class OrderServiceImpl implements OrderService {
+    private final MemberRepository memberRepository;
+    private final DiscountPolicy discountPolicy;
+
+    @Autowired
+    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
+        this.memberRepository = memberRepository;
+				this.discountPolicy = discountPolicy;
+    }
+}
+```
+
+생성자가 하나일 경우 @Autowired 어노테이션이 없어도 자동으로 의존성이 주입된다.
+
+### Setter (수정자 주입)
+
+선택, 변경 가능성이 있는 의존관계에 사용된다.
+
+생성자 주입이 없어도 추후에 의존성 주입이 가능하다. 하지만 생성자 호출 후에 값이 수정되는 것이므로 final 키워드를 사용할 수 없다.
+
+```java
+@Component
+public class OrderServiceImpl implements OrderService {
+    private final MemberRepository memberRepository;
+    private final DiscountPolicy discountPolicy;
+
+    @Autowired
+    public void setMemberRepository(MemberRepository memberRepository) {
+			this.memberRepository = memberRepository;
+		}
+
+		@Autowired
+    public void setDiscountPolicy(DiscountPolicy discountPolicy) {
+			this.discountPolicy = discountPolicy;
+		}
+}
+```
+
+### Field, Method 주입
+
+거의 쓰이지 않는다고 봐도 무방하다. 아니, 안 쓰는게 맞다.
+
+### Spring Container가 관리하는 Spring Bean이 의존성 자동 주입 대상
+
+의존 관계 자동 주입은 Spring Container가 관리하는 Spring Bean이어야 동작한다.
+
+Member와 같이 Spring Bean이 아닌 클래스의 객체는 @Autowired가 있어도 자동으로 주입되지 않는다.
+
+## @Autowired 옵션 처리
+
+### @Autowired(required=false)
+
+자동 주입할 대상이 없으면 Setter 메서드 자체가 호출되지 않는다.
+
+### @Nullable
+
+자동 주입할 대상이 없으면 null이 입력된다.
+
+### Optional<>
+
+자동 주입할 대상이 없으면 Optional.empty가 입력된다.
+
+```java
+static class TestBean {
+  @Autowired(required = false)
+  public void setNoBean1(Member noBean1) {
+    System.out.println("noBean1 = " + noBean1);
+  }
+
+  @Autowired
+  public void setNoBean2(@Nullable Member noBean2) {
+    System.out.println("noBean2 = " + noBean2);
+  }
+
+  @Autowired
+  public void setNoBean3(Optional<Member> noBean3) {
+    System.out.println("noBean3 = " + noBean3);
+  }
+}
+```
+
+Member가 Spring Container가 관리하는 Bean이 아니므로 자동 주입할 대상이 없다.
+
+따라서 setNoBean1 메서드는 호출되지 않고, setNoBean2는 null을, setNoBean3은 Optional.empty이 입력된다.
+
+## Constructor Injection을 사용해야 하는 이유
+
+### 불변성
+
+- 의존 관계 주입은 한번 이루어지면 의존 관계가 변경될 일이 거의 없다 불변해야 하는 경우가 대부분이다.
+- setter 주입을 하려면 setter를 public으로 열어놔야 한다.
+    - 누군가 실수로 변경해서는 안되는 의존성을 변경할 수 있다.
+- constructor는 객체를 생성할 때 딱 한번 호출되므로 의존성을 불변하게 생성할 수 있다.
+
+### 누락 방지
+
+SpringFramework에서는 @Autowired가 동작할 때 의존관계가 없으면 오류가 발생해서 실행조차 안된다.
+
+하지만 순수 Java 코드로 테스트를 수행할 경우 의존관계가 없어도 실행은 된다. 물론 필수적인 의존관계가 없으므로 NullPointerException이 발생한다.
+
+Setter로 의존성을 주입할 경우 객체 생성 후 필수적인 의존성 주입을 누락할 소지가 있다.
+
+Constructor로 의존성을 주입할 경우, 필수적인 의존성 주입을 누락했을 때 **컴파일 에러가 발생한다.**
+
+### final 키워드 사용 가능
+
+필수적인 필드의 의존성 주입이 누락될 경우 **컴파일 에러가 발생한다.**
+
+final 키워드를 사용하면 생성자 호출 때 최초로 한번만 초기화될 수 있으므로, 생성자 주입의 경우에만 사용 가능하다.
+
+생성자 주입을 제외한 다른 모든 의존성 주입 방법은 생성자 호출 이후에 이루어지므로 final 키워드를 사용할 수 없다.
+
+## Lombok
+
+### @RequiredArgsConstructor
+
+```java
+@Component
+@RequiredArgsConstructor
+public class OrderServiceImpl implements OrderService {
+    private final MemberRepository memberRepository;
+    private final DiscountPolicy discountPolicy;
+}
+```
+
+final 키워드가 붙은 필드를 모아서 생성자를 자동으로 만들어준다. 
+
+최근 트렌드는 필수적인 필드를 초기화하는 생성자를 1개 사용하고 @Autowired를 생략하는 방법을 주로 사용한다. @RequiredArgsConstructor를 사용하면 간결한 코드로 이를 만족시킬 수 있다.
+
+
 # Computer Network
 
 ## Application Layer
