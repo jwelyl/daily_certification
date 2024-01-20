@@ -1,12 +1,5 @@
 # 24_01_20_daily_certification
 
-```
-[koreii] #20 데일리인증
-20240120
-알고리즘
-- 수식 트리 & DFS로 각 피연산자 부호 정하기 & 그리디 알고리즘 + 난이도 기여
-```
-
 # Problem Solving (Algorithm & SQL)
 
 **BOJ 17501 수식 트리**
