@@ -16,7 +16,7 @@
 
 **코드**
 
-```java
+```kotlin
 import java.util.*
 import java.io.*
 
@@ -31,7 +31,6 @@ class BOJ_14615 {
 
     private lateinit var graph : Array<Array<MutableList<Int>>>
     private lateinit var visited : Array<BooleanArray>
-    private lateinit var dist : Array<BooleanArray>
 
     fun solve() {
         tokens = StringTokenizer(br.readLine())
@@ -40,7 +39,6 @@ class BOJ_14615 {
 
         graph = Array(2) { Array(n + 1) { mutableListOf() } }
         visited = Array(2) { BooleanArray(n + 1) }
-        dist = Array(2) { BooleanArray(n + 1) }
 
         repeat(m) {
             tokens = StringTokenizer(br.readLine())
@@ -59,17 +57,17 @@ class BOJ_14615 {
         while(t-- > 0) {
             val mid = br.readLine().toInt()
 
-            sb.append("${if(dist[0][mid] && dist[1][mid]) "Defend the CTP" else "Destroyed the CTP"}\n")
+            sb.append("${if(visited[0][mid] && visited[1][mid]) "Defend the CTP" else "Destroyed the CTP"}\n")
         }
 
         print(sb)
     }
 
     private fun dfs(v : Int, d : Int, dir : Int) {
-        dist[dir][v] = true
+        visited[dir][v] = true
 
         for(nv in graph[dir][v]) {
-            if(!dist[dir][nv])
+            if(!visited[dir][nv])
                 dfs(nv, d + 1, dir)
         }
     }
