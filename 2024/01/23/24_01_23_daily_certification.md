@@ -1,5 +1,58 @@
 # 24_01_23_daily_certification
 
+# React
+
+## Babel
+
+**Javascript Compiler**
+
+![Untitled](24_01_23_daily_certification%208960e8ade4f947dca5627d193be5ecad/Untitled.png)
+
+## Function Component
+
+**Title Component**
+
+```jsx
+const Title = () => (
+  <h3 id="title" onMouseEnter={() => console.log("mouse enter")}>
+    Hello, I'm a title
+  </h3>
+);
+```
+
+**Button Component**
+
+```jsx
+const Button = () => (
+  <button
+    style={{
+      backgroundColor: "tomato",
+    }}
+    onClick={() => console.log("i'm clicked")}
+  >
+    Click me
+  </button>
+);
+```
+
+**Container Component**
+
+```jsx
+const Container = () => (
+  <div>
+    <button>Hello</button>
+    <Title />
+    <Button />
+  </div>
+);
+```
+
+**렌더링**
+
+```jsx
+ReactDOM.render(<Container />, root);
+```
+
 # Problem Solving (Algorithm & SQL)
 
 **BOJ 5547 일루미네이션**
