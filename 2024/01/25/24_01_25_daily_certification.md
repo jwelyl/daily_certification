@@ -1,12 +1,5 @@
 # 24_01_25_daily_certification
 
-```
-[koreii] #25 데일리인증
-20240125
-알고리즘
-- boj 1135 뉴스 전하기 풀이 중
-```
-
 # Problem Solving (Algorithm & SQL)
 
 **BOJ 1135 뉴스 전하기**
