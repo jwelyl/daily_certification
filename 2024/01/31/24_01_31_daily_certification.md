@@ -1,5 +1,234 @@
 # 24_01_31_daily_certification
 
+# JPA
+
+## 연관관계 매핑
+
+### **연관관계가 없는 객체 (Team 참조 대신 Team의 PK를 FK로 그대로 가짐)**
+
+![Untitled](24_01_31_daily_certification%20a93d6959fb274f75aefdfc71b5bfc6eb/Untitled.png)
+
+**Member Entity**
+
+```java
+@Entity
+public class Member {
+  @Id
+  @GeneratedValue
+  @Column(name = "MEMBER_ID")
+  private Long id;
+  @Column(name = "USERNAME")
+  private String username;
+
+  @Column(name = "TEAM_ID")
+  private Long teamId;
+
+  public Long getId() {
+    return id;
+  }
+
+  public String getUsername() {
+    return username;
+  }
+
+  public void setUsername(String username) {
+    this.username = username;
+  }
+
+  public Long getTeamId() {
+    return teamId;
+  }
+
+  public void setTeamId(Long teamId) {
+    this.teamId = teamId;
+  }
+}
+```
+
+**Team Entity**
+
+```java
+@Entity
+public class Team {
+  @Id
+  @GeneratedValue
+  @Column(name = "TEAM_ID")
+  private Long id;
+
+  @Column(name = "TEAM_NAME")
+  private String name;
+
+  public Long getId() {
+    return id;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+}
+```
+
+**DB Schema**
+
+![Untitled](24_01_31_daily_certification%20a93d6959fb274f75aefdfc71b5bfc6eb/Untitled%201.png)
+
+Member 테이블이 Team 테이블의 PK 값을 그대로 가지고 있다.
+
+**JpaMain**
+
+```java
+try {
+  Team team = new Team();
+  team.setName("TeamA");
+  em.persist(team);
+
+  Member member = new Member();
+  member.setUsername("member1");
+  member.setTeamId(team.getId());
+  em.persist(member);
+
+	Member findMember = em.find(Member.class, member.getId());
+
+  Long findTeamId = findMember.getTeamId();
+  Team findTeam = em.find(Team.class, findTeamId);
+
+  tx.commit();
+} catch (Exception e) {
+  tx.rollback();
+} finally {
+  em.close();
+}
+```
+
+**Query**
+
+![Untitled](24_01_31_daily_certification%20a93d6959fb274f75aefdfc71b5bfc6eb/Untitled%202.png)
+
+member의 TEAM_ID를 설정하기 위해서 team에서 ID를 가져와야 한다. 또한 member가 속한 team을 찾기 위해서 member의 FK인 TEAM_ID를 이용해 team을 찾아야 한다. 
+
+### 단방향 연관관계
+
+**객체 연관관계 사용**
+
+![Untitled](24_01_31_daily_certification%20a93d6959fb274f75aefdfc71b5bfc6eb/Untitled%203.png)
+
+MEMBER 테이블이 TEAM 테이블의 PK를 FK로 가지므로 MEMBER : TEAM은 다대일(N : 1) 관계이다.
+
+Member 객체가 TEAM 테이블의 PK를 FK로 직접 가지는 대신 Team 객체의 참조를 가진다. 
+
+![Untitled](24_01_31_daily_certification%20a93d6959fb274f75aefdfc71b5bfc6eb/Untitled%204.png)
+
+**즉 FK와 참조가 매핑된다.**
+
+**Member Entity**
+
+```java
+@Entity
+public class Member {
+  @Id
+  @GeneratedValue
+  @Column(name = "MEMBER_ID")
+  private Long id;
+  @Column(name = "USERNAME")
+  private String username;
+
+  @ManyToOne
+  @JoinColumn(name = "TEAM_ID")
+  private Team team;
+
+  public Long getId() {
+    return id;
+  }
+
+  public String getUsername() {
+    return username;
+  }
+
+  public void setUsername(String username) {
+    this.username = username;
+  }
+
+  public Team getTeam() {
+    return team;
+  }
+
+  public void setTeam(Team team) {
+    this.team = team;
+  }
+}
+```
+
+Member 객체는 Team 객체의 참조 team를 가지게 된다. 이 때 MEMBER 테이블과 TEAM 테이블은 N : 1 관계이므로 **@ManyToOne** 어노테이션을 붙여줘야 하며, team 참조가 MEMBER 테이블의 FK TEAM_ID와 매핑되어야 하므로 **@JoinColumn(name = “TEAM_ID”)** 어노테이션을 붙여준다.
+
+**DB Schema**
+
+![Untitled](24_01_31_daily_certification%20a93d6959fb274f75aefdfc71b5bfc6eb/Untitled%205.png)
+
+Member 테이블이 FK로 TEAM_ID를 가지는 것을 알 수 있다. 즉 team 참조가 FK로 잘 매핑되었다.
+
+**JpaMain**
+
+```java
+try {
+  Team team = new Team();
+  team.setName("TeamA");
+  em.persist(team);
+
+  Member member = new Member();
+  member.setUsername("member1");
+  member.setTeam(team);
+  em.persist(member);
+
+  Member findMember = em.find(Member.class, member.getId());
+  Team findTeam = findMember.getTeam();
+  tx.commit();
+} catch (Exception e) {
+  tx.rollback();
+} finally {
+  em.close();
+}
+```
+
+보다 객체지향적으로 연관관계를 맺어줄 수 있고 FK 없이도 조회가 가능하다.
+
+cf) find할 때 select 쿼리가 나오지 않는 이유
+
+team, member는 이미 Persistence Context에 들어가 있으므로 DB가 아니라 1차 캐시에서 바로 가져올 수 있기 때문dp select 쿼리가 나오지 않는다.
+
+select 쿼리를 보고 싶으면
+
+```java
+try {
+  Team team = new Team();
+  team.setName("TeamA");
+  em.persist(team);
+
+  Member member = new Member();
+  member.setUsername("member1");
+  member.setTeam(team);
+  em.persist(member);
+
+  em.flush();
+  em.clear();
+
+  Member findMember = em.find(Member.class, member.getId());
+  Team findTeam = findMember.getTeam();
+  tx.commit();
+} catch (Exception e) {
+  tx.rollback();
+} finally {
+  em.close();
+}
+```
+
+flush를 통해, Persistence Context에 있는 insert 쿼리를 DB로 보내 저장하고(싱크를 맞춘다.), clear로 Persistence Context를 초기화하면, DB에서 member, team을 찾아야 하므로 select 쿼리가 나온다. 
+
+![Untitled](24_01_31_daily_certification%20a93d6959fb274f75aefdfc71b5bfc6eb/Untitled%206.png)
+
 # Problem Solving (Algorithm & SQL)
 
 **BOJ 1208 부분수열의 합 2**
