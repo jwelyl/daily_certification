@@ -1,5 +1,6 @@
 # 24_02_02_daily_certification
 
+
 # Computer Network
 
 ## Network Layer
@@ -45,6 +46,20 @@ Router를 Node로, Link를 Edge로 보면 Network는 Graph이고, Routing Algori
 ![IMG_0132.jpg](24_02_02_daily_certification%20e3eb2c8d1d3d4372965145c48a7f5c1f/IMG_0132.jpg)
 
 ![IMG_0133.jpg](24_02_02_daily_certification%20e3eb2c8d1d3d4372965145c48a7f5c1f/IMG_0133.jpg)
+
+Link State Algorithm을 위해서는 모든 Router에 Network 상황을 Broadcast해야 한다.
+
+**그 범위는 특정 Network로 한다.** (ex) 서강대학교 네트워크), 전체 Internet이 아님
+
+**각 네트워크 주체별로(ex) HYU, SK) 각자의 Routing Algorithm을 사용함**
+
+![1.jpeg](24_02_02_daily_certification%20e3eb2c8d1d3d4372965145c48a7f5c1f/1.jpeg)
+
+네트워크와 네트워크 사이(ex) Sogang과 SKKU 사이)에도 Router가 존재하는데 네트워크와 네트워크 사이의 Routing Algorithm은? 즉 Network 사이의 Routing Algorithm은?
+
+### Distance Vector Algorithm
+
+**Bellman-Ford Algorithm**
 
 # Problem Solving (Algorithm & SQL)
 
