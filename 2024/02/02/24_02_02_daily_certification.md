@@ -1,6 +1,5 @@
 # 24_02_02_daily_certification
 
-
 # Computer Network
 
 ## Network Layer
@@ -63,12 +62,153 @@ Link State Algorithm을 위해서는 모든 Router에 Network 상황을 Broadcas
 
 # Problem Solving (Algorithm & SQL)
 
-**BOJ 11509 풍선 맞추기**
+**BOJ 4792 레드 블루 스패닝 트리**
 
-[11509번: 풍선 맞추기](https://www.acmicpc.net/problem/11509)
+[4792번: 레드 블루 스패닝 트리](https://www.acmicpc.net/problem/4792)
+
+빨간 간선을 우선적으로 사용하여 스패닝 트리를 만들고 빨간 간선만으로 부족할 때 파란 간선까지 사용해 스패닝 트리를 만든다. 이 때 사용한 파란 간선 개수를 cnt1이라 하자. 만약 cnt1 > k이면, 파란 간선이 정확히 k개인 스패닝 트리는 존재할 수 없다.
+
+반대로 파란 간선을 우선적으로 사용하여 스패닝 트리를 만들고 파란 간선만으로 부족할 때 빨간 간선까지 사용하여 스패닝 트리를 만든다. 이 때 사용한 파란 간선 개수를 cnt2라고 하자. 만약 cnt2 < k이면, 파란 간선이 정확히 k개인 스패닝 트리는 존재할 수 없다.
 
 **코드**
 
 ```kotlin
+import java.util.*
+import java.io.*
+import kotlin.collections.ArrayList
 
+class BOJ_4792 {
+    private val br = BufferedReader(InputStreamReader(System.`in`))
+    private val sb = StringBuilder()
+    private lateinit var tokens: StringTokenizer
+
+    private var n = 0   //  정점 개수
+    private var m = 0   //  간선 개수
+    private var k = 0   //  요구 파란 간선 개수
+
+    private lateinit var ds : IntArray
+
+    private val blueEdges = ArrayList<Edge>()
+    private val redEdges = ArrayList<Edge>()
+
+    fun solve() {
+        while(true) {
+            tokens = StringTokenizer(br.readLine())
+            n = tokens.nextToken().toInt()
+            m = tokens.nextToken().toInt()
+            k = tokens.nextToken().toInt()
+
+            if(n == 0 && m == 0 && k == 0) {
+                print(sb)
+                break
+            }
+
+            blueEdges.clear()
+            redEdges.clear()
+            ds = IntArray(n + 1) { it }
+
+            repeat(m) {
+                tokens = StringTokenizer(br.readLine())
+                val color = tokens.nextToken()[0]
+                val v1 = tokens.nextToken().toInt()
+                val v2 = tokens.nextToken().toInt()
+
+                if(color == 'B')
+                    blueEdges.add(Edge(v1, v2))
+                else
+                    redEdges.add(Edge(v1, v2))
+            }
+
+            //  1. 빨강 간선 먼저 사용해서 MST 구축
+            var mstEdgeCnt = 0
+            var blueEdgeCnt = 0
+
+            for(redEdge in redEdges) {
+                val v1 = redEdge.v1
+                val v2 = redEdge.v2
+
+                val v1DS = findDS(v1)
+                val v2DS = findDS(v2)
+
+                if(v1DS != v2DS) {
+                    unionDS(v1DS, v2DS)
+                    mstEdgeCnt++
+                }
+
+                if(mstEdgeCnt == n - 1)
+                    break
+            }
+
+            if(mstEdgeCnt < n - 1) {
+                for(blueEdge in blueEdges) {
+                    val v1 = blueEdge.v1
+                    val v2 = blueEdge.v2
+
+                    val v1DS = findDS(v1)
+                    val v2DS = findDS(v2)
+
+                    if(v1DS != v2DS) {
+                        unionDS(v1DS, v2DS)
+                        mstEdgeCnt++
+                        blueEdgeCnt++
+                    }
+
+                    if(mstEdgeCnt == n - 1)
+                        break
+                }
+            }
+
+            if(blueEdgeCnt > k) {   //  빨간 간선 먼저 사용했는데도 파란 간선이 k개가 넘을 경우
+                sb.append("0\n")
+                continue
+            }
+            //  2. 파란 간선 먼저 사용해서 MST 구축
+            ds = IntArray(n + 1) { it }
+
+            mstEdgeCnt = 0
+            blueEdgeCnt = 0
+
+            for(blueEdge in blueEdges) {
+                val v1 = blueEdge.v1
+                val v2 = blueEdge.v2
+
+                val v1DS = findDS(v1)
+                val v2DS = findDS(v2)
+
+                if(v1DS != v2DS) {
+                    unionDS(v1DS, v2DS)
+                    mstEdgeCnt++
+                    blueEdgeCnt++
+                }
+
+                if(mstEdgeCnt == n - 1)
+                    break
+            }
+
+            if(blueEdgeCnt < k) {   //  파란 간선을 먼저 사용했음에도 파란 간선이 k개가 되지 않을때
+                sb.append("0\n")
+                continue
+            }
+
+            sb.append("1\n")
+        }
+    }
+
+    private fun findDS(v : Int) : Int {
+        if(v == ds[v]) return v
+
+        ds[v] = findDS(ds[v])
+        return ds[v]
+    }
+
+    private fun unionDS(v1 : Int, v2 : Int) {
+        ds[v2] = v1
+    }
+
+    private class Edge(val v1 : Int, val v2 : Int)
+}
+
+fun main() {
+    BOJ_4792().solve()
+}
 ```
