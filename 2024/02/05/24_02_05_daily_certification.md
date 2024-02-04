@@ -1,5 +1,16 @@
 # 24_02_05_daily_certification
 
+```
+[koreii] #36 데일리인증
+20240205
+JPA
+연관관계 매핑 종류
+- 일대일 매핑
+- 다대다 매핑 (안 쓰는 이유)
+알고리즘
+- DFS & Greedy & 한붓 그리기 문제 풀이 + 난이도 기여
+```
+
 # JPA
 
 ## 연관관계 매핑
@@ -268,12 +279,60 @@ public class Product {
 
 # Problem Solving (Algorithm & SQL)
 
-**BOJ 13202 피자 배치**
+**BOJ 14926 Not Equal**
 
-[13202번: 피자 배치](https://www.acmicpc.net/problem/13202)
+[14926번: Not Equal](https://www.acmicpc.net/problem/14926)
+
+정N각형의 모든 꼭짓점끼리 선분으로 이었을떄 각 선분을 한번씩만 지나는 경로를 구하는 문제이다. 이 때 경로 중 사전 순으로 가장 앞서는 것을 구해야 하므로 a1에서 시작해서 a2로 이동하고 … an에서 a1으로 마지막에 이동하는 것이 가장 앞서는 순서가 된다.
+
+![1.jpeg](24_02_05_daily_certification%207d826029519e41f19d845c3441e43690/1.jpeg)
+
+따라서 선분 a1an을 방문 처리해놓고 a1부터 dfs로 탐색하면 된다. 방문하지 않은 정점 중 가장 번호가 작은 정점을 방문하면 된다.
+
+n이 홀수임에 주의해야 한다. n = 4로 놓고 위의 방법대로 한붓그리기를 시도하면 불가능하다는 것을 알 수 있다.
 
 **코드**
 
 ```kotlin
+import java.io.*
 
+class BOJ_14926 {
+    private val br = BufferedReader(InputStreamReader(System.`in`))
+    private val sb = StringBuilder()
+    
+    private var n = 0
+    private lateinit var edges : Array<BooleanArray>
+    
+    fun solve() {
+        n = br.readLine().toInt()
+        
+        edges = Array(n + 1) { BooleanArray(n + 1) }
+    
+        edges[1][n] = true
+        edges[n][1] = true
+        
+        dfs(1)
+        
+        sb.append("a1\n")
+        
+        print(sb)
+    }
+    
+    private fun dfs(v : Int) {
+        sb.append("a$v ")
+        
+        for(i in 1 .. n) {
+            if(i != v && !edges[v][i]) {
+                edges[v][i] = true
+                edges[i][v] = true
+                
+                dfs(i)
+            }
+        }
+    }
+}
+
+fun main() {
+    BOJ_14926().solve()
+}
 ```
