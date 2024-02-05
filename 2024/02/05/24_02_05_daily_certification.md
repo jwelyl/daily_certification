@@ -1,15 +1,30 @@
 # 24_02_05_daily_certification
 
-```
-[koreii] #36 데일리인증
-20240205
-JPA
-연관관계 매핑 종류
-- 일대일 매핑
-- 다대다 매핑 (안 쓰는 이유)
-알고리즘
-- DFS & Greedy & 한붓 그리기 문제 풀이 + 난이도 기여
-```
+# Computer Network
+
+## Network Layer
+
+### Distance Vector Algorithm
+
+**Bellman-Ford Algorithm**
+
+![1.jpeg](24_02_05_daily_certification%207d826029519e41f19d845c3441e43690/1.jpeg)
+
+Dynamic Programming을 이용
+
+![IMG_0149.jpg](24_02_05_daily_certification%207d826029519e41f19d845c3441e43690/IMG_0149.jpg)
+
+![IMG_0150.jpg](24_02_05_daily_certification%207d826029519e41f19d845c3441e43690/IMG_0150.jpg)
+
+![IMG_0151.jpg](24_02_05_daily_certification%207d826029519e41f19d845c3441e43690/IMG_0151.jpg)
+
+![IMG_0148.jpg](24_02_05_daily_certification%207d826029519e41f19d845c3441e43690/IMG_0148.jpg)
+
+![IMG_0152.jpg](24_02_05_daily_certification%207d826029519e41f19d845c3441e43690/IMG_0152.jpg)
+
+![IMG_0153.jpg](24_02_05_daily_certification%207d826029519e41f19d845c3441e43690/IMG_0153.jpg)
+
+![IMG_0154.jpg](24_02_05_daily_certification%207d826029519e41f19d845c3441e43690/IMG_0154.jpg)
 
 # JPA
 
@@ -285,7 +300,7 @@ public class Product {
 
 정N각형의 모든 꼭짓점끼리 선분으로 이었을떄 각 선분을 한번씩만 지나는 경로를 구하는 문제이다. 이 때 경로 중 사전 순으로 가장 앞서는 것을 구해야 하므로 a1에서 시작해서 a2로 이동하고 … an에서 a1으로 마지막에 이동하는 것이 가장 앞서는 순서가 된다.
 
-![1.jpeg](24_02_05_daily_certification%207d826029519e41f19d845c3441e43690/1.jpeg)
+![1.jpeg](24_02_05_daily_certification%207d826029519e41f19d845c3441e43690/1%201.jpeg)
 
 따라서 선분 a1an을 방문 처리해놓고 a1부터 dfs로 탐색하면 된다. 방문하지 않은 정점 중 가장 번호가 작은 정점을 방문하면 된다.
 
