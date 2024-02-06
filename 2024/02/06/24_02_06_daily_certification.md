@@ -384,3 +384,90 @@ where
 확실한 것은 TABLE_PER_CLASS 전략은 쓸 일이 없다. ORM 전문가, DBA 모두에게 외면받았다.
 
 **기본적으로는 조인 전략을 사용하되, 정말 정말 단순할 경우에는 단일 테이블 전략을 사용하자.**
+
+# Problem Solving (Algorithm & SQL)
+
+**코딩테스트 연습 > JOIN > 조건에 맞는 도서와 저자 리스트 출력하기**
+
+[](https://school.programmers.co.kr/learn/courses/30/lessons/144854)
+
+BOOK과 author_id로 join한 후 그 중 
+
+![join.jpeg](24_02_06_daily_certification%200466251f48124fedbf5f21bf6174d190/join.jpeg)
+
+**BOOK 테이블**
+
+```sql
+select 
+    b.book_id as book_id, b.category as category, b.author_id as author_id, 
+    b.price as price, date_format(b.published_date, '%Y-%m-%d') as published_date
+from BOOK b;
+```
+
+| book_id | category | author_id | price | published_date |
+| --- | --- | --- | --- | --- |
+| 1 | 경제 | 1 | 9000 | 2020-01-10 |
+| 2 | 경제 | 1 | 12000 | 2021-06-10 |
+| 3 | 인문 | 1 | 11000 | 2021-10-24 |
+| 4 | 소설 | 2 | 7500 | 2020-03-03 |
+| 5 | 기술 | 3 | 11000 | 2020-02-17 |
+| 6 | 기술 | 3 | 8000 | 2020-04-29 |
+| 7 | 생활 | 3 | 9500 | 2021-08-20 |
+
+**AUTHOR 테이블**
+
+```sql
+select 
+    a.author_id as author_id, 
+    a.author_name as author_name
+from AUTHOR a;
+```
+
+| author_id | author_name |
+| --- | --- |
+| 1 | 홍길동 |
+| 2 | 김영호 |
+| 3 | 김수진 |
+
+**BOOK, AUTHOR inner join 테이블**
+
+```sql
+select
+    b.book_id as book_id,
+    b.category as category,
+    b.author_id as author_id,
+    b.price as price,
+    date_format(b.published_date, '%Y-%m-%d') as published_date,
+    a.author_id as author_id,
+    a.author_name as author_name
+from BOOK b inner join AUTHOR a
+on b.author_Id = a.author_id;
+```
+
+| book_id | category | author_id | price | published_date | author_id | author_name |
+| --- | --- | --- | --- | --- | --- | --- |
+| 1 | 경제 | 1 | 9000 | 2020-01-10 | 1 | 홍길동 |
+| 2 | 경제 | 1 | 12000 | 2021-06-10 | 1 | 홍길동 |
+| 3 | 인문 | 1 | 11000 | 2021-10-24 | 1 | 홍길동 |
+| 4 | 소설 | 2 | 7500 | 2020-03-03 | 2 | 김영호 |
+| 5 | 기술 | 3 | 11000 | 2020-02-17 | 3 | 김수진 |
+| 6 | 기술 | 3 | 8000 | 2020-04-29 | 3 | 김수진 |
+| 7 | 생활 | 3 | 9500 | 2021-08-20 | 3 | 김수진 |
+
+정답
+
+```sql
+select
+    b.book_id as book_id,
+    a.author_name as author_name,
+    date_format(b.published_date, '%Y-%m-%d') as published_date
+from BOOK b inner join AUTHOR a
+on b.author_id = a.author_id
+where b.category = '경제'
+order by published_date;
+```
+
+| book_id | author_name | published_date |
+| --- | --- | --- |
+| 1 | 홍길동 | 2020-01-10 |
+| 2 | 홍길동 | 2021-06-10 |
