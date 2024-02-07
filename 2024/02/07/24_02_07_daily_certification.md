@@ -143,23 +143,12 @@ Proxy 객체 초기화를 위한 DB 조회 select 쿼리는 1번만 나간 후, 
 ## Proxy의 특징
 
 - 프록시 객체는 처음 사용할 때 한 번만 초기화
-- **프록시 객체를 초기화 할 때, 프록시 객체가 실제 엔티티로 바뀌는 것은 아님, 초**
+- **프록시 객체를 초기화 할 때, 프록시 객체가 실제 엔티티로 바뀌는 것은 아님, 초기화되면 프록시 객체를 통해서 실제 엔티티에 접근 가능**
+- **프록시 객체는 원본 엔티티를 상속받음, 따라서 타입 체크시 주의해야함 (== 비교 실패, 대신 instance of 사용)**
+- 영속성 컨텍스트에 찾는 엔티티가 이미 있으면 em.**getReference()**를 호출해도 실제 엔티티 반환
+- 영속성 컨텍스트의 도움을 받을 수 없는 준영속 상태일 때, 프록시를 초기화하면문제 발생 (하이버네이트는 org.hibernate.LazyInitializationException 예외를 터트림)
 
-**기화되면 프록시 객체를 통해서 실제 엔티티에 접근 가능**
-
-- **프록시 객체는 원본 엔티티를 상속받음, 따라서 타입 체크시 주의해야함 (== 비**
-
-**교 실패, 대신 instance of 사용)**
-
-- 영속성 컨텍스트에 찾는 엔티티가 이미 있으면 em.**getReference()**를 호출해
-
-도 실제 엔티티 반환
-
-- 영속성 컨텍스트의 도움을 받을 수 없는 준영속 상태일 때, 프록시를 초기화하면
-
-문제 발생
-
-(하이버네이트는 org.hibernate.LazyInitializationException 예외를 터트림)
+**프록시 객체는 원본 엔티티를 상속받음, 따라서 타입 체크시 주의해야함 (== 비교 실패, 대신 instance of 사용)**
 
 아래와 같은 로직을 수행할 때
 
@@ -245,6 +234,173 @@ private static void logic(Member m1, Member m2) {
 ```
 
 ![Untitled](24_02_07_daily_certification%20435a7bdf92d7415b9079b7b7556f4648/Untitled%2011.png)
+
+**영속성 컨텍스트에 찾는 엔티티가 이미 있으면 em.getReference()를 호출해도 실제 엔티티 반환**
+
+```java
+try {
+  Member member1 = new Member();
+  member1.setUsername("member1");
+  em.persist(member1);
+
+  em.flush();
+  em.clear();
+
+  Member m1 = em.find(Member.class, member1.getId());
+  System.out.println("m1 = " + m1.getClass());
+
+  Member reference = em.getReference(Member.class, member1.getId());
+  System.out.println("reference = " + reference.getClass());
+	System.out.println("m1 == reference : " + (m1 == reference));
+
+  tx.commit();
+} catch (Exception e) {
+  tx.rollback();
+} finally {
+  em.close();
+}
+```
+
+m1을 find로 실제 DB에서 조회한 후, m1을 getReference로 Proxy로 조회를 시도해밨다.
+
+![Untitled](24_02_07_daily_certification%20435a7bdf92d7415b9079b7b7556f4648/Untitled%2012.png)
+
+reference도 Proxy 클래스가 아니라 Member 클래스가 출력된다. Proxy가 아니라 원본이 가져와진다.
+
+**JPA는 같은 객체는 같은 Persistence Context 내에서, 한 Transaction 내에서 == 비교는 항상 true가 나와야 한다.**
+
+그리고 이미 원본을 가져왔는데 굳이 Proxy를 가져와서 얻을 이익이 없다.
+
+```java
+try {
+  Member member1 = new Member();
+  member1.setUsername("member1");
+  em.persist(member1);
+
+  em.flush();
+  em.clear();
+
+  Member m1 = em.getReference(Member.class, member1.getId());
+  System.out.println("m1 = " + m1.getClass());
+
+  Member reference = em.getReference(Member.class, member1.getId());
+  System.out.println("reference = " + reference.getClass());
+	System.out.println("m1 == reference : " + (m1 == reference));
+
+  tx.commit();
+} catch (Exception e) {
+  tx.rollback();
+} finally {
+  em.close();
+}
+```
+
+둘 다 Proxy로 가져올 경우에도 당연히 같은 Proxy가 가져와지며 == 비교 시 true이다. Proxy를 가져왔으므로 select 쿼리는 나오지 않느다.
+
+![Untitled](24_02_07_daily_certification%20435a7bdf92d7415b9079b7b7556f4648/Untitled%2013.png)
+
+반대로 Proxy를 가져온 객체를 find하려 하면 어떻게 될까?
+
+```java
+try {
+  Member member1 = new Member();
+  member1.setUsername("member1");
+  em.persist(member1);
+
+  em.flush();
+  em.clear();
+
+  Member refMember = em.getReference(Member.class, member1.getId());
+  System.out.println("refMember = " + refMember.getClass());
+
+  Member findMember = em.find(Member.class, member1.getId());
+  System.out.println("findMember = " + findMember.getClass());
+  System.out.println("refMember == findMember : " + (refMember == findMember));
+
+  tx.commit();
+} catch (Exception e) {
+  tx.rollback();
+} finally {
+  em.close();
+}
+```
+
+![Untitled](24_02_07_daily_certification%20435a7bdf92d7415b9079b7b7556f4648/Untitled%2014.png)
+
+refMember가 Proxy가 되는건 당연하다. findMember 또한 Proxy를 가져온다.
+
+만약 findMember를 원본을 가져오면 refMember == findMember가 true임을 보장할 수 없다.
+
+**JPA는 같은 객체는 같은 Persistence Context 내에서, 한 Transaction 내에서 == 비교는 항상 true가 나와야 한다.**
+
+**영속성 컨텍스트의 도움을 받을 수 없는 준영속 상태일 때, 프록시를 초기화하면문제 발생**
+
+Proxy를 가져오고 username에 접근하면 DB를 조회하며 Proxy가 잘 초기화된다.
+
+```java
+try {
+  Member member1 = new Member();
+  member1.setUsername("member1");
+  em.persist(member1);
+
+  em.flush();
+  em.clear();
+
+  Member refMember = em.getReference(Member.class, member1.getId());
+  System.out.println("refMember = " + refMember.getClass());  //  Proxy
+
+  System.out.println("refMember.name = " + refMember.getUsername());
+
+  tx.commit();
+} catch (Exception e) {
+  tx.rollback();
+} finally {
+  em.close();
+}
+```
+
+![Untitled](24_02_07_daily_certification%20435a7bdf92d7415b9079b7b7556f4648/Untitled%2015.png)
+
+Proxy를 가져오고 Persistence Context를 종료한 상태에서 Proxy의 초기화를 시도하면 어찌될까?
+
+```java
+try {
+  Member member1 = new Member();
+  member1.setUsername("member1");
+  em.persist(member1);
+
+  em.flush();
+  em.clear();
+
+  Member refMember = em.getReference(Member.class, member1.getId());
+  System.out.println("refMember = " + refMember.getClass());  //  Proxy
+
+	em.detach(refMember); //  준영속 상태로 변경
+//      em.close();           //  영속성 컨텍스트 종료
+//      em.clear();           //  영속성 컨텍스트 초기화
+
+  System.out.println("refMember.name = " + refMember.getUsername());
+
+  tx.commit();
+} catch (Exception e) {
+  tx.rollback();
+	e.printStackTrace();
+} finally {
+  em.close();
+}
+```
+
+준영속 상태로 변경한 경우, 또는 영속성 컨텍스트를 초기화한 경우
+
+![Untitled](24_02_07_daily_certification%20435a7bdf92d7415b9079b7b7556f4648/Untitled%2016.png)
+
+Proxy를 초기화할 수 없다는 LazyInitializationException이 발생한다. no Session이 Persistence Context에서 관리되지 않는다는 뜻이다.
+
+영속성 컨텍스트를 종료한 경우
+
+![Untitled](24_02_07_daily_certification%20435a7bdf92d7415b9079b7b7556f4648/Untitled%2017.png)
+
+영속성 컨텍스트가 닫혔다는 뜻이다.
 
 # Problem Solving (Algorithm & SQL)
 
