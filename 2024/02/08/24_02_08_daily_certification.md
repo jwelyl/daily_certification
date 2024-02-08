@@ -145,7 +145,7 @@ public class Member extends BaseEntity {
 }
 ```
 
-Team 참조자의 @ManyToOne 어노테이션의 fetch 값을 **FetchType.LAZY**로 변경하자.
+Team 참조자의 @ManyToOne 어노테이션의 fetch 값을 **FetchType.LAZY**로 변경하자. 
 
 (기본값은 FetchType.EAGER)
 
@@ -255,7 +255,7 @@ team의 특정 Property를 사용하면 그 때 Proxy가 초기화된다.
 
 ### 지연 로딩 LAZY vs 즉시 로딩 EAGER
 
-Member는 자주 사용하지만 Member가 속한 Team을 조회할 일이 많지 않다면 지연 로딩을 사용하는게 효율적이다. 하지만 Team도 Member 못지 않게 조회할 일이 많다면 지연 로딩으로 Member 조회 쿼리와 Team 조회 쿼리가 2번씩 나가는 것은 비효율적이다.
+Member는 자주 사용하지만 Member가 속한 Team을 조회할 일이 많지 않다면 지연 로딩을 사용하는게 효율적이다. 하지만 Team도 Member 못지 않게 조회할 일이 많다면 지연 로딩으로 Member 조회 쿼리와 Team 조회  쿼리가 2번씩 나가는 것은 비효율적이다.
 
 이럴 경우 즉시 로딩을 사용하는게 바람직하다. 아니다. 그래도 지연 로딩을 사용하는게 좋다. 특히 실무에선
 
@@ -442,6 +442,246 @@ JOIN으로 team을 다 채워서 나오므로 쿼리는 1번만 나간다.
 **@ManyToOne, @OneToOne은 반드시 LAZY로 직접 변경해줘야 한다.**
 
 **결론은 일단 모든 연관관계를 지연 로딩으로 처리해두자.**
+
+## 영속성 전이(CASCADE), 고아 객체
+
+### 영속성 전이 : CASCADE
+
+특정 Entity를 영속 상태로 만들때 연관 Entity들도 모두 영속 상태로 만들고 싶을 때 사용
+
+```java
+
+@Entity
+public class Parent {
+  @Id
+  @GeneratedValue
+  private Long id;
+
+  private String name;
+
+  @OneToMany(mappedBy = "parent")
+  private List<Child> childList = new ArrayList<>();
+
+  public void addChild(Child child) {
+    childList.add(child);
+    child.setParent(this);
+  }
+
+  /* getter, setter */
+}
+```
+
+```java
+@Entity
+public class Child {
+  @Id
+  @GeneratedValue
+  private Long id;
+
+  private String name;
+
+  @ManyToOne
+  @JoinColumn(name = "parent_id")
+  private Parent parent;
+
+  /* getter, setter */
+}
+```
+
+**JpaMain**
+
+```java
+try {
+  Parent parent = new Parent();
+  Child child1 = new Child();
+  Child child2 = new Child();
+
+  parent.addChild(child1);
+  parent.addChild(child2);
+
+  em.persist(parent);
+  em.persist(child1);
+  em.persist(child2);
+
+  tx.commit();
+} catch (Exception e) {
+  tx.rollback();
+  e.printStackTrace();
+} finally {
+  em.close();
+}
+```
+
+parent와 child1, child2 모두 저장하기 위해 persist를 세번 호출해야 한다. 매우 귀찮다.
+
+![Untitled](24_02_08_daily_certification%200d6f5a20fea04dbab798abbaae793165/Untitled%2013.png)
+
+parent 중심으로 개발을 진행하면 parent만 저장해도 연관된 child1, child2도 같이 저장됐으면 한다. 그렇다고 parent만 persist하면 당연히 child1, child2는 저장되지 않는다.
+
+이를 해결하기 위해 Parent의 childList의 매핑에 **cascade 속성을 CascadeType.ALL로 추가한다.**
+
+```java
+@Entity
+public class Parent {
+  @Id
+  @GeneratedValue
+  private Long id;
+
+  private String name;
+
+  @OneToMany(mappedBy = "parent", cascade = CascadeType.ALL)
+  private List<Child> childList = new ArrayList<>();
+
+  public void addChild(Child child) {
+    childList.add(child);
+    child.setParent(this);
+  }
+
+  /* getter, setter */
+}
+```
+
+```java
+try {
+  Parent parent = new Parent();
+  Child child1 = new Child();
+  Child child2 = new Child();
+
+  parent.addChild(child1);
+  parent.addChild(child2);
+
+  em.persist(parent);
+//      em.persist(child1);
+//      em.persist(child2);
+
+  tx.commit();
+} catch (Exception e) {
+  tx.rollback();
+  e.printStackTrace();
+} finally {
+  em.close();
+}
+```
+
+parent만 저장했는데도 child 저장 쿼리까지 같이 나가며
+
+![Untitled](24_02_08_daily_certification%200d6f5a20fea04dbab798abbaae793165/Untitled%2014.png)
+
+child1, child2 또한 정상적으로 저장된다.
+
+![Untitled](24_02_08_daily_certification%200d6f5a20fea04dbab798abbaae793165/Untitled%2015.png)
+
+**cascade가 항상 옳은가?**
+
+하나의 부모 Entity하고만 연관관계가 있을 경우에는 써도 무방하다. 하지만 자식 Entity가 여러 Entity와 연관 관계를 맺을 때는 쓰는데 주의해야 한다. 아니, 쓰면 안된다.
+
+### 고아 객체
+
+고아 객체 : 부모 Entity와 연관관계가 끊어진 자식 Entity
+
+**고아 객체 제거 : 부모 Entity와 연관관계가 끊어진 자식 Entity를 자동으로 제거함**
+
+**orphanRemoval = true**
+
+```java
+@Entity
+public class Parent {
+  @Id
+  @GeneratedValue
+  private Long id;
+
+  private String name;
+
+  @OneToMany(mappedBy = "parent", orphanRemoval = true)
+  private List<Child> childList = new ArrayList<>();
+
+  public void addChild(Child child) {
+    childList.add(child);
+    child.setParent(this);
+  }
+
+  /* getter, setter */
+}
+```
+
+```java
+try {
+  Parent parent = new Parent();
+  Child child1 = new Child();
+  Child child2 = new Child();
+
+  parent.addChild(child1);
+  parent.addChild(child2);
+
+  em.persist(parent);
+	em.persist(child1);
+	em.persist(child2);
+
+  em.flush();
+  em.clear();
+
+  Parent findParent = em.find(Parent.class, parent.getId());
+  findParent.getChildList().remove(0);  //  첫 번째 자식을 제거
+  
+  tx.commit();
+} catch (Exception e) {
+  tx.rollback();
+  e.printStackTrace();
+} finally {
+  em.close();
+}
+```
+
+![Untitled](24_02_08_daily_certification%200d6f5a20fea04dbab798abbaae793165/Untitled%2016.png)
+
+child 삭제 쿼리가 나가고
+
+![Untitled](24_02_08_daily_certification%200d6f5a20fea04dbab798abbaae793165/Untitled%2017.png)
+
+실제 DB에도 child1이 제거된다. Parent의 @OneToMany Collection에서 제거되어 연관관계가 제거된 child가 DB에서도 제거된다.
+
+**당연히 Child Entity를 참조하는게 Parent Entity 하나일 때만 고아 객체를 삭제해야 한다.**
+
+부모 객체 parent를 제거하면 자식 객체 child1, child2는 자동으로 제거된다. 
+
+CascadeType.REMOVE, CascadeType.ALL처럼 동작한다.
+
+```java
+try {
+  Parent parent = new Parent();
+  Child child1 = new Child();
+  Child child2 = new Child();
+
+  parent.addChild(child1);
+  parent.addChild(child2);
+
+  em.persist(parent);
+  em.persist(child1);
+  em.persist(child2);
+
+  em.flush();
+  em.clear();
+
+  Parent findParent = em.find(Parent.class, parent.getId());
+  em.remove(findParent);
+
+  tx.commit();
+} catch (Exception e) {
+  tx.rollback();
+  e.printStackTrace();
+} finally {
+  em.close();
+}
+```
+
+![Untitled](24_02_08_daily_certification%200d6f5a20fea04dbab798abbaae793165/Untitled%2018.png)
+
+### 영속성 전이 + 고아 객체, 생명 주기
+
+- CascadeType.ALL + orphanRemoval = true 둘 다 적용 시
+- Parent는 생명 주기를 JPA가 관리한다.
+- Child는 생명 주기를 Parent가 관리한다. (별도 Repository, DAO를 구현할 필요가 없다.)
+- 도메인 주도 설계(DDD)의 Aggregate Root 개념을 구현할 때 유용하다. (나중에)
 
 # Problem Solving (Algorithm & SQL)
 
