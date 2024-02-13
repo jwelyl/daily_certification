@@ -266,49 +266,41 @@ import java.io.*
 
 class BOJ_2109 {
     private val br = BufferedReader(InputStreamReader(System.`in`))
-    private val sb = StringBuilder()
-    private lateinit var tokens: StringTokenizer
+    private lateinit var tokens : StringTokenizer
 
-    private var r = 0
-    private var c = 0
-    private lateinit var table : Array<CharArray>
-    private val set = HashSet<String>()
-    private var count = 0
+    private var n = 0    //    강연 수
+    private val lectureList = ArrayList<Lecture>()    //    강연 기한 촉박한 순으로
+    private val pq = PriorityQueue<Int>()    //    강연 보상 작은 순으로
+
+    private var ans = 0    //    최대 보상
 
     fun solve() {
-        tokens = StringTokenizer(br.readLine())
-        r = tokens.nextToken().toInt()
-        c = tokens.nextToken().toInt()
+        n = br.readLine().toInt()
 
-        table = Array(r) { CharArray(c) }
-        for(i in 0 ..< r)
-            table[i] = br.readLine().toCharArray()
+        repeat(n) {
+            tokens = StringTokenizer(br.readLine())
+            lectureList.add(Lecture(tokens.nextToken().toInt(), tokens.nextToken().toInt()))
+        }
 
-        parametricSearch()
-        println(count)
+        lectureList.sort()    //    강연 기한이 빠른 순으로 정렬
+
+        for(i in 0 ..< n) {
+            val lecture = lectureList[i]
+            pq.offer(lecture.p)
+
+            if(lecture.d < pq.size)    //    해당 강연을 하기엔 이미 잡힌 강연이 많을 경우
+                pq.poll()    //    가장 가치가 작은 강연 제거
+        }
+
+        while(pq.isNotEmpty())    //    남은 강연들은 모두 강연 가능함 (가치 큰 것들만)
+            ans += pq.poll()
+
+        println(ans)
     }
 
-    private fun parametricSearch() {
-        var start = 0
-        var end = r - 1
-
-        while(start <= end) {
-            val mid = (start + end) / 2 //  mid행부터 부분 문자열을 확인해봄
-
-            set.clear()
-            for(j in 0 ..< c) {
-                sb.clear()
-                for(i in mid ..< r)
-                    sb.append(table[i][j])
-                set.add(sb.toString())
-            }
-
-            if(set.size == c) { //  mid행부터 문자열 잘랐을 때 중복 없을 경우
-                count = mid     //  일단 count 저장
-                start = mid + 1 //  더 큰 count 찾아보기
-            }
-            else  //  mid행부터 문자열 잘랐을 때 중복 발생할 경우
-                end = mid - 1   //  더 작은 count 찾아야 함
+    private class Lecture(val p : Int, val d : Int) : Comparable<Lecture> {
+        override fun compareTo(other : Lecture) : Int {
+            return this.d.compareTo(other.d)
         }
     }
 }
