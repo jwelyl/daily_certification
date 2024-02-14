@@ -35,7 +35,7 @@ try {
 
 영속성 컨텍스트를 초기화한 후 가져온 result의 원소들은 모두 Member Entity다. 이들이 영속성 컨텍스트에 의해 관리가 될까? 즉 setAge로 나이를 변경했을 때 update 쿼리가 나갈까?
 
-정답은 나간다. 
+정답은 나간다.
 
 ![Untitled](24_02_14_daily_certification%2065efb5e707c6434dbe18097670175997/Untitled.png)
 
@@ -90,7 +90,7 @@ MEMBER 테이블이 아니라 TEAM 테이블에서 team 정보를 가져오므�
 
 JPQL은 단순한 select 쿼리 같지만 실제 SQL은 복잡한 JOIN 쿼리가 나가므로 괴리가 심하다. (묵시적 JOIN)
 
-실제로 JOIN 같은 고비용 쿼리가 나가는 것을 JPQL에서도 알 수 있어야 한다. 
+실제로 JOIN 같은 고비용 쿼리가 나가는 것을 JPQL에서도 알 수 있어야 한다.
 
 **즉, JPQL을 실제 SQL과 유사하게 작성해야 한다.**
 
@@ -221,8 +221,6 @@ public class MemberDTO {
 
 **DTO 사용 JpaMain**
 
-Object[]의 TypeQuery를 사용해 Object[] List를 받고, 각 원소를 사용한다.
-
 ```java
 List<MemberDTO> resultList = em.createQuery("select new jpql.MemberDTO(m.username, m.age) from Member m", MemberDTO.class).getResultList();
 MemberDTO result = resultList.get(0);
@@ -238,6 +236,306 @@ System.out.println("age = " + result.getAge());
 
 ![Untitled](24_02_14_daily_certification%2065efb5e707c6434dbe18097670175997/Untitled%207.png)
 
+# Typescript
+
+## Call Signature
+
+**Traditional Function**
+
+```tsx
+//  call signature
+//  function add1: (a: number, b: number): number
+function add1(a: number, b: number): number {
+  return a + b;
+}
+```
+
+**Arrow Function**
+
+```tsx
+//  call signature
+//  const add2: (a: number, b: number) => number
+const add2 = (a: number, b: number): number => a + b;
+```
+
+**Call Signature**
+
+함수의 선언부, 함수의 이름과 어떤 parameter를 받고, 어떤 값을 반환하는지를 알 수 있다.
+
+즉 함수의 호출 방법을 알수 있다.
+
+**Call Signature 정의**
+
+두 개의 number를 parameter로 받고, number를 반환하는 함수의 Call Signature를 정의하자.
+
+```tsx
+//  declaring call signature
+type Add = (a: number, b: number) => number;
+```
+
+또는
+
+```tsx
+//  declaring call signature
+type Add = {
+  (a: number, b: number): number;
+};
+```
+
+정의한 Add call signature로 함수를 정의할 수 있다.
+
+```tsx
+//  parameter type 생략 가능
+const add3: Add = (a, b) => a + b;
+```
+
+Call Signature를 이용하면 parameter의 type을 생략할 수 있다.
+
+또한 React에서 Props로 함수를 보낼 때, 함수의 사용법을 알려줄 수 있다.
+
+## Overloading
+
+**call signature를 이용한 overloading**
+
+**parameter 개수가 같을 경우**
+
+```tsx
+//  declaring call signature
+//  overloading
+type Add = {
+  (a: number, b: number): number;
+  (a: number, b: string): number;
+};
+```
+
+call signature type에 오버로딩할 함수의 call signature를 모아두는 것으로 오버로딩을 할 수 있다.
+
+만약 위와 같이 오버로딩할 경우 다음 함수 정의는 문제가 된다.
+
+```tsx
+const add: Add = (a, b) => a + b;
+```
+
+![Untitled](24_02_14_daily_certification%2065efb5e707c6434dbe18097670175997/Untitled%208.png)
+
+b가 number일 수도, string일 수도 있기 때문에 +를 할 수 없다고 한다.
+
+```tsx
+const add: Add = (a, b) => {
+  if (typeof b === "string") return a;
+  return a + b;
+};
+```
+
+이런 식으로 사용하면 사용할 수는 있다.
+
+**다른 예시 (next.js의 Router)**
+
+```tsx
+type Config = {
+  path: string;
+  state: object;
+};
+
+type Push = {
+  (path: string): void;
+  (config: Config): void;
+};
+
+const push: Push = (config) => {
+  if (typeof config === "string") console.log(config);
+  else {
+    console.log(config.path);
+  }
+};
+```
+
+**parameter 개수가 다를 경우**
+
+```tsx
+//  declaring call signature
+//  overloading
+type Add = {
+  (a: number, b: number): number;
+  (a: number, b: number, c: number): number; // c는 optional함
+};
+```
+
+a, b를 parameter로 가지는 메서드와 a, b, c를 parameter로 가지는 메서드를 오버로딩할 경우
+
+```tsx
+const add: Add = (a, b) => {
+  return a + b;
+};
+```
+
+parameter가 2개인 함수는 정의가 잘 되지만, 3개인 함수를 정의하면
+
+```tsx
+const add: Add = (a, b, c) => {
+  return a + b;
+};
+```
+
+![Untitled](24_02_14_daily_certification%2065efb5e707c6434dbe18097670175997/Untitled%209.png)
+
+위와 같이 오류가 발생한다. c는 optional하기 때문이다.
+
+따라서 c까지 parameter로 받으려면 다음과 같이 정의해야 한다. c가 optional이란 것을 명시해야 한다.
+
+```tsx
+const add: Add = (a, b, c?: number) => {
+  if (c) return a + b + c;
+  return a + b;
+};
+```
+
+**call signature로 오버로딩을 하는 것이다. add라는 화살표 함수는 여전히 하나만 존재할 수 있다.**
+
+이런 오버로딩은 불가하다.
+
+```tsx
+const add = (num1: number, num2: number) => num1 + num2;
+const add = (num1: number, num2: number, num3: number) => num1 + num2 + num3;
+```
+
+**Java와 overloading 방식이 다름을 기억하자.**
+
+**사실 Javascript에서는 정식으로 overloading을 지원하지 않는다.**
+
+## Generic Type & Polymorphism
+
+```tsx
+type SuperPrint = {
+  (arr: number[]): void;
+  (arr: boolean[]): void;
+};
+
+const superPrint: SuperPrint = (arr) => {
+  arr.forEach((i) => console.log(i));
+};
+
+superPrint([1, 2, 3, 4]);
+superPrint([true, false, true]);
+superPrint(["apple", "tomato", "banana"]); // syntax error
+```
+
+마지막 호출은 string[]에 대해 오버로딩 되지 않았으므로 오류가 발생한다.
+
+그렇다고 다음과 같이 SuperPrint를 고치는 것은 현명하지 않다. 당장 string[]은 출력이 되겠지만, 다른 타입을 출력하고 싶으면 계속 signature를 추가해야 한다.
+
+```tsx
+type SuperPrint = {
+  (arr: number[]): void;
+  (arr: boolean[]): void;
+  (arr: string[]): void;
+};
+```
+
+이런 것도 해결할 수 없다.
+
+```tsx
+superPrint([1, "2", true, false]);
+```
+
+모든 경우의 입력을 해결하려면 결국 Generic을 이용해야 한다.
+
+number, boolean, string과 같은 type을 concrete type이라고 한다.
+
+**Generic을 사용한 함수 오버로딩**
+
+```tsx
+type SuperPrint = {
+  <TypePlaceholder>(arr: TypePlaceholder[]): void;
+};
+
+const superPrint: SuperPrint = (arr) => {
+  arr.forEach((i) => console.log(i));
+};
+
+superPrint([1, 2, 3, 4]);
+superPrint([true, false, true]);
+superPrint(["apple", "tomato", "banana"]);
+superPrint([1, "2", true, false]);
+```
+
+Generic을 통해 입력한 인자의 타입을 추론하여 알맞은 타입으로 맞춰서 작동한다.
+
+```tsx
+type SuperPrint = {
+  <TypePlaceholder>(arr: TypePlaceholder[]): TypePlaceholder;
+};
+
+const superPrint: SuperPrint = (arr) => arr[0];
+
+const a = superPrint([1, 2, 3, 4]);
+const b = superPrint([true, false, true]);
+const c = superPrint(["apple", "tomato", "banana"]);
+const d = superPrint([1, "2", true, false]);
+
+console.log(a, b, c, d);
+```
+
+반환형에도 Generic을 사용할 수 있다. 보통 Generic Type으로 다음 같이 T를 사용한다.
+
+```tsx
+type SuperPrint = {
+  <T>(arr: T[]): T;
+};
+
+const superPrint: SuperPrint = (arr) => arr[0];
+
+const a = superPrint([1, 2, 3, 4]);
+const b = superPrint([true, false, true]);
+const c = superPrint(["apple", "tomato", "banana"]);
+const d = superPrint([1, "2", true, false]);
+```
+
+```tsx
+function superPrint<V>(a: V[]): V {
+  return a[0];
+}
+
+const a = superPrint([1, 2, 3, 4]);
+const b = superPrint([true, false, true]);
+const c = superPrint(["apple", "tomato", "banana"]);
+const d = superPrint([1, "2", true, false]);
+```
+
+generic을 이용해 Type을 정의하는 것도 가능하다.
+
+```tsx
+type Player<E> = {
+  name: string;
+  extraInfo: E;
+};
+
+type KoreiiPlayer = Player<{ favFood: string }>;
+
+const koreii1: Player<{ favFood: string }> = {
+  name: "koreii1",
+  extraInfo: {
+    favFood: "sushi",
+  },
+};
+
+const koreii2: KoreiiPlayer = {
+  name: "koreii2",
+  extraInfo: {
+    favFood: "sushi",
+  },
+};
+
+const jwelyl: Player<null> = {
+  name: "jwelyl",
+  extraInfo: null,
+};
+```
+
+```tsx
+
+```
+
 # Problem Solving (Algorithm & SQL)
 
 **BOJ 2109 순회강연**
@@ -250,13 +548,13 @@ System.out.println("age = " + result.getAge());
 
 우선순위 큐에는 강연할 수 있는 강의들만 담겨 있다.
 
-![Untitled](24_02_14_daily_certification%2065efb5e707c6434dbe18097670175997/Untitled%208.png)
+![Untitled](24_02_14_daily_certification%2065efb5e707c6434dbe18097670175997/Untitled%2010.png)
 
 우선순위 큐의 크기가 곧 강연할 날의 수이다. 강연의 d보다 우선순위 큐의 크기가 크다면 해당 강연을 하기에는 이미 잡혀있는 강연이 너무 많은 것이다. 그럴 경우 해당 강연을 포함하여 기존에 잡혀있는 강연 중 가장 가치가 작은 강연부터 배제한다.
 
 일단 강연 날짜가 촉박한 것부터 해결해 나가야 하므로 강연 날짜가 빠른 순으로 정렬한다.
 
-![Untitled](24_02_14_daily_certification%2065efb5e707c6434dbe18097670175997/Untitled%209.png)
+![Untitled](24_02_14_daily_certification%2065efb5e707c6434dbe18097670175997/Untitled%2011.png)
 
 **코드**
 
