@@ -4,6 +4,55 @@
 
 # Typescript
 
+## Class
+
+### Dictionary 구현해보기
+
+```tsx
+type Words = {
+    [key:string]: string
+}
+
+class Word {
+    constructor(
+        public term: string,
+        public def: string
+    ) {}
+}
+
+class Dict {
+    private words : Words
+    
+    constructor() {
+        this.words = {}
+    }
+
+    //  단어 추가
+    addWord(word : Word) {
+        if(this.words[word.term] === undefined) {   //  존재하지 않는 단어일 경우
+            this.words[word.term] = word.def;
+        }
+    }
+
+    //  단어 뜻 가져오기, 존재하지 않으면 undefined 가져옴
+    getDef(term:string) {
+        return this.words[term]
+    }
+
+    //  단어 뜻 갱신
+    updateWord(word : Word) {
+        if(this.words[word.term] !== undefined) //  존재하는 단어일 경우
+            this.words[word.term] = word.def;   //  단어 뜻 변경
+    }
+
+    //  단어 삭제
+    deleteWord(word : Word) {
+        if(this.words[word.term] !== undefined)    //  존재하는 단어일 경우
+            delete this.words[word.term];
+    }
+}
+```
+
 # Problem Solving (Algorithm & SQL)
 
 **BOJ 20437 문자열 게임 2**
@@ -99,9 +148,3 @@ fun main() {
     BOJ_20437().solve()
 }
 ```
-
-# 독서
-
-**내가 틀릴 수도 있습니다. -비욘나티코린데블라드-**
-
-**Q. 오늘 읽은 부분 중 기억에 남는 문장?**
