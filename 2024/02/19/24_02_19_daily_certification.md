@@ -1,11 +1,286 @@
 # 24_02_19_daily_certification
 
+# Typescript
+
+## Interface
+
+### type 복습
+
+type 키워드로 number, string 같은 타입에 alias를 설정하여 다른 이름(별칭)으로 접근할 수도 있고, object의 명세를 작성할 수도 있다.
+
+```tsx
+type Nickname = string;
+type Health = number;
+type Team = "red" | "blue" | "yellow";
+
+type Player = {
+  nickname: Nickname;
+  healthBar: Health;
+  team: Team;
+};
+
+const nico: Player = {
+  nickname: "nico",
+  healthBar: 10,
+  team: "red",
+};
+
+type Food = string;
+
+const kimch: Food = "delicious";
 ```
-[koreii] #50 데일리인증
-20240219
-알고리즘
-- Longest Common Subsequence 길이 구하기 + 실제 LCS 찾아서 출력하기
-- Longest Common Subsequence vs Longest Common Substring 구분
+
+object의 명세를 작성하는 역할을 interface가 대신할 수 있다. 대신 타입에 alias를 설정하는 것은 불가하다.
+
+참고로 Java interface와 다르게 property를 설정하는 것도 가능하다. (Java는 상수만 가능) 대신 property들도 public이여야 하며 상속받는 class에서도 public이다.
+
+```tsx
+type Nickname = string; // interface Nickname = string은 불가
+type Health = number;
+type Team = "red" | "blue" | "yellow";
+
+interface Player {
+  nickname: Nickname;
+  healthBar: Health;
+  team: Team;
+}
+
+const nico: Player = {
+  nickname: "nico",
+  healthBar: 10,
+  team: "red",
+};
+
+type Food = string;
+
+const kimch: Food = "delicious";
+```
+
+**하지만 interface가 보다 객체지향적이다.**
+
+```tsx
+interface User {
+  name: string;
+}
+
+interface Player extends User {}
+
+const nico: Player = {
+  name: "nico",
+};
+```
+
+type으로도 비슷하게 구현할 수는 있다.
+
+```tsx
+type User = {
+  name: string;
+};
+
+type Player = User & {};
+
+const nico: Player = {
+  name: "nico",
+};
+```
+
+&는 and를 의미하며, Player는 User와 추가적으로 서술하는 필드를 가지게 된다.
+
+같은 interface 이름을 재정의하면 필드가 축적된다. 즉 아래와 같이 User를 세 번 정의하면
+
+```tsx
+interface User {
+  name: string;
+}
+
+interface User {
+  lastName: string;
+}
+
+interface User {
+  health: number;
+}
+
+const nico: User = {
+  name: "nico",
+  lastName: "n",
+  health: 10,
+};
+```
+
+다음과 같은 interface가 된다. type으로는 할 수 없다.
+
+```tsx
+interface User {
+  name: string;
+  lastName: string;
+  health: number;
+}
+
+const nico: User = {
+  name: "nico",
+  lastName: "n",
+  health: 10,
+};
+```
+
+## Abstract Class vs Javascript
+
+### abstract class
+
+```tsx
+abstract class User {
+  constructor(protected firstName: string, protected lastName: string) {}
+
+  abstract fullName(): string;
+  abstract sayHi(name: string): string;
+}
+
+class Player extends User {
+  fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+
+  sayHi(name: string) {
+    return `Hello ${name}. My name is ${this.fullName()}`;
+  }
+}
+
+// const user : User = new User("jaeseong", "heo") // 추상 클래스의 객체 만들 수 없음
+const user: User = new Player("jaeseong", "heo");
+```
+
+위 TS 코드는 다음과 같은 JS 코드로 변환된다.
+
+```jsx
+"use strict";
+class User {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+}
+class Player extends User {
+  fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+  sayHi(name) {
+    return `Hello ${name}. My name is ${this.fullName()}`;
+  }
+}
+// const user : User = new User("jaeseong", "heo")
+const user = new Player("jaeseong", "heo");
+```
+
+### interface
+
+```tsx
+interface User {
+  firstName: string;
+  lastName: string;
+  fullName(): string;
+  sayHi(name: string): string;
+}
+
+class Player implements User {
+  constructor(public firstName: string, public lastName: string) {}
+
+  fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+
+  sayHi(name: string) {
+    return `Hello ${name}. My name is ${this.fullName()}`;
+  }
+}
+```
+
+위 TS 코드는 다음과 같이 JS 코드로 변한다.
+
+```jsx
+"use strict";
+class Player {
+  constructor(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+  }
+  fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+  sayHi(name) {
+    return `Hello ${name}. My name is ${this.fullName()}`;
+  }
+}
+```
+
+User에 관한 내용이 존재하지 않아, 파일 크기가 줄어든다.
+
+하나의 class가 여러 interface를 구현하는 것도 가능하다. Player는 User와 Human을 구현한다.
+
+```jsx
+interface User {
+  firstName : string,
+  lastName : string,
+  fullName() : string,
+  sayHi(name : string) : string
+}
+
+interface Human {
+  health : number
+}
+
+class Player implements User, Human {
+  constructor(
+    public firstName : string,
+    public lastName : string,
+    public health : number
+  ) {}
+
+  fullName() {
+    return `${this.firstName} ${this.lastName}`
+  }
+
+  sayHi(name : string) {
+    return `Hello ${name}. My name is ${this.fullName()}`
+  }
+}
+```
+
+## Polymorphism
+
+```tsx
+interface MyStorage<T> {
+  [key: string]: T;
+}
+
+class LocalStorage<T> {
+  private storage: MyStorage<T> = {};
+
+  set(key: string, value: T) {
+    this.storage[key] = value;
+  }
+
+  remove(key: string) {
+    delete this.storage[key];
+  }
+
+  get(key: string): T {
+    return this.storage[key];
+  }
+  clear() {
+    this.storage = {};
+  }
+}
+
+const stringStorage = new LocalStorage<string>();
+stringStorage.set("key", "value");
+
+const strValue: string = stringStorage.get("key");
+
+const booleanStorage = new LocalStorage<boolean>();
+booleanStorage.set("key", false);
+
+const boolValue: boolean = booleanStorage.get("key");
 ```
 
 # Problem Solving (Algorithm & SQL)
@@ -14,7 +289,7 @@
 
 [17218번: 비밀번호 만들기](https://www.acmicpc.net/problem/17218)
 
-LCS를 실제로 출력하는 문제이다. 
+LCS를 실제로 출력하는 문제이다.
 
 문제에서 요구하는 LCS가 Longest Common Subsequence인지, Longest Common Substring인지 잘 확인하고 문제를 풀어야 한다.
 
@@ -32,11 +307,11 @@ A**U**T**A**BB**E**H**N**S**A** 와 BC**UA**M**E**FKAJ**NA** 이므로 **UAENA**
 
 **Longest Commnon Substring**
 
-가장 긴 공통 부분 문자열을 구하는 것이다. 부분 문자열인만큼 반드시  연속해서 골라야 한다. 위의 예시에서 길이 2 이상의 공통 부분 문자열은 없다.
+가장 긴 공통 부분 문자열을 구하는 것이다. 부분 문자열인만큼 반드시 연속해서 골라야 한다. 위의 예시에서 길이 2 이상의 공통 부분 문자열은 없다.
 
 [5582번: 공통 부분 문자열](https://www.acmicpc.net/problem/5582)
 
-가장 긴 공통 부분 수열을 구하는 것으로 돌아와서 길이를 구하는 것은 9251번처럼 O(len1 * len2)의 시간 복잡도로 한 번에  쉽게 구할 수 있다. 하지만 실제 LCS를 출력하기 위해서는 길이만 저장할 뿐만 아니라 추가적으로 O(len1 * len2)의 공간복잡도를 사용해서 현재 (i, j)까지 최장 공통 부분 수열 이전에 어디서 LCS가 생성되는지를 저장하고 LCS가 완성된 다음에 역추적 과정을 거쳐야 한다.
+가장 긴 공통 부분 수열을 구하는 것으로 돌아와서 길이를 구하는 것은 9251번처럼 O(len1 _ len2)의 시간 복잡도로 한 번에 쉽게 구할 수 있다. 하지만 실제 LCS를 출력하기 위해서는 길이만 저장할 뿐만 아니라 추가적으로 O(len1 _ len2)의 공간복잡도를 사용해서 현재 (i, j)까지 최장 공통 부분 수열 이전에 어디서 LCS가 생성되는지를 저장하고 LCS가 완성된 다음에 역추적 과정을 거쳐야 한다.
 
 ![32123231.jpeg](24_02_19_daily_certification%2018fd3a4ed0174877ba013d65915e1fa8/32123231.jpeg)
 
