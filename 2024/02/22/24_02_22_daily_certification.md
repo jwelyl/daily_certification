@@ -3,10 +3,42 @@
 ```
 [koreii] #53 데일리인증
 20240222
+GIT
+- Rebase
+- Merge vs Rebase
+
 알고리즘
 - dijkstra 문제 풀이, 디버깅
 - setter 대신 생성자로 초기화하기
 ```
+
+# GIT
+
+## Merge vs Rebase
+
+다음과 같은 상황이라고 가정하자.
+
+![mergevsrebase.png](24_02_22_daily_certification%20a1caafaffcda43458841991de55b593c/mergevsrebase.png)
+
+master와 feature를 합치는 방법엔 merge와 rebase 2가지가 존재한다.
+
+### Merge
+
+![Untitled](24_02_22_daily_certification%20a1caafaffcda43458841991de55b593c/Untitled.png)
+
+![Untitled](24_02_22_daily_certification%20a1caafaffcda43458841991de55b593c/Untitled%201.png)
+
+### Rebase
+
+![Untitled](24_02_22_daily_certification%20a1caafaffcda43458841991de55b593c/Untitled%202.png)
+
+![Untitled](24_02_22_daily_certification%20a1caafaffcda43458841991de55b593c/Untitled%203.png)
+
+![Untitled](24_02_22_daily_certification%20a1caafaffcda43458841991de55b593c/Untitled%204.png)
+
+### Merge vs Rebase
+
+![Untitled](24_02_22_daily_certification%20a1caafaffcda43458841991de55b593c/Untitled%205.png)
 
 # Problem Solving (Algorithm & SQL)
 
@@ -165,7 +197,7 @@ class BOJ_10473 {
         }
     }
 
-    private class Pos(var y : Double, var x : Double)
+    private class Pos(val y : Double, val x : Double)
 
     private fun dist(p1 : Pos, p2 : Pos) : Double {
         return sqrt((p1.y - p2.y) * (p1.y - p2.y) + (p1.x - p2.x) * (p1.x - p2.x))
