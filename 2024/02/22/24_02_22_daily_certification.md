@@ -1,17 +1,5 @@
 # 24_02_22_daily_certification
 
-```
-[koreii] #53 데일리인증
-20240222
-GIT
-- Rebase
-- Merge vs Rebase
-
-알고리즘
-- dijkstra 문제 풀이, 디버깅
-- setter 대신 생성자로 초기화하기
-```
-
 # GIT
 
 ## Merge vs Rebase
