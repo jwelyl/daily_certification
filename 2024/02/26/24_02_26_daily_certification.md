@@ -1,5 +1,302 @@
 # 24_02_26_daily_certification
 
+# JPQL 기본 문법
+
+## Paging API
+
+JPA에서는 JPQL을 통해 페이징을 매우 간단하게 구현할 수 있다.
+
+### setFirstResult(int startPosition)
+
+조회 시작 위치 (0부터 시작)
+
+### setMaxResults(int maxResult)
+
+조회할 데이터 수
+
+### setFirstResult(int maxResult)
+
+조회할 데이터 수
+
+**JpaMain**
+
+```java
+try {
+  for(int i = 0; i < 100; i++) {
+    Member member = new Member();
+    member.setUsername("member" + i);
+    member.setAge(i);
+    em.persist(member);
+  }
+
+  em.flush(); //  DB에 반영
+  em.clear(); //  영속성 컨텍스트 초기화
+
+  List<Member> result = em.createQuery("select m from Member m order by m.age desc", Member.class)
+      .setFirstResult(0)
+      .setMaxResults(10)
+      .getResultList();
+
+  System.out.println("result.size = " + result.size());
+  for(Member m : result) {
+    System.out.println("m = " + m);
+  }
+
+  tx.commit();
+} catch (Exception e) {
+  tx.rollback();
+  e.printStackTrace();
+} finally {
+  em.close();
+}
+```
+
+0번째 Member부터 10개를 가져와서 출력한다.
+
+![Untitled](24_02_26_daily_certification%201ef6d6bd3f1e43e9ac6592a70c471b6a/Untitled.png)
+
+쿼리를 보면 limit 구문으로 10개만 선택되는 것을 알 수 있다.
+
+setFirstResult로 시작 offset을 설정할 수 있다.
+
+```java
+List<Member> result = em.createQuery("select m from Member m order by m.age desc", Member.class)
+      .setFirstResult(1)
+      .setMaxResults(10)
+      .getResultList();
+```
+
+![Untitled](24_02_26_daily_certification%201ef6d6bd3f1e43e9ac6592a70c471b6a/Untitled%201.png)
+
+쿼리를 보면 limit offset 구문으로 시작 offset으로부터 10개만 선택되는 것을 알 수 있다.참
+
+![Untitled](24_02_26_daily_certification%201ef6d6bd3f1e43e9ac6592a70c471b6a/Untitled%202.png)
+
+참고로 Oracle Paging 쿼리는 다음과 같다. 이런 복잡한 쿼리를 작성할 필요가 없다.
+
+Spring Data JPA에서 쉽게 페이징을 구현할 수 있는것도 JPA 덕분에 가능한 것.
+
+## JOIN
+
+### [INNER] JOIN
+
+### LEFT [OUTER] JOIN
+
+### THETA JOIN
+
+FK가 아닌 값으로 JOIN하는 것
+
+위 3개 JOIN은 JPA를 떠나서 SQL 기본이므로 반드시 숙지하자.
+
+**INNER JOIN JpaMain**
+
+```java
+try {
+  Team team = new Team();
+  team.setName("teamA");
+  em.persist(team);
+
+  Member member = new Member();
+  member.setUsername("member1");
+  member.setAge(10);
+  member.setTeam(team);
+
+  em.persist(member);
+
+  em.flush(); //  DB에 반영
+  em.clear(); //  영속성 컨텍스트 초기화
+
+  String query = "select m from Member m inner join m.team t";
+  List<Member> result = em.createQuery(query, Member.class).getResultList();
+
+  tx.commit();
+} catch (Exception e) {
+  tx.rollback();
+  e.printStackTrace();
+} finally {
+  em.close();
+}
+
+emf.close();
+}
+```
+
+![Untitled](24_02_26_daily_certification%201ef6d6bd3f1e43e9ac6592a70c471b6a/Untitled%203.png)
+
+Team select 쿼리가 왜 나올까?
+
+**Member Entity**
+
+```java
+@Entity
+public class Member {
+  /*...*/
+  @ManyToOne(fetch = FetchType.LAZY)
+  @JoinColumn(name = "TEAM_ID")
+  private Team team;
+	/*...*/
+}
+```
+
+다대일에서 fetch는 항상 LAZY로 해야 한다. 다시 복습하라.
+
+![Untitled](24_02_26_daily_certification%201ef6d6bd3f1e43e9ac6592a70c471b6a/Untitled%204.png)
+
+**LEFT JOIN JpaMain**
+
+```java
+try {
+  Team team = new Team();
+  team.setName("teamA");
+  em.persist(team);
+
+  Member member = new Member();
+  member.setUsername("member1");
+  member.setAge(10);
+  member.setTeam(team);
+
+  em.persist(member);
+
+  em.flush(); //  DB에 반영
+  em.clear(); //  영속성 컨텍스트 초기화
+
+  String query = "select m from Member m left outer join m.team t";
+  List<Member> result = em.createQuery(query, Member.class).getResultList();
+
+  tx.commit();
+} catch (Exception e) {
+  tx.rollback();
+  e.printStackTrace();
+} finally {
+  em.close();
+}
+
+emf.close();
+}
+```
+
+![Untitled](24_02_26_daily_certification%201ef6d6bd3f1e43e9ac6592a70c471b6a/Untitled%205.png)
+
+**THETA JOIN JpaMain**
+
+```java
+try {
+  Team team = new Team();
+  team.setName("teamA");
+  em.persist(team);
+
+  Member member = new Member();
+  member.setUsername("member1");
+  member.setAge(10);
+  member.setTeam(team);
+
+  em.persist(member);
+
+  em.flush(); //  DB에 반영
+  em.clear(); //  영속성 컨텍스트 초기화
+
+  String query = "select m from Member m, Team t where m.username = t.name";
+  List<Member> result = em.createQuery(query, Member.class).getResultList();
+
+  tx.commit();
+} catch (Exception e) {
+  tx.rollback();
+  e.printStackTrace();
+} finally {
+  em.close();
+}
+
+emf.close();
+}
+```
+
+![Untitled](24_02_26_daily_certification%201ef6d6bd3f1e43e9ac6592a70c471b6a/Untitled%206.png)
+
+### ON JOIN
+
+1. JOIN 대상 필터링 가능
+    
+    ![Untitled](24_02_26_daily_certification%201ef6d6bd3f1e43e9ac6592a70c471b6a/Untitled%207.png)
+    
+2. 연관관계 없는 Entity OUTER JOIN (INNER JOIN은 THETA JOIN으로도 가능)
+    
+    ![Untitled](24_02_26_daily_certification%201ef6d6bd3f1e43e9ac6592a70c471b6a/Untitled%208.png)
+    
+
+**ON JOIN JpaMain**
+
+JOIN 대상 필터링
+
+```java
+try {
+  Team team = new Team();
+  team.setName("teamA");
+  em.persist(team);
+
+  Member member = new Member();
+  member.setUsername("member1");
+  member.setAge(10);
+  member.setTeam(team);
+
+  em.persist(member);
+
+  em.flush(); //  DB에 반영
+  em.clear(); //  영속성 컨텍스트 초기화
+
+  String query = "select m from Member m left join m.team t on t.name = 'teamA'";
+  List<Member> result = em.createQuery(query, Member.class).getResultList();
+
+  tx.commit();
+} catch (Exception e) {
+  tx.rollback();
+  e.printStackTrace();
+} finally {
+  em.close();
+}
+
+emf.close();
+}
+```
+
+![Untitled](24_02_26_daily_certification%201ef6d6bd3f1e43e9ac6592a70c471b6a/Untitled%209.png)
+
+**ON JOIN JpaMain**
+
+연관관계 없는 Entity OUTER JOIN
+
+```java
+try {
+  Team team = new Team();
+  team.setName("teamA");
+  em.persist(team);
+
+  Member member = new Member();
+  member.setUsername("member1");
+  member.setAge(10);
+  member.setTeam(team);
+
+  em.persist(member);
+
+  em.flush(); //  DB에 반영
+  em.clear(); //  영속성 컨텍스트 초기화
+
+  String query = "select m from Member m left join Team t on m.username = t.name";
+  List<Member> result = em.createQuery(query, Member.class).getResultList();
+
+  tx.commit();
+} catch (Exception e) {
+  tx.rollback();
+  e.printStackTrace();
+} finally {
+  em.close();
+}
+
+emf.close();
+}
+```
+
+![Untitled](24_02_26_daily_certification%201ef6d6bd3f1e43e9ac6592a70c471b6a/Untitled%2010.png)
+
 # Problem Solving (Algorithm & SQL)
 
 **BOJ 20136 멀티탭 스케줄링 2**
