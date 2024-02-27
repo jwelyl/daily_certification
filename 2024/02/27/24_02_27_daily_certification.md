@@ -1,5 +1,228 @@
 # 24_02_27_daily_certification
 
+# Database
+
+## JOIN
+
+다음과 같은 두 테이블이 존재할 때
+
+**employees**
+
+| employee_id | employee_name | department_id |
+| --- | --- | --- |
+| 1 | John Doe | 1 |
+| 2 | Jane Smith | 2 |
+| 3 | Anne Brown | 3 |
+| 4 | Bill Green | 4 |
+
+**departments**
+
+| department_id | department_name |
+| --- | --- |
+| 1 | HR |
+| 2 | IT |
+| 3 | Marketing |
+
+### Inner Join
+
+두 테이블의 교집합만을 결과로 반환한다. 즉, 두 테이블 모두에 해당하는 행만을 결과로 가져온다.
+
+department_id를 기준으로 두 테이블을 inner join으로 결합하면 다음과 같은 결과 테이블을 얻는다.
+
+| employee_id | employee_name | department_id | department_name |
+| --- | --- | --- | --- |
+| 1 | John Doe | 1 | HR |
+| 2 | Jane Smith | 2 | IT |
+| 3 | Anne Brown | 3 | Marketing |
+
+employees 테이블에서 department_id = 4인 행이 departments 테이블에서는 존재하지 않으므로 결과 테이블에서 Bill Green의 정보는 나타나지 않는다.
+
+**SQL**
+
+```sql
+SELECT * FROM employees INNER JOIN departments 
+ON employees.department_id = departments.department_id;
+```
+
+### Left (Outer) Join
+
+왼쪽 테이블(employees)의 모든 행을 포함하며, 오른쪽 테이블(departmenst)에서 일치하는 행이 없는 경우 해당 값을 NULL로 가진다.
+
+department_id를 기준으로 두 테이블을 left outer join으로 결합하면 다음과 같은 결과 테이블을 얻는다.
+
+| employee_id | employee_name | department_id | department_name |
+| --- | --- | --- | --- |
+| 1 | John Doe | 1 | HR |
+| 2 | Jane Smith | 2 | IT |
+| 3 | Anne Brown | 3 | Marketing |
+| 4 | Bill Green | 4 | NULL |
+
+employees 테이블에서 department_id = 4인 행이 department 테이블에서는 존재하지 않으므로 결과 테이블에서 Bill Green의 department_name은 NULL이 된다.
+
+**SQL**
+
+```sql
+SELECT * FROM employees LEFT OUTER JOIN departments 
+ON employees.department_id = departments.department_id;
+```
+
+### Theta Join
+
+두 테이블의 JOIN 조건으로 특정 조건(<, >, =, ≠)을 사용한다. 명시적으로 theta join이라고 표현하지는 않는 대신, on 키워드로 join 조건을 지정한다.
+
+department_id를 기준으로 두 테이블을 join하되 employee_id가 2보다 큰 직원만 결과에 포함되도록 하면 결과 테이블은 다음과 같다.
+
+| employee_id | employee_name | department_id | department_name |
+| --- | --- | --- | --- |
+| 3 | Anne Brown | 3 | Marketing |
+
+기본적으로 inner join에 추가적인 조건을 on으로 명시하는 것과 같다. department_id로 inner join한 결과에 employee_id 조건을 추가했다.
+
+**SQL**
+
+```sql
+SELECT * FROM employees INNER JOIN departments 
+ON employees.department_id = departments.department_id
+where employees.emplyee_id > 2;
+```
+
+department_id가 departments 테이블에 존재하지 않는 직원 결과도 나오도록 하면 결과 테이블은 다음과 같다.
+
+| employee_id | employee_name | department_id | department_name |
+| --- | --- | --- | --- |
+| 3 | Anne Brown | 3 | Marketing |
+| 4 | Bill Green | 4 | NULL |
+
+기본적으로 left outer join에 추가적인 조건을 on으로 명시하는 것과 같다. department_id로left outer join한 결과에 employee_id 조건을 추가했다.
+
+**SQL**
+
+```sql
+SELECT * FROM employees LEFT OUTER JOIN departments 
+ON employees.department_id = departments.department_id
+where employees.emplyee_id > 2;
+```
+
+실제로 그럴 일은 거의 없겠지만 employees 테이블의 employee_name 값과 departments 테이블의 department_name을 비교하여 둘이 같은 값을 가지는 row를 결합하고 싶을 수도 있다. 이런 근본 없는(즉 FK가 아닌 값으로 JOIN하는) JOIN이 보통 말하는 theta join이다.
+
+예시를 위해 테이블을 수정해보자.
+
+**employees**
+
+| employee_id | employee_name | department_id |
+| --- | --- | --- |
+| 1 | Engineering | 1 |
+| 2 | HR | 2 |
+| 3 | Marketing | 3 |
+| 4 | Design | 4 |
+
+**departments**
+
+| department_id | department_name |
+| --- | --- |
+| 1 | Engineering |
+| 2 | HR |
+| 3 | Marketing |
+
+employee_name과 departmnet_name으로 inner join하는 SQL문과 결과는  다음과 같다.
+
+**SQL**
+
+```sql
+SELECT * FROM employees INNER JOIN departments 
+ON employees.employee_name = departments.department_name;
+```
+
+| employee_id | employee_name | department_id | department_name |
+| --- | --- | --- | --- |
+| 1 | Engineering | 1 | Engineering |
+| 2 | HR | 2 | HR |
+| 3 | Marketing | 3 | Marketing |
+
+employee_name과 departmnet_name으로 left outer join하는 SQL문과 결과는  다음과 같다.
+
+**SQL**
+
+```sql
+SELECT * FROM employees LEFT JOIN departments 
+ON employees.employee_name = departments.department_name;
+```
+
+| employee_id | employee_name | department_id | department_name |
+| --- | --- | --- | --- |
+| 1 | Engineering | 1 | Engineering |
+| 2 | HR | 2 | HR |
+| 3 | Marketing | 3 | Marketing |
+| 4 | Design | 4 | NULL |
+
+### Natural Join
+
+Inner Join이되, JOIN 조건을 생략한 경우이다. JOIN할 두 테이블이 공통적으로 같은 column 명, 같은 타입 값을 가지면 on으로 JOIN 조건을 생략할 수 있다.
+
+**employees**
+
+| employee_id | employee_name | department_id |
+| --- | --- | --- |
+| 1 | John Doe | 1 |
+| 2 | Jane Smith | 2 |
+| 3 | Anne Brown | 3 |
+| 4 | Bill Green | 4 |
+
+**departments**
+
+| department_id | department_name |
+| --- | --- |
+| 1 | HR |
+| 2 | IT |
+| 3 | Marketing |
+
+두 테이블 모두 department_id라는 column을 공통으로 가지고, 타입도 같으므로 natural join 시 department_id로 inner join이 된다.
+
+**SQL**
+
+```sql
+SELECT * FROM employees NATURAL JOIN departments;
+```
+
+| employee_id | employee_name | department_id | department_name |
+| --- | --- | --- | --- |
+| 1 | John Doe | 1 | HR |
+| 2 | Jane Smith | 2 | IT |
+| 3 | Anne Brown | 3 | Marketing |
+
+만약 다음과 같이 두 테이블에 공통되는 column이 두 개(department_id, leader_id) 이상일 경우
+
+**employees**
+
+| employee_id | employee_name | department_id | leader_id |
+| --- | --- | --- | --- |
+| 1 | Alice | 101 | 1 |
+| 2 | Bob | 102 | 2 |
+| 3 | Charlie | 103 | 3 |
+| 4 | David | 101 | 4 |
+
+**projects 테이블**
+
+| project_id | project_name | department_id | leader_id |
+| --- | --- | --- | --- |
+| P1 | Project A | 101 | 1 |
+| P2 | Project B | 102 | 2 |
+| P3 | Project C | 101 | 1 |
+| P4 | Project D | 104 | 5 |
+| P5 | Project E | 105 | 6 |
+
+공통되는 column(department_id, leader_id)이 모두 같은 행만 natural join 결과로 나온다.
+
+| employee_id | employee_name | department_id | leader_id | project_id | project_name |
+| --- | --- | --- | --- | --- | --- |
+| 1 | Alice | 101 | 1 | P1 | Project A |
+| 1 | Alice | 101 | 1 | P3 | Project C |
+| 2 | Bob | 102 | 2 | P2 | Project B |
+
+Natural Join은 SQL문이 간결해지고 작성하기 편리하지만 JOIN 조건이 불명확해진다. 이로 인해 SQL만 보고 의도를 파악하기 어려워져서 유지 보수가 어려우며, 특정 column으로 JOIN할 수도 없고 스키마 변경 시 오류가 발생하거나 결과가 달라질 수도 있다.
+
+따라서 가급적이면 JOIN 조건을 명확히 명시하는 것이 좋다.
+
 # Problem Solving (Algorithm & SQL)
 
 **BOJ 17940 일감호에 다리 놓기**
@@ -171,3 +394,9 @@ fun main() {
 ```
 
 간선을 구축하고 부서진 간선을 구별하는 더 좋은 방법을 생각해봐야겠다.
+
+| employee_id | employee_name | department_id |
+| --- | --- | --- |
+| 1 | John Doe | 1 |
+| 2 | Jane Smith | 2 |
+| 3 | Anne Brown | 3 |
