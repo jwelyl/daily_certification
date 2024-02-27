@@ -223,6 +223,98 @@ Natural Join은 SQL문이 간결해지고 작성하기 편리하지만 JOIN 조�
 
 따라서 가급적이면 JOIN 조건을 명확히 명시하는 것이 좋다.
 
+# JPQL 기본 문법
+
+## Subquery
+
+### Subquery
+
+```java
+// 나이가 평균보다 많은 회원
+String query1 = "select m from Member where m.age > (select avg(m2.age) from Member m2)";
+```
+
+subquery를 작성할 때, main query에서 접근하는 Member 테이블 별칭(alias) m과 subquery에서 접근하는 Member 테이블 별칭 m2를 다르게 해야 성능이 잘 나온다. → 이유는?
+
+```java
+// 한 건이라도 주문한 고객
+String query2 = "select m from Member where (select count(o) from Order o where m = o.member) > 0";
+```
+
+위와 같이 main query의 alias를 subquery에서도 사용할 경우 성능이 떨어질 수 있다. → 이유는?
+
+### JPA Subquery 한계
+
+- 표준 JPA에서는 WHERE, HAVING 절에서만 subquery를 사용할 수 있다.
+- 보통 사용하는 JPA 구현체인 Hibernate에서는 SELECT 절에서도 사용 가능하다.
+- **FROM 절에서는 불가능하다. JOIN으로 해결해라.**
+
+## JPQL Type
+
+- 문자열 : ‘HELLO’, ‘She’’s’
+- 수 : 10L(Long), 10.0D(Double), 10.0F(Float)
+- Boolean : TRUE, FALUSE
+- **ENUM : jpql.MemberType.Admin (패키지 명을 포함해야 한다.)**
+- Entity Type : TYPE(m) = Member (상속 관계에서 사용)
+    
+    ```java
+    String typeQuery = "select i from Item i where type(i) = Book";
+    ```
+    
+    ![Untitled](24_02_27_daily_certification%20326274df432f41429e5c1ed6c0cbfbd4/Untitled.png)
+    
+
+**JpaMain**
+
+```java
+try {
+      Team team = new Team();
+      team.setName("teamA");
+      em.persist(team);
+
+      Member member = new Member();
+      member.setUsername("teamA");
+      member.setAge(10);
+      member.setTeam(team);
+
+      em.persist(member);
+
+      em.flush(); //  DB에 반영
+      em.clear(); //  영속성 컨텍스트 초기화
+
+      String query = "select m.username, 'HELLO', TRUE from Member m " +
+                     "where m.type = jpql.MemberType.ADMIN";
+      List<Object[]> result = em.createQuery(query).getResultList();
+      List<Object[]> result = em.createQuery(query).getResultList();
+
+      for(Object[] objects : result) {
+        System.out.println("objects = " + objects[0]);
+        System.out.println("objects = " + objects[1]);
+        System.out.println("objects = " + objects[2]);
+      }
+      tx.commit();
+    } catch (Exception e) {
+      tx.rollback();
+      e.printStackTrace();
+    } finally {
+      em.close();
+    }
+```
+
+ENUM은 사용하려는 ENUM 타입을 패키지명까지 적어줘야 한다.
+
+![Untitled](24_02_27_daily_certification%20326274df432f41429e5c1ed6c0cbfbd4/Untitled%201.png)
+
+Parameter Binding을 통해 좀 더 간결하게 쓸 수는 있다.
+
+```java
+String query = "select m.username, 'HELLO', TRUE from Member m " +
+                     "where m.type = :userType";
+List<Object[]> result = em.createQuery(query)
+    .setParameter("userType", MemberType.ADMIN)
+    .getResultList();
+```
+
 # Problem Solving (Algorithm & SQL)
 
 **BOJ 17940 일감호에 다리 놓기**
@@ -231,11 +323,11 @@ Natural Join은 SQL문이 간결해지고 작성하기 편리하지만 JOIN 조�
 
 일단 공사중인(편의상 부서진) 구간 개수 M이 1 이하면 와우도(N + 1)과 연결하지 않고도 강의동 1~N은 연결되어 있다. 따라서 K의 개수에 관계 없이 항상 YES이다.
 
-![Untitled](24_02_27_daily_certification%20326274df432f41429e5c1ed6c0cbfbd4/Untitled.png)
+![Untitled](24_02_27_daily_certification%20326274df432f41429e5c1ed6c0cbfbd4/Untitled%202.png)
 
 M = 0인 경우 이미 연결되어 있다.
 
-![Untitled](24_02_27_daily_certification%20326274df432f41429e5c1ed6c0cbfbd4/Untitled%201.png)
+![Untitled](24_02_27_daily_certification%20326274df432f41429e5c1ed6c0cbfbd4/Untitled%203.png)
 
 M = 1인 경우 N개의 구간 중 어느 하나가 부서졌다 쳐도 나머지 N-1개의 구간으로 연결되어 있다.
 
@@ -243,7 +335,7 @@ M = 1인 경우 N개의 구간 중 어느 하나가 부서졌다 쳐도 나머�
 
 예제 1, 2번의 상황은 다음 그림과 같다.
 
-![Untitled](24_02_27_daily_certification%20326274df432f41429e5c1ed6c0cbfbd4/Untitled%202.png)
+![Untitled](24_02_27_daily_certification%20326274df432f41429e5c1ed6c0cbfbd4/Untitled%204.png)
 
 부서진 구간은 점선으로 표시했고 멀쩡한 구간은 빨간색 실선으로 표시했다. 와우도와 연결하는 선은 파란색으로 표시했다. 간선의 숫자는 필요한 돌 개수이다. 멀쩡한 구간에는 돌이 필요없다.
 
@@ -261,7 +353,7 @@ Section 클래스는 간선의 두 정점 정보가 (번호가 작은 정점, �
 
 어차피 간선들은 크기 순으로 정렬되므로 부서지지 않은 간선들이 우선되게 된다. 해당 간선들을 전부 연결해도 사이클이 발생하지 않으므로 반드시 MST에 포함된다. 따라서 별도 처리를 해주지 않아도 된다. 
 
-![Untitled](24_02_27_daily_certification%20326274df432f41429e5c1ed6c0cbfbd4/Untitled%203.png)
+![Untitled](24_02_27_daily_certification%20326274df432f41429e5c1ed6c0cbfbd4/Untitled%205.png)
 
 MST의 cost를 구한 후 K와 비교해서 K보다 작거나 같으면 YES를, 아니면 NO를 출력한다.
 
