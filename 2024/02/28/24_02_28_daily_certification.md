@@ -1,5 +1,116 @@
 # 24_02_28_daily_certification
 
+# Typescript
+
+## Union Type
+
+```tsx
+type A = B | C | D | F;
+```
+
+A는 타입 B, C, D, F 중 하나의 타입을 가질 수 있는 Union Type이다. Union Type을 사용하면 타입 유연성을 높일 수 있다.
+
+```tsx
+type StringOrNumber = string | number;
+
+function logMessage(message: StringOrNumber) {
+  console.log(message);
+}
+
+logMessage("hello");  // 문자열 사용 가능
+logMessage(123);      // 숫자 사용 가능
+// logMessage(true);  // 오류: boolean 타입은 StringOrNumber 타입에 할당할 수 없음
+
+```
+
+logMessage 함수는 Union Type인 StringOrNumber 변수를 매개변수로 받으므로 string 또는 number 타입의 인자를 받을 수 있다.
+
+## enum
+
+Typescript에서 enum은 기본적으로 Numeric Enums이다. 명시적으로 값을 지정하지 않으면 다음 enum 타입은 A = 0부터 시작해서 1씩 증가된 값을 가진다.
+
+```tsx
+enum Enum {
+  A, B, C, D
+};
+```
+
+```tsx
+enum Enum {
+    A,
+    B,
+    C,
+    D
+};
+
+console.log(Enum.A) //  0
+console.log(Enum.B) //  1
+console.log(Enum.C) //  2
+console.log(Enum.D) //  3
+```
+
+![Untitled](24_02_28_daily_certification%20ab8afc076a874daa89def694abc30668/Untitled.png)
+
+```tsx
+enum Enum {
+    A,
+    B,
+    E,
+    C,
+    D
+};
+
+console.log(Enum.A) //  0
+console.log(Enum.B) //  1
+console.log(Enum.C) //  2
+console.log(Enum.D) //  3
+```
+
+만약 명시적인 값 지정 없이 B와 C 사이에 새로운 멤버 E를 추가할 경우, 새로 추가된 E 멤버가 2 값을 가지게 되고 이후의 C, D 값은 값이 1씩 증가하게 된다.
+
+![Untitled](24_02_28_daily_certification%20ab8afc076a874daa89def694abc30668/Untitled%201.png)
+
+중간에 새로운 멤버를 추가할 경우, 기존에 C, D 멤버를 사용하던 코드에서 문제가 발생하게 된다.
+
+이를 해결하기 위해 String Enums를 사용한다. Typescript에서 enum 멤버가 string 값을 가지려면 명시적으로 값을 지정해줘야 한다.
+
+```tsx
+enum Enum {
+    A = "A",
+    B = "B",
+    C = "C",
+    D = "D"
+};
+
+console.log(Enum.A) //  A
+console.log(Enum.B) //  B
+console.log(Enum.C) //  C
+console.log(Enum.D) //  D
+```
+
+![Untitled](24_02_28_daily_certification%20ab8afc076a874daa89def694abc30668/Untitled%202.png)
+
+B, C 사이에 E를 추가해줘도 E 이후의 값이 변하지 않으므로 기존에 C, D를 사용하는 코드에서 문제를 일으키지 않는다.
+
+```tsx
+enum Enum {
+    A = "A",
+    B = "B",
+    E = "E",
+    C = "C",
+    D = "D"
+};
+
+console.log(Enum.A) //  A
+console.log(Enum.B) //  B
+console.log(Enum.C) //  C
+console.log(Enum.D) //  D
+```
+
+![Untitled](24_02_28_daily_certification%20ab8afc076a874daa89def694abc30668/Untitled%202.png)
+
+Numeric Enums을 사용할 때에도 명시적으로 값을 지정해준다면 같은 효과를 기대할 수 있다. 가독성 및 유지보수성이 좋고, 실제 값과 enum 멤버명이 같아 디버깅 시에도 용이하고 충돌을 방지하기도 쉽다.
+
 # Problem Solving (Algorithm & SQL)
 
 **BOJ 5076 Web Pages**
