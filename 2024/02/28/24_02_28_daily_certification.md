@@ -1,13 +1,5 @@
 # 24_02_28_daily_certification
 
-```
-[koreii] #59 데일리인증
-20240228
-알고리즘
-- HTML 태그 파싱 & 스택 문제 풀이 + 난이도 기여
-- 로직 설계 후 코드 작성하기
-```
-
 # Problem Solving (Algorithm & SQL)
 
 **BOJ 5076 Web Pages**
@@ -87,7 +79,7 @@ class BOJ_5076 {
                 }
             }
 
-            var legal = true
+            var legal = true    //  중간에 오류가 발생할 경우 false
 
             tokens = StringTokenizer(refinedInput.toString(), ">")
             while(tokens.hasMoreTokens()) {
@@ -96,19 +88,23 @@ class BOJ_5076 {
                 if(tag[0] == '/') {  //  닫히는 태그면
                     val tagName = tag.substring(1)
 
-                    if(tagStack.isEmpty()) { //  열리는 태그 없이 닫히는 태그가 나온 경우
+                    if (tagStack.isEmpty()) { //  열리는 태그 없이 닫히는 태그가 나온 경우
                         legal = false
                         break
                     }
-                    if(tagStack.peek().indexOf(tagName) == 0)   //  열리는 태그와 일치하면
-                        tagStack.pop()  //  열리는 태그 스택에서 제거
+                    if (tagStack.peek().indexOf(tagName) != 0) { //  열리는 태그와 일치하지 않으면
+                        legal = false
+                        break
+                    }
+                    else tagStack.pop() //  닫히는 태그와 매칭되는 열리는 태그 제거
                 }
                 else if(tag[tag.length - 1] != '/')  //  self tag가 아니면
                     tagStack.push(tag)  //  열리는 태그이므로 스택에 넣기
             }
 
-            //  tagStack이 비어있으면
-            sb.append(if(!legal) "illegal\n" else if(tagStack.isEmpty()) "legal\n" else "illegal\n")
+            //  중간에 오류가 없고, tagStack이 비어있으면 legal, 그렇지 않으면 illegal
+            //  opening tag가 남으면 중간에 오류가 없지만 tagStack이 비어있지 않게 됨
+            sb.append(if(legal && tagStack.isEmpty()) "legal\n" else "illegal\n")
         }
     }
 }
