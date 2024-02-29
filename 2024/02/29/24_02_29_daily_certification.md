@@ -1,5 +1,517 @@
 # 24_02_29_daily_certification
 
+# React
+
+## useState
+
+```jsx
+const [counter, setCounter] = React.useState(0);
+
+setCounter(counter + 1);
+```
+
+setState로 state 변경 시 state가 변경됨과 동시에 state가 사용되는 컴포넌트가 자동으로 리렌더링된다.
+
+리렌더링될 때는 페이지 전체가 아니라 바뀐 부분만 업데이트된다.
+
+![Untitled](24_02_29_daily_certification%206e550b2fcd574dc5aead917fdc79a004/Untitled.png)
+
+```jsx
+const [counter, setCounter] = React.useState(0);
+
+setCounter(counter + 1);
+```
+
+state(위에선 counter)를 위와 같은 방법으로 변경하는 것은 좋은 방법이 아니다. counter 값이 다른 곳에서도 변경되었을 수 있기 때문에 의도한 대로 현재 값 + 1이라는 결과가 나오지 않을 수도 있다. (비동기적으로 변할 수 있음)
+
+**state의 현재 값을 토대로 새로운 값으로 갱신하고 싶으면 다음과 같이 하는 게 안전하다.**
+
+```jsx
+setCounter((current) => current + 1);
+```
+
+current가 현재의 counter 값임을 보장하기 때문에 새로운 counter도 의도한 대로 갱신된다.
+
+### 단위 변환기 코드
+
+```jsx
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js
+    "></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    const MinutesToHours = () => {
+      const [amount, setAmount] = React.useState(0);
+      const [inverted, setInverted] = React.useState(false);
+
+      const onChange = (event) => {
+        setAmount(event.target.value);
+      };
+
+      const reset = () => setAmount(0);
+      const onFlip = () => {
+        reset();
+        setInverted((current) => !current);
+      };
+
+      return (
+        <div>
+          <div>
+            <label htmlFor="minutes">Minutes</label>
+            <input
+              id="minutes"
+              value={inverted ? amount * 60 : amount}
+              placeholder="Minutes"
+              type="number"
+              disabled={inverted}
+              onChange={onChange}
+            />
+          </div>
+          <div>
+            <label htmlFor="hours">Hours</label>
+            <input
+              id="hours"
+              value={inverted ? amount : amount / 60}
+              placeholder="Hours"
+              type="number"
+              disabled={!inverted}
+              onChange={onChange}
+            />
+          </div>
+          <button onClick={reset}>Reset</button>
+          <button onClick={onFlip}>Flip</button>
+        </div>
+      );
+    }
+
+    const KmsToMiles = () => {
+      const [amount, setAmount] = React.useState(0);
+      const [inverted, setInverted] = React.useState(false);
+
+      const onChange = (event) => {
+        setAmount(event.target.value);
+      }
+
+      const reset = () => {
+        setAmount(0);
+      }
+
+      const onFlip = () => {
+        reset();
+        setInverted((current) => !current);
+      }
+
+      return (
+        <div>
+          <div>
+            <label htmlFor="kms">KMs</label>
+            <input
+              id="kms"
+              value={inverted ? amount * 1.60934 : amount}
+              placeholder="kms"
+              type="number"
+              disabled={inverted}
+              onChange={onChange}
+            />
+          </div>
+          <div>
+            <label htmlFor="miles">Miles</ label>
+            <input
+              id="miles"
+              value={inverted ? amount : amount / 1.60934}
+              placeholder="kms"
+              type="number"
+              disabled={!inverted}
+              onChange={onChange}
+            />
+          </div>
+          <button onClick={reset}>Reset</button>
+          <button onClick={onFlip}>Flip</button>
+        </div>
+      );
+    }
+
+    const App = () => {
+      const [index, setIndex] = React.useState("xx");
+
+      const onSelect = (event) => {
+        console.log(event.target.value);
+        setIndex(event.target.value);
+      };
+
+      return (
+        <div>
+          <h1 className="hi">Super Converter</h1>
+          <select value={index} onChange={onSelect}>
+            <option value="xx">Select your units</option>
+            <option value="0">Minutes & Hours</option>
+            <option value="1">Kms & Miles</option>
+          </select>
+          {index === "0" ? <MinutesToHours /> : null}
+          {index === "1" ? <KmsToMiles /> : null}
+        </div>
+      );
+    }
+
+    const root = document.getElementById("root");
+    ReactDOM.render(<App />, root);
+  </script>
+</html>
+
+```
+
+## props
+
+![Untitled](24_02_29_daily_certification%206e550b2fcd574dc5aead917fdc79a004/Untitled%201.png)
+
+저장(save) 버튼과 확인(confirm) 버튼을 만들고 싶다. 가장 기본적인 방법은 두 버튼 각각 컴포넌트로 만들어 App 컴포넌트에 렌더링시키는 것이다.
+
+```jsx
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js
+    "></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    const SaveBtn = () => {
+      return (
+        <button
+          style={{
+            backgroundColor: "tomato",
+            color: "white",
+            padding: "10px 20px",
+            border: 0,
+            borderRadius: "10px",
+          }}
+        >
+          Save Changes
+        </button>
+      );
+    };
+
+    const ConfirmBtn = () => {
+      return (
+        <button
+          style={{
+            backgroundColor: "tomato",
+            color: "white",
+            padding: "10px 20px",
+            border: 0,
+            borderRadius: "10px",
+          }}
+        >
+          Confirm
+        </button>
+      );
+    };
+
+    const App = () => {
+      return (
+        <div>
+          <SaveBtn />
+          <ConfirmBtn />
+        </div>
+      );
+    };
+
+    const root = document.getElementById("root");
+    ReactDOM.render(<App />, root);
+  </script>
+</html>
+
+```
+
+버튼 개수가 1~2개일 땐 큰 문제가 없지만, 버튼의 개수가 1억개일 땐 일일이 컴포넌트로 만들 수 없다. 그리고 여러 버튼에 css style을 적용해야 한다면 모든 컴포넌트에 일일이 적용해야 한다. SaveBtn 컴포넌트와 Confirm 컴포넌트 모두 button 태그를 가지고 있으며 같은 스타일이 적용되어 있다. 다른 점은 버튼에 적힌 텍스트뿐이다.
+
+하나의 컴포넌트로 텍스트만 다른 두 버튼을 나타낼 수 있을까?
+
+```jsx
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js
+    "></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    const Btn = () => {
+      return (
+        <button
+          style={{
+            backgroundColor: "tomato",
+            color: "white",
+            padding: "10px 20px",
+            border: 0,
+            borderRadius: "10px",
+          }}
+        >
+          Save Changes
+        </button>
+      );
+    };
+
+    const App = () => {
+      return (
+        <div>
+          <Btn />
+          <Btn />
+        </div>
+      );
+    };
+
+    const root = document.getElementById("root");
+    ReactDOM.render(<App />, root);
+  </script>
+</html>
+
+```
+
+![Untitled](24_02_29_daily_certification%206e550b2fcd574dc5aead917fdc79a004/Untitled%202.png)
+
+이렇게 하면 Save Changes라는 텍스트를 가진 버튼만 2개 렌더링된다. 다른 것들은 그대로 두고 텍스트만 따로 설정하고 싶다. HTML 태그에 properties를 주듯이, Btn 태그에 props로 텍스트 값을 전달하면 된다.
+
+App 컴포넌트에서 자식 컴포넌트인 Btn 컴포넌트에 text라는 property와 값을 주면 Btn 컴포넌트에서는 props라는 객체로 그것을 받고 text를 가져다가 쓸 수 있다.
+
+```jsx
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js
+    "></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    const Btn = (props) => {
+      return (
+        <button
+          style={{
+            backgroundColor: "tomato",
+            color: "white",
+            padding: "10px 20px",
+            border: 0,
+            borderRadius: "10px",
+          }}
+        >
+          {props.text}
+        </button>
+      );
+    };
+
+    const App = () => {
+      return (
+        <div>
+          <Btn text="Save Changes"/>
+          <Btn text="Confirm"/>
+        </div>
+      );
+    };
+
+    const root = document.getElementById("root");
+    ReactDOM.render(<App />, root);
+  </script>
+</html>
+
+```
+
+![Untitled](24_02_29_daily_certification%206e550b2fcd574dc5aead917fdc79a004/Untitled%201.png)
+
+props에 여러 property를 전달할 수도 있다. App 컴포넌트에서 Btn 컴포넌트에 text와 big이라는 property를 전달하면 Btn 컴포넌트는 props를 다음과 같이 받는다.
+
+```jsx
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js
+    "></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    const Btn = (props) => {
+      console.log(props);
+
+      return (
+        <button
+          style={{
+            backgroundColor: "tomato",
+            color: "white",
+            padding: "10px 20px",
+            border: 0,
+            borderRadius: "10px",
+            fontSize: props.big ? 18 : 12,
+          }}
+        >
+          {props.text}
+        </button>
+      );
+    };
+
+    const App = () => {
+      return (
+        <div>
+          <Btn text="Save Changes" big={true}/>
+          <Btn text="Confirm" big={false}/>
+        </div>
+      );
+    };
+
+    const root = document.getElementById("root");
+    ReactDOM.render(<App />, root);
+  </script>
+</html>
+
+```
+
+![Untitled](24_02_29_daily_certification%206e550b2fcd574dc5aead917fdc79a004/Untitled%203.png)
+
+![Untitled](24_02_29_daily_certification%206e550b2fcd574dc5aead917fdc79a004/Untitled%204.png)
+
+자식 컴포넌트의 property로 함수를 넘겨줄 수도 있다. 이를 통해 버튼이 눌렸을 때의 동작을 버튼마다 다르게 구현할 수 있다.
+
+```jsx
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js
+    "></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    const Btn = (props) => {
+      const {text, changeValue} = props;
+
+      return (
+        <button
+          onClick={changeValue}
+          style={{
+            backgroundColor: "tomato",
+            color: "white",
+            padding: "10px 20px",
+            border: 0,
+            borderRadius: "10px",
+          }}
+        >
+          {text}
+        </button>
+      );
+    };
+
+    const App = () => {
+      const [value, setValue] = React.useState("Save Changes");
+
+      const changeValue = () => setValue("Revert Changes");
+
+      return (
+        <div>
+          <Btn text={value} changeValue={changeValue}/>
+          <Btn text="Confirm" />
+        </div>
+      );
+    };
+
+    const root = document.getElementById("root");
+    ReactDOM.render(<App />, root);
+  </script>
+</html>
+
+```
+
+![Untitled](24_02_29_daily_certification%206e550b2fcd574dc5aead917fdc79a004/Untitled%205.png)
+
+최초 렌더링
+
+![Untitled](24_02_29_daily_certification%206e550b2fcd574dc5aead917fdc79a004/Untitled%206.png)
+
+왼쪽 버튼을 누르면 전달받은 App 컴포넌트의 changeValue 메서드가 실행되어 setValue에 의해 state value가 변경된다.
+
+버튼 누른 후 렌더링
+
+![Untitled](24_02_29_daily_certification%206e550b2fcd574dc5aead917fdc79a004/Untitled%207.png)
+
+버튼을 누른 후에는 App 컴포넌트의 state가 변경되므로 자식 컴포넌트들도 모두 다시 렌더링된다. 두 번째 버튼은 변한 것이 없는데도 렌더링된다.
+
+Memo를 이용하면 두 번째 Btn 컴포넌트의 property가 그대로라면 부모 컴포넌트의 state가 변해도 리렌더링되지 않도록 할 수 있다.
+
+```jsx
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js
+    "></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    const Btn = (props) => {
+      const {text, changeValue} = props;
+
+      console.log(text, "renderd");
+
+      return (
+        <button
+          onClick={changeValue}
+          style={{
+            backgroundColor: "tomato",
+            color: "white",
+            padding: "10px 20px",
+            border: 0,
+            borderRadius: "10px",
+          }}
+        >
+          {text}
+        </button>
+      );
+    };
+
+    const MemorizedBtn = React.memo(Btn);
+
+    const App = () => {
+      const [value, setValue] = React.useState("Save Changes");
+
+      const changeValue = () => setValue("Revert Changes");
+
+      const confirm = () => {
+        console.log("confirm");
+      }
+
+      return (
+        <div>
+          <MemorizedBtn text={value} changeValue={changeValue}/>
+          <MemorizedBtn text="Confirm" />
+        </div>
+      );
+    };
+
+    const root = document.getElementById("root");
+    ReactDOM.render(<App />, root);
+  </script>
+</html>
+
+```
+
+버튼 누른 후 렌더링
+
+![Untitled](24_02_29_daily_certification%206e550b2fcd574dc5aead917fdc79a004/Untitled%208.png)
+
+버튼을 누른 후에는 App 컴포넌트의 state가 변경되어도 두 번째 버튼 컴포넌트의 property는 변한 것이 없으므로 리렌더링이 일어나지 않는다.
+
 # Problem Solving (Algorithm & SQL)
 
 **BOJ 16920 확장 게임**
