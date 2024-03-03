@@ -1,10 +1,445 @@
 # 24_03_03_daily_certification
 
+# React
+
+## useEffect
+
+App 컴포넌트가 다음과 같으면 버튼을 클릭할 때마다 setState에 의해 state가 변경되어 App 컴포넌트 전체가 리렌더링될 것이다.
+
+```jsx
+import { useState } from "react";
+
+function App() {
+  const [counter, setCounter] = useState(0);
+  const onClick = () => setCounter((current) => current + 1);
+  console.log("render");
+
+  return (
+    <div>
+      <h1>{counter}</h1>
+      <button onClick={onClick}>click me</button>
+    </div>
+  );
+}
+
+export default App;
 ```
-[koreii] #63 데일리인증
-20240303
-알고리즘
-- DFS | BFS 문제 풀이
+
+당연히 로그도 최초 렌더링 포함, 리렌더링될때마다 출력될 것이다.
+
+![Untitled](24_03_03_daily_certification%207b5049d04e2e47ecb8ea8ec1f7fd07e2/Untitled.png)
+
+최초 렌더링시에만 로그를 출력할 수 있을까?
+
+**최초 렌더링시에만 특정 메서드가 동작할 수 있을까?**
+
+좀 더 실용적인 예를 들어보자.
+
+어떤 컴포넌트에서 API 호출을 통해 대량의 데이터를 가져온다고 가정하자. 최초 렌더링 시에 가져온 데이터를 state가 변경되었다고 리렌더링될 때마다 다시 호출해서 데이터를 가져올 필요는 없다. 아니, 가져와서는 안된다.
+
+```jsx
+import { useState } from "react";
+
+function App() {
+  const [counter, setCounter] = useState(0);
+  const onClick = () => setCounter((current) => current + 1);
+  
+	//  API 호출
+  console.log("CALL THE API...");
+
+  return (
+    <div>
+      <h1>{counter}</h1>
+      <button onClick={onClick}>click me</button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+### useEffect
+
+useEffect를 import하고 useEffect의 첫 번째 인자로 최초 렌더링 시에만 실행될 함수를 넣어주고, 두 번째 인자로 []를 넣어주면, 해당 함수는 최초 렌더링 시에만 실행된다.
+
+```jsx
+import { useState, useEffect } from "react";
+
+function App() {
+  const [counter, setCounter] = useState(0);
+  const onClick = () => setCounter((current) => current + 1);
+  
+  //  렌더링때마다 출력될 로그
+  console.log("I run all the time");
+
+  //  최초 렌더링 시에만 실행될 함수
+  const iRunOnlyOnce = () => {
+    console.log("I run only once.");
+  }
+
+  useEffect(iRunOnlyOnce, []);
+
+  return (
+    <div>
+      <h1>{counter}</h1>
+      <button onClick={onClick}>click me</button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+![Untitled](24_03_03_daily_certification%207b5049d04e2e47ecb8ea8ec1f7fd07e2/Untitled%201.png)
+
+최초 렌더링 포함 총 5번 렌더링되었지만 iRunOnlyOnce는 최초 1회만 실행되었다.
+
+```jsx
+import { useState, useEffect } from "react";
+
+function App() {
+  const [counter, setCounter] = useState(0);
+  const onClick = () => setCounter((current) => current + 1);
+
+	//  렌더링때마다 출력될 로그
+  console.log("I run all the time");
+
+  //  최초 렌더링 시 API 호출
+  useEffect(() => {
+    console.log("CALL THE API...");
+  }, []);
+
+  return (
+    <div>
+      <h1>{counter}</h1>
+      <button onClick={onClick}>click me</button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+이번에는 입력창에 입력할 때마다 해당 내용을 로그로 보여주도록 하고 싶다고 가정해보자. 입력이 들어올 때마다 리렌더링을 해줘야 한다.
+
+```jsx
+import { useState, useEffect } from "react";
+
+function App() {
+  const [counter, setCounter] = useState(0);
+  const [keyword, setKeyword] = useState("");
+
+  const onClick = () => setCounter((current) => current + 1);
+  const onChange = (event) => setKeyword(event.target.value);
+
+  //  검색창에 입력할 때마다 출력
+  console.log("search for", keyword);
+
+  //  최초 렌더링 시 API 호출
+  useEffect(() => {
+    console.log("CALL THE API...");
+  }, []);
+
+  return (
+    <div>
+      <input
+        value={keyword}
+        onChange={onChange}
+        type="text"
+        placeholder="Search here..."
+      />
+      <h1>{counter}</h1>
+      <button onClick={onClick}>click me</button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+![Untitled](24_03_03_daily_certification%207b5049d04e2e47ecb8ea8ec1f7fd07e2/Untitled%202.png)
+
+useState를  사용해서 입력할 때마다 keyword를 갱신해주도록 할 수 있다.
+
+![Untitled](24_03_03_daily_certification%207b5049d04e2e47ecb8ea8ec1f7fd07e2/Untitled%203.png)
+
+하지만 counter와  같은 다른 state의 변경에도 해당 메서드가 동작할 수 있다. 버튼을 눌러서 counter를 증가시켰을 뿐인데도 로그가 출력되었다.
+
+ 
+
+```jsx
+//  검색창에 입력할 때마다 출력
+console.log("search for", keyword);
+```
+
+위의 로그는 keyword가 갱신될 때에도 출력되지만, counter가 변경될 때에도 출력한다. 이는 우리가 원하는 동작이 아니다.
+
+오로지 keyword의 변화가 발생할 시에만 동작하고 싶다.
+
+```jsx
+import { useState, useEffect } from "react";
+
+function App() {
+  const [counter, setCounter] = useState(0);
+  const [keyword, setKeyword] = useState("");
+
+  const onClick = () => setCounter((current) => current + 1);
+  const onChange = (event) => setKeyword(event.target.value);
+  
+  //  최초 렌더링 시 API 호출
+  useEffect(() => {
+    console.log("CALL THE API...");
+  }, []);
+
+  //  검색창에 입력할 때마다 출력
+  useEffect(() => {
+    console.log("search for", keyword);
+  }, [keyword]);
+
+  return (
+    <div>
+      <input
+        value={keyword}
+        onChange={onChange}
+        type="text"
+        placeholder="Search here..."
+      />
+      <h1>{counter}</h1>
+      <button onClick={onClick}>click me</button>
+    </div>
+  );
+}
+
+export default App;
+
+```
+
+**useEffect의 두 번째 인자의 배열 안에 변화를 감지할 state를 넣어준다.**
+
+![Untitled](24_03_03_daily_certification%207b5049d04e2e47ecb8ea8ec1f7fd07e2/Untitled%204.png)
+
+검색창에 입력해서 keyword가 변할 때마다 로그가 출력된다.
+
+![Untitled](24_03_03_daily_certification%207b5049d04e2e47ecb8ea8ec1f7fd07e2/Untitled%205.png)
+
+버튼을 눌러 counter를 증가시켰지만 추라적으로 로그가 출력되지 않는다. 오로지 keyword의 변화만 감지하여 로그를 출력한다.
+
+useEffect의 두 번째 인자로 빈 배열을 넘겨주었을 경우, 변화를 감지할 state가 없어서 최초 렌더링 시에만 실행되는 것이다.
+
+사소한 문제지만 useEffect에 keyword를 넘겨주어도 최초 렌더링 시에도 로글르 출력하는 것을 알 수 있다. 최초 렌더링 시에 작동하는 것은 useEffect가 정상 동작하는 것이지만, 기능 상 최초에는 검색을 하지 않도록 구현하려면, 구체적으로는 최초 렌더링 포함, 검색창이 비었을 때는 검색하지 않도록 구현하려면
+
+```jsx
+//  검색창에 입력할 때마다 출력
+useEffect(() => {
+  if (keyword !== "") {
+    console.log("search for", keyword);
+  }
+}, [keyword]);
+```
+
+조건문을 걸어주면 된다. 더 구체적으로 길이가 5 이상일 때만 검색하길 원한다면
+
+```jsx
+//  검색창에 입력할 때마다 출력
+useEffect(() => {
+  if (keyword !== "" && keyword.length >= 5) {
+    console.log("search for", keyword);
+  }
+}, [keyword]);
+```
+
+각각의 state마다 useEffect를 걸어두면 각각의 변경을 따로 감지해서 그 때마다 동작을 달리 할 수 있다.
+
+```jsx
+import { useState, useEffect } from "react";
+
+function App() {
+  const [counter, setCounter] = useState(0);
+  const [keyword, setKeyword] = useState("");
+
+  const onClick = () => setCounter((current) => current + 1);
+  const onChange = (event) => setKeyword(event.target.value);
+
+  //  최초 렌더링 시 로그
+  useEffect(() => {
+    console.log("I run only once.");
+  }, []);
+
+  // 버튼 누를 때마다 출력
+  useEffect(() => {
+    console.log("I run when 'counter' changes.");
+  }, [counter]);
+
+  //  검색창에 입력할 때마다 출력
+  useEffect(() => {
+    console.log("I run when 'keyword' changes.");
+  }, [keyword]);
+
+  return (
+    <div>
+      <input
+        value={keyword}
+        onChange={onChange}
+        type="text"
+        placeholder="Search here..."
+      />
+      <h1>{counter}</h1>
+      <button onClick={onClick}>click me</button>
+    </div>
+  );
+}
+
+export default App;
+```
+
+추가로 만약 keyword 또는 counter 둘 중 하나라도 변경되면 출력하는 로그는 
+
+```jsx
+//  버튼 누르거나, 검색창에 입력할 때마다 출력
+  useEffect(() => {
+    console.log("I run when 'counter' or 'keyword' changes.");
+  }, [counter, keyword]);
+```
+
+useEffect에 감지할 state를 모두 전달하면 된다.
+
+**useEffect가 변경을 감지할 state를 Dependency라고 한다.**
+
+### Cleanup
+
+```jsx
+import { useState } from "react";
+
+function App() {
+  const [showing, setShowing] = useState(false);
+
+  const onClick = () => setShowing((prev) => !prev);
+
+  return (
+    <div>
+      <button onClick={onClick}>{showing ? "Hide" : "Show"}</button>
+    </div>
+  );
+}
+
+export default App;
+
+```
+
+버튼을 누를 때마다 Hide와 Show를 번갈아 보여준다.
+
+이번에는 버튼을 누를 때마다 Hello라는 간단한 컴포넌트를 보여주거나 숨기는 기능을 만들어보자.
+
+```jsx
+const Hello = () => {
+    return <h1>Hello</h1>;
+}
+
+export default Hello;
+```
+
+```jsx
+import { useState } from "react";
+import Hello from "./Hello";
+
+function App() {
+  const [showing, setShowing] = useState(false);
+
+  const onClick = () => setShowing((prev) => !prev);
+
+  return (
+    <div>
+      {showing ? <Hello /> : null}
+      <button onClick={onClick}>{showing ? "Hide" : "Show"}</button>
+    </div>
+  );
+}
+
+export default App;
+
+```
+
+여기까지는 전혀 새로운 것이 없다. Hello 컴포넌트에 useEffect를 추가해서 최초 렌더링 시에 로그를 출력하도록 해보자.
+
+```jsx
+import { useEffect } from "react";
+
+const Hello = () => {
+  useEffect(() => console.log("I'm here!"), []);
+
+  return <h1>Hello</h1>;
+};
+
+export default Hello;
+
+```
+
+![Untitled](24_03_03_daily_certification%207b5049d04e2e47ecb8ea8ec1f7fd07e2/Untitled%206.png)
+
+최초에는 Hello 컴포넌트가 렌더링되지 않았으므로 아무 로그도 없고
+
+![Untitled](24_03_03_daily_certification%207b5049d04e2e47ecb8ea8ec1f7fd07e2/Untitled%207.png)
+
+버튼을 누르면 Hello 컴포넌트가 렌더링되면서 로그도 출력된다.
+
+![Untitled](24_03_03_daily_certification%207b5049d04e2e47ecb8ea8ec1f7fd07e2/Untitled%208.png)
+
+만약 버튼을 여러 번 누르면 Hello 컴포넌트가 사라졌다가 다시 나타나면서 로그도 여러 번 출력된다. 즉 여러 번 최초 렌더링된다.
+
+위의 구현은 Hello 컴포넌트를 매번 제거했다가 다시 생성하는 것이다.
+
+Hello 컴포넌트가 제거될 때도 로그를 출력할 수 있을까?
+
+**구체적으로 Hello 컴포넌트가 생성되어 최초 렌더링될 때에는 “created :)”를, 제거될 때는 “destroyed :(”를 출력할 수 있을까?**
+
+**가능하다. 제거 될 때 실행할동작을 return하면 된다.**
+
+```jsx
+import { useEffect } from "react";
+
+const Hello = () => {
+  useEffect(() => {
+    console.log("created :)");
+    return () => console.log("destroyed :(");
+  }, []);
+
+  return <h1>Hello</h1>;
+};
+
+export default Hello;
+
+```
+
+![Untitled](24_03_03_daily_certification%207b5049d04e2e47ecb8ea8ec1f7fd07e2/Untitled%209.png)
+
+생성될 시 created :) 가,
+
+![Untitled](24_03_03_daily_certification%207b5049d04e2e47ecb8ea8ec1f7fd07e2/Untitled%2010.png)
+
+제거될 시 destroyed :( 가 출력된다.
+
+최초 렌더링 시 동작할 메서드를 hiFn, 컴포넌트 소멸 시 동작할 메서드를 byeFn이라 하면 다음과 같이 작성하면 위의 코드와 동일하게 동작한다. 이 때 hiFn은 byeFn을 반환해야 한다.
+
+```jsx
+import { useEffect } from "react";
+
+const Hello = () => {
+  function byeFn() {
+    console.log("destroyed :(");
+  }
+
+  function hiFn() {
+    console.log("created :)");
+    return byeFn;
+  }
+
+  useEffect(hiFn, []);
+
+  return <h1>Hello</h1>;
+};
+
+export default Hello;
+
 ```
 
 # Problem Solving (Algorithm & SQL)
