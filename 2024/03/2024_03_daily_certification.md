@@ -25,3 +25,5 @@
 ## 2024.03.10.sun ~ 2024.03.16.sat 데일리 인증
 
 ### [2024.03.10](https://github.com/jwelyl/daily_certification/blob/main/2024/03/10/24_03_10_daily_certification.md)
+
+### [2024.03.11](https://github.com/jwelyl/daily_certification/blob/main/2024/03/10/24_03_11_daily_certification.md)
