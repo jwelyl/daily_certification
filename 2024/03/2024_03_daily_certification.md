@@ -29,3 +29,5 @@
 ### [2024.03.11](https://github.com/jwelyl/daily_certification/blob/main/2024/03/11/24_03_11_daily_certification.md)
 
 ### [2024.03.12](https://github.com/jwelyl/daily_certification/blob/main/2024/03/12/24_03_12_daily_certification.md)
+
+### [2024.03.13](https://github.com/jwelyl/daily_certification/blob/main/2024/03/13/24_03_13_daily_certification.md)
