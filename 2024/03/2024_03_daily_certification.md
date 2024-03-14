@@ -33,3 +33,5 @@
 ### [2024.03.13](https://github.com/jwelyl/daily_certification/blob/main/2024/03/13/24_03_13_daily_certification.md)
 
 ### [2024.03.14](https://github.com/jwelyl/daily_certification/blob/main/2024/03/14/24_03_14_daily_certification.md)
+
+### [2024.03.15](https://github.com/jwelyl/daily_certification/blob/main/2024/03/15/24_03_15_daily_certification.md)
