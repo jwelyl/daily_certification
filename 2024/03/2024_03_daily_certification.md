@@ -50,3 +50,6 @@ BOJ 16500 (DP, String)
 
 ### [2024.03.15](https://github.com/jwelyl/daily_certification/blob/main/2024/03/15/24_03_15_daily_certification.md)
 BOJ 1414 (MST, String)
+
+### [2024.03.16](https://github.com/jwelyl/daily_certification/blob/main/2024/03/16/24_03_16_daily_certification.md)
+BOJ 4256 (Tree, Preorder, Inorder, Postorder)
