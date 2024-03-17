@@ -53,3 +53,6 @@ BOJ 1414 (MST, String)
 
 ### [2024.03.16](https://github.com/jwelyl/daily_certification/blob/main/2024/03/16/24_03_16_daily_certification.md)
 BOJ 4256 (Tree, Preorder, Inorder, Postorder)
+
+### [2024.03.17](https://github.com/jwelyl/daily_certification/blob/main/2024/03/17/24_03_17_daily_certification.md)
+BOJ 10750 (String, Stack)
