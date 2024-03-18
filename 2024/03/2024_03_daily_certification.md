@@ -61,3 +61,6 @@ BOJ 10750 (String, Stack)
 
 ### [2024.03.18](https://github.com/jwelyl/daily_certification/blob/main/2024/03/18/24_03_18_daily_certification.md)
 BOJ 16402 (String, Disjoint Set)
+
+### [2024.03.19](https://github.com/jwelyl/daily_certification/blob/main/2024/03/19/24_03_19_daily_certification.md)
+BOJ 5670 (String, Trie)
