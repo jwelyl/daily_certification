@@ -58,3 +58,6 @@ BOJ 4256 (Tree, Preorder, Inorder, Postorder)
 
 ### [2024.03.17](https://github.com/jwelyl/daily_certification/blob/main/2024/03/17/24_03_17_daily_certification.md)
 BOJ 10750 (String, Stack)
+
+### [2024.03.18](https://github.com/jwelyl/daily_certification/blob/main/2024/03/18/24_03_18_daily_certification.md)
+BOJ 16402 (String, Disjoint Set)
