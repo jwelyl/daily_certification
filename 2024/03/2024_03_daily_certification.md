@@ -63,4 +63,4 @@ BOJ 10750 (String, Stack)
 BOJ 16402 (String, Disjoint Set)
 
 ### [2024.03.19](https://github.com/jwelyl/daily_certification/blob/main/2024/03/19/24_03_19_daily_certification.md)
-BOJ 5670 (String, Trie)
+Database(DBMS, Database System, Data Models, Database Schema, Three Schema Architecture, DDL, DML, SQL), BOJ 5670 (String, Trie)
