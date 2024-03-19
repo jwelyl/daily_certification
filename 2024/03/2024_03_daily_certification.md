@@ -64,3 +64,6 @@ BOJ 16402 (String, Disjoint Set)
 
 ### [2024.03.19](https://github.com/jwelyl/daily_certification/blob/main/2024/03/19/24_03_19_daily_certification.md)
 Database(DBMS, Database System, Data Models, Database Schema, Three Schema Architecture, DDL, DML, SQL), BOJ 5670 (String, Trie)
+
+### [2024.03.20](https://github.com/jwelyl/daily_certification/blob/main/2024/03/20/24_03_20_daily_certification.md)
+Database(Relational Data Model, Relational Database, NULL, Key, Constraints)
