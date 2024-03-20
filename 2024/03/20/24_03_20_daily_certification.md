@@ -1,5 +1,17 @@
 # 24_03_20_daily_certification
 
+```
+[koreii] #80 데일리인증
+데이터베이스
+- Relational Data Model
+- Relational Database의 정의, 특징
+- NULL
+- Key
+- constraints
+알고리즘 & 코딩 테스트 대비
+- Relational Database Key 관련 문제 풀이
+```
+
 # Databse
 
 ## Relational Data Model
@@ -88,6 +100,8 @@ Relation Schema Set + Integrity Constraints Set
 Relation 자체가 수학의 Set에서 비롯된 것이므로 중복된 원소를 가질 수 없다.
 
 ### Relation의 tuple을 식별하기 위해 attributes의 부분 집합을 key로 설정한다.
+
+Key는 매우 중요한 개념이므로 아래에 따로 설명한다.
 
 ### Relation의 tuple의 순서는 중요하지 않다.
 
@@ -225,8 +239,117 @@ DDL을 통해 Relation Schema에 직접 명시할 수 있는 constraints
 
 # Problem Solving (Algorithm & SQL)
 
+**programmers 코딩테스트 연습 2019 KAKAO BLIND RECRUITMENT 후보키**
+
 [](https://school.programmers.co.kr/learn/courses/30/lessons/42890?language=java)
 
-```java
+Relational Database의 핵심 개념인 Key에 대해 알아볼 수 있는 문제이다.
 
+relation의 튜플 개수는 최대 20개, 컬럼 개수는 최대 8개이므로 모든 가능한 컬럼 조합의 최대 개수는 8C1 + 8C1 + … + 8C8 - 1 = 2^8 - 1개이다.
+
+컬럼 개수가 적은 조합부터 시작해서 이미 존재하는 후보키와 비교 후 최소성을 만족하는지, 최소성을 만족한다면 유일성도 만족하는지 확인 후 둘 다 만족하면 후보키에 넣어주면 된다.
+
+모든 컬럼을 다 조합해 키로 쓰는 경우도 생각해야 한다. 머리로는 알고 있었지만 조합을 구할 때 c개 중 c개를 고르는 경우를 누락해서 일부 테스트케이스를 통과하지 못했다.
+
+즉 다음과 같은 경우이다.
+
+| column1 | column2 | column3 | column4 |
+| --- | --- | --- | --- |
+| a | b | c | d |
+| x | b | c | d |
+| a | x | c | d |
+| a | b | x | d |
+| a | b | c | x |
+
+위의 경우, 1개 컬럼, 2개 컬럼의 조합, 3개 컬럼의 조합으로는 유일성을 보장할 수 없어서 결국 4개 컬럼 모두를 사용해야 유일성이 보장된다.
+
+조합의 경우의 수를 비트마스킹을 이용해 구현할 수도 있다.
+
+4개의 컬럼이 있을 경우 컬럼을 고르는 경우의 수는 2^4 - 1 = 15가지이다.
+
+각 경우는 이진수로 나타내면 0001, 0010, 0011, 0100, 0101, 0110, 0111, 1000, 1001, 1010, 1011, 1100, 1101, 1110, 1111이므로 1 ~ 15까지를 컬럼의 상태로 보고 비트마스킹을 이용하여 구현하면 아래 코드보다는 깔끔하게 구현이 가능할 것이다.
+
+**코드**
+
+```java
+import java.util.*;
+
+class Solution {
+    private int t;     //  튜플 개수
+    private int c;     //  컬럼 개수
+    private Set<String> candKeySet;     //  후보키 집합
+    
+    public int solution(String[][] relation) {
+        t = relation.length;
+        c = relation[0].length;
+        
+        candKeySet = new HashSet<>();   //  후보키 집합
+        
+        for(int i = 1; i <= c; i++)
+            comb(0, i, 0, new int[i], relation);
+        
+        return candKeySet.size();
+    }
+    
+    //  0, 1, 2, ..., c - 1 중 cnt개를 뽑음
+    private void comb(int nth, int cnt, int start, int[] selected, String[][] relation) {
+        if(nth == cnt) {    //  cnt개를 모두 뽑았을 경우
+            Set<Integer> selectedSet = new HashSet<>(); //  뽑은 컬림들 집합
+            for(int i = 0; i < cnt; i++)
+                selectedSet.add(selected[i]);
+          
+            //  1. selected가 minimality를 만족하는지 체크
+            boolean minimality = true;
+            for(String candKey : candKeySet) {  //  이미 후보키로 확정난 키들을 확인
+                List<Integer> candKeyColumnList = new ArrayList<>();
+                StringTokenizer tokens = new StringTokenizer(candKey, "#");
+                while(tokens.hasMoreTokens())
+                    candKeyColumnList.add(Integer.parseInt(tokens.nextToken()));
+                
+                int dup = 0;    //  이미 후보키로 알려진 키의 모든 column이 현재 selected에 포함됐나 체크
+                
+                for(int i = 0; i < candKeyColumnList.size(); i++) {
+                    int column = candKeyColumnList.get(i);
+                    
+                    if(selectedSet.contains(column))
+                        dup++;
+                }
+                
+                if(dup == candKeyColumnList.size()) { //  만약 후보키의 모든 column이 현재 selected에 포함되면 최소성 위반임
+                    minimality = false;
+                    break;
+                }
+            }
+            
+            if(minimality) {    //  현재 selected가 최소성은 만족할 경우 
+                Set<String> tupleSet = new HashSet<String>();
+                
+                for(int i = 0; i < t; i++) {
+                    StringBuilder sb = new StringBuilder();
+                    
+                    for(int j = 0; j < c; j++) {
+                        if(selectedSet.contains(j))
+                            sb.append(relation[i][j]).append("#");
+                    }
+                    
+                    tupleSet.add(sb.toString());
+                }
+                
+                if(tupleSet.size() == t) {  //  모든 튜플을 구분할 수 있을 경우 유일성 보장
+                    StringBuilder sb = new StringBuilder();
+                    for(int i = 0; i < cnt; i++)
+                        sb.append(selected[i]).append("#");
+                    candKeySet.add(sb.toString());
+                }
+            }
+            
+            return;
+        }
+        
+        for(int i = start; i < c; i++) {
+            selected[nth] = i;  //  nth번째로 i를 뽑음
+            comb(nth + 1, cnt, i + 1, selected, relation);    //  nth+1번째는 i+1부터 뽑을 수 있음
+        }
+    }
+}
 ```
