@@ -70,3 +70,6 @@ Database(Relational Data Model, Relational Database, NULL, Key, Constraints), �
 
 ### [2024.03.21](https://github.com/jwelyl/daily_certification/blob/main/2024/03/21/24_03_21_daily_certification.md)
 Java(ObjectMapper, JsonNode, JsonNode tree Parsing), BOJ 13140 (Bruteforcing, Backtracking)
+
+### [2024.03.22](https://github.com/jwelyl/daily_certification/blob/main/2024/03/22/24_03_22_daily_certification.md)
+프로그래머스 뒤에 있는 큰 수 찾기(Data Structure, Stack)
