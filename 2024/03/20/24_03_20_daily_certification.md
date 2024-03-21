@@ -1,17 +1,5 @@
 # 24_03_20_daily_certification
 
-```
-[koreii] #80 데일리인증
-데이터베이스
-- Relational Data Model
-- Relational Database의 정의, 특징
-- NULL
-- Key
-- constraints
-알고리즘 & 코딩 테스트 대비
-- Relational Database Key 관련 문제 풀이
-```
-
 # Databse
 
 ## Relational Data Model
