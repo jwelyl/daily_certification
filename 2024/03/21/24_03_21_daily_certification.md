@@ -1,5 +1,290 @@
 # 24_03_21_daily_certification
 
+# Java
+
+## ObjectMapper, JsonNode
+
+다음과 같은 JSON schema를 트리 형태로 파싱하고 싶다고 가정하자.
+
+```json
+{
+    "type": "object",
+    "properties": {
+      "j": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "x": {
+              "type": "number"
+            },
+            "y": {
+              "type": "number"
+            },
+            "z": {
+              "type": "string"
+            },
+            "w": {
+              "type": "number"
+            },
+            "v": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "a": {
+                    "type": "number"
+                  },
+                  "b": {
+                    "type": "string"
+                  },
+                  "c": {
+                    "type": "number"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "k": {
+          "type" : "object",
+          "properties" : {
+              "member1" : {"type" : "number"},
+              "member2" : {"type" : "string"},
+              "member3" : {"type" : "boolean"}
+          }
+      },
+      "l" : {
+          "type" : "number"
+      },
+      "m" : {
+          "type" : "array",
+          "items": {
+              "type" : "number"
+          }
+      }
+    },
+    "title": "response json schema",
+    "description": "response json schema of tetete service"
+  }
+  
+```
+
+위 JSON Schema를 다음과 같은 트리 형태로 바꾸고 싶다.
+
+![JSONtree.jpeg](24_03_21_daily_certification%2096ddfe00ec6040cf8b2f0d1e886a8609/JSONtree.jpeg)
+
+만들어질 트리의 노드 Node는 다음과 같다.
+
+Node.java
+
+```java
+import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.List;
+
+@Setter
+@Getter
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+public class Node {
+  private String nodeName;
+  private String type;
+  private boolean isArray;
+  private List<Node> children;
+}
+
+```
+
+ObjectMapper를 통해 JSON 데이터를 트리 구조로 나타내서 탐색하는데 사용할 수 있다. 그렇게 만들어진 트리는 노드가 JsonNode인 트리가 된다.
+
+**build.gradle**
+
+```
+dependencies {
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.13.0'
+}
+```
+
+ObjectMapper와 JsonNode를 사용하기 위해서는 build.gradle에 위의 의존성을 추가해야 한다.
+
+**main 메서드**
+
+```java
+public static void main(String[] args) throws Exception {
+    String jsonSchema = (JsonSchema 형태 문자열);
+
+    ObjectMapper objectMapper = new ObjectMapper(); //  JsonSchema를 파싱하기 위한 ObjectMapper
+    JsonNode rootNode = objectMapper.readTree(jsonSchema);  //  JsonSchema를 JsonNode 트리 형태로 변환
+    Node root = getNode(rootNode, "root");      //  JsonNode 트리를 Node 트리로 변환
+
+    printTree(root);  //  Node 트리 출력
+  }
+```
+
+ObjectMapper로 JsonSchema를 JsonNode 트리로 변환한 후 JsonNode 트리의 각 노드를 postorder 방식으로 순회하며 Node 형태로 변환한다.
+
+**getNode 메서드**
+
+```java
+/**
+ *
+ * @param node : JsonNode 서브트리의 루트 노드
+ * @param nodeName : JsonNode 서브트리로부터 변환된 Node 트리 루트 노드의 이름
+ * @return : JsonNode 서브트리로부터 변환된 Node 트리의 루트
+ */
+private static Node getNode(JsonNode node, String nodeName) {
+  String type = node.path("type").asText(); //  현재 노드에 저장된 타입
+
+  Node root = new Node(); //  Node 트리의 루트 노드
+
+  root.setNodeName(nodeName);
+  root.setType(type);
+  root.setArray(type.equals("array"));  //  타입이 배열일 경우 true
+  root.setChildren(new ArrayList<>());  //  자식 노드 저장할 리스트
+
+  if(type.equals("object")) { //  현재 노드 타입이 object 타입일 경우 오브젝트의 하위 멤버들을 탐색해서 자식 노드로 삼아야 함
+    JsonNode propertiesNode = node.path("properties");  //  현재 노드의 properties 확인
+    Iterator<Entry<String, JsonNode>> fieldIterator = propertiesNode.fields();  //  Key : 자식 멤버 이름, Value : 자식 멤버 JsonNode
+
+    while(fieldIterator.hasNext()) {  //  모든 자식 노드들에 대하여
+      Map.Entry<String, JsonNode> field = fieldIterator.next();
+      String fieldName = field.getKey();      //  자식 노드 이름
+      JsonNode fieldNode = field.getValue();  //  자식 노드
+
+      root.getChildren().add(getNode(fieldNode, fieldName));  //  자식 JsonNode를 Node로 변경해서 root의 자식으로 넣어줌
+    }
+  } else if(type.equals("array")) { //  현재 노드 타입이 array일 경우 어떤 타입 array인지 확인해야 함
+    JsonNode itemNode = node.path("items"); //  items 확인
+    String itemType = itemNode.path("type").asText(); //  배열 원소 타입 확인
+
+    root.setType(itemType); //  루트 노드 타입 변경
+    if(itemType.equals("object")) { //  배열 원소 타입이 object일 경우
+      JsonNode propertiesNode = itemNode.path("properties");  //  현재 노드의 properties 확인
+      Iterator<Entry<String, JsonNode>> fieldIterator = propertiesNode.fields();  //  Key : 자식 멤버 이름, Value : 자식 멤버 JsonNode
+
+      while(fieldIterator.hasNext()) {  //  모든 자식 노드들에 대하여
+        Map.Entry<String, JsonNode> field = fieldIterator.next();
+        String fieldName = field.getKey();      //  자식 노드 이름
+        JsonNode fieldNode = field.getValue();  //  자식 노드
+
+        root.getChildren().add(getNode(fieldNode, fieldName));  //  자식 JsonNode를 Node로 변경해서 root의 자식으로 넣어줌
+      }
+    }
+
+  }
+
+  return root;
+}
+```
+
+그러면 다음 그림과 같은 Node 트리가 만들어진다.
+
+![JSONtree.jpeg](24_03_21_daily_certification%2096ddfe00ec6040cf8b2f0d1e886a8609/JSONtree%201.jpeg)
+
+트리가 잘 만들어졌는지 확인하기 위해 preorder로 순회하는 코드를 작성한다.
+
+**printTree 메서드**
+
+```java
+private static int order = 1;  //  순회 순서
+/**
+ *
+ * @param root : 출력할 트리의 루트 노드
+ * 루트 노드를 기준으로 preorder 방식으로 순회하며 정보 출력함
+ */
+private static void printTree(Node root) {
+  System.out.println("(" + order++ + ")");
+  System.out.println("name = " + root.getNodeName());
+  System.out.println("type = " + root.getType());
+  System.out.println("isArray = " + root.isArray());  //  현재 노드 정보들 출력
+
+  for(Node child : root.getChildren())  //  자식 노드들 돌면서
+    printTree(child); //  자식 노드들 정보 출력
+}
+```
+
+예상 순회 순서는 다음과 같다.
+
+![preorder.jpeg](24_03_21_daily_certification%2096ddfe00ec6040cf8b2f0d1e886a8609/preorder.jpeg)
+
+실제 순회를 콘솔로 출력하면 다음과 같다.
+
+```
+(1)
+name = root
+type = object
+isArray = false
+(2)
+name = j
+type = object
+isArray = true
+(3)
+name = x
+type = number
+isArray = false
+(4)
+name = y
+type = number
+isArray = false
+(5)
+name = z
+type = string
+isArray = false
+(6)
+name = w
+type = number
+isArray = false
+(7)
+name = v
+type = object
+isArray = true
+(8)
+name = a
+type = number
+isArray = false
+(9)
+name = b
+type = string
+isArray = false
+(10)
+name = c
+type = number
+isArray = false
+(11)
+name = k
+type = object
+isArray = false
+(12)
+name = member1
+type = number
+isArray = false
+(13)
+name = member2
+type = string
+isArray = false
+(14)
+name = member3
+type = boolean
+isArray = false
+(15)
+name = l
+type = number
+isArray = false
+(16)
+name = m
+type = number
+isArray = true
+
+```
+
 # Problem Solving (Algorithm & SQL)
 
 **BOJ 13140 Hello World!**

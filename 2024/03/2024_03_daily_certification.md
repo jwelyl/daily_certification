@@ -69,4 +69,4 @@ Database(DBMS, Database System, Data Models, Database Schema, Three Schema Archi
 Database(Relational Data Model, Relational Database, NULL, Key, Constraints), 프로그래머스 후보키(Bruteforcing, Implementation, Backtracking, HashSet)
 
 ### [2024.03.21](https://github.com/jwelyl/daily_certification/blob/main/2024/03/21/24_03_21_daily_certification.md)
-BOJ 13140 (Bruteforcing, Backtracking)
+Java(ObjectMapper, JsonNode, JsonNode tree Parsing), BOJ 13140 (Bruteforcing, Backtracking)
