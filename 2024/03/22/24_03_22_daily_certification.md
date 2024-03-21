@@ -75,3 +75,180 @@ class Solution {
     }
 }
 ```
+
+**Programmers 합승 택시 요금**
+
+[](https://school.programmers.co.kr/learn/courses/30/lessons/72413#)
+
+정점 개수 N이 최대 200이고, 간선 개수 E도 최대 N * (N - 1) / 2이므로 O(ElogN) = O(N^2logN)의 Dijkstra Algorithm도 괜찮고, O(N^3)의 Floyd Warshall Algorithm도 괜찮다.
+
+Dijkstra Algorithm을 사용할 경우 합승해서 갈 정점을 mid라고 할 때, 1~n까지 모든 가능한 mid에 대해 s에서 mid까지, mid에서 a, b까지 3번 Dijkstra Algorithm을 수행할 경우 시간 복잡도는 O(NElogN) = O(N^3logN)이 된다. N이 워낙 작아서 큰 문제가 없어보이지만 비효율적이다.
+
+그래프가 양방향 그래프이고 임의의 두 정점 a, b가 연결되어 있을 경우 a에서 b로 가는 비용과 b에서 a로 가는 비용은 같다.
+
+![dijkstra.jpeg](24_03_22_daily_certification%20c9dfe2dde76a45279d1f30e38d0268e3/dijkstra.jpeg)
+
+즉 임의의 mid에서 s, a, b로 가는 비용은 각각 s, a, b에서 mid로 가는 비용과 같으므로 s, a, b를 출발 정점으로 놓고 3번의 Dijkstra Algorithm을 수행하면 더 이상 수행할 필요가 없이 모든 경우의 비용을 구할 수 있다. mid만 1~n으로 바꿔가며 이미 구한 비용들을 이용해 계산하면 된다.
+
+s-mid, a-mid, b-mid 사이 간선이 없을 경우를 잘 대비해야 한다.
+
+**Dijkstra 코드**
+
+```java
+import java.util.PriorityQueue;
+import java.util.List;
+import java.util.Arrays;
+import java.util.ArrayList;
+
+class Solution {
+    private final static int INF = Integer.MAX_VALUE;
+    
+    private List<Node>[] graph;
+    
+    public int solution(int n, int s, int a, int b, int[][] fares) {
+        int answer = 0;
+        
+        graph = new ArrayList[n + 1];
+        for(int i = 1; i <= n; i++)
+            graph[i] = new ArrayList<>();
+        
+        for(int i = 0; i < fares.length; i++) { //  모든 간선 확인
+            int v1 = fares[i][0];
+            int v2 = fares[i][1];
+            int cost = fares[i][2]; //  v1, v2 사이 간선 비용 cost
+            
+            graph[v1].add(new Node(v2, cost));
+            graph[v2].add(new Node(v1, cost));  //   양방향 그래프
+        }
+        
+        int[] distS = dijkstra(s, n);   //  s로부터 각 정점 사이 비용
+        int[] distA = dijkstra(a, n);   //  a로부터 각 정점 사이 비용
+        int[] distB = dijkstra(b, n);   //  b로부터 각 정점 사이 비용
+        
+        answer = INF;   //  최소 비용
+        
+        for(int mid = 1; mid <= n; mid++) { //  같이 타고 갈 곳 mid
+            int sToMid = distS[mid];    //  s부터 mid까지 비용
+            int midToA = distA[mid];    //  mid부터 a까지 비용 = a부터 mid까지 비용 (양방향 그래프)
+            int midToB = distB[mid];    //  mid부터 b까지 비용 = b부터 mid까지 비용 (양방향 그래프)
+            
+            if(sToMid == INF || midToA == INF || midToB == INF) //  mid를 거쳐서 갈 수 없을 겨우
+                continue;
+            
+            answer = Math.min(answer, sToMid + midToA + midToB);
+        }
+        
+        return answer;
+    }
+    
+    //  start로부터 n개의 정점까지 가는 최소 비용 리스트 반환
+    private int[] dijkstra(int start, int n) {
+        PriorityQueue<Node> pq = new PriorityQueue<>();
+        
+        int[] dist = new int[n + 1];
+        Arrays.fill(dist, INF);
+        
+        dist[start] = 0;    //  start에서 start까지 비용은 0
+        pq.offer(new Node(start, dist[start]));
+        
+        while(!pq.isEmpty()) {
+            Node curNode = pq.poll();
+            int cv = curNode.vertex;    //  현재 정점
+            int ccost = curNode.cost;   //  현재 정점까지의 비용
+            
+            if(dist[cv] < ccost)    //  현재 cv까지 알려진 최소비용보다 더 클 경우 고려할 가치가 없음
+                continue;
+            
+            for(Node nextNode : graph[cv]) {    //  cv와 연결된 다른 정점 확인
+                int nv = nextNode.vertex;               //  다음 정점
+                int ncost = ccost + nextNode.cost;      //  cv를 거쳐서 nv까지 가는 비용
+                
+                if(ncost < dist[nv]) {  //  기존에 알려진 nv까지 최소 비용보다 적을 경우
+                    dist[nv] = ncost;   //  최소 비용 갱신
+                    pq.offer(new Node(nv, dist[nv]));
+                }
+            }
+        }
+        
+        return dist;
+    }
+    
+    private static class Node implements Comparable<Node> {
+        int vertex;
+        int cost;
+        
+        Node(int vertex, int cost) {
+            this.vertex = vertex;
+            this.cost = cost;
+        }
+        
+        //  cost에 대해 오름차순 정렬
+        @Override
+        public int compareTo(Node node) {
+            return Integer.compare(this.cost, node.cost);
+        }
+    }
+}
+```
+
+정점의 개수 n이 최대 200이므로 간선 개수는 많아야 19,900개이다. 모든 간선의 비용이 최대 비용 100,000이라고 쳐도 가능한 임의의 두 정점 사이의 최대 비용은 1,990,000,000이므로 20억이 되지 않아 int형으로 충분하다.
+
+혹시 이런 계산이 자신이 없거나 가늠하기 어려운 경우에는 long을 사용하자. 어지간한 경우에는 별 문제 없을 것이다. 아래 Floyd-Warshall 코드는 long으로 작성했다.
+
+**Floyd-Warshall 코드**
+
+```java
+import java.util.Arrays;
+
+class Solution {
+    private final static long INF = Long.MAX_VALUE;
+    
+    private long[][] dist;   //  dist[v1][v2]    //  v1에서 v2로 가는 최소 비용
+    
+    public int solution(int n, int s, int a, int b, int[][] fares) {
+        long answer = INF;
+        
+        dist = new long[n + 1][n + 1];
+        for(int i = 1; i <= n; i++) {
+            Arrays.fill(dist[i], INF);
+            dist[i][i] = 0; //  자기 자신으로 가는 비용은 0
+        }
+        
+        for(int i = 0; i < fares.length; i++) {
+            int v1 = fares[i][0];
+            int v2 = fares[i][1];
+            int cost = fares[i][2]; //  두 정점 v1, v2 사이 간선 비용 cost
+            
+            dist[v1][v2] = dist[v2][v1] = cost;
+        }
+        
+        floydWarshall(n);
+        
+        for(int mid = 1; mid <= n; mid++) { //  같이 가는 지점 mid
+            long sToMid = dist[s][mid];
+            long midToA = dist[mid][a];
+            long midToB = dist[mid][b];
+            
+            if(sToMid == INF || midToA == INF || midToB == INF) //  mid를 거칠 수 없는 경우
+                continue;
+            
+            answer = Math.min(answer, sToMid + midToA + midToB);
+        }
+        
+        return (int)answer;
+    }
+    
+    private void floydWarshall(int n) {
+        for(int k = 1; k <= n; k++) {
+            for(int i = 1; i <= n; i++) {
+                for(int j = 1; j <= n; j++) {
+                    if(dist[i][k] == INF || dist[k][j] == INF)  //  k를 거쳐서 갈 수 없을 경우
+                        continue;
+                    
+                    dist[i][j] = Math.min(dist[i][j], dist[i][k] + dist[k][j]);
+                }
+            }
+        }
+    }
+}
+```
