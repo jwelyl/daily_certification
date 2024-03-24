@@ -81,4 +81,4 @@ Database(Transaction, ACID), 코딩 테스트
 ## 2024.03.24.sun ~ 2024.03.30.sat 데일리 인증
 
 ### [2024.03.24](https://github.com/jwelyl/daily_certification/blob/main/2024/03/24/24_03_24_daily_certification.md)
-Database(Transaction, ACID)
+Database(Transaction, ACID), BOJ 5446 (String, Trie)

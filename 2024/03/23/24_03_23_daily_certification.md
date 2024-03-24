@@ -124,6 +124,101 @@ COMMIT;
     SELECT @@AUTOCOMM;  // AUTOCOMMIT 여부 확인
     ```
     
+- **MySQL에서는 START TRANSACTION 이후의 쿼리들은 자동으로 AUTOCOMMIT이 off가 된다.**
+    
+    COMMIT/ROLLBACK으로 Transaction이 종료되면 AUTOCOMMIT이 기존의 설정대로 돌아간다.
+    
+
+### 일반적인 Transaction 사용 패턴
+
+1. Transaction을 시작(begin)한다. (START TRANSACTION)
+2. 데이터 삽입, 수정, 삭제 등의 SQL문들을 포함한 로직을 수행한다.
+3. 2의 과정들이 문제없이 동작했다면 Transaction을 commit한다.
+4. 2의 과정 중간에 문제가 발생했다면 transaction을 rollback한다.
+
+하지만 Back-End 개발자가 직접 SQL문으로 Transaction을 관리할 일은 잘 없다. 
+
+대신 Java 같은  Programming 언어로 Transaction을 관리하게 된다.
+
+```java
+public void transfer(String fromId, String toId, int amount) {
+  try {
+    Connection connection = ...;           // get DB connection .. (Application Server와 Database Server를 연결)
+	  connections.setAutoCommit(false);      // means START TRANSACTION
+	  ...                                    // update at fromId (logic)
+	  ...                                    // update at toId (logic)
+	  connection.commit();                   // logic 성공 시 commit
+  } catch(Exception e) {
+	  ...
+	  connections.rollback();                // logic 실패 시 rollback
+	  ...
+  } finally {
+	  connections.setAutoCommit(true);       // transaction 종료 후 connection 원래 설정 복구
+	}
+}
+```
+
+사실 위의 코드는 이체와 관련된 business logic 코드는 2줄밖에 되지 않는다. 나머지는 전부 transaction 관리 코드이다. Spring, SpringBoot에서는 @Transactional Annotaion을 이용해 transaction 관리 코드를 자동으로 추가해준다.
+
+```java
+@Transactional
+public void transfer(String fromId, String toId, int amount) {
+  ...                                    // update at fromId (logic)
+  ...                                    // update at toId (logic)
+}
+```
+
+### ACID
+
+**Transaction이 반드시 지녀야 하는 핵심 속성이다.**
+
+- **Atomicity (원자성)**
+    - **ALL or NOTHING**
+    - Transaction은 논리적으로 쪼개질 수 없는 작업 단위이므로 **내부의 SQL문들이 모두 성공**해야 한다.
+    - **중간에 SQL문이 실패하면 지금까지의 작업을 모두 취소하**여 아무 일도 없었던 것처럼 rollback한다.
+    - DBMS가 담당하는 것
+        - commit했을 때 DB에 영구적으로 저장되는 것
+        - rollback했을 때 이전 상태로 되돌리는 것
+    - 개발자가 담당해야 하는 것
+        - 언제 commit할지 정하기 (Transaction의 단위를 정하기)
+        - 언제 rollback할지 정하기 (어떤 경우 실패로 처리할지 정하기)
+- **Consistency (일관성)**
+    - 데이터베이스의 일관성을 유지시키는 것
+        - 예를 들어 계좌 잔고로 음수를 허용하지 않는다면 잔액을 초과한 금액의 이체는 실행시키지 않는다.
+    - **Transaction은 DB 상태를 consistent 상태에서 또 다른 consistent 상태로 바꿔줘야 한다.**
+        - 일관성을 유지하던 DB가 어떤 transaction 후에 일관성이 깨져있을 수는 없다.
+    - constraints, trigger 등을 통해 DB에 정의된 rules을 transaction이 위반했다면 해당 transaction을 rollback해야 한다.
+    - Transaction이 DB에 저장된 rule을 위반했는지는 DBMS가 commit 전에 확인 후 알려준다.
+        - 개발자가 개발을 잘했다면 Exception Message를 통해 확인 가능할 것이다.
+        - 하지만 해당 Exception은 DB에 정의된 rule 위반에 관해 알려줄 뿐이다.
+    - **Application 관점에서 Transaction이 consistent하게 동작하는지 개발자가 확인해야 한다.**
+        - Application의 Business Logic 관점에서도 일관성이 유지되는지는 개발자가 확인해야 한다.
+- **Isolation (격리성)**
+    - **여러 Transaction들이 동시에 실행될 때도 혼자 실행되는 것처럼 동작하게 만든다.**
+    - DBMS에서는 여러 종류의 Isolation Level을 제공한다.
+        - Isolation Level이 높을 수록 보다 엄격한 격리성을 유지해서 다른 Transcation으로부터 받는 영향이 줄어든다.
+        - 하지만 Isolation Level이 높을 수록 동시에 실행될 수 있는 동시성이 감소해 DB Server의 Performance가 감소한다.
+        - Isolation Level이 낮을 수록 동시에 실행될 수 있는 동시성이 증가해 DB Server의 Performance가 증가한다.
+        - 하지만 Isolation Level이 높을 수록 다른 Transcation으로부터 받는 영향이 커져 잘못된 결과를 낳을 수 있다.
+    - 개발자는 Isolation Level 중에 어떤 Level로 Transaction을 동작시킬지 설정할 수 있다.
+        - 디폴트 설정이 있긴 하지만 상황에 따라 튜닝할 수 있어야 한다.
+    - Concurrency Control의 주된 목표가 Isolation이다.
+- **Durability (지속성, 영존성)**
+    - **commit된 Transaction은 DB에 영구적으로 저장한다.**
+    - DB System에 power fail, DB crash 같은 문제가 발생해도 commit된 Transaction은 DB에 남아 있어야 한다.
+    - ‘영구적으로 저장한다’는 일반적으로 **비휘발성 메모리 (HDD, SSD)에 저장**함을 의미한다.
+    - 기본적으로 Transaction의 Durability는 DBMS가 보장한다.
+
+### Transaction과 개발자
+
+1. **Transaction을 어떻게 정의해서 사용할지는 개발자가 정하는 것이다.**
+    
+    구현하려는 기능과 ACID 속성을 이해해야 Transaction을 잘 정의할 수 있다.
+    
+2. **Transaction의 ACID와 관련해서 개발자가 챙겨야 하는 부분이 있다.**
+    
+    DBMS가 모두 알아서 해주는 것이 절대 아니다.
+    
 
 # Problem Solving (Algorithm & SQL)
 

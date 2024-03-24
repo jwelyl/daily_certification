@@ -1,4 +1,12 @@
-# 24_03_23_daily_certification
+# 24_03_24_daily_certification
+
+```
+[koreii] #84 데일리인증
+데이터베이스
+- Transaction 복습
+알고리즘 & 코딩 테스트 대비
+- String, Trie 문제 풀이
+```
 
 # 데이터베이스
 
@@ -218,3 +226,260 @@ public void transfer(String fromId, String toId, int amount) {
 2. **Transaction의 ACID와 관련해서 개발자가 챙겨야 하는 부분이 있다.**
     
     DBMS가 모두 알아서 해주는 것이 절대 아니다.
+    
+
+# Problem Solving (Algorithm & SQL)
+
+**BOJ 5446 용량 부족**
+
+[5446번: 용량 부족](https://www.acmicpc.net/problem/5446)
+
+삭제할 단어들을 모두 Trie에 넣어준다. 기존 Trie 문제에서 단어를 삽입할 때처럼 단어의 끝에 도달하면 표시를 해주고 추가적으로 단어의 각 문자에 해당하는 노드에 지워도 된다는 표식을 해둔다. (canDelete = true)
+
+![ex1.jpeg](24_03_24_daily_certification%207b7e7daf07974657b58ee413cd98b84f/ex1.jpeg)
+
+다음으로 삭제해서는 안되는 단어들을 입력받는다. Trie에 삽입하는 대신 해당 단어들로 Trie를 조회하면서 만나는 노드들의 canDelete를 모두 false로 변경한다. 해당 단어의 문자에 해당하는 노드가 없을 경우 탐색을 종료한다.
+
+![ex2.jpeg](24_03_24_daily_certification%207b7e7daf07974657b58ee413cd98b84f/ex2.jpeg)
+
+이제 Trie 전체를 순회한다. canDelete가 true인 노드를 만다면 해당 노드까지 오는 경로 (ex) abcd라고 하자.)로 파일들을 한번에 지울 수 있다는 뜻이다. 즉 rm abcd*가 가능하다.
+
+canDelete가 false일 경우 true인 노드를 만날 때까지 계속 다음 노드로 이동한다.
+
+clean 같은 경우 rm clean*으로 지우면 지워서는 안되는 파일인 cleanup, cleanup.IN, cleaning이 모두 지워지므로 불가능하지만 clean 자체는 지워야하는 파일이므로 rm clean으로 따로 지울 수 있다. 따라서 canDelete가 false지만 해당 노드가 지워야 하는 어떤 단어의 끝이라면 지우는 횟수를 1 증가시킨다.
+
+![ex3.jpeg](24_03_24_daily_certification%207b7e7daf07974657b58ee413cd98b84f/ex3.jpeg)
+
+위의 내용으로 구현한 코드는 다음과 같다.
+
+**틀린 코드**
+
+```java
+import java.util.*;
+import java.io.*;
+import java.util.Map.Entry;
+
+public class Main {
+  private final static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+  private final static StringBuilder sb = new StringBuilder();
+
+  private static int tc;   //  테스트 케이스 개수
+  private static int n1;  //  지울 파일 수
+  private static int n2;  //  지우면 안되는 파일 수
+
+  private static Trie trie;
+  private static int ans = 0; //  필요한 최소 rm 명령 횟수
+
+  public static void main(String[] args) throws IOException {
+    tc = Integer.parseInt(br.readLine());
+
+    for(int t = 0; t < tc; t++) {
+      ans = 0;
+      trie = new Trie();
+
+      n1 = Integer.parseInt(br.readLine());
+
+      //  삭제할 단어들 트라이에 추가
+      for(int i = 0; i < n1; i++)
+        trie.insertWord(br.readLine());
+
+      n2 = Integer.parseInt(br.readLine());
+
+      //  삭제하면 안되는 단어들 트라이에서 표시
+      for(int i = 0; i < n2; i++)
+        trie.insertCantDeleteWord(br.readLine());
+
+      trie.cntRmOperations();
+
+      sb.append(ans).append("\n");
+    }
+
+    System.out.print(sb);
+  } // main-end
+
+  private static class TrieNode {
+    Map<Character, TrieNode> children = new HashMap<>();
+    boolean canDelete = true;
+    boolean isEnd = false;
+  }
+
+  private static class Trie {
+    private TrieNode root = new TrieNode();
+
+    //  삭제할 단어 삽입하기
+    public void insertWord(String word) {
+      TrieNode cur = root;
+
+      for(int i = 0; i < word.length(); i++) {
+        char ch = word.charAt(i);
+
+        if(!cur.children.containsKey(ch))
+          cur.children.put(ch, new TrieNode());
+        cur = cur.children.get(ch);
+      }
+
+      cur.isEnd = true;
+    }
+
+    //  삭제하면 안되는 단어 표시
+    public void insertCantDeleteWord(String word) {
+      TrieNode cur = root;
+
+      for(int i = 0; i < word.length(); i++) {
+        char ch = word.charAt(i);
+
+        if(!cur.children.containsKey(ch))
+          return;
+
+        cur = cur.children.get(ch);
+        cur.canDelete = false;  //  지우면 안되는 단어로 표시
+      }
+    }
+
+    private void cntRmOperations() {
+      for(Entry<Character, TrieNode> entry : root.children.entrySet())
+        dfs(entry.getValue());
+    }
+
+    private void dfs(TrieNode trieNode) {
+      if (trieNode.canDelete) { //  지울 수 있는 분기로 올 경우
+        ans++;    //  해당 분기로 지우면 됨.
+      }
+      else {  //  지울 수 없는 분기일 경우
+        if(trieNode.isEnd)    //  지울 수 있는 단어의 끝일 경우
+          ans++;  //  해당 단어로 지우면 됨
+
+        for(Entry<Character, TrieNode> entry : trieNode.children.entrySet())  //  다음 자식 노드들 확인
+          dfs(entry.getValue());
+      }
+    }
+  }
+} //  Main-class-end
+```
+
+위의 코드는 다음과 같은 경우를 고려할 수 없다.
+
+![counter_ex.jpeg](24_03_24_daily_certification%207b7e7daf07974657b58ee413cd98b84f/counter_ex.jpeg)
+
+삭제할 단어로 A, B 두 개가 들어오고, 삭제해서는 안되는 단어는 없는 경우이다. 따라서 rm *으로 한 번의 명령어로 모두 제거할 수 있지만 위의 코드에 의하면 rm A, rm B로 두 번의 명령어로 지우게 된다.
+
+따라서 root부터 dfs로 탐색하고 root가 true이면 모든 단어를 한 번에 지울 수 있도록 해야한다. 그렇게 구현하면 위의 설명의 그림들도 다음과 같이 변한다.
+
+**삭제할 단어들 삽입 후**
+
+![cex1.jpeg](24_03_24_daily_certification%207b7e7daf07974657b58ee413cd98b84f/cex1.jpeg)
+
+**삭제하면 안되는 단어들 표시 후**
+
+![cex2.jpeg](24_03_24_daily_certification%207b7e7daf07974657b58ee413cd98b84f/cex2.jpeg)
+
+위의 반례는 아래와 같이 변한다.
+
+![counter_ex2.jpeg](24_03_24_daily_certification%207b7e7daf07974657b58ee413cd98b84f/counter_ex2.jpeg)
+
+root부터 탐색해서 root가 true이므로 모든 단어를 한 번에 지울 수 있다.
+
+**정답 코드**
+
+```java
+import java.util.*;
+import java.io.*;
+import java.util.Map.Entry;
+
+public class Main {
+  private final static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+  private final static StringBuilder sb = new StringBuilder();
+
+  private static int tc;   //  테스트 케이스 개수
+  private static int n1;  //  지울 파일 수
+  private static int n2;  //  지우면 안되는 파일 수
+
+  private static Trie trie;
+  private static int ans = 0; //  필요한 최소 rm 명령 횟수
+
+  public static void main(String[] args) throws IOException {
+    tc = Integer.parseInt(br.readLine());
+
+    for(int t = 0; t < tc; t++) {
+      ans = 0;
+      trie = new Trie();
+
+      n1 = Integer.parseInt(br.readLine());
+
+      //  삭제할 단어들 트라이에 추가
+      for(int i = 0; i < n1; i++)
+        trie.insertWord(br.readLine());
+
+      n2 = Integer.parseInt(br.readLine());
+
+      //  삭제하면 안되는 단어들 트라이에서 표시
+      for(int i = 0; i < n2; i++)
+        trie.insertCantDeleteWord(br.readLine());
+
+      trie.cntRmOperations();
+
+      sb.append(ans).append("\n");
+    }
+
+    System.out.print(sb);
+  } // main-end
+
+  private static class TrieNode {
+    Map<Character, TrieNode> children = new HashMap<>();
+    boolean canDelete = true;
+    boolean isEnd = false;
+  }
+
+  private static class Trie {
+    private TrieNode root = new TrieNode();
+
+    //  삭제할 단어 삽입하기
+    public void insertWord(String word) {
+      TrieNode cur = root;
+
+      for(int i = 0; i < word.length(); i++) {
+        char ch = word.charAt(i);
+
+        if(!cur.children.containsKey(ch))
+          cur.children.put(ch, new TrieNode());
+        cur = cur.children.get(ch);
+      }
+
+      cur.isEnd = true;
+    }
+
+    //  삭제하면 안되는 단어 표시
+    public void insertCantDeleteWord(String word) {
+      TrieNode cur = root;
+      cur.canDelete = false;
+
+      for(int i = 0; i < word.length(); i++) {
+        char ch = word.charAt(i);
+
+        if(!cur.children.containsKey(ch))
+          return;
+
+        cur = cur.children.get(ch);
+        cur.canDelete = false;  //  지우면 안되는 단어로 표시
+      }
+    }
+
+    private void cntRmOperations() {
+      dfs(this.root);
+    }
+
+    private void dfs(TrieNode trieNode) {
+      if (trieNode.canDelete) { //  지울 수 있는 분기로 올 경우
+        ans++;    //  해당 분기로 지우면 됨.
+      }
+      else {  //  지울 수 없는 분기일 경우
+        if(trieNode.isEnd)    //  지울 수 있는 단어의 끝일 경우
+          ans++;  //  해당 단어로 지우면 됨
+
+        for(Entry<Character, TrieNode> entry : trieNode.children.entrySet())  //  다음 자식 노드들 확인
+          dfs(entry.getValue());
+      }
+    }
+  }
+} //  Main-class-end
+```
