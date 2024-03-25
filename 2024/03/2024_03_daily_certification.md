@@ -82,3 +82,6 @@ Database(Transaction, ACID), 코딩 테스트
 
 ### [2024.03.24](https://github.com/jwelyl/daily_certification/blob/main/2024/03/24/24_03_24_daily_certification.md)
 Database(Transaction, ACID), BOJ 5446 (String, Trie)
+
+### [2024.03.25](https://github.com/jwelyl/daily_certification/blob/main/2024/03/25/24_03_25_daily_certification.md)
+Database(DML)
