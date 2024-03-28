@@ -95,3 +95,6 @@ BOJ 2179 (String, Sorting, HashMap)
 
 ### [2024.03.28](https://github.com/jwelyl/daily_certification/blob/main/2024/03/28/24_03_28_daily_certification.md)
 포트폴리오 복기, 경험 정리
+
+### [2024.03.29](https://github.com/jwelyl/daily_certification/blob/main/2024/03/29/24_03_29_daily_certification.md)
+BOJ 20917 (Parametric Search)
