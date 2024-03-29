@@ -98,3 +98,6 @@ BOJ 2179 (String, Sorting, HashMap)
 
 ### [2024.03.29](https://github.com/jwelyl/daily_certification/blob/main/2024/03/29/24_03_29_daily_certification.md)
 BOJ 20917 (Parametric Search)
+
+### [2024.03.30](https://github.com/jwelyl/daily_certification/blob/main/2024/03/30/24_03_30_daily_certification.md)
+BOJ 23300 (Implementation, Deque)
