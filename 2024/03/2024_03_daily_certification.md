@@ -101,3 +101,6 @@ BOJ 20917 (Parametric Search)
 
 ### [2024.03.30](https://github.com/jwelyl/daily_certification/blob/main/2024/03/30/24_03_30_daily_certification.md)
 BOJ 23300 (Implementation, Deque)
+
+### [2024.03.31](https://github.com/jwelyl/daily_certification/blob/main/2024/03/31/24_03_31_daily_certification.md)
+포트폴리오 복기, 경험 정리
