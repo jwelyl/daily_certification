@@ -13,3 +13,6 @@
 
 ### [2024.04.04](https://github.com/jwelyl/daily_certification/blob/main/2024/04/04/24_04_04_daily_certification.md)
 BOJ 1052 (Greedy, Bitmasking, Geometric Sequence)
+
+### [2024.04.05](https://github.com/jwelyl/daily_certification/blob/main/2024/04/05/24_04_05_daily_certification.md)
+BOJ 1774 (MST)
