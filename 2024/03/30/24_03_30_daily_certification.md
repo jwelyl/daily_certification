@@ -1,11 +1,5 @@
 # 24_03_30_daily_certification
 
-```
-[koreii] #90 데일리인증
-알고리즘 & 코딩 테스트 대비
-- 구현, 덱 문제풀이
-```
-
 # Problem Solving (Algorithm & SQL)
 
 **BOJ 23300 웹 브라우저 2**
