@@ -19,3 +19,8 @@ BOJ 1774 (MST)
 
 ### [2024.04.06](https://github.com/jwelyl/daily_certification/blob/main/2024/04/06/24_04_06_daily_certification.md)
 BOJ 6198 (Stack)
+
+## 2024.04.07.mon ~ 2024.04.13.sat 데일리 인증
+
+### [2024.04.07](https://github.com/jwelyl/daily_certification/blob/main/2024/04/07/24_04_07_daily_certification.md)
+BOJ 1689 (Greedy, Sorting, Sweeping)
