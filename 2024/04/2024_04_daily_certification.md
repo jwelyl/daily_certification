@@ -24,3 +24,9 @@ BOJ 6198 (Stack)
 
 ### [2024.04.07](https://github.com/jwelyl/daily_certification/blob/main/2024/04/07/24_04_07_daily_certification.md)
 BOJ 1689 (Greedy, Sorting, Sweeping)
+
+### [2024.04.07](https://github.com/jwelyl/daily_certification/blob/main/2024/04/07/24_04_07_daily_certification.md)
+BOJ 1689 (Greedy, Sorting, Sweeping)
+
+### [2024.04.08](https://github.com/jwelyl/daily_certification/blob/main/2024/04/08/24_04_08_daily_certification.md)
+Database(Transaction, ACID, Schedule, Serializability, Equivalence, Conflict, Isolation)
