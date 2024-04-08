@@ -30,3 +30,6 @@ BOJ 1689 (Greedy, Sorting, Sweeping)
 
 ### [2024.04.08](https://github.com/jwelyl/daily_certification/blob/main/2024/04/08/24_04_08_daily_certification.md)
 Database(Transaction, ACID, Schedule, Serializability, Equivalence, Conflict, Isolation)
+
+### [2024.04.09](https://github.com/jwelyl/daily_certification/blob/main/2024/04/09/24_04_09_daily_certification.md)
+Database(Transaction Recoverable Schedule)
