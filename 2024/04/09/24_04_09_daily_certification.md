@@ -1,14 +1,5 @@
 # 24_04_09_daily_certification
 
-```
-[koreii] #100 데일리인증
-20240409
-데이터베이스
-- Recoverable Schedule
-- Cascadeless Schedule
-- Strict Schedule
-```
-
 # 데이터베이스
 
 ## Transaction
