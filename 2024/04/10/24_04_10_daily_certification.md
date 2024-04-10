@@ -1,19 +1,5 @@
 # 24_04_10_daily_certification
 
-```
-[koreii] #101 데일리인증
-20240410
-데이터베이스
-Transaction Isolation 이상현상
-- Dirty Read
-- Non-repeatable Read
-- Phantom Read
-- 그 외
-Transaction 
-- SQL 표준 Isolation Level
-- Snapshot Isolation
-```
-
 # 데이터베이스
 
 ## Transaction
