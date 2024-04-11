@@ -36,3 +36,6 @@ Database(Transaction Recoverable Schedule)
 
 ### [2024.04.10](https://github.com/jwelyl/daily_certification/blob/main/2024/04/10/24_04_10_daily_certification.md)
 Database(Transaction Isolation Level)
+
+### [2024.04.11](https://github.com/jwelyl/daily_certification/blob/main/2024/04/11/24_04_11_daily_certification.md)
+Database(Lock), BOJ 1277 (MST)
