@@ -39,3 +39,6 @@ Database(Transaction Isolation Level)
 
 ### [2024.04.11](https://github.com/jwelyl/daily_certification/blob/main/2024/04/11/24_04_11_daily_certification.md)
 Database(Lock), BOJ 1277 (MST)
+
+### [2024.04.12](https://github.com/jwelyl/daily_certification/blob/main/2024/04/12/24_04_12_daily_certification.md)
+Database(Lock)
