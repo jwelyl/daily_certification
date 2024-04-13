@@ -42,3 +42,6 @@ Database(Lock), BOJ 1277 (MST)
 
 ### [2024.04.12](https://github.com/jwelyl/daily_certification/blob/main/2024/04/12/24_04_12_daily_certification.md)
 Database(Lock), BOJ 1451 (Prefix Sum, Case Work)
+
+### [2024.04.13](https://github.com/jwelyl/daily_certification/blob/main/2024/04/13/24_04_13_daily_certification.md)
+코드트리 - 기울어진 직사각형 (Bruteforcing)
