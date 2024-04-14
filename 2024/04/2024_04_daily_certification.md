@@ -20,7 +20,7 @@ BOJ 1774 (MST)
 ### [2024.04.06](https://github.com/jwelyl/daily_certification/blob/main/2024/04/06/24_04_06_daily_certification.md)
 BOJ 6198 (Stack)
 
-## 2024.04.07.mon ~ 2024.04.13.sat 데일리 인증
+## 2024.04.07.sun ~ 2024.04.13.sat 데일리 인증
 
 ### [2024.04.07](https://github.com/jwelyl/daily_certification/blob/main/2024/04/07/24_04_07_daily_certification.md)
 BOJ 1689 (Greedy, Sorting, Sweeping)
@@ -45,3 +45,8 @@ Database(Lock), BOJ 1451 (Prefix Sum, Case Work)
 
 ### [2024.04.13](https://github.com/jwelyl/daily_certification/blob/main/2024/04/13/24_04_13_daily_certification.md)
 코드트리 - 기울어진 직사각형 (Bruteforcing)
+
+## 2024.04.14.sun ~ 2024.04.20.sat 데일리 인증
+
+### [2024.04.14](https://github.com/jwelyl/daily_certification/blob/main/2024/04/14/24_04_14_daily_certification.md)
+BOJ 25634 (Prefix Sum, DP)
