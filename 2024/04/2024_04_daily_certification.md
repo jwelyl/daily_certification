@@ -50,3 +50,7 @@ Database(Lock), BOJ 1451 (Prefix Sum, Case Work)
 
 ### [2024.04.14](https://github.com/jwelyl/daily_certification/blob/main/2024/04/14/24_04_14_daily_certification.md)
 BOJ 25634 (Prefix Sum, DP)
+
+### [2024.04.15](https://github.com/jwelyl/daily_certification/blob/main/2024/04/15/24_04_15_daily_certification.md)
+Database(Write-Lock, Read-Lock, 2PL Protocol),
+코드트리 - 연결리스트1 (Doubly-Linked_list), 정수 n개의 합 2 (Prefix Sum), 점 개수 세기 3 (Grid Compression)
