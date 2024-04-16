@@ -56,4 +56,5 @@ Database(Write-Lock, Read-Lock, 2PL Protocol),
 코드트리 - 연결리스트1 (Doubly-Linked_list), 정수 n개의 합 2 (Prefix Sum), 점 개수 세기 3 (Grid Compression)
 
 ### [2024.04.16](https://github.com/jwelyl/daily_certification/blob/main/2024/04/16/24_04_16_daily_certification.md)
-Database(MVCC, PostgreSQL)
+Database(MVCC, PostgreSQL, MySQL),
+코드트리 - 마라톤 중간에 택시타기 (LR Technique), 숫자 빠르게 찾기 (Binary Search)

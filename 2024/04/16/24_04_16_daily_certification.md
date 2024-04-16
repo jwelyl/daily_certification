@@ -117,6 +117,61 @@ TX마다 서로 다른 Isolation Level을 줄 수 있다.
 
 PostgreSQL에서는 TX 2에서 x를 먼저 업데이트하고 commit되므로 나중에 x에 write하려 하는 TX 1은 rollback된다. 따라서 결과는 TX 2만 실행되서 x = 80, y = 10으로 제대로 된 결과가 된다.
 
+### MySQL
+
+**TX 1, 2 둘 다 Repeatable Read일 때 MySQL**
+
+MySQL에서는 Repeatable Read만으로는 Lost Update를 해결할 수 없다.
+
+**MySQL에서는 Locking Read로 Lost Update를 해결한다.**
+
+![Untitled](24_04_16_daily_certification%20c8ebbe2517604f1ebf4c1ffd3a16521b/Untitled%209.png)
+
+**MySQL의 Locking Read는 가장 최근의 comit된 데이터를 읽는다.**
+
+**Locking Read**
+
+```sql
+//  Write Lock (Exclusive Lock)
+SELECT ... FOR UPDATE;
+//  Read Lock (Shared Lock)
+SELECT ... FOR SHARE;
+```
+
+**Repeatable Read에서 Write Skew**
+
+초기 x = 10, y = 10이고 TX 1은 x와 y를 더해서 x에 쓰고, TX 2는 x와 y를 더해서 y에 쓴다.
+
+정상적으로 동작했다면 결과는 x = 20, y = 30 또는 x = 30, y = 20이어야 한다.
+
+![Untitled](24_04_16_daily_certification%20c8ebbe2517604f1ebf4c1ffd3a16521b/Untitled%2010.png)
+
+Write Skew가 발생하여 x = 20, y = 20이 된다. 이는 MySQL, PostgreSQL 모두 발생한다.
+
+### **MySQL**
+
+![Untitled](24_04_16_daily_certification%20c8ebbe2517604f1ebf4c1ffd3a16521b/Untitled%2011.png)
+
+Locking Read를 통해서 해결할 수 있다.
+
+### PostgreSQL
+
+![Untitled](24_04_16_daily_certification%20c8ebbe2517604f1ebf4c1ffd3a16521b/Untitled%2012.png)
+
+Locking Read를 지원하지만, 먼저 update한 TX가 commit되면 나중 TX는 rollback된다.
+
+### Serializable로 해결
+
+가장 엄격한 TX Isolation Level인 Serializable로 해결 가능하다.
+
+### **MySQL**
+
+![Untitled](24_04_16_daily_certification%20c8ebbe2517604f1ebf4c1ffd3a16521b/Untitled%2013.png)
+
+### PostgreSQL
+
+![Untitled](24_04_16_daily_certification%20c8ebbe2517604f1ebf4c1ffd3a16521b/Untitled%2014.png)
+
 ### MVCC 정리
 
 - 데이터를 읽을 때 **특정 시점 기준**으로 **가장 최근에 commit된 데이터를 읽는다.**
@@ -128,3 +183,133 @@ PostgreSQL에서는 TX 2에서 x를 먼저 업데이트하고 commit되므로 �
 - **read와 write가 서로를 block하지 않는다.**
     - read하면서 write도, write하면서 read도 가능하므로 처리량이 높다.
     - 대부분의 RDBMS가 MVCC를 사용해서 구현한다.
+
+# Problem Solving (Algorithm & SQL)
+
+**CO{)E TREE 마라톤 중간에 택시타기**
+
+[https://www.codetree.ai/missions/8/problems/taking-a-taxi-in-the-middle-of-the-marathon/description](https://www.codetree.ai/missions/8/problems/taking-a-taxi-in-the-middle-of-the-marathon/description)
+
+[코드트리 | 코딩테스트 준비를 위한 알고리즘 정석](https://www.codetree.ai/missions/8/problems/taking-a-taxi-in-the-middle-of-the-marathon/description)
+
+**코드**
+
+```java
+import java.util.*;
+import java.io.*;
+
+public class Main {
+    private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    private static StringTokenizer tokens;
+
+    private static int n;   //  체크 포인트 개수
+
+    private static int[] posX;  //  체크 포인트 x 좌표
+    private static int[] posY;  //  체크 포인트 y 좌표
+
+    private static int[] leftX;     //  left x값 저장 배열
+    private static int[] leftY;     //  left y값 저장 배열
+    private static int[] rightX;    //  right x값 저장 배열
+    private static int[] rightY;    //  right y값 저장 배열
+
+    private static int ans = Integer.MAX_VALUE; //  완주 최소 거리
+
+    public static void main(String[] args) throws IOException {
+        n = Integer.parseInt(br.readLine());
+
+        posX = new int[n + 1];
+        posY = new int[n + 1];
+
+        leftX = new int[n + 1];
+        leftY = new int[n + 1];
+        rightX = new int[n + 1];
+        rightY = new int[n + 1];
+
+        for(int i = 0; i < n; i++) {
+            tokens = new StringTokenizer(br.readLine());
+            posX[i + 1] = Integer.parseInt(tokens.nextToken());
+            posY[i + 1] = Integer.parseInt(tokens.nextToken());
+        }
+
+        for(int i = 1; i < n; i++) {
+            leftX[i + 1] = leftX[i] + Math.abs(posX[i + 1] - posX[i]);
+            leftY[i + 1] = leftY[i] + Math.abs(posY[i + 1] - posY[i]);
+        }
+
+        for(int i = n - 1; i >= 1; i--) {
+            rightX[i] = rightX[i + 1] + Math.abs(posX[i] - posX[i + 1]);
+            rightY[i] = rightY[i + 1] + Math.abs(posY[i] - posY[i + 1]);
+        }
+
+        for(int i = 2; i < n; i++)
+            ans = Math.min(ans, leftX[i - 1] + Math.abs(posX[i + 1] - posX[i - 1]) + rightX[i + 1] + leftY[i - 1] + Math.abs(posY[i + 1] - posY[i - 1]) + rightY[i + 1]);
+        
+        System.out.println(ans);
+    }   //  main-end
+}   //  Main-class-end
+```
+
+**CO{)E TREE 숫자 빠르게 찾기**
+
+[https://www.codetree.ai/missions/8/problems/find-number-fast/introduction](https://www.codetree.ai/missions/8/problems/find-number-fast/introduction)
+
+[코드트리 | 코딩테스트 준비를 위한 알고리즘 정석](https://www.codetree.ai/missions/8/problems/find-number-fast/introduction)
+
+**코드**
+
+```java
+import java.util.*;
+import java.io.*;
+
+public class Main {
+    private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    private static StringTokenizer tokens;
+    private static final StringBuilder sb = new StringBuilder();
+
+    private static int n, m;   //  정렬된 수 개수 n, 찾을 수 개수 m
+
+    private static int[] nums;
+
+    public static void main(String[] args) throws IOException {
+        tokens = new StringTokenizer(br.readLine());
+        
+        n = Integer.parseInt(tokens.nextToken());
+        m = Integer.parseInt(tokens.nextToken());
+        
+        nums = new int[n];
+
+        tokens = new StringTokenizer(br.readLine());
+        for(int i = 0; i < n; i++)
+            nums[i] = Integer.parseInt(tokens.nextToken());
+
+        Arrays.sort(nums);
+
+        for(int i = 0; i < m; i++)
+            sb.append(binarySearch(Integer.parseInt(br.readLine()))).append("\n");
+
+        System.out.print(sb);
+    }   //  main-end
+
+    private static int binarySearch(int target) {
+        int idx = -1;   //  찾지 못했을 경우 -1 반환
+        int start = 0;
+        int end = n - 1;
+
+        while(start <= end) {
+            int mid = (start + end) / 2;
+            int midNum = nums[mid];
+            
+            if(midNum == target) {  //  중앙값이 target일 경우
+                idx = (mid + 1);
+                break;
+            }
+            else if(midNum < target)    //  중앙값이 target보다 작을 경우
+                start = mid + 1;    //  오른쪽에서 찾기
+            else                        //  중앙값이 target보다 클 경우
+                end = mid - 1;      //  왼쪽에서 찾기
+        }
+
+        return idx;
+    }
+}   //  Main-class-end
+```
