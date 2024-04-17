@@ -58,3 +58,6 @@ Database(Write-Lock, Read-Lock, 2PL Protocol),
 ### [2024.04.16](https://github.com/jwelyl/daily_certification/blob/main/2024/04/16/24_04_16_daily_certification.md)
 Database(MVCC, PostgreSQL, MySQL),
 코드트리 - 마라톤 중간에 택시타기 (LR Technique), 숫자 빠르게 찾기 (Binary Search)
+
+### [2024.04.17](https://github.com/jwelyl/daily_certification/blob/main/2024/04/17/24_04_17_daily_certification.md)
+Database(Normalization, Anomalies, Functional Dependency)
