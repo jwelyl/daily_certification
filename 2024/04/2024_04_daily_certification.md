@@ -66,4 +66,4 @@ Database(Normalization, Anomalies, Functional Dependency)
 코드트리 - 이상한 폭탄 (Preprocessing), 각 정점까지의 최단 경로 2, 3 (Shortest Path)
 
 ### [2024.04.19](https://github.com/jwelyl/daily_certification/blob/main/2024/04/19/24_04_19_daily_certification.md)
-코드트리 - 연속 부분 합의 최댓값 구하기 (DP)
+코드트리 - 연속 부분 합의 최댓값 구하기 (DP), 계단 오르기 2(DP)
