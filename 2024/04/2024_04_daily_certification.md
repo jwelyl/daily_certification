@@ -67,3 +67,8 @@ Database(Normalization, Anomalies, Functional Dependency)
 
 ### [2024.04.19](https://github.com/jwelyl/daily_certification/blob/main/2024/04/19/24_04_19_daily_certification.md)
 코드트리 - 연속 부분 합의 최댓값 구하기 (DP), 계단 오르기 2(DP)
+
+### [2024.04.20](https://github.com/jwelyl/daily_certification/blob/main/2024/04/20/24_04_20_daily_certification.md)
+코드트리 - 사각형 채우기 (DP), 사각형 채우기 3(DP)
+
+## 2024.04.21.sun ~ 2024.04.27.sat 데일리 인증
