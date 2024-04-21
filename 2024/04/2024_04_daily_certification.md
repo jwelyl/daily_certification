@@ -74,4 +74,7 @@ Database(Normalization, Anomalies, Functional Dependency)
 ## 2024.04.21.sun ~ 2024.04.27.sat 데일리 인증
 
 ### [2024.04.21](https://github.com/jwelyl/daily_certification/blob/main/2024/04/21/24_04_21_daily_certification.md)
-코드트리 - 정수 n개의 합 3 (Prefix Sum), 부분 수열의 합이 k 3(Prefix Sum), 연속한 K개의 숫자(Prefix Sum)
+코드트리 - 정수 n개의 합 3 (Prefix Sum), 부분 수열의 합이 k (Prefix Sum), 연속한 K개의 숫자(Prefix Sum)
+
+### [2024.04.22](https://github.com/jwelyl/daily_certification/blob/main/2024/04/22/24_04_22_daily_certification.md)
+코드트리 - 범위 내에 있는 점의 수 2 (Prefix Sum), 구간에 속한 문자의 개수 (Prefix Sum)
