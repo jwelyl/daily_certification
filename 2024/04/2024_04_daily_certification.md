@@ -80,4 +80,5 @@ Database(Normalization, Anomalies, Functional Dependency)
 코드트리 - 범위 내에 있는 점의 수 2 (Prefix Sum), 구간에 속한 문자의 개수 (Prefix Sum), Database(Normalization, Anomalies, Functional Dependency)
 
 ### [2024.04.23](https://github.com/jwelyl/daily_certification/blob/main/2024/04/23/24_04_23_daily_certification.md)
+Database(Normalization, Normal Forms, 1NF, 2NF, 3NF, BCNF)
 코드트리 - 가장 짧은 부분합 (Two Pointers), 연속하는 정수 n개의 합 (Two Pointers), 정수 두 개의 합 2 (Two Pointers)
