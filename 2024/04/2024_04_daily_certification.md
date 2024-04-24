@@ -86,3 +86,6 @@ Database(Normalization, Normal Forms, 1NF, 2NF, 3NF, BCNF)
 ### [2024.04.24](https://github.com/jwelyl/daily_certification/blob/main/2024/04/24/24_04_24_daily_certification.md)
 Database(Index, B-Tree Index, Hash Index)
 코드트리 - 연속 부분 합의 최댓값 구하기 2 (Greedy), 쪼개어 배낭 채우기 구현 (Greedy), 숫자 합치기 (Greedy)
+
+### [2024.04.25](https://github.com/jwelyl/daily_certification/blob/main/2024/04/25/24_04_25_daily_certification.md)
+코드트리 - 숫자 등장 횟수 (Hash Map), 가장 많은 데이터 (Hash Map), 대응되는 수와 문자 (Hash Map)
