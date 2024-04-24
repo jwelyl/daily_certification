@@ -84,4 +84,5 @@ Database(Normalization, Normal Forms, 1NF, 2NF, 3NF, BCNF)
 코드트리 - 가장 짧은 부분합 (Two Pointers), 연속하는 정수 n개의 합 (Two Pointers), 정수 두 개의 합 2 (Two Pointers)
 
 ### [2024.04.24](https://github.com/jwelyl/daily_certification/blob/main/2024/04/24/24_04_24_daily_certification.md)
+Database(Index, B-Tree Index, Hash Index)
 코드트리 - 연속 부분 합의 최댓값 구하기 2 (Greedy), 쪼개어 배낭 채우기 구현 (Greedy), 숫자 합치기 (Greedy)
