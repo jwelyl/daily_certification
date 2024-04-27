@@ -92,3 +92,6 @@ Database(Index, B-Tree Index, Hash Index)
 
 ### [2024.04.26](https://github.com/jwelyl/daily_certification/blob/main/2024/04/26/24_04_26_daily_certification.md)
 코드트리 - bit 계산 (Bitmasking), 겹치는 bit가 없는 세 수 (Bitmasking), 트리의 부모 노드 (Tree), 집합의 원소(Disjoint Set)
+
+### [2024.04.27](https://github.com/jwelyl/daily_certification/blob/main/2024/04/27/24_04_27_daily_certification.md)
+코드트리 - 친구의 키 1, 2 (Topological Sort), 선행 작업 (Topological Sort + DP), 갈 수 있는 경우의 수 (Topological Sort + DP)
