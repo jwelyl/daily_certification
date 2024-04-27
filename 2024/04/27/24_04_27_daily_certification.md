@@ -1,12 +1,5 @@
 # 24_04_27_daily_certification
 
-```
-[koreii] #118 데일리인증
-20240427
-알고리즘 & 코딩 테스트 대비
-- 코드트리 위상 정렬 + DP 문제 풀이
-```
-
 # Problem Solving (Algorithm & SQL)
 
 **CO{)E TREE 친구의 키**
