@@ -10,3 +10,6 @@
 
 ### [2024.05.03](https://github.com/jwelyl/daily_certification/blob/main/2024/05/03/24_05_03_daily_certification.md)
 코드트리 - 자리 바꾸기 2 (Hash Set)
+
+### [2024.05.04](https://github.com/jwelyl/daily_certification/blob/main/2024/05/04/24_05_04_daily_certification.md)
+코드트리 - C-TAG (Hash Set)
