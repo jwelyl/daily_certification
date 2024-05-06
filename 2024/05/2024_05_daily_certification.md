@@ -18,3 +18,6 @@
 
 ### [2024.05.05](https://github.com/jwelyl/daily_certification/blob/main/2024/05/05/24_05_05_daily_certification.md)
 코드트리 - 초대장과 번호표 (Hash Map, BFS)
+
+### [2024.05.06](https://github.com/jwelyl/daily_certification/blob/main/2024/05/06/24_05_06_daily_certification.md)
+코드트리 - 트리셋
