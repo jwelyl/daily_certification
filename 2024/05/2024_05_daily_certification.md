@@ -24,3 +24,6 @@
 
 ### [2024.05.07](https://github.com/jwelyl/daily_certification/blob/main/2024/05/07/24_05_07_daily_certification.md)
 코드트리 - 가까운 숫자 (TreeSet), top k 숫자 (TreeSet), 자리 차지하기 (TreeSet)
+
+### [2024.05.08](https://github.com/jwelyl/daily_certification/blob/main/2024/05/08/24_05_08_daily_certification.md)
+코드트리 - 차이가 가장 작은 수 (TreeSet, Two Pointer), 점 빼기 (TreeSet), 행렬로 주어진 간선 (Floyd-Warshall)
