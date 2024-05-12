@@ -36,3 +36,8 @@
 
 ### [2024.05.11](https://github.com/jwelyl/daily_certification/blob/main/2024/05/11/24_05_11_daily_certification.md)
 코드트리 - TreeSet, PriorityQueue
+
+## 2024.05.12.sun ~ 2024.05.18.sat 데일리 인증
+
+### [2024.05.11](https://github.com/jwelyl/daily_certification/blob/main/2024/05/11/24_05_11_daily_certification.md)
+코드트리 - 앞에서부터 삭제하기 2 (PriorityQueue, PrefixSum)
