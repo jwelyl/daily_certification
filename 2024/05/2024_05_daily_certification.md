@@ -44,3 +44,6 @@
 
 ### [2024.05.13](https://github.com/jwelyl/daily_certification/blob/main/2024/05/13/24_05_13_daily_certification.md)
 코드트리 - 중앙값 (PriorityQueue)
+
+### [2024.05.14](https://github.com/jwelyl/daily_certification/blob/main/2024/05/14/24_05_14_daily_certification.md)
+코드트리 - k번째로 작은 쌍의 합
