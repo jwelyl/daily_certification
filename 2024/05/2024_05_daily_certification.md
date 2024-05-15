@@ -47,3 +47,6 @@
 
 ### [2024.05.14](https://github.com/jwelyl/daily_certification/blob/main/2024/05/14/24_05_14_daily_certification.md)
 코드트리 - k번째로 작은 쌍의 합
+
+### [2024.05.15](https://github.com/jwelyl/daily_certification/blob/main/2024/05/15/24_05_15_daily_certification.md)
+코드트리 - PriorityQueue
