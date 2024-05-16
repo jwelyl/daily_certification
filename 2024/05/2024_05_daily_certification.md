@@ -50,3 +50,6 @@
 
 ### [2024.05.15](https://github.com/jwelyl/daily_certification/blob/main/2024/05/15/24_05_15_daily_certification.md)
 코드트리 - PriorityQueue
+
+### [2024.05.16](https://github.com/jwelyl/daily_certification/blob/main/2024/05/16/24_05_16_daily_certification.md)
+코드트리 - 정원 입장은 선착순 (PriorityQueue, Sorting)
