@@ -53,3 +53,6 @@
 
 ### [2024.05.16](https://github.com/jwelyl/daily_certification/blob/main/2024/05/16/24_05_16_daily_certification.md)
 코드트리 - 정원 입장은 선착순 (PriorityQueue, Sorting)
+
+### [2024.05.17](https://github.com/jwelyl/daily_certification/blob/main/2024/05/17/24_05_17_daily_certification.md)
+코드트리 - 연결리스트 2 (Doubly Linked List)
