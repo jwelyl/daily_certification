@@ -59,3 +59,8 @@
 
 ### [2024.05.18](https://github.com/jwelyl/daily_certification/blob/main/2024/05/18/24_05_18_daily_certification.md)
 코드트리 - 배열에서 자리 바꾸기 (Doubly Linked List), 회의실 준비 구현 (Greedy)
+
+## 2024.05.19.sun ~ 2024.05.25.sat 데일리 인증
+
+### [2024.05.19](https://github.com/jwelyl/daily_certification/blob/main/2024/05/19/24_05_19_daily_certification.md)
+코드트리 - 책꽂이 정리 (Doubly Linked List), 숫자의 개수 (Binary Search)
