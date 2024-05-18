@@ -1,15 +1,4 @@
-# 24_05_17_daily_certification (1)
-
-```
-[koreii] #138 데일리인증
-2024517
-사이드 프로젝트
-- 기능 명세에 따른 와이어프레임 제작 중
-알고리즘 & 코딩 테스트 대비
-- 코드트리 PriorityQueue, Doubly Linked List, HashMap
-- Kotlin sortedBy, sortedWith, sortBy, sortWith 학습
-```
-
+# 24_05_17_daily_certification
 # Side Project
 
 [https://www.figma.com/design/OqqxvbgsCXDJKCYdUpMalJ/와이어프레임?node-id=0-1&t=kZti5PkOLcDyOCoF-0](https://www.figma.com/design/OqqxvbgsCXDJKCYdUpMalJ/%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?node-id=0-1&t=kZti5PkOLcDyOCoF-0)
