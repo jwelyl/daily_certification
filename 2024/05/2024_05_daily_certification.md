@@ -67,3 +67,6 @@
 
 ### [2024.05.20](https://github.com/jwelyl/daily_certification/blob/main/2024/05/20/24_05_20_daily_certification.md)
 코드트리 - 테디의 여행 플래너 (Doubly Linked List), 최단 거리 3(Dijkstra)
+
+### [2024.05.21](https://github.com/jwelyl/daily_certification/blob/main/2024/05/21/24_05_21_daily_certification.md)
+코드트리 - 기사 출정식 (Doubly Linked List), 각 정점까지의 최단 경로(Dijkstra), Spring Java OOP
