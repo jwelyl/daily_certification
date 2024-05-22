@@ -70,3 +70,6 @@
 
 ### [2024.05.21](https://github.com/jwelyl/daily_certification/blob/main/2024/05/21/24_05_21_daily_certification.md)
 코드트리 - 기사 출정식 (Doubly Linked List), 각 정점까지의 최단 경로(Dijkstra), Spring Java OOP
+
+### [2024.05.22](https://github.com/jwelyl/daily_certification/blob/main/2024/05/22/24_05_22_daily_certification.md)
+코드트리 - 코드트리 유치원 (Doubly Linked List), Spring Java OOP, SOLID
