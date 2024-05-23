@@ -73,3 +73,6 @@
 
 ### [2024.05.22](https://github.com/jwelyl/daily_certification/blob/main/2024/05/22/24_05_22_daily_certification.md)
 코드트리 - 코드트리 유치원 (Doubly Linked List), Spring Java OOP, SOLID
+
+### [2024.05.23](https://github.com/jwelyl/daily_certification/blob/main/2024/05/23/24_05_23_daily_certification.md)
+코드트리 - 새치기 (Doubly Linked List), 가장 오래 걸리는 학생 2(Dijkstra), Spring Java OOP, SOLID
