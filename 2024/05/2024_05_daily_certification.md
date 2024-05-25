@@ -79,3 +79,6 @@
 
 ### [2024.05.24](https://github.com/jwelyl/daily_certification/blob/main/2024/05/24/24_05_24_daily_certification.md)
 Doubly Linked List, Spring Java OOP, SOLID
+
+### [2024.05.25](https://github.com/jwelyl/daily_certification/blob/main/2024/05/25/24_05_25_daily_certification.md)
+코드트리 - 강강수월래 (Doubly Linked List, Circular LinkedList)
