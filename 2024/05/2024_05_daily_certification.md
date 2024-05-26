@@ -82,3 +82,8 @@ Doubly Linked List, Spring Java OOP, SOLID
 
 ### [2024.05.25](https://github.com/jwelyl/daily_certification/blob/main/2024/05/25/24_05_25_daily_certification.md)
 코드트리 - 강강수월래 (Doubly Linked List, Circular LinkedList)
+
+## 2024.05.26.sun ~ 2024.05.31.fri 데일리 인증
+
+### [2024.05.26](https://github.com/jwelyl/daily_certification/blob/main/2024/05/26/24_05_26_daily_certification.md)
+코드트리 - 새치기 2 (Doubly Linked List), 최단 거리 9(Dijkstra)
