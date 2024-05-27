@@ -87,3 +87,6 @@ Doubly Linked List, Spring Java OOP, SOLID
 
 ### [2024.05.26](https://github.com/jwelyl/daily_certification/blob/main/2024/05/26/24_05_26_daily_certification.md)
 코드트리 - 새치기 2 (Doubly Linked List), 최단 거리 9(Dijkstra)
+
+### [2024.05.27](https://github.com/jwelyl/daily_certification/blob/main/2024/05/27/24_05_27_daily_certification.md)
+코드트리 - 선분 위의 점 (Binary Search), 최단 거리 11(Dijkstra)
