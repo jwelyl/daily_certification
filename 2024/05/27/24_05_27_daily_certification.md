@@ -1,11 +1,20 @@
 # 24_05_27_daily_certification
 
-```
-[koreii] #148 데일리인증
-2024527
-알고리즘 & 코딩 테스트 대비
-- 코드트리 Binary Search, Dijkstra 최단 경로 사전순 출력
-```
+# Side Project
+
+### Side Project ERD CLOUD
+
+**팀 페이지**
+
+[ERDCloud](https://www.erdcloud.com/team/KnojjqmjLmZMWR2gL)
+
+**ERD**
+
+[Side Project](https://www.erdcloud.com/d/oXWj5rnsrJpDmDrWF)
+
+### ERD CLOUD 사용법
+
+[☁️ ERD CLOUD - ERD 다이어그램을 온라인에서 그려보자](https://inpa.tistory.com/entry/ERD-CLOUD-☁️-ERD-다이어그램을-온라인에서-그려보자)
 
 # Problem Solving (Algorithm & SQL)
 
