@@ -93,3 +93,6 @@ Doubly Linked List, Spring Java OOP, SOLID
 
 ### [2024.05.28](https://github.com/jwelyl/daily_certification/blob/main/2024/05/28/24_05_28_daily_certification.md)
 코드트리 - 컴퓨터와 함께하는 숫자 게임 2 (Binary Search), 자연수 n개의 합(Parametric Search), 정수 분배하기 (Parametric Search), ERD 설계 1차 완료
+
+### [2024.05.29](https://github.com/jwelyl/daily_certification/blob/main/2024/05/29/24_05_29_daily_certification.md)
+코드트리 - 삼오무(Parametric Search)
