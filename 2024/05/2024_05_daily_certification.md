@@ -98,4 +98,7 @@ Doubly Linked List, Spring Java OOP, SOLID
 코드트리 - 삼오무(Parametric Search)
 
 ### [2024.05.30](https://github.com/jwelyl/daily_certification/blob/main/2024/05/30/24_05_30_daily_certification.md)
-코드트리 - 이차원 배열의 오름차순 정리무(Parametric Search), 최대 거리의 점(Parametric Search)
+코드트리 - 이차원 배열의 오름차순 정리(Parametric Search), 최대 거리의 점(Parametric Search)
+
+### [2024.05.31](https://github.com/jwelyl/daily_certification/blob/main/2024/05/31/24_05_31_daily_certification.md)
+코드트리 - 최소 통과 시간(Parametric Search), 겹치지 않는 선분위의 두 점(Parametric Search)
