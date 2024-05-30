@@ -96,3 +96,6 @@ Doubly Linked List, Spring Java OOP, SOLID
 
 ### [2024.05.29](https://github.com/jwelyl/daily_certification/blob/main/2024/05/29/24_05_29_daily_certification.md)
 코드트리 - 삼오무(Parametric Search)
+
+### [2024.05.30](https://github.com/jwelyl/daily_certification/blob/main/2024/05/30/24_05_30_daily_certification.md)
+코드트리 - 이차원 배열의 오름차순 정리무(Parametric Search), 최대 거리의 점(Parametric Search)
