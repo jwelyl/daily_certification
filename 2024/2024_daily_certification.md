@@ -9,3 +9,5 @@
 ## [2024.04. 데일리 인증 목록](https://github.com/jwelyl/daily_certification/blob/main/2024/04/2024_04_daily_certification.md)
 
 ## [2024.05. 데일리 인증 목록](https://github.com/jwelyl/daily_certification/blob/main/2024/05/2024_05_daily_certification.md)
+
+## [2024.06. 데일리 인증 목록](https://github.com/jwelyl/daily_certification/blob/main/2024/05/2024_06_daily_certification.md)
