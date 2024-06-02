@@ -6,3 +6,6 @@
 코드트리 - 트로미노(Bruteforce, Simulation)
 
 ## 2024.06.02.sun ~ 2024.06.08.sat 데일리 인증
+
+### [2024.06.02](https://github.com/jwelyl/daily_certification/blob/main/2024/06/02/24_06_02_daily_certification.md)
+코드트리 - 겹쳐지지 않는 두 직사각형(Bruteforcing, Prefix Sum)

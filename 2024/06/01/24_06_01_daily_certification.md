@@ -10,7 +10,7 @@
 
 **코드** 
 
-```kotlin
+```java
 import java.util.*;
 import java.io.*;
 
