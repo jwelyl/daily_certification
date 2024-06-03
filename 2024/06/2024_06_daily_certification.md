@@ -11,4 +11,4 @@
 코드트리 - 겹쳐지지 않는 두 직사각형(Bruteforcing, Prefix Sum)
 
 ### [2024.06.03](https://github.com/jwelyl/daily_certification/blob/main/2024/06/03/24_06_03_daily_certification.md)
-코드트리 - 양수 직사각형의 최대 크기(Bruteforcing)
+코드트리 - 양수 직사각형의 최대 크기(Bruteforcing), BOJ 15685 드래곤 커브(Simulation), GIT cherry-pick
