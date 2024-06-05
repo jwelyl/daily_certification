@@ -15,3 +15,6 @@
 
 ### [2024.06.04](https://github.com/jwelyl/daily_certification/blob/main/2024/06/04/24_06_04_daily_certification.md)
 BOJ 17140 이차원 배열과 연산(Simulation, Sorting)
+
+### [2024.06.05](https://github.com/jwelyl/daily_certification/blob/main/2024/06/05/24_06_05_daily_certification.md)
+코드트리 - 가장 가까운 두 점 사이의 거리를 최대화하기(Parametric Search), BOJ 20055 컨베이어 벨트 위 로봇(Simulation)
