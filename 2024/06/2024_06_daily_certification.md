@@ -18,3 +18,6 @@ BOJ 17140 이차원 배열과 연산(Simulation, Sorting)
 
 ### [2024.06.05](https://github.com/jwelyl/daily_certification/blob/main/2024/06/05/24_06_05_daily_certification.md)
 코드트리 - 가장 가까운 두 점 사이의 거리를 최대화하기(Parametric Search), BOJ 20055 컨베이어 벨트 위 로봇(Simulation)
+
+### [2024.06.06](https://github.com/jwelyl/daily_certification/blob/main/2024/06/06/24_06_06_daily_certification.md)
+코드트리 - 번호표를 든 N명의 사람(Parametric Search), BOJ 15684 사다리 조작(Bruteforcing, Backtracking)
