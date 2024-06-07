@@ -21,3 +21,6 @@ BOJ 17140 이차원 배열과 연산(Simulation, Sorting)
 
 ### [2024.06.06](https://github.com/jwelyl/daily_certification/blob/main/2024/06/06/24_06_06_daily_certification.md)
 코드트리 - 번호표를 든 N명의 사람(Parametric Search), BOJ 15684 사다리 조작(Bruteforcing, Backtracking)
+
+### [2024.06.07](https://github.com/jwelyl/daily_certification/blob/main/2024/06/07/24_06_07_daily_certification.md)
+데이터베이스 - B-Tree O(logN), B-Tree가 Index로 쓰이는 이유, BOJ 18808 스티커 붙이기(Bruteforcing, Simulation)
