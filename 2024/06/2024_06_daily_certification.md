@@ -24,3 +24,6 @@ BOJ 17140 이차원 배열과 연산(Simulation, Sorting)
 
 ### [2024.06.07](https://github.com/jwelyl/daily_certification/blob/main/2024/06/07/24_06_07_daily_certification.md)
 데이터베이스 - B-Tree O(logN), B-Tree가 Index로 쓰이는 이유, BOJ 18808 스티커 붙이기(Bruteforcing, Simulation)
+
+### [2024.06.08](https://github.com/jwelyl/daily_certification/blob/main/2024/06/08/24_06_08_daily_certification.md)
+데이터베이스 - Partitioning, Sharding, Replication, BOJ 1917 정육면체 전개도(Simulation, DFS)
