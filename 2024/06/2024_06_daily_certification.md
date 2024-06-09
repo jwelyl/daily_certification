@@ -27,3 +27,8 @@ BOJ 17140 이차원 배열과 연산(Simulation, Sorting)
 
 ### [2024.06.08](https://github.com/jwelyl/daily_certification/blob/main/2024/06/08/24_06_08_daily_certification.md)
 데이터베이스 - Partitioning, Sharding, Replication, BOJ 1917 정육면체 전개도(Simulation, DFS)
+
+## 2024.06.09.sun ~ 2024.06.15.sat 데일리 인증
+
+### [2024.06.09](https://github.com/jwelyl/daily_certification/blob/main/2024/06/09/24_06_09_daily_certification.md)
+데이터베이스 - DBCP, BOJ 5373 큐빙(Simulation) (실패)
