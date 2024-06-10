@@ -32,3 +32,6 @@ BOJ 17140 이차원 배열과 연산(Simulation, Sorting)
 
 ### [2024.06.09](https://github.com/jwelyl/daily_certification/blob/main/2024/06/09/24_06_09_daily_certification.md)
 데이터베이스 - DBCP, BOJ 5373 큐빙(Simulation) (실패)
+
+### [2024.06.10](https://github.com/jwelyl/daily_certification/blob/main/2024/06/10/24_06_10_daily_certification.md)
+데이터베이스 - DBCP, BOJ 3987 보이저 1호(Simulation, Graph Traversal)
