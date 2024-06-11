@@ -1,7 +1,5 @@
 # 24_06_11_daily_certification
 
-# Database
-
 # Problem Solving (Algorithm & SQL)
 
 ### BOJ 4577 소코반
