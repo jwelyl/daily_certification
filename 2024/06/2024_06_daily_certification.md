@@ -38,3 +38,6 @@ BOJ 17140 이차원 배열과 연산(Simulation, Sorting)
 
 ### [2024.06.11](https://github.com/jwelyl/daily_certification/blob/main/2024/06/11/24_06_11_daily_certification.md)
 BOJ 4577 소코반(Simulation)
+
+### [2024.06.12](https://github.com/jwelyl/daily_certification/blob/main/2024/06/12/24_06_12_daily_certification.md)
+BOJ 22255 호석사우루스(Dijkstra)
