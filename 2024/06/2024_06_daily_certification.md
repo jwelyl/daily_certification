@@ -41,3 +41,12 @@ BOJ 4577 소코반(Simulation)
 
 ### [2024.06.12](https://github.com/jwelyl/daily_certification/blob/main/2024/06/12/24_06_12_daily_certification.md)
 BOJ 22255 호석사우루스(Dijkstra)
+
+### [2024.06.13](https://github.com/jwelyl/daily_certification/blob/main/2024/06/13/24_06_13_daily_certification.md)
+데이터베이스 - RDB vs NoSQL
+
+### [2024.06.14](https://github.com/jwelyl/daily_certification/blob/main/2024/06/14/24_06_14_daily_certification.md)
+BOJ 4095 최대 정사각형 (DP)
+
+### [2024.06.15](https://github.com/jwelyl/daily_certification/blob/main/2024/06/15/24_06_15_daily_certification.md)
+BOJ 28707 배열 정렬 (Dijkstra, HashMap)
