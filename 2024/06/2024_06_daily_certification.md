@@ -50,3 +50,8 @@ BOJ 4095 최대 정사각형 (DP)
 
 ### [2024.06.15](https://github.com/jwelyl/daily_certification/blob/main/2024/06/15/24_06_15_daily_certification.md)
 BOJ 28707 배열 정렬 (Dijkstra, HashMap)
+
+## 2024.06.16.sun ~ 2024.06.22.sat 데일리 인증
+
+### [2024.06.16](https://github.com/jwelyl/daily_certification/blob/main/2024/06/16/24_06_16_daily_certification.md)
+BOJ 20005 보스몬스터 전리품 (Simulation, BFS)
