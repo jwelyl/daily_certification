@@ -55,3 +55,6 @@ BOJ 28707 배열 정렬 (Dijkstra, HashMap)
 
 ### [2024.06.16](https://github.com/jwelyl/daily_certification/blob/main/2024/06/16/24_06_16_daily_certification.md)
 BOJ 20005 보스몬스터 전리품 (Simulation, BFS)
+
+### [2024.06.17](https://github.com/jwelyl/daily_certification/blob/main/2024/06/17/24_06_17_daily_certification.md)
+BOJ 8972 미친 아두이노 (Simulation), RDB vs NoSQL
