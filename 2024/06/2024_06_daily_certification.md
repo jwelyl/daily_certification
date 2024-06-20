@@ -64,3 +64,6 @@ BOJ 8972 미친 아두이노 (Simulation), RDB vs NoSQL, FK Constraint, DB Index
 
 ### [2024.06.19](https://github.com/jwelyl/daily_certification/blob/main/2024/06/19/24_06_19_daily_certification.md)
 BOJ 20182 골목 대장 호석 - 효율성 1 (Dijkstra, Parametric Search)
+
+### [2024.06.20](https://github.com/jwelyl/daily_certification/blob/main/2024/06/20/24_06_20_daily_certification.md)
+BOJ 20183 골목 대장 호석 - 효율성 2 (Dijkstra, Parametric Search), Git Hooks, Java Code Checkstyle
