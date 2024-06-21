@@ -67,3 +67,6 @@ BOJ 20182 골목 대장 호석 - 효율성 1 (Dijkstra, Parametric Search)
 
 ### [2024.06.20](https://github.com/jwelyl/daily_certification/blob/main/2024/06/20/24_06_20_daily_certification.md)
 BOJ 20183 골목 대장 호석 - 효율성 2 (Dijkstra, Parametric Search), Git Hooks, Java Code Checkstyle
+
+### [2024.06.21](https://github.com/jwelyl/daily_certification/blob/main/2024/06/21/24_06_21_daily_certification.md)
+BOJ 31404 아리스, 청소합니다! (Easy) (Implementation, Simulation)
