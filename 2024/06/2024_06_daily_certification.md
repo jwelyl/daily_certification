@@ -70,3 +70,6 @@ BOJ 20183 골목 대장 호석 - 효율성 2 (Dijkstra, Parametric Search), Git 
 
 ### [2024.06.21](https://github.com/jwelyl/daily_certification/blob/main/2024/06/21/24_06_21_daily_certification.md)
 BOJ 31404 아리스, 청소합니다! (Easy) (Implementation, Simulation)
+
+### [2024.06.22](https://github.com/jwelyl/daily_certification/blob/main/2024/06/22/24_06_22_daily_certification.md)
+BOJ 11780 플로이드 2 (Floyd Warshall)
