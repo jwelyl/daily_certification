@@ -73,3 +73,8 @@ BOJ 31404 아리스, 청소합니다! (Easy) (Implementation, Simulation)
 
 ### [2024.06.22](https://github.com/jwelyl/daily_certification/blob/main/2024/06/22/24_06_22_daily_certification.md)
 BOJ 11780 플로이드 2 (Floyd Warshall)
+
+## 2024.06.23.sun ~ 2024.06.29.sat 데일리 인증
+
+### [2024.06.23](https://github.com/jwelyl/daily_certification/blob/main/2024/06/23/24_06_23_daily_certification.md)
+BOJ 16954 움직이는 미로 탈출 (BFS)
