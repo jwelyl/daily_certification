@@ -81,3 +81,6 @@ BOJ 16954 움직이는 미로 탈출 (BFS)
 
 ### [2024.06.24](https://github.com/jwelyl/daily_certification/blob/main/2024/06/24/24_06_24_daily_certification.md)
 BOJ 30805 사전 순 최대 공통 부분 수열 (Greedy), JPA 상속관계 매핑
+
+### [2024.06.25](https://github.com/jwelyl/daily_certification/blob/main/2024/06/25/24_06_25_daily_certification.md)
+BOJ 14391 종이 조각 (Bruteforcing + Bitmasking/Backtracking), Computer Architecture Overview
