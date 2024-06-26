@@ -84,3 +84,6 @@ BOJ 30805 사전 순 최대 공통 부분 수열 (Greedy), JPA 상속관계 매�
 
 ### [2024.06.25](https://github.com/jwelyl/daily_certification/blob/main/2024/06/25/24_06_25_daily_certification.md)
 BOJ 14391 종이 조각 (Bruteforcing + Bitmasking/Backtracking), Computer Architecture Overview
+
+### [2024.06.26](https://github.com/jwelyl/daily_certification/blob/main/2024/06/26/24_06_26_daily_certification.md)
+BOJ 14497 주난의 난(難) (BFS + Dijkstra), Network OSI 7 Layer
