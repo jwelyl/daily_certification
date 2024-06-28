@@ -89,4 +89,7 @@ BOJ 14391 종이 조각 (Bruteforcing + Bitmasking/Backtracking), Computer Archi
 BOJ 14497 주난의 난(難) (BFS + Dijkstra), Network OSI 7 Layer
 
 ### [2024.06.27](https://github.com/jwelyl/daily_certification/blob/main/2024/06/27/24_06_27_daily_certification.md)
-BOJ 14658 하늘에서 별똥별이 빗발친다 (Bruteforcint), Computer Architecture Data, Instruction
+BOJ 14658 하늘에서 별똥별이 빗발친다 (Bruteforcing), Computer Architecture Data, Instruction
+
+### [2024.06.28](https://github.com/jwelyl/daily_certification/blob/main/2024/06/28/24_06_28_daily_certification.md)
+BOJ 10711 모래성 (BFS), Computer Network Datalink Layer(L2)
