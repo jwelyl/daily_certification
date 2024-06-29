@@ -13,7 +13,7 @@
 - BFS
 ```
 
-# Computer Architecture
+# Network
 
 # Datalink Layer (L2)
 
