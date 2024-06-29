@@ -93,3 +93,6 @@ BOJ 14658 하늘에서 별똥별이 빗발친다 (Bruteforcing), Computer Archit
 
 ### [2024.06.28](https://github.com/jwelyl/daily_certification/blob/main/2024/06/28/24_06_28_daily_certification.md)
 BOJ 10711 모래성 (BFS), Computer Network Datalink Layer(L2)
+
+### [2024.06.29](https://github.com/jwelyl/daily_certification/blob/main/2024/06/29/24_06_29_daily_certification.md)
+BOJ 4574 스도미노쿠 (Backtracking), Computer Network Network Layer(L3)
