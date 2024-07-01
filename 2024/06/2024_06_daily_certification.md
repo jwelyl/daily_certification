@@ -97,5 +97,7 @@ BOJ 10711 모래성 (BFS), Computer Network Datalink Layer(L2)
 ### [2024.06.29](https://github.com/jwelyl/daily_certification/blob/main/2024/06/29/24_06_29_daily_certification.md)
 BOJ 4574 스도미노쿠 (Backtracking), Computer Network Network Layer(L3)
 
+## 2024.06.30.sun 데일리 인증
+
 ### [2024.06.30](https://github.com/jwelyl/daily_certification/blob/main/2024/06/30/24_06_30_daily_certification.md)
 BOJ 4343 Artic Network (Minimum Spanning Tree), Computer Network Network Layer(L3)
