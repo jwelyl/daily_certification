@@ -10,3 +10,6 @@ BOJ 9505 엔터프라이즈호 탈출 (Dijkstra Algorithm), Computer Network Tra
 
 ### [2024.07.03](https://github.com/jwelyl/daily_certification/blob/main/2024/07/03/24_07_03_daily_certification.md)
 BOJ 31230 모비스터디 (Dijkstra Algorithm), Computer Architecture CPU Performance
+
+### [2024.07.04](https://github.com/jwelyl/daily_certification/blob/main/2024/07/04/24_07_04_daily_certification.md)
+BOJ 4920 테트리스 게임 (Bruteforcing)
