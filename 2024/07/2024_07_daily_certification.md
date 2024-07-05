@@ -13,3 +13,6 @@ BOJ 31230 모비스터디 (Dijkstra Algorithm), Computer Architecture CPU Perfor
 
 ### [2024.07.04](https://github.com/jwelyl/daily_certification/blob/main/2024/07/04/24_07_04_daily_certification.md)
 BOJ 4920 테트리스 게임 (Bruteforcing)
+
+### [2024.07.05](https://github.com/jwelyl/daily_certification/blob/main/2024/07/05/24_07_05_daily_certification.md)
+BOJ 3019 테트리스 (Bruteforcing)
