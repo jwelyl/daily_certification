@@ -16,3 +16,6 @@ BOJ 4920 테트리스 게임 (Bruteforcing)
 
 ### [2024.07.05](https://github.com/jwelyl/daily_certification/blob/main/2024/07/05/24_07_05_daily_certification.md)
 BOJ 3019 테트리스 (Bruteforcing)
+
+### [2024.07.06](https://github.com/jwelyl/daily_certification/blob/main/2024/07/06/24_07_06_daily_certification.md)
+BOJ 21773 가희와 프로세스 1(Priority Queue), Network Application Layer
