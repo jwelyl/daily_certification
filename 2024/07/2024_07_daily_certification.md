@@ -28,3 +28,6 @@ Computer Architecture Secondary Storage, I/O Devices
 
 ### [2024.07.09](https://github.com/jwelyl/daily_certification/blob/main/2024/07/09/24_07_09_daily_certification.md)
 Operating System Kernel, Dual Mode, System Call, BOJ 3085 사탕 게임 (Bruteforcing), BOJ 10157 자리배정 (Implementation, Bruteforcing)
+
+### [2024.07.10](https://github.com/jwelyl/daily_certification/blob/main/2024/07/10/24_07_10_daily_certification.md)
+BOJ 2615 오목 (Implementation, Bruteforcing)
