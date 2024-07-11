@@ -31,3 +31,6 @@ Operating System Kernel, Dual Mode, System Call, BOJ 3085 사탕 게임 (Brutefo
 
 ### [2024.07.10](https://github.com/jwelyl/daily_certification/blob/main/2024/07/10/24_07_10_daily_certification.md)
 BOJ 2615 오목 (Implementation, Bruteforcing)
+
+### [2024.07.11](https://github.com/jwelyl/daily_certification/blob/main/2024/07/11/24_07_11_daily_certification.md)
+Operating System Process
