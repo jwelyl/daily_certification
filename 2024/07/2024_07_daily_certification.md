@@ -37,3 +37,6 @@ Operating System Process
 
 ### [2024.07.12](https://github.com/jwelyl/daily_certification/blob/main/2024/07/121/24_07_12_daily_certification.md)
 BOJ 2042 구간 합 구하기, BOJ 6213 Balanced Lineup (Segment Tree)
+
+### [2024.07.13](https://github.com/jwelyl/daily_certification/blob/main/2024/07/13/24_07_13_daily_certification.md)
+Operating System Thread
