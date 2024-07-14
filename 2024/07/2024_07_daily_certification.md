@@ -20,6 +20,8 @@ BOJ 3019 테트리스 (Bruteforcing)
 ### [2024.07.06](https://github.com/jwelyl/daily_certification/blob/main/2024/07/06/24_07_06_daily_certification.md)
 BOJ 21773 가희와 프로세스 1(Priority Queue), Network Application Layer
 
+## 2024.07.07.sun ~ 2024.07.13.sat 데일리 인증
+
 ### [2024.07.07](https://github.com/jwelyl/daily_certification/blob/main/2024/07/07/24_07_07_daily_certification.md)
 Computer Architecture Memory
 
@@ -40,3 +42,8 @@ BOJ 2042 구간 합 구하기, BOJ 6213 Balanced Lineup (Segment Tree)
 
 ### [2024.07.13](https://github.com/jwelyl/daily_certification/blob/main/2024/07/13/24_07_13_daily_certification.md)
 Operating System Thread
+
+## 2024.07.14.sun ~ 2024.07.20.sat 데일리 인증
+
+### [2024.07.14](https://github.com/jwelyl/daily_certification/blob/main/2024/07/14/24_07_14_daily_certification.md)
+Operating System CPU Scheduling
