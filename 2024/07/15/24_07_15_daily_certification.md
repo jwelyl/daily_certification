@@ -2,6 +2,8 @@
 
 # Problem Solving (Algorithm & SQL)
 
+### BOJ 2243 사탕 상자
+
 [](https://www.acmicpc.net/problem/2243)
 
 ```java

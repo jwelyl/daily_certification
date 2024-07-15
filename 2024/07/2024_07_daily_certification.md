@@ -47,3 +47,6 @@ Operating System Thread
 
 ### [2024.07.14](https://github.com/jwelyl/daily_certification/blob/main/2024/07/14/24_07_14_daily_certification.md)
 Operating System CPU Scheduling
+
+### [2024.07.15](https://github.com/jwelyl/daily_certification/blob/main/2024/07/15/24_07_15_daily_certification.md)
+BOJ 2243 사탕 상자 (Segment Tree, Binary Search)
