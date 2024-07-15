@@ -5,6 +5,8 @@
 
 ## [2024. 데일리 인증](https://github.com/jwelyl/daily_certification/blob/main/2024/2024_daily_certification.md)
 
+### [2024.07. 데일리 인증 목록](https://github.com/jwelyl/daily_certification/blob/main/2024/07/2024_07_daily_certification.md)
+
 ### [2024.06. 데일리 인증 목록](https://github.com/jwelyl/daily_certification/blob/main/2024/06/2024_06_daily_certification.md)
 
 ### [2024.05. 데일리 인증 목록](https://github.com/jwelyl/daily_certification/blob/main/2024/05/2024_05_daily_certification.md)
