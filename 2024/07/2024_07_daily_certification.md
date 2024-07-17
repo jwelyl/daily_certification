@@ -53,3 +53,6 @@ BOJ 2243 사탕 상자 (Segment Tree, Binary Search)
 
 ### [2024.07.16](https://github.com/jwelyl/daily_certification/blob/main/2024/07/16/24_07_16_daily_certification.md)
 BOJ 17430 가로등 (HashMap)
+
+### [2024.07.17](https://github.com/jwelyl/daily_certification/blob/main/2024/07/17/24_07_17_daily_certification.md)
+Operating System Kernel, Dual Mode, System Call, PCB, BOJ 19951 태상이의 훈련소 생활 (Prefix Sum)
