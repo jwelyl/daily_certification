@@ -59,3 +59,6 @@ Operating System Kernel, Dual Mode, System Call, PCB, BOJ 19951 태상이의 훈
 
 ### [2024.07.18](https://github.com/jwelyl/daily_certification/blob/main/2024/07/18/24_07_18_daily_certification.md)
 BOJ 2539 모자이크 (Parametric Search)
+
+### [2024.07.19](https://github.com/jwelyl/daily_certification/blob/main/2024/07/19/24_07_19_daily_certification.md)
+BOJ 17430 가로등 (HashMap)
