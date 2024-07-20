@@ -62,3 +62,6 @@ BOJ 2539 모자이크 (Parametric Search)
 
 ### [2024.07.19](https://github.com/jwelyl/daily_certification/blob/main/2024/07/19/24_07_19_daily_certification.md)
 BOJ 17430 가로등 (HashMap)
+
+### [2024.07.20](https://github.com/jwelyl/daily_certification/blob/main/2024/07/20/24_07_20_daily_certification.md)
+BOJ 6248 Bronze Cow Party (Dijkstra)
