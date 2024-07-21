@@ -65,3 +65,9 @@ BOJ 17430 가로등 (HashMap)
 
 ### [2024.07.20](https://github.com/jwelyl/daily_certification/blob/main/2024/07/20/24_07_20_daily_certification.md)
 BOJ 6248 Bronze Cow Party (Dijkstra)
+
+## 2024.07.21.sun ~ 2024.07.27.sat 데일리 인증
+
+### [2024.07.21](https://github.com/jwelyl/daily_certification/blob/main/2024/07/21/24_07_21_daily_certification.md)
+싸움땅 (Simulation), 산타의 선물 공장 (Doubly Linked List)
+
