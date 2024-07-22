@@ -71,3 +71,5 @@ BOJ 6248 Bronze Cow Party (Dijkstra)
 ### [2024.07.21](https://github.com/jwelyl/daily_certification/blob/main/2024/07/21/24_07_21_daily_certification.md)
 싸움땅 (Simulation), 산타의 선물 공장 (Doubly Linked List)
 
+### [2024.07.22](https://github.com/jwelyl/daily_certification/blob/main/2024/07/22/24_07_22_daily_certification.md)
+예술성 (BFS + Implementation), 팩맨 (Implementation, Simulation) - Fail
