@@ -79,3 +79,6 @@ BOJ 6248 Bronze Cow Party (Dijkstra)
 
 ### [2024.07.24](https://github.com/jwelyl/daily_certification/blob/main/2024/07/24/24_07_24_daily_certification.md)
 승자독식 모노폴리 (Implementation, Simulation) - Fail -> Success, imos
+
+### [2024.07.25](https://github.com/jwelyl/daily_certification/blob/main/2024/07/25/24_07_25_daily_certification.md)
+술래잡기 체스 (Backtracking, Simulation) - Fail -> Success, 윷놀이 사기단 (Backtracking, Simulation)
