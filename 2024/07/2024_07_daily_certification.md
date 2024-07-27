@@ -85,3 +85,6 @@ BOJ 6248 Bronze Cow Party (Dijkstra)
 
 ### [2024.07.26](https://github.com/jwelyl/daily_certification/blob/main/2024/07/26/24_07_26_daily_certification.md)
 미로 타워 디펜스 (Implementation, Simulation)
+
+### [2024.07.27](https://github.com/jwelyl/daily_certification/blob/main/2024/07/27/24_07_27_daily_certification.md)
+BOJ 14601 샤워실 바닥 깔기 (Large) (Recursion)
