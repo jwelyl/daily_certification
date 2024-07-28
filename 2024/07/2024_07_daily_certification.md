@@ -88,3 +88,8 @@ BOJ 6248 Bronze Cow Party (Dijkstra)
 
 ### [2024.07.27](https://github.com/jwelyl/daily_certification/blob/main/2024/07/27/24_07_27_daily_certification.md)
 BOJ 14601 샤워실 바닥 깔기 (Large) (Recursion)
+
+## 2024.07.28.sun ~ 2024.07.31.wed 데일리 인증
+
+### [2024.07.28](https://github.com/jwelyl/daily_certification/blob/main/2024/07/28/24_07_28_daily_certification.md)
+계획 정비
