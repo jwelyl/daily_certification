@@ -93,3 +93,6 @@ BOJ 14601 샤워실 바닥 깔기 (Large) (Recursion)
 
 ### [2024.07.28](https://github.com/jwelyl/daily_certification/blob/main/2024/07/28/24_07_28_daily_certification.md)
 계획 정비
+
+### [2024.07.29](https://github.com/jwelyl/daily_certification/blob/main/2024/07/29/24_07_29_daily_certification.md)
+바이러스 실험 (Deque, Simluation), BOJ 19942 다이어트 (Bruteforcing, Backtracking)
