@@ -96,3 +96,6 @@ BOJ 14601 샤워실 바닥 깔기 (Large) (Recursion)
 
 ### [2024.07.29](https://github.com/jwelyl/daily_certification/blob/main/2024/07/29/24_07_29_daily_certification.md)
 바이러스 실험 (Deque, Simluation), BOJ 19942 다이어트 (Bruteforcing, Backtracking)
+
+### [2024.07.30](https://github.com/jwelyl/daily_certification/blob/main/2024/07/30/24_07_30_daily_certification.md)
+BOJ 9944 NxM 보드 완주하기 (Implementation, Backtracking), BOJ 12004 Closing the Farm (Silver) (Graph Traversal, Disjoint Set)
