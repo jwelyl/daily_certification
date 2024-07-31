@@ -99,3 +99,6 @@ BOJ 14601 샤워실 바닥 깔기 (Large) (Recursion)
 
 ### [2024.07.30](https://github.com/jwelyl/daily_certification/blob/main/2024/07/30/24_07_30_daily_certification.md)
 BOJ 9944 NxM 보드 완주하기 (Implementation, Backtracking), BOJ 12004 Closing the Farm (Silver) (Graph Traversal, Disjoint Set)
+
+### [2024.07.31](https://github.com/jwelyl/daily_certification/blob/main/2024/07/31/24_07_31_daily_certification.md)
+BOJ 2983 개구리 공주 (Implementation, Linked List, HashMap)
