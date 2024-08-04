@@ -10,3 +10,8 @@ BOJ 18430 무기 공학 (Backtracking)
 
 ### [2024.08.03](https://github.com/jwelyl/daily_certification/blob/main/2024/08/03/24_08_03_daily_certification.md)
 BOJ 31857 사탕 공장 (Doubly Linked List)
+
+## 2024.08.04.sun ~ 2024.08.10.sat 데일리 인증
+
+### [2024.08.04](https://github.com/jwelyl/daily_certification/blob/main/2024/08/04/24_08_04_daily_certification.md)
+BOJ 17085 십자가 2개 놓기 (Bruteforcing)
