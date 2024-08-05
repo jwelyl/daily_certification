@@ -15,3 +15,6 @@ BOJ 31857 사탕 공장 (Doubly Linked List)
 
 ### [2024.08.04](https://github.com/jwelyl/daily_certification/blob/main/2024/08/04/24_08_04_daily_certification.md)
 BOJ 17085 십자가 2개 놓기 (Bruteforcing)
+
+### [2024.08.05](https://github.com/jwelyl/daily_certification/blob/main/2024/08/05/24_08_05_daily_certification.md)
+BOJ 14431 소수마을 (Dijkstra, Primality Test)
