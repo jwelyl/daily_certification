@@ -21,3 +21,6 @@ BOJ 14431 소수마을 (Dijkstra, Primality Test)
 
 ### [2024.08.06](https://github.com/jwelyl/daily_certification/blob/main/2024/08/06/24_08_06_daily_certification.md)
 BOJ 12012 Closing the Farm (Gold) (Disjoint Set)
+
+### [2024.08.07](https://github.com/jwelyl/daily_certification/blob/main/2024/08/07/24_08_07_daily_certification.md)
+BOJ 14601 샤워실 바닥 깔기 (Large) (Recursion,  DNC)
