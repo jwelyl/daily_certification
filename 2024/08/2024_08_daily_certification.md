@@ -24,3 +24,6 @@ BOJ 12012 Closing the Farm (Gold) (Disjoint Set)
 
 ### [2024.08.07](https://github.com/jwelyl/daily_certification/blob/main/2024/08/07/24_08_07_daily_certification.md)
 BOJ 14601 샤워실 바닥 깔기 (Large) (Recursion,  DNC)
+
+### [2024.08.08](https://github.com/jwelyl/daily_certification/blob/main/2024/08/08/24_08_08_daily_certification.md)
+BOJ 10090 Counting Inversions (Segment Tree)
