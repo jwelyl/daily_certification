@@ -31,3 +31,6 @@ BOJ 10090 Counting Inversions (Segment Tree)
 
 ### [2024.08.09](https://github.com/jwelyl/daily_certification/blob/main/2024/08/09/24_08_09_daily_certification.md)
 BOJ 2957 이진 탐색 트리 (Binary Search Tree, Tree Set)
+
+### [2024.08.10](https://github.com/jwelyl/daily_certification/blob/main/2024/08/10/24_08_10_daily_certification.md)
+BOJ 17255 N으로 만들기 (Backtracking, String, HashSet)
