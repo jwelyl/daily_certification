@@ -34,3 +34,8 @@ BOJ 2957 이진 탐색 트리 (Binary Search Tree, Tree Set)
 
 ### [2024.08.10](https://github.com/jwelyl/daily_certification/blob/main/2024/08/10/24_08_10_daily_certification.md)
 BOJ 17255 N으로 만들기 (Backtracking, String, HashSet)
+
+## 2024.08.11.sun ~ 2024.08.17.sat 데일리 인증
+
+### [2024.08.11](https://github.com/jwelyl/daily_certification/blob/main/2024/08/11/24_08_11_daily_certification.md)
+BOJ 2194 유닛 이동시키기 (BFS)
