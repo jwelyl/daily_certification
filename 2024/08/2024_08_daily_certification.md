@@ -39,3 +39,6 @@ BOJ 17255 N으로 만들기 (Backtracking, String, HashSet)
 
 ### [2024.08.11](https://github.com/jwelyl/daily_certification/blob/main/2024/08/11/24_08_11_daily_certification.md)
 BOJ 2194 유닛 이동시키기 (BFS)
+
+### [2024.08.12](https://github.com/jwelyl/daily_certification/blob/main/2024/08/12/24_08_12_daily_certification.md)
+BOJ 1662 압축 (Recursion)
