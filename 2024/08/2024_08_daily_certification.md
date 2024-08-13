@@ -42,3 +42,6 @@ BOJ 2194 유닛 이동시키기 (BFS)
 
 ### [2024.08.12](https://github.com/jwelyl/daily_certification/blob/main/2024/08/12/24_08_12_daily_certification.md)
 BOJ 1662 압축 (Recursion)
+
+### [2024.08.13](https://github.com/jwelyl/daily_certification/blob/main/2024/08/13/24_08_13_daily_certification.md)
+BOJ 27440 1로 만들기 3 (BFS, HashSet)
