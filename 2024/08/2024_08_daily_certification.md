@@ -45,3 +45,6 @@ BOJ 1662 압축 (Recursion)
 
 ### [2024.08.13](https://github.com/jwelyl/daily_certification/blob/main/2024/08/13/24_08_13_daily_certification.md)
 BOJ 27440 1로 만들기 3 (BFS, HashSet)
+
+### [2024.08.14](https://github.com/jwelyl/daily_certification/blob/main/2024/08/14/24_08_14_daily_certification.md)
+BOJ 15730 수영장 사장님 (BFS, Deque)
