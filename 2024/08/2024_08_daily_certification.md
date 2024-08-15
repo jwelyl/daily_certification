@@ -48,3 +48,6 @@ BOJ 27440 1로 만들기 3 (BFS, HashSet)
 
 ### [2024.08.14](https://github.com/jwelyl/daily_certification/blob/main/2024/08/14/24_08_14_daily_certification.md)
 BOJ 15730 수영장 사장님 (BFS, Deque)
+
+### [2024.08.15](https://github.com/jwelyl/daily_certification/blob/main/2024/08/15/24_08_15_daily_certification.md)
+BOJ 24305 ОТЧЕТ (Stack)
