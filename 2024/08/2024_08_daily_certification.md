@@ -51,3 +51,6 @@ BOJ 15730 수영장 사장님 (BFS, Deque)
 
 ### [2024.08.15](https://github.com/jwelyl/daily_certification/blob/main/2024/08/15/24_08_15_daily_certification.md)
 BOJ 24305 ОТЧЕТ (Stack)
+
+### [2024.08.16](https://github.com/jwelyl/daily_certification/blob/main/2024/08/16/24_08_16_daily_certification.md)
+BOJ 5944 Apple Delivery (Dijkstra)
