@@ -54,3 +54,6 @@ BOJ 24305 ОТЧЕТ (Stack)
 
 ### [2024.08.16](https://github.com/jwelyl/daily_certification/blob/main/2024/08/16/24_08_16_daily_certification.md)
 BOJ 5944 Apple Delivery (Dijkstra)
+
+### [2024.08.17](https://github.com/jwelyl/daily_certification/blob/main/2024/08/17/24_08_17_daily_certification.md)
+BOJ 10652 Piggy Back (Dijkstra)
