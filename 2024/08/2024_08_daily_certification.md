@@ -57,3 +57,8 @@ BOJ 5944 Apple Delivery (Dijkstra)
 
 ### [2024.08.17](https://github.com/jwelyl/daily_certification/blob/main/2024/08/17/24_08_17_daily_certification.md)
 BOJ 10652 Piggy Back (Dijkstra)
+
+## 2024.08.18.sun ~ 2024.08.24.sat 데일리 인증
+
+### [2024.08.18](https://github.com/jwelyl/daily_certification/blob/main/2024/08/18/24_08_18_daily_certification.md)
+BOJ 9370 미확인 도착지 (Dijkstra)
