@@ -62,3 +62,6 @@ BOJ 10652 Piggy Back (Dijkstra)
 
 ### [2024.08.18](https://github.com/jwelyl/daily_certification/blob/main/2024/08/18/24_08_18_daily_certification.md)
 BOJ 9370 미확인 도착지 (Dijkstra)
+
+### [2024.08.19](https://github.com/jwelyl/daily_certification/blob/main/2024/08/19/24_08_19_daily_certification.md)
+BOJ 17835 면접보는 승범이네  (Dijkstra)
