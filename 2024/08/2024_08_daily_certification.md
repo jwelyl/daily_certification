@@ -68,3 +68,6 @@ BOJ 17835 면접보는 승범이네 (Dijkstra)
 
 ### [2024.08.20](https://github.com/jwelyl/daily_certification/blob/main/2024/08/20/24_08_20_daily_certification.md)
 BOJ 1248 Guess (Bruteforcing, Backtracking)
+
+### [2024.08.21](https://github.com/jwelyl/daily_certification/blob/main/2024/08/21/24_08_21_daily_certification.md)
+BOJ 6191 Cows on Skates (BFS)
