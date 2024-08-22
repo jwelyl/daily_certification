@@ -71,3 +71,6 @@ BOJ 1248 Guess (Bruteforcing, Backtracking)
 
 ### [2024.08.21](https://github.com/jwelyl/daily_certification/blob/main/2024/08/21/24_08_21_daily_certification.md)
 BOJ 6191 Cows on Skates (BFS)
+
+### [2024.08.22](https://github.com/jwelyl/daily_certification/blob/main/2024/08/22/24_08_22_daily_certification.md)
+BOJ 16118 달빛 여우 (Dijkstra)
