@@ -74,3 +74,6 @@ BOJ 6191 Cows on Skates (BFS)
 
 ### [2024.08.22](https://github.com/jwelyl/daily_certification/blob/main/2024/08/22/24_08_22_daily_certification.md)
 BOJ 16118 달빛 여우 (Dijkstra)
+
+### [2024.08.23](https://github.com/jwelyl/daily_certification/blob/main/2024/08/23/24_08_23_daily_certification.md)
+BOJ 23801 두 단계 최단 경로 2 (Dijkstra)
