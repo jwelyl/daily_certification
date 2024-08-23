@@ -77,3 +77,6 @@ BOJ 16118 달빛 여우 (Dijkstra)
 
 ### [2024.08.23](https://github.com/jwelyl/daily_certification/blob/main/2024/08/23/24_08_23_daily_certification.md)
 BOJ 23801 두 단계 최단 경로 2 (Dijkstra)
+
+### [2024.08.24](https://github.com/jwelyl/daily_certification/blob/main/2024/08/24/24_08_24_daily_certification.md)
+BOJ 2967 그리스-로마 건축 (Bruteforcing, Prefix Sum, Case-Work)
