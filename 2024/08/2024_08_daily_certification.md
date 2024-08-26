@@ -85,3 +85,6 @@ BOJ 2967 그리스-로마 건축 (Bruteforcing, Prefix Sum, Case-Work)
 
 ### [2024.08.25](https://github.com/jwelyl/daily_certification/blob/main/2024/08/25/24_08_25_daily_certification.md)
 BOJ 23807 두 단계 최단 경로 3 (Dijkstra, Bruteforcing)
+
+### [2024.08.26](https://github.com/jwelyl/daily_certification/blob/main/2024/08/26/24_08_26_daily_certification.md)
+BOJ 1749 점수따먹기 (Prefix Sum, Bruteforcing)
