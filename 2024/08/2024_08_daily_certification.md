@@ -88,3 +88,6 @@ BOJ 23807 두 단계 최단 경로 3 (Dijkstra, Bruteforcing)
 
 ### [2024.08.26](https://github.com/jwelyl/daily_certification/blob/main/2024/08/26/24_08_26_daily_certification.md)
 BOJ 1749 점수따먹기 (Prefix Sum, Bruteforcing)
+
+### [2024.08.27](https://github.com/jwelyl/daily_certification/blob/main/2024/08/27/24_08_27_daily_certification.md)
+BOJ 15949 Piet (BFS, Simulation)
