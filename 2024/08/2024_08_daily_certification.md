@@ -91,3 +91,6 @@ BOJ 1749 점수따먹기 (Prefix Sum, Bruteforcing)
 
 ### [2024.08.27](https://github.com/jwelyl/daily_certification/blob/main/2024/08/27/24_08_27_daily_certification.md)
 BOJ 15949 Piet (BFS, Simulation)
+
+### [2024.08.28](https://github.com/jwelyl/daily_certification/blob/main/2024/08/28/24_08_28_daily_certification.md)
+BOJ 15778 Yut Nori (Implementation, Simulation)

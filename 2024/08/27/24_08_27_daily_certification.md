@@ -4,7 +4,7 @@
 
 ### BOJ 15949 Piet
 
-[](https://www.acmicpc.net/problem/1749)
+[](https://www.acmicpc.net/problem/15949)
 
 ```java
 import java.util.*;
