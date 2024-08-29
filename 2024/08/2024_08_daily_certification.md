@@ -94,3 +94,6 @@ BOJ 15949 Piet (BFS, Simulation)
 
 ### [2024.08.28](https://github.com/jwelyl/daily_certification/blob/main/2024/08/28/24_08_28_daily_certification.md)
 BOJ 15778 Yut Nori (Implementation, Simulation)
+
+### [2024.08.29](https://github.com/jwelyl/daily_certification/blob/main/2024/08/29/24_08_29_daily_certification.md)
+BOJ 5590 船旅 (Dijkstra)
