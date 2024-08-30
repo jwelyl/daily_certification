@@ -97,3 +97,6 @@ BOJ 15778 Yut Nori (Implementation, Simulation)
 
 ### [2024.08.29](https://github.com/jwelyl/daily_certification/blob/main/2024/08/29/24_08_29_daily_certification.md)
 BOJ 5590 船旅 (Dijkstra)
+
+### [2024.08.30](https://github.com/jwelyl/daily_certification/blob/main/2024/08/30/24_08_30_daily_certification.md)
+BOJ 10875 뱀 (Implementation, Simulation)
