@@ -100,3 +100,6 @@ BOJ 5590 船旅 (Dijkstra)
 
 ### [2024.08.30](https://github.com/jwelyl/daily_certification/blob/main/2024/08/30/24_08_30_daily_certification.md)
 BOJ 10875 뱀 (Implementation, Simulation)
+
+### [2024.08.31](https://github.com/jwelyl/daily_certification/blob/main/2024/08/31/24_08_31_daily_certification.md)
+BOJ 13911 집 구하기 (Dijkstra)
