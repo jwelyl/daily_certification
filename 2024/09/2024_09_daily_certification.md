@@ -10,3 +10,6 @@ BOJ 16986 인싸들의 가위바위보 (Bruteforcing, Backtracking)
 
 ### [2024.09.03](https://github.com/jwelyl/daily_certification/blob/main/2024/09/03/24_09_03_daily_certification.md)
 BOJ 12991 홍준이의 행렬 (Binary Search, Parametric Search)
+
+### [2024.09.04](https://github.com/jwelyl/daily_certification/blob/main/2024/09/04/24_09_04_daily_certification.md)
+BOJ 19235 모노미노도미노 (Implementation, Simulation)
