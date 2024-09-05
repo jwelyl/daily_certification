@@ -13,3 +13,6 @@ BOJ 12991 홍준이의 행렬 (Binary Search, Parametric Search)
 
 ### [2024.09.04](https://github.com/jwelyl/daily_certification/blob/main/2024/09/04/24_09_04_daily_certification.md)
 BOJ 19235 모노미노도미노 (Implementation, Simulation)
+
+### [2024.09.05](https://github.com/jwelyl/daily_certification/blob/main/2024/09/05/24_09_05_daily_certification.md)
+BOJ 13349 Millionaire Madness (Dijkstra, Parametric Search)
