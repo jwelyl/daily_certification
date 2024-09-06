@@ -16,3 +16,6 @@ BOJ 19235 모노미노도미노 (Implementation, Simulation)
 
 ### [2024.09.05](https://github.com/jwelyl/daily_certification/blob/main/2024/09/05/24_09_05_daily_certification.md)
 BOJ 13349 Millionaire Madness (Dijkstra, Parametric Search)
+
+### [2024.09.06](https://github.com/jwelyl/daily_certification/blob/main/2024/09/06/24_09_06_daily_certification.md)
+BOJ 27617 Road To Savings (Dijkstra, DFS)
