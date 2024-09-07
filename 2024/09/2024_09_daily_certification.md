@@ -19,3 +19,6 @@ BOJ 13349 Millionaire Madness (Dijkstra, Parametric Search)
 
 ### [2024.09.06](https://github.com/jwelyl/daily_certification/blob/main/2024/09/06/24_09_06_daily_certification.md)
 BOJ 27617 Road To Savings (Dijkstra, DFS)
+
+### [2024.09.07](https://github.com/jwelyl/daily_certification/blob/main/2024/09/07/24_09_07_daily_certification.md)
+고대 문명 유적 탐사 (BFS, Simulation)
