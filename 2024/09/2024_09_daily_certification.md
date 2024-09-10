@@ -22,3 +22,8 @@ BOJ 27617 Road To Savings (Dijkstra, DFS)
 
 ### [2024.09.07](https://github.com/jwelyl/daily_certification/blob/main/2024/09/07/24_09_07_daily_certification.md)
 고대 문명 유적 탐사 (BFS, Simulation)
+
+## 2024.09.08.sun ~ 2024.09.14.sat 데일리 인증
+
+### [2024.09.08](https://github.com/jwelyl/daily_certification/blob/main/2024/09/08/24_09_08_daily_certification.md)
+BOJ 5890 Tractor (Dijkstra)
