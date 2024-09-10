@@ -30,3 +30,6 @@ BOJ 5890 Tractor (Dijkstra)
 
 ### [2024.09.09](https://github.com/jwelyl/daily_certification/blob/main/2024/09/09/24_09_09_daily_certification.md)
 BOJ 12078 gCampus (Small), BOJ 12079 gCampus (Large) (Dijkstra, Shortest Path)
+
+### [2024.09.10](https://github.com/jwelyl/daily_certification/blob/main/2024/09/10/24_09_10_daily_certification.md)
+BOJ 7535 A Bug’s Life (DFS, Bipartite graph)
