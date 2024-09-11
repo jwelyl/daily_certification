@@ -33,3 +33,6 @@ BOJ 12078 gCampus (Small), BOJ 12079 gCampus (Large) (Dijkstra, Shortest Path)
 
 ### [2024.09.10](https://github.com/jwelyl/daily_certification/blob/main/2024/09/10/24_09_10_daily_certification.md)
 BOJ 7535 A Bug’s Life (DFS, Bipartite graph)
+
+### [2024.09.11](https://github.com/jwelyl/daily_certification/blob/main/2024/09/11/24_09_11_daily_certification.md)
+BOJ 23309 철도 공사 (Doubly Linked List)
