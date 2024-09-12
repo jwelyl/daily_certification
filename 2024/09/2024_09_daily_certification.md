@@ -38,4 +38,4 @@ BOJ 7535 A Bug’s Life (DFS, Bipartite graph)
 BOJ 23309 철도 공사 (Doubly Linked List)
 
 ### [2024.09.12](https://github.com/jwelyl/daily_certification/blob/main/2024/09/12/24_09_12_daily_certification.md)
-### BOJ 15806 영우의 기숙사 청소 (BFS)
+### BOJ 15806 영우의 기숙사 청소 (BFS), 프로그래머스 n^2 배열 자르기 (Mathematics)

@@ -120,3 +120,29 @@ public class Main {
 	}
 }	//	Main-class-end
 ```
+
+### 프로그래머스 n^2 배열 자르기
+
+[](https://school.programmers.co.kr/learn/courses/30/lessons/87390)
+
+```java
+import java.util.List;
+import java.util.ArrayList;
+
+class Solution {
+    public int[] solution(int n, long left, long right) {
+        List<Integer> retList = new ArrayList<>();
+        
+        for(long i = left; i <= right; i++) {
+            int row = (int)(i / n);
+            int col = (int)(i % n);
+            
+            retList.add(Math.max(row + 1, col + 1));
+        }
+        
+        int[] answer = retList.stream().mapToInt(i -> i).toArray();
+        
+        return answer;
+    }
+}
+```
