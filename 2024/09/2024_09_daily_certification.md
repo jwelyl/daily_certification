@@ -42,3 +42,6 @@ BOJ 23309 철도 공사 (Doubly Linked List)
 
 ### [2024.09.13](https://github.com/jwelyl/daily_certification/blob/main/2024/09/13/24_09_13_daily_certification.md)
 ### BOJ 5913 준규와 사과 (Bruteforcing, Backtracking)
+
+### [2024.09.14](https://github.com/jwelyl/daily_certification/blob/main/2024/09/14/24_09_14_daily_certification.md)
+### BOJ 24891 단어 마방진 (Bruteforcing, Backtracking)
