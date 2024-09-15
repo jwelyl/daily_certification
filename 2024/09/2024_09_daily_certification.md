@@ -45,3 +45,8 @@ BOJ 23309 철도 공사 (Doubly Linked List)
 
 ### [2024.09.14](https://github.com/jwelyl/daily_certification/blob/main/2024/09/14/24_09_14_daily_certification.md)
 ### BOJ 24891 단어 마방진 (Bruteforcing, Backtracking)
+
+## 2024.09.15.sun ~ 2024.09.21.sat 데일리 인증
+
+### [2024.09.15](https://github.com/jwelyl/daily_certification/blob/main/2024/09/15/24_09_15_daily_certification.md)
+### BOJ 14868 문명 (BFS, Disjoint Set)
