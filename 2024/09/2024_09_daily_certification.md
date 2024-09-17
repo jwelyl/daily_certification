@@ -53,3 +53,6 @@ BOJ 23309 철도 공사 (Doubly Linked List)
 
 ### [2024.09.16](https://github.com/jwelyl/daily_certification/blob/main/2024/09/16/24_09_16_daily_certification.md)
 ### BOJ 17267 상남자 (BFS, Priority Queue)
+
+### [2024.09.17](https://github.com/jwelyl/daily_certification/blob/main/2024/09/17/24_09_17_daily_certification.md)
+### BOJ 23034 조별과제 멈춰! (BFS, MST)
