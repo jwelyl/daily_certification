@@ -52,7 +52,10 @@ BOJ 23309 철도 공사 (Doubly Linked List)
 ### BOJ 14868 문명 (BFS, Disjoint Set)
 
 ### [2024.09.16](https://github.com/jwelyl/daily_certification/blob/main/2024/09/16/24_09_16_daily_certification.md)
-### BOJ 17267 상남자 (BFS, Priority Queue)
+### BOJ 17267 상남자 (BFS, Priority Queue, 0-1 BFS)
 
 ### [2024.09.17](https://github.com/jwelyl/daily_certification/blob/main/2024/09/17/24_09_17_daily_certification.md)
-### BOJ 23034 조별과제 멈춰! (BFS, MST)
+### BOJ 23034 조별과제 멈춰! (BFS, DFS, MST)
+
+### [2024.09.18](https://github.com/jwelyl/daily_certification/blob/main/2024/09/18/24_09_18_daily_certification.md)
+### BOJ 2645 회로배치 (Dijkstra, 0-1 BFS, Implementation)
