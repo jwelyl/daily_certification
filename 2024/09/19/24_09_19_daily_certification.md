@@ -48,7 +48,7 @@ public class Main {
 }    //    Main-class-end
 ```
 
-### BOJ 2412 암벽 등반
+### BOJ 2412 암벽 등반 (BFS, HashMap)
 
 [](https://www.acmicpc.net/problem/2412)
 
