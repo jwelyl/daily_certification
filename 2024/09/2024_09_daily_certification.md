@@ -59,3 +59,6 @@ BOJ 23309 철도 공사 (Doubly Linked List)
 
 ### [2024.09.18](https://github.com/jwelyl/daily_certification/blob/main/2024/09/18/24_09_18_daily_certification.md)
 ### BOJ 2645 회로배치 (Dijkstra, 0-1 BFS, Implementation)
+
+### [2024.09.19](https://github.com/jwelyl/daily_certification/blob/main/2024/09/19/24_09_19_daily_certification.md)
+### BOJ 2493 탑 (Stack), BOJ 2412 암벽 등반 (BFS, HashMap)
