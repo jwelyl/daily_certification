@@ -62,3 +62,6 @@ BOJ 23309 철도 공사 (Doubly Linked List)
 
 ### [2024.09.19](https://github.com/jwelyl/daily_certification/blob/main/2024/09/19/24_09_19_daily_certification.md)
 ### BOJ 2493 탑 (Stack), BOJ 2412 암벽 등반 (BFS, HashMap)
+
+### [2024.09.20](https://github.com/jwelyl/daily_certification/blob/main/2024/09/20/24_09_20_daily_certification.md)
+### BOJ 18430 무기 공학 (Bruteforcing, Backtracking), BOJ 1477 휴게소 세우기 (Parametric Search)
