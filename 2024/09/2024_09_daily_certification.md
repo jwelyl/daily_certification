@@ -65,3 +65,6 @@ BOJ 23309 철도 공사 (Doubly Linked List)
 
 ### [2024.09.20](https://github.com/jwelyl/daily_certification/blob/main/2024/09/20/24_09_20_daily_certification.md)
 ### BOJ 18430 무기 공학 (Bruteforcing, Backtracking), BOJ 1477 휴게소 세우기 (Parametric Search)
+
+### [2024.09.21](https://github.com/jwelyl/daily_certification/blob/main/2024/09/21/24_09_21_daily_certification.md)
+### BOJ 23290 마법사 상어와 복제 (Implementation, Simulation, Backtracking), BBOJ 19951 태상이의 훈련소 생활 (Prefix Sum)
