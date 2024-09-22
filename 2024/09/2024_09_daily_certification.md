@@ -68,3 +68,6 @@ BOJ 23309 철도 공사 (Doubly Linked List)
 
 ### [2024.09.21](https://github.com/jwelyl/daily_certification/blob/main/2024/09/21/24_09_21_daily_certification.md)
 ### BOJ 23290 마법사 상어와 복제 (Implementation, Simulation, Backtracking), BBOJ 19951 태상이의 훈련소 생활 (Prefix Sum)
+
+## 2024.09.22.sun ~ 2024.09.28.sat 데일리 인증
+### BOJ 23289 온풍기 안녕! (Implementation, Simulation, BFS), BBOJ 19942 다이어트 (Bruteforcing, Backtracking)
