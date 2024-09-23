@@ -104,9 +104,6 @@ public class Main {
 		int x = heater[2];	//	온풍기 위치
 		int d = heater[3];	//	온풍기가 바람 뱉는 방향
 		
-		int[][] tmp = new int[R][C];
-		
-		tmp[y + wDy[d][1]][x + wDx[d][1]] = 5;
 		add[y + wDy[d][1]][x + wDx[d][1]] += 5;
 		visited[y + wDy[d][1]][x + wDx[d][1]] = h;
 		q.offer(new int[] {y + wDy[d][1], x + wDx[d][1], 5});
@@ -128,7 +125,6 @@ public class Main {
 				//	해당 칸이 격자 안에 있고, (cy, cx)에서 (ny, nx)로 이동 가능하며, (ny, nx)가 h에 의해 영향 받은 적이 없을 경우
 				if(isIn(ny, nx) && canMove(d, cy, cx, ny, nx) && visited[ny][nx] != h) {
 					add[ny][nx] += ninc;	//	(ny, nx)칸 온도 ninc만큼 증가
-					tmp[ny][nx] = ninc;
 					visited[ny][nx] = h;
 					q.offer(new int[] {ny, nx, ninc});
 				}
