@@ -77,4 +77,4 @@ BOJ 23309 철도 공사 (Doubly Linked List)
 ### BOJ 19238 스타트 택시 (Implementation, Simulation, BFS), BOJ 20366 같이 눈사람 만들래? (Two-Pointer, Sorting)
 
 ### [2024.09.24](https://github.com/jwelyl/daily_certification/blob/main/2024/09/24/24_09_24_daily_certification.md)
-BOJ 16987 계란으로 계란치기 (Backtracking), BOJ 3151 합이 0 (Two-Pointer, Binary Search)
+BOJ 16987 계란으로 계란치기 (Backtracking), BOJ 3151 합이 0 (Two-Pointer, Binary Search), 포탑 부수기 (BFS, Implementation, Simulation)
