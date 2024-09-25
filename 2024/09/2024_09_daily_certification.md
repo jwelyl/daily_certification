@@ -81,3 +81,6 @@ BOJ 16987 계란으로 계란치기 (Backtracking), BOJ 3151 합이 0 (Two-Point
 
 ### [2024.09.25](https://github.com/jwelyl/daily_certification/blob/main/2024/09/25/24_09_25_daily_certification.md)
 BOJ 25682 체스판 다시 칠하기 2 (DP, Prefix Sum)
+
+### [2024.09.26](https://github.com/jwelyl/daily_certification/blob/main/2024/09/26/24_09_26_daily_certification.md)
+BOJ 5931 Cow Beauty Pageant (BFS, DFS)
