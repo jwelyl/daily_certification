@@ -87,3 +87,6 @@ BOJ 15971 두 로봇 (BFS, DFS), BOJ 2295 세 수의 합 (Binary Search)
 
 ### [2024.09.27](https://github.com/jwelyl/daily_certification/blob/main/2024/09/27/24_09_27_daily_certification.md)
 BOJ 12004 Closing the Farm (Silver) (BFS, DFS), BOJ 17299 오등큰수 (Stack)
+
+### [2024.09.28](https://github.com/jwelyl/daily_certification/blob/main/2024/09/28/24_09_28_daily_certification.md)
+BOJ 5389 제곱근 작도 (Mathematics, Bruteforcing), BOJ 2015 수들의 합 4 (Prefix Sum, HashMap), 토끼와 경주 (Priority Queue, Simulation), 산타의 선물 공장 2 (Doubly Linked List, Simulation) 
