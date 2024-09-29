@@ -70,6 +70,7 @@ BOJ 23309 철도 공사 (Doubly Linked List)
 ### BOJ 23290 마법사 상어와 복제 (Implementation, Simulation, Backtracking), BOJ 19951 태상이의 훈련소 생활 (Prefix Sum)
 
 ## 2024.09.22.sun ~ 2024.09.28.sat 데일리 인증
+
 ### [2024.09.22](https://github.com/jwelyl/daily_certification/blob/main/2024/09/22/24_09_22_daily_certification.md)
 ### BOJ 23289 온풍기 안녕! (Implementation, Simulation, BFS), BOJ 19942 다이어트 (Bruteforcing, Backtracking)
 
@@ -89,4 +90,9 @@ BOJ 15971 두 로봇 (BFS, DFS), BOJ 2295 세 수의 합 (Binary Search)
 BOJ 12004 Closing the Farm (Silver) (BFS, DFS), BOJ 17299 오등큰수 (Stack)
 
 ### [2024.09.28](https://github.com/jwelyl/daily_certification/blob/main/2024/09/28/24_09_28_daily_certification.md)
-BOJ 5389 제곱근 작도 (Mathematics, Bruteforcing), BOJ 2015 수들의 합 4 (Prefix Sum, HashMap), 토끼와 경주 (Priority Queue, Simulation), 산타의 선물 공장 2 (Doubly Linked List, Simulation) 
+BOJ 5389 제곱근 작도 (Mathematics, Bruteforcing), BOJ 2015 수들의 합 4 (Prefix Sum, HashMap), 토끼와 경주 (Priority Queue, Simulation), 산타의 선물 공장 2 (Doubly Linked List, Simulation)
+
+## 2024.09.29.sun ~ 2024.09.30.mon 데일리 인증
+
+### [2024.09.29](https://github.com/jwelyl/daily_certification/blob/main/2024/09/29/24_09_29_daily_certification.md)
+BOJ 17136 색종이 붙이기 (Bruteforcing, Backtracking), BOJ 2473 세 용액 (Two-Pointer, Binary Search), 메이즈 러너 (Implementation, Bruteforcing)
