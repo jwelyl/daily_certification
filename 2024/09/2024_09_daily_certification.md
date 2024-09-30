@@ -96,3 +96,6 @@ BOJ 5389 제곱근 작도 (Mathematics, Bruteforcing), BOJ 2015 수들의 합 4 
 
 ### [2024.09.29](https://github.com/jwelyl/daily_certification/blob/main/2024/09/29/24_09_29_daily_certification.md)
 BOJ 17136 색종이 붙이기 (Bruteforcing, Backtracking), BOJ 2473 세 용액 (Two-Pointer, Binary Search), 메이즈 러너 (Implementation, Bruteforcing)
+
+### [2024.09.30](https://github.com/jwelyl/daily_certification/blob/main/2024/09/30/24_09_30_daily_certification.md)
+BOJ 13144 List of Unique Numbers (Two-Pointer), BOJ 19236 청소년 상어 (Simulation, Backtracking), 나무박멸 (Simulation, Bruteforcing)
