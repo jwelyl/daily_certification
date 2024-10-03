@@ -7,3 +7,6 @@ BOJ 16166 서울의 지하철 (BFS, HashSet), BOJ 9935 문자열 폭발 (Stack, 
 
 ### [2024.10.02](https://github.com/jwelyl/daily_certification/blob/main/2024/10/02/24_10_02_daily_certification.md)
 BOJ 22945 팀 빌딩 (Two Pointer), BOJ 10800 컬러볼 (Prefix Sum), BOJ 2539 모자이크 (Parametric Search)
+
+### [2024.10.03](https://github.com/jwelyl/daily_certification/blob/main/2024/10/03/24_10_03_daily_certification.md)
+BOJ 24512 Bottleneck Travelling Salesman Problem (Small) (Bruteforcing, Backtracking, TSP), BOJ 1300 K번째 수 (Parametric Search), BOJ 23247 Ten (Bruteforcing, Prefix Sum)
