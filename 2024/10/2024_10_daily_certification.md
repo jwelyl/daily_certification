@@ -10,3 +10,9 @@ BOJ 22945 팀 빌딩 (Two Pointer), BOJ 10800 컬러볼 (Prefix Sum), BOJ 2539 �
 
 ### [2024.10.03](https://github.com/jwelyl/daily_certification/blob/main/2024/10/03/24_10_03_daily_certification.md)
 BOJ 24512 Bottleneck Travelling Salesman Problem (Small) (Bruteforcing, Backtracking, TSP), BOJ 1300 K번째 수 (Parametric Search), BOJ 23247 Ten (Bruteforcing, Prefix Sum)
+
+### [2024.10.04](https://github.com/jwelyl/daily_certification/blob/main/2024/10/04/24_10_04_daily_certification.md)
+BOJ 13397 구간 나누기 2 (Parametric Search), BOJ 1800 인터넷 설치 (Parametric Search, Dijkstra/BFS), BOJ 2143 두 배열의 합 (Prefix Sum, HashMap)
+
+### [2024.10.05](https://github.com/jwelyl/daily_certification/blob/main/2024/10/05/24_10_05_daily_certification.md)
+BOJ 14698 **전생했더니 슬라임 연구자였던 건에 대하여 (Hard) (Greedy, Priority Queue, Modulo Operation), BOJ 1484 다이어트 (Mathematics, Two Pointer)
