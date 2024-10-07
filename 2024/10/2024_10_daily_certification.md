@@ -21,3 +21,6 @@ BOJ 14698 전생했더니 슬라임 연구자였던 건에 대하여 (Hard) (Gre
 
 ### [2024.10.06](https://github.com/jwelyl/daily_certification/blob/main/2024/10/06/24_10_06_daily_certification.md)
 BOJ 21939 문제 추천 시스템 Version 1 (TreeSet), BOJ 2211 네트워크 복구 (Dijkstra, Shortest Path Tree)
+
+### [2024.10.07](https://github.com/jwelyl/daily_certification/blob/main/2024/10/07/24_10_07_daily_certification.md)
+BOJ 1655 가운데를 말해요 (Priority Queue, Heap), BOJ 1937 욕심쟁이 판다 (DP, DFS)
