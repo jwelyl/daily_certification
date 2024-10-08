@@ -24,3 +24,6 @@ BOJ 21939 문제 추천 시스템 Version 1 (TreeSet), BOJ 2211 네트워크 복
 
 ### [2024.10.07](https://github.com/jwelyl/daily_certification/blob/main/2024/10/07/24_10_07_daily_certification.md)
 BOJ 1655 가운데를 말해요 (Priority Queue, Heap), BOJ 1937 욕심쟁이 판다 (DP, DFS)
+
+### [2024.10.08](https://github.com/jwelyl/daily_certification/blob/main/2024/10/08/24_10_08_daily_certification.md)
+BOJ 1368 물대기 (MST), BOJ 3109 빵집 (DFS, Greedy)
