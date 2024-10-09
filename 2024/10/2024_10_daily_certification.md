@@ -27,3 +27,6 @@ BOJ 1655 가운데를 말해요 (Priority Queue, Heap), BOJ 1937 욕심쟁이 �
 
 ### [2024.10.08](https://github.com/jwelyl/daily_certification/blob/main/2024/10/08/24_10_08_daily_certification.md)
 BOJ 1368 물대기 (MST), BOJ 3109 빵집 (DFS, Greedy)
+
+### [2024.10.09](https://github.com/jwelyl/daily_certification/blob/main/2024/10/09/24_10_09_daily_certification.md)
+BOJ 9205 맥주 마시면서 걸어가기 (BFS), BOJ 7662 이중 우선순위 큐 (TreeMap)
