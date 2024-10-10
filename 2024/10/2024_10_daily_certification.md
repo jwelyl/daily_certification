@@ -30,3 +30,6 @@ BOJ 1368 물대기 (MST), BOJ 3109 빵집 (DFS, Greedy)
 
 ### [2024.10.09](https://github.com/jwelyl/daily_certification/blob/main/2024/10/09/24_10_09_daily_certification.md)
 BOJ 9205 맥주 마시면서 걸어가기 (BFS), BOJ 7662 이중 우선순위 큐 (TreeMap)
+
+### [2024.10.10](https://github.com/jwelyl/daily_certification/blob/main/2024/10/10/24_10_10_daily_certification.md)
+BOJ 16929 Two Dots (DFS, Cycle Detection), BOJ 1202 보석 도둑 (Greedy, Sorting, Priority Queue)
