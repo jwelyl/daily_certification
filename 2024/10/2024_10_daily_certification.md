@@ -33,3 +33,6 @@ BOJ 9205 맥주 마시면서 걸어가기 (BFS), BOJ 7662 이중 우선순위 �
 
 ### [2024.10.10](https://github.com/jwelyl/daily_certification/blob/main/2024/10/10/24_10_10_daily_certification.md)
 BOJ 16929 Two Dots (DFS, Cycle Detection), BOJ 1202 보석 도둑 (Greedy, Sorting, Priority Queue)
+
+### [2024.10.11](https://github.com/jwelyl/daily_certification/blob/main/2024/10/11/24_10_11_daily_certification.md)
+BOJ 11066 파일 합치기 (DP, Prefix Sum), BOJ 1007 벡터 매칭 (Bruteforcing, Mathematics)
