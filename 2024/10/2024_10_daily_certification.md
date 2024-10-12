@@ -36,3 +36,6 @@ BOJ 16929 Two Dots (DFS, Cycle Detection), BOJ 1202 보석 도둑 (Greedy, Sorti
 
 ### [2024.10.11](https://github.com/jwelyl/daily_certification/blob/main/2024/10/11/24_10_11_daily_certification.md)
 BOJ 11066 파일 합치기 (DP, Prefix Sum), BOJ 1007 벡터 매칭 (Bruteforcing, Mathematics)
+
+### [2024.10.12](https://github.com/jwelyl/daily_certification/blob/main/2024/10/12/24_10_12_daily_certification.md)
+BOJ 5430 AC (Deque, Doubly Linked List), BOJ 1818 책정리 (LIS (O(NlogN)))
