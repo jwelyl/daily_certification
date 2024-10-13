@@ -17,7 +17,7 @@ BOJ 13397 구간 나누기 2 (Parametric Search), BOJ 1800 인터넷 설치 (Par
 ### [2024.10.05](https://github.com/jwelyl/daily_certification/blob/main/2024/10/05/24_10_05_daily_certification.md)
 BOJ 14698 전생했더니 슬라임 연구자였던 건에 대하여 (Hard) (Greedy, Priority Queue, Modulo Operation), BOJ 1484 다이어트 (Mathematics, Two Pointer)
 
-## 2024.10.06.mon ~ 2024.10.12.sat 데일리 인증
+## 2024.10.06.sun ~ 2024.10.12.sat 데일리 인증
 
 ### [2024.10.06](https://github.com/jwelyl/daily_certification/blob/main/2024/10/06/24_10_06_daily_certification.md)
 BOJ 21939 문제 추천 시스템 Version 1 (TreeSet), BOJ 2211 네트워크 복구 (Dijkstra, Shortest Path Tree)
@@ -39,3 +39,8 @@ BOJ 11066 파일 합치기 (DP, Prefix Sum), BOJ 1007 벡터 매칭 (Bruteforcin
 
 ### [2024.10.12](https://github.com/jwelyl/daily_certification/blob/main/2024/10/12/24_10_12_daily_certification.md)
 BOJ 5430 AC (Deque, Doubly Linked List), BOJ 1818 책정리 (LIS (O(NlogN)))
+
+## 2024.10.13.sun ~ 2024.10.19.sat 데일리 인증
+
+### [2024.10.13](https://github.com/jwelyl/daily_certification/blob/main/2024/10/13/24_10_13_daily_certification.md)
+BOJ 17485 진우의 달 여행 (Large) (DP), BOJ 19598 최소 회의실 개수 (Greedy, Sorting, Priority Queue)
