@@ -47,3 +47,6 @@ BOJ 17485 진우의 달 여행 (Large) (DP), BOJ 19598 최소 회의실 개수 (
 
 ### [2024.10.14](https://github.com/jwelyl/daily_certification/blob/main/2024/10/14/24_10_14_daily_certification.md)
 BOJ 16437 양 구출 작전 (DFS, Tree, Postorder), BOJ 5021 왕위 계승 (Topological Sort, HashMap)
+
+### [2024.10.15](https://github.com/jwelyl/daily_certification/blob/main/2024/10/15/24_10_15_daily_certification.md)
+BOJ 1025 제곱수 찾기 (Bruteforcing), BOJ 3079 입국심사 (Parametric Search)
