@@ -50,3 +50,6 @@ BOJ 16437 양 구출 작전 (DFS, Tree, Postorder), BOJ 5021 왕위 계승 (Topo
 
 ### [2024.10.15](https://github.com/jwelyl/daily_certification/blob/main/2024/10/15/24_10_15_daily_certification.md)
 BOJ 1025 제곱수 찾기 (Bruteforcing), BOJ 3079 입국심사 (Parametric Search)
+
+### [2024.10.16](https://github.com/jwelyl/daily_certification/blob/main/2024/10/16/24_10_16_daily_certification.md)
+BOJ 1715 카드 정렬하기 (Greedy, Priority Queue), BOJ 1253 좋다 (Two Pointer, Sorting)
