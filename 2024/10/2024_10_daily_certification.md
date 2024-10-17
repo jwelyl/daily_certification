@@ -53,3 +53,6 @@ BOJ 1025 제곱수 찾기 (Bruteforcing), BOJ 3079 입국심사 (Parametric Sear
 
 ### [2024.10.16](https://github.com/jwelyl/daily_certification/blob/main/2024/10/16/24_10_16_daily_certification.md)
 BOJ 1715 카드 정렬하기 (Greedy, Priority Queue), BOJ 1253 좋다 (Two Pointer, Sorting)
+
+### [2024.10.17](https://github.com/jwelyl/daily_certification/blob/main/2024/10/17/24_10_17_daily_certification.md)
+BOJ 1799 비숍 (Backtracking, MITM), BOJ 6198 옥상 정원 꾸미기 (Stack)
