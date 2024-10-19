@@ -63,3 +63,8 @@ BOJ MooTube (Silver) (DFS, BFS), BOJ 10775 공항 (Greedy, Disjoint Set)
 
 ### [2024.10.19](https://github.com/jwelyl/daily_certification/blob/main/2024/10/19/24_10_19_daily_certification.md)
 CO{) TREE 트리 중위 순회 (Inorder/Level order Traversal)
+
+## 2024.10.20.sun ~ 2024.10.26.sat 데일리 인증
+
+### [2024.10.20](https://github.com/jwelyl/daily_certification/blob/main/2024/10/20/24_10_20_daily_certification.md)
+CO{) TREE 트리의 서브트리 (Tree DP)
