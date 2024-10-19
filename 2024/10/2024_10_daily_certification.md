@@ -57,5 +57,9 @@ BOJ 1715 카드 정렬하기 (Greedy, Priority Queue), BOJ 1253 좋다 (Two Poin
 ### [2024.10.17](https://github.com/jwelyl/daily_certification/blob/main/2024/10/17/24_10_17_daily_certification.md)
 BOJ 1799 비숍 (Backtracking, MITM), BOJ 6198 옥상 정원 꾸미기 (Stack)
 
-### [2024.10.18](https://github.com/jwelyl/daily_certification/blob/main/2024/10/18/24_10_18_daily_certification.md)
+### [2024.10.18](https://github.com/jwelyl/daily_certification/blob/main/2024/10/18/
+24_10_18_daily_certification.md)
 BOJ MooTube (Silver) (DFS, BFS), BOJ 10775 공항 (Greedy, Disjoint Set)
+
+### [2024.10.19](https://github.com/jwelyl/daily_certification/blob/main/2024/10/19/24_10_19_daily_certification.md)
+CO{) TREE 트리 중위 순회 (Inorder/Level order Traversal)
