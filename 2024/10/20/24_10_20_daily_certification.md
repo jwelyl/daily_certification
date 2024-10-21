@@ -1,18 +1,5 @@
 # 24_10_20_daily_certification
 
-```
-[#294 koreii] 데일리인증 20241020
-1. 실전 코딩테스트 1개, 후기 작성
-2. 면접 준비
-3. 지난 면접 질문 복기
-- Java equals, hashCode, HashTable
-- 동기/비동기
-- Spring IoC/DI/AOP
-- 프록시 패턴
-4. 알고리즘 & 코딩 테스트 대비
-- Tree DP (코드트리 트리의 서브트리)
-```
-
 # Problem Solving (Algorithm & SQL)
 
 ### **CO{)E TREE** 트리의 서브트리
