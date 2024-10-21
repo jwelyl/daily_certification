@@ -68,3 +68,6 @@ CO{) TREE 트리 중위 순회 (Inorder/Level order Traversal)
 
 ### [2024.10.20](https://github.com/jwelyl/daily_certification/blob/main/2024/10/20/24_10_20_daily_certification.md)
 CO{) TREE 트리의 서브트리 (Tree DP)
+
+### [2024.10.21](https://github.com/jwelyl/daily_certification/blob/main/2024/10/21/24_10_21_daily_certification.md)
+CO{) TREE 트리 전달 (Tree DP)
