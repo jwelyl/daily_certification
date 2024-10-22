@@ -59,7 +59,7 @@ BOJ 1799 비숍 (Backtracking, MITM), BOJ 6198 옥상 정원 꾸미기 (Stack)
 
 ### [2024.10.18](https://github.com/jwelyl/daily_certification/blob/main/2024/10/18/
 24_10_18_daily_certification.md)
-BOJ MooTube (Silver) (DFS, BFS), BOJ 10775 공항 (Greedy, Disjoint Set)
+BOJ 15591 MooTube (Silver) (DFS, BFS), BOJ 10775 공항 (Greedy, Disjoint Set)
 
 ### [2024.10.19](https://github.com/jwelyl/daily_certification/blob/main/2024/10/19/24_10_19_daily_certification.md)
 CO{) TREE 트리 중위 순회 (Inorder/Level order Traversal)
@@ -71,3 +71,6 @@ CO{) TREE 트리의 서브트리 (Tree DP)
 
 ### [2024.10.21](https://github.com/jwelyl/daily_certification/blob/main/2024/10/21/24_10_21_daily_certification.md)
 CO{) TREE 트리 전달 (Tree DP)
+
+### [2024.10.22](https://github.com/jwelyl/daily_certification/blob/main/2024/10/22/24_10_22_daily_certification.md)
+BOJ 2206 벽 부수고 이동하기 (BFS), BOJ 14442 벽 부수고 이동하기 2 (BFS), CO{) TREE 폭탄 해체 작업 (Greedy, Priority Queue)
