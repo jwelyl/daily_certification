@@ -74,3 +74,6 @@ CO{) TREE 트리 전달 (Tree DP)
 
 ### [2024.10.22](https://github.com/jwelyl/daily_certification/blob/main/2024/10/22/24_10_22_daily_certification.md)
 BOJ 2206 벽 부수고 이동하기 (BFS), BOJ 14442 벽 부수고 이동하기 2 (BFS), CO{) TREE 폭탄 해체 작업 (Greedy, Priority Queue)
+
+### [2024.10.23](https://github.com/jwelyl/daily_certification/blob/main/2024/10/23/24_10_23_daily_certification.md)
+BOJ 16946 벽 부수고 이동하기 4 (BFS, HashSet), CO{) TREE 1이 k개 이상 존재하는 부분 수열 (Two Pointer)
