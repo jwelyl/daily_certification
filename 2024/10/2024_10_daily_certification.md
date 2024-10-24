@@ -77,3 +77,6 @@ BOJ 2206 벽 부수고 이동하기 (BFS), BOJ 14442 벽 부수고 이동하기 
 
 ### [2024.10.23](https://github.com/jwelyl/daily_certification/blob/main/2024/10/23/24_10_23_daily_certification.md)
 BOJ 16946 벽 부수고 이동하기 4 (BFS, HashSet), CO{) TREE 1이 k개 이상 존재하는 부분 수열 (Two Pointer)
+
+### [2024.10.24](https://github.com/jwelyl/daily_certification/blob/main/2024/10/24/24_10_24_daily_certification.md)
+CO{) TREE 회의실 겹치지 않게 하기 (Greedy, Sorting)
