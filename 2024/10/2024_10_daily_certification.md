@@ -80,3 +80,6 @@ BOJ 16946 벽 부수고 이동하기 4 (BFS, HashSet), CO{) TREE 1이 k개 이�
 
 ### [2024.10.24](https://github.com/jwelyl/daily_certification/blob/main/2024/10/24/24_10_24_daily_certification.md)
 CO{) TREE 회의실 겹치지 않게 하기 (Greedy, Sorting)
+
+### [2024.10.25](https://github.com/jwelyl/daily_certification/blob/main/2024/10/25/24_10_25_daily_certification.md)
+BOJ 1781 컵라면 (Greedy, Priority Queue), BOJ 12991 홍준이의 행렬 (Parametric Search, Binary Search)
