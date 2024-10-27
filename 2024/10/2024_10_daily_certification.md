@@ -83,3 +83,11 @@ CO{) TREE 회의실 겹치지 않게 하기 (Greedy, Sorting)
 
 ### [2024.10.25](https://github.com/jwelyl/daily_certification/blob/main/2024/10/25/24_10_25_daily_certification.md)
 BOJ 1781 컵라면 (Greedy, Priority Queue), BOJ 12991 홍준이의 행렬 (Parametric Search, Binary Search)
+
+### [2024.10.26](https://github.com/jwelyl/daily_certification/blob/main/2024/10/26/24_10_26_daily_certification.md)
+BOJ 14746 Closest Pair (Sorting)
+
+## 2024.10.27.sun ~ 2024.10.31.thu 데일리 인증
+
+### [2024.10.27](https://github.com/jwelyl/daily_certification/blob/main/2024/10/27/24_10_27_daily_certification.md)
+BOJ 4123 Bridges and Tunnels (Dijkstra)
