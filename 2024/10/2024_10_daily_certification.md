@@ -91,3 +91,6 @@ BOJ 14746 Closest Pair (Sorting)
 
 ### [2024.10.27](https://github.com/jwelyl/daily_certification/blob/main/2024/10/27/24_10_27_daily_certification.md)
 BOJ 4123 Bridges and Tunnels (Dijkstra)
+
+### [2024.10.28](https://github.com/jwelyl/daily_certification/blob/main/2024/10/28/24_10_28_daily_certification.md)
+BOJ 14618 총깡 총깡 (Dijkstra)
