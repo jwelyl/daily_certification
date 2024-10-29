@@ -94,3 +94,6 @@ BOJ 4123 Bridges and Tunnels (Dijkstra)
 
 ### [2024.10.28](https://github.com/jwelyl/daily_certification/blob/main/2024/10/28/24_10_28_daily_certification.md)
 BOJ 14618 총깡 총깡 (Dijkstra)
+
+### [2024.10.29](https://github.com/jwelyl/daily_certification/blob/main/2024/10/29/24_10_29_daily_certification.md)
+BOJ 13904 과제 (Greedy, Sorting, Priority Queue), BOJ 3933 라그랑주의 네 제곱수 정리 (DP, Bruteforcing)
