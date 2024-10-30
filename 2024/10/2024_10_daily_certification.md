@@ -97,3 +97,6 @@ BOJ 14618 총깡 총깡 (Dijkstra)
 
 ### [2024.10.29](https://github.com/jwelyl/daily_certification/blob/main/2024/10/29/24_10_29_daily_certification.md)
 BOJ 13904 과제 (Greedy, Sorting, Priority Queue), BOJ 3933 라그랑주의 네 제곱수 정리 (DP, Bruteforcing)
+
+### [2024.10.30](https://github.com/jwelyl/daily_certification/blob/main/2024/10/30/24_10_30_daily_certification.md)
+BOJ 2064 IP 주소 (Bitmasking)
