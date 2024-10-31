@@ -100,3 +100,6 @@ BOJ 13904 과제 (Greedy, Sorting, Priority Queue), BOJ 3933 라그랑주의 네
 
 ### [2024.10.30](https://github.com/jwelyl/daily_certification/blob/main/2024/10/30/24_10_30_daily_certification.md)
 BOJ 2064 IP 주소 (Bitmasking)
+
+### [2024.10.31](https://github.com/jwelyl/daily_certification/blob/main/2024/10/31/24_10_31_daily_certification.md)
+BOJ 25515 트리 노드 합의 최댓값, BOJ 31740 Split the SSHS 3 (DFS, Tree DP, Postorder)
