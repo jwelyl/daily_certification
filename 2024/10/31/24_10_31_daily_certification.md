@@ -1,22 +1,5 @@
 # 24_10_31_daily_certification
 
-```
-[#305 koreii] 데일리인증 202410131
-1. Spring Core Advanced
-- JDK 동적 프록시
-- CGLIB
-2. 컴퓨터공학 이론
-- DBCP
-- TCP 3-way Handshake
-- TCP 연결 종료
-- loopback
-- Indexing
-- B+Tree
-- 주소창에 www.naver.com을 입력하면 발생하는 일
-3. 코딩 테스트 대비 알고리즘 학습
--  Tree DP, DFS, Postorder (25515 트리 노드 합의 최댓값, 31740 Split the SSHS 3)
-```
-
 # Problem Solving (Algorithm & SQL)
 
 ### BOJ 25515 트리 노드 합의 최댓값
