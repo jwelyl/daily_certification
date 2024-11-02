@@ -1,23 +1,5 @@
 # 24_11_01_daily_certification
 
-```
-[#306 koreii] 데일리인증 20241101
-1. Java Multithread, Concurrency 
-- 원자적 연산
-- Atomic 클래스
-2. 컴퓨터공학 이론
-- DBCP
-- TCP 3-way Handshake
-- TCP 연결 종료
-- loopback
-- Indexing
-- B+Tree
-- HTTP, SSL, 상태 코드, GET, POST
-3. 코딩 테스트 대비 복습문제 풀이 
-- DFS, Tree, Postorder (19641 중첩 집합 모델)
-- Disjoint Set, Sorting, Sweeping (14595 동방 프로젝트 (Large))
-```
-
 # Problem Solving (Algorithm & SQL)
 
 ### BOJ 19641 중첩 집합 모델
