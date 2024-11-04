@@ -12,3 +12,6 @@ BOJ 2109 순회강연 (Greedy, Sorting, Priority Queue), BOJ 13397 구간 나누
 
 ### [2024.11.03](https://github.com/jwelyl/daily_certification/blob/main/2024/11/03/24_11_03_daily_certification.md)
 BOJ 12978 스크루지 민호 2 (Tree DP)
+
+### [2024.11.04](https://github.com/jwelyl/daily_certification/blob/main/2024/11/04/24_11_04_daily_certification.md)
+CO{) TREE 1이 k개 이상 존재하는 부분 수열 (Disjoint Set)
