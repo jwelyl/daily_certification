@@ -15,3 +15,6 @@ BOJ 12978 스크루지 민호 2 (Tree DP)
 
 ### [2024.11.04](https://github.com/jwelyl/daily_certification/blob/main/2024/11/04/24_11_04_daily_certification.md)
 CO{) TREE 1이 k개 이상 존재하는 부분 수열 (Disjoint Set)
+
+### [2024.11.05](https://github.com/jwelyl/daily_certification/blob/main/2024/11/05/24_11_05_daily_certification.md)
+BOJ 11000 강의실 배정 (Greedy, Sorting, Priority Queue)
