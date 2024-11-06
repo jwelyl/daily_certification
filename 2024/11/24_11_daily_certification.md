@@ -18,3 +18,6 @@ CO{) TREE 1이 k개 이상 존재하는 부분 수열 (Disjoint Set)
 
 ### [2024.11.05](https://github.com/jwelyl/daily_certification/blob/main/2024/11/05/24_11_05_daily_certification.md)
 BOJ 11000 강의실 배정 (Greedy, Sorting, Priority Queue)
+
+### [2024.11.06](https://github.com/jwelyl/daily_certification/blob/main/2024/11/06/24_11_06_daily_certification.md)
+BOJ 17779 게리맨더링 2 (Bruteforcing, Simulation), HackerRank Queen’s Attack II (HashSet)
