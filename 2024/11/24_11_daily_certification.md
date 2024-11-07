@@ -24,3 +24,6 @@ BOJ 17779 게리맨더링 2 (Bruteforcing, Simulation), HackerRank Queen’s Att
 
 ### [2024.11.07](https://github.com/jwelyl/daily_certification/blob/main/2024/11/07/24_11_07_daily_certification.md)
 BOJ 5095 Matrix Powers (Exponentiation By Squaring)
+
+### [2024.11.08](https://github.com/jwelyl/daily_certification/blob/main/2024/11/08/24_11_08_daily_certification.md)
+BOJ 1949 우수 마을 (Tree DP)
