@@ -21,3 +21,6 @@ BOJ 11000 강의실 배정 (Greedy, Sorting, Priority Queue)
 
 ### [2024.11.06](https://github.com/jwelyl/daily_certification/blob/main/2024/11/06/24_11_06_daily_certification.md)
 BOJ 17779 게리맨더링 2 (Bruteforcing, Simulation), HackerRank Queen’s Attack II (HashSet)
+
+### [2024.11.07](https://github.com/jwelyl/daily_certification/blob/main/2024/11/07/24_11_07_daily_certification.md)
+BOJ 5095 Matrix Powers (Exponentiation By Squaring)
