@@ -27,3 +27,6 @@ BOJ 5095 Matrix Powers (Exponentiation By Squaring)
 
 ### [2024.11.08](https://github.com/jwelyl/daily_certification/blob/main/2024/11/08/24_11_08_daily_certification.md)
 BOJ 1949 우수 마을 (Tree DP)
+
+### [2024.11.09](https://github.com/jwelyl/daily_certification/blob/main/2024/11/09/24_11_09_daily_certification.md)
+CO{) TREE 트리의 지름 (Tree, DFS)
