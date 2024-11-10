@@ -30,3 +30,8 @@ BOJ 1949 우수 마을 (Tree DP)
 
 ### [2024.11.09](https://github.com/jwelyl/daily_certification/blob/main/2024/11/09/24_11_09_daily_certification.md)
 CO{) TREE 트리의 지름 (Tree, DFS)
+
+## 2024.11.10.sun ~ 2024.11.16.sat 데일리 인증
+
+### [2024.11.10](https://github.com/jwelyl/daily_certification/blob/main/2024/11/10/24_11_10_daily_certification.md)
+CO{) TREE 진수 to 진수 (Implementation)
