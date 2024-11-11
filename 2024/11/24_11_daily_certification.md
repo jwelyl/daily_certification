@@ -35,3 +35,6 @@ CO{) TREE 트리의 지름 (Tree, DFS)
 
 ### [2024.11.10](https://github.com/jwelyl/daily_certification/blob/main/2024/11/10/24_11_10_daily_certification.md)
 CO{) TREE 진수 to 진수 (Implementation)
+
+### [2024.11.11](https://github.com/jwelyl/daily_certification/blob/main/2024/11/11/24_11_11_daily_certification.md)
+BOJ 2423 전구를 켜라 (Dijkstra, 0-1 BFS)
