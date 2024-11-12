@@ -1,14 +1,5 @@
 # 24_11_11_daily_certification
 
-```
-[#316 koreii] 데일리인증 20241111
-1. 서류 1개 제출
-2. 최종면접 + 컬쳐핏 면접 준비
-3. 면접 질문 시뮬레이션
-4. 코딩 테스트 대비 알고리즘 학습
-- Dijkstra, 0-1 BFS (2423 전구를 켜라)
-```
-
 # Problem Solving (Algorithm & SQL)
 
 ### **BOJ 2423 전구를 켜라**
