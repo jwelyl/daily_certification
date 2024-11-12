@@ -41,3 +41,6 @@ BOJ 2423 전구를 켜라 (Dijkstra, 0-1 BFS)
 
 ### [2024.11.12](https://github.com/jwelyl/daily_certification/blob/main/2024/11/12/24_11_12_daily_certification.md)
 BOJ 1938 통나무 옮기기 (Implementation, BFS)
+
+### [2024.11.13](https://github.com/jwelyl/daily_certification/blob/main/2024/11/13/24_11_13_daily_certification.md)
+BOJ 5917 Roadblock (Dijkstra, Shortest Path Tree)
