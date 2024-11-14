@@ -44,3 +44,6 @@ BOJ 1938 통나무 옮기기 (Implementation, BFS)
 
 ### [2024.11.13](https://github.com/jwelyl/daily_certification/blob/main/2024/11/13/24_11_13_daily_certification.md)
 BOJ 5917 Roadblock (Dijkstra, Shortest Path Tree)
+
+### [2024.11.14](https://github.com/jwelyl/daily_certification/blob/main/2024/11/14/24_11_14_daily_certification.md)
+BOJ 14167 Moocast (MST, Krukal)
