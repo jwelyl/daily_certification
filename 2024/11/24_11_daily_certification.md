@@ -47,3 +47,6 @@ BOJ 5917 Roadblock (Dijkstra, Shortest Path Tree)
 
 ### [2024.11.14](https://github.com/jwelyl/daily_certification/blob/main/2024/11/14/24_11_14_daily_certification.md)
 BOJ 14167 Moocast (MST, Krukal)
+
+### [2024.11.15](https://github.com/jwelyl/daily_certification/blob/main/2024/11/15/24_11_15_daily_certification.md)
+BOJ 11952 좀비 (Multisource BFS, Dijkstra)
