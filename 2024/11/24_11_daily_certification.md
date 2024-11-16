@@ -50,3 +50,6 @@ BOJ 14167 Moocast (MST, Krukal)
 
 ### [2024.11.15](https://github.com/jwelyl/daily_certification/blob/main/2024/11/15/24_11_15_daily_certification.md)
 BOJ 11952 좀비 (Multisource BFS, Dijkstra)
+
+### [2024.11.16](https://github.com/jwelyl/daily_certification/blob/main/2024/11/16/24_11_16_daily_certification.md)
+BOJ 2917 늑대 사냥꾼 (Multisource BFS, Parametric Search, Dijkstra)
