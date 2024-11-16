@@ -1,5 +1,360 @@
 # 24_11_16_daily_certification
 
+# Database
+
+# Normalization
+
+## Initial Table
+
+| **bank_name** | **account_num** | **account_id** | **class** | **ratio** | **empl_id** | **empl_name** | **card_id** |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Woori | 010-9231-1121 | A11 | BRONZE | 0.1 | E1 | SONY | C101 |
+| Woori | 102-992-180125 | A12 | SILVER | 0.2 | E1 | SONY | C102 |
+| Kookmin | 010-9231-1121 | A13 | LOYAL | 0.7 | E1 | SONY | C103 |
+| Kookmin | 010-1221-1732 | A21 | LOYAL | 1 | E2 | MESSI | C201
+C202 |
+
+**class** 
+
+Woori (BRONZE, SILVER, GOLD)
+
+Kookmin (STAR, PRESTIGE, LOYAL)
+
+**Key**
+
+{account_id}
+
+{bank_name, account_num}
+
+## 1NF
+
+모든 attribute의 value는 나눠질 수 없는 단일한 값이어야 한다.
+
+### **Before**
+
+| **bank_name** | **account_num** | **account_id** | **class** | **ratio** | **empl_id** | **empl_name** | **card_id** |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Woori | 010-9231-1121 | A11 | BRONZE | 0.1 | E1 | SONY | C101 |
+| Woori | 102-992-180125 | A12 | SILVER | 0.2 | E1 | SONY | C102 |
+| Kookmin | 010-9231-1121 | A13 | LOYAL | 0.7 | E1 | SONY | C103 |
+| Kookmin | 010-1221-1732 | A21 | LOYAL | 1 | E2 | MESSI | C201
+C202 |
+
+### **After**
+
+| **bank_name** | **account_num** | **account_id** | **class** | **ratio** | **empl_id** | **empl_name** | **card_id** |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Woori | 010-9231-1121 | A11 | BRONZE | 0.1 | E1 | SONY | C101 |
+| Woori | 102-992-180125 | A12 | SILVER | 0.2 | E1 | SONY | C102 |
+| Kookmin | 010-9231-1121 | A13 | LOYAL | 0.7 | E1 | SONY | C103 |
+| Kookmin | 010-1221-1732 | A21 | LOYAL | 1 | E2 | MESSI | C201 |
+| Kookmin | 010-1221-1732 | A21 | LOYAL | 1 | E2 | MESSI | C202 |
+
+**Key**
+
+{account_id, card_id}
+
+{bank_name, account_num, card_id}
+
+**Non-prime attribute**
+
+class, ratio, empl_id, empl_name
+
+### 2NF
+
+모든 Non-prime attribute는 Key에 대해 Fully Dependent해야 한다.
+
+### **Before**
+
+| **bank_name** | **account_num** | **account_id** | **class** | **ratio** | **empl_id** | **empl_name** | **card_id** |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Woori | 010-9231-1121 | A11 | BRONZE | 0.1 | E1 | SONY | C101 |
+| Woori | 102-992-180125 | A12 | SILVER | 0.2 | E1 | SONY | C102 |
+| Kookmin | 010-9231-1121 | A13 | LOYAL | 0.7 | E1 | SONY | C103 |
+| Kookmin | 010-1221-1732 | A21 | LOYAL | 1 | E2 | MESSI | C201 |
+| Kookmin | 010-1221-1732 | A21 | LOYAL | 1 | E2 | MESSI | C202 |
+
+**Key**
+
+{account_id, card_id}
+
+{bank_name, account_num, card_id}
+
+**Functional Dependencies**
+
+{account_id, card_id} → {class, ratio, empl_id, empl_name}
+
+{bank_name, account_num, card_id} → {class, ratio, empl_id, empl_name}
+
+{account_id, card_id} → {class, ratio, empl_id, empl_name}에서 사실 {account_id} →  {class, ratio, empl_id, empl_name}이다.
+
+{bank_name, account_num, card_id} → {class, ratio, empl_id, empl_name}에서 사실 {bank_name, account_num} →  {class, ratio, empl_id, empl_name}이다.
+
+### **After**
+
+| **account_id** | **card_id** |
+| --- | --- |
+| A11 | C101 |
+| A12 | C102 |
+| A13 | C103 |
+| A21 | C201 |
+| A21 | C202 |
+
+**Key**
+
+{card_id}
+
+**Functional Dependencies**
+
+{card_id} → {account_id}
+
+| **bank_name** | **account_num** | **account_id** | **class** | **ratio** | **empl_id** | **empl_name** |
+| --- | --- | --- | --- | --- | --- | --- |
+| Woori | 010-9231-1121 | A11 | BRONZE | 0.1 | E1 | SONY |
+| Woori | 102-992-180125 | A12 | SILVER | 0.2 | E1 | SONY |
+| Kookmin | 010-9231-1121 | A13 | LOYAL | 0.7 | E1 | SONY |
+| Kookmin | 010-1221-1732 | A21 | LOYAL | 1 | E2 | MESSI |
+
+**Key**
+
+{account_id}
+
+{bank_name, account_num}
+
+**Functional Dependencies**
+
+{account_id} → {class, ratio, empl_id, empl_name}
+
+{bank_name, account_num} → {class, ratio, empl_id, empl_name}
+
+{class} → {bank_name}
+
+{empl_id} → {empl_num}
+
+## 3NF
+
+non-prime attribute 사이에 FD가 존재해서는 안된다.
+
+### **Before**
+
+| **account_id** | **card_id** |
+| --- | --- |
+| A11 | C101 |
+| A12 | C102 |
+| A13 | C103 |
+| A21 | C201 |
+| A21 | C202 |
+
+**Key**
+
+{card_id}
+
+**Functional Dependencies**
+
+{card_id} → {account_id}
+
+| **bank_name** | **account_num** | **account_id** | **class** | **ratio** | **empl_id** | **empl_name** |
+| --- | --- | --- | --- | --- | --- | --- |
+| Woori | 010-9231-1121 | A11 | BRONZE | 0.1 | E1 | SONY |
+| Woori | 102-992-180125 | A12 | SILVER | 0.2 | E1 | SONY |
+| Kookmin | 010-9231-1121 | A13 | LOYAL | 0.7 | E1 | SONY |
+| Kookmin | 010-1221-1732 | A21 | LOYAL | 1 | E2 | MESSI |
+
+**Key**
+
+{account_id}
+
+{bank_name, account_num}
+
+**Functional Dependencies**
+
+{account_id} → {class, ratio, empl_id, empl_name}
+
+{bank_name, account_num} → {class, ratio, empl_id, empl_name}
+
+{class} → {bank_name}
+
+{empl_id} → {empl_num}
+
+**Transitivie Functional Dependencies**
+
+{account_id} → {empl_id}, {empl_id} → {empl_name} then {account_id} 
+
+{bank_name, account_num} → {empl_id}, {empl_id} → {empl_name} then {bank_name, account_num} → {empl_name}
+
+### After
+
+| **account_id** | **card_id** |
+| --- | --- |
+| A11 | C101 |
+| A12 | C102 |
+| A13 | C103 |
+| A21 | C201 |
+| A21 | C202 |
+
+**Key**
+
+{card_id}
+
+**Functional Dependencies**
+
+{card_id} → {account_id}
+
+| **empl_id** | **empl_name** |
+| --- | --- |
+| E1 | SONY |
+| E2 | MESSI |
+
+**Key**
+
+{empl_id}
+
+**Functional Dependencies**
+
+{empl_id} → {empl_name}
+
+| **bank_name** | **account_num** | **account_id** | **class** | **ratio** | **empl_id** |
+| --- | --- | --- | --- | --- | --- |
+| Woori | 010-9231-1121 | A11 | BRONZE | 0.1 | E1 |
+| Woori | 102-992-180125 | A12 | SILVER | 0.2 | E1 |
+| Kookmin | 010-9231-1121 | A13 | LOYAL | 0.7 | E1 |
+| Kookmin | 010-1221-1732 | A21 | LOYAL | 1 | E2 |
+
+**Key**
+
+{account_id}
+
+{bank_name, account_num}
+
+**Functional Dependencies**
+
+{account_id} → {class, ratio, empl_id}
+
+{bank_name, account_num} → {class, ratio, empl_id}
+
+{class} → {bank_name}
+
+## BCNF
+
+모든 유효한 Non-trivial FD X -> Y에서 X는 super key여야 한다.
+
+### Before
+
+| **account_id** | **card_id** |
+| --- | --- |
+| A11 | C101 |
+| A12 | C102 |
+| A13 | C103 |
+| A21 | C201 |
+| A21 | C202 |
+
+**Key**
+
+{card_id}
+
+**Functional Dependencies**
+
+{card_id} → {account_id}
+
+| **empl_id** | **empl_name** |
+| --- | --- |
+| E1 | SONY |
+| E2 | MESSI |
+
+**Key**
+
+{empl_id}
+
+**Functional Dependencies**
+
+{empl_id} → {empl_name}
+
+| **bank_name** | **account_num** | **account_id** | **class** | **ratio** | **empl_id** |
+| --- | --- | --- | --- | --- | --- |
+| Woori | 010-9231-1121 | A11 | BRONZE | 0.1 | E1 |
+| Woori | 102-992-180125 | A12 | SILVER | 0.2 | E1 |
+| Kookmin | 010-9231-1121 | A13 | LOYAL | 0.7 | E1 |
+| Kookmin | 010-1221-1732 | A21 | LOYAL | 1 | E2 |
+
+**Key**
+
+{account_id}
+
+{bank_name, account_num}
+
+**Functional Dependencies**
+
+{account_id} → {class, ratio, empl_id}
+
+{bank_name, account_num} → {class, ratio, empl_id}
+
+{class} → {bank_name}
+
+{class}는 Super Key가 아니고 {class} → {bank_name}은 Non-trivial FD임
+
+### After
+
+| **account_id** | **card_id** |
+| --- | --- |
+| A11 | C101 |
+| A12 | C102 |
+| A13 | C103 |
+| A21 | C201 |
+| A21 | C202 |
+
+**Key**
+
+{card_id}
+
+**Functional Dependencies**
+
+{card_id} → {account_id}
+
+| **empl_id** | **empl_name** |
+| --- | --- |
+| E1 | SONY |
+| E2 | MESSI |
+
+**Key**
+
+{empl_id}
+
+**Functional Dependencies**
+
+{empl_id} → {empl_name}
+
+| **class** | **bank_name** |
+| --- | --- |
+| BRONZE | Woori |
+| SILVER | Woori |
+| GOLD | Woori |
+| STAR | Kookmin |
+| PRESTIGE | Kookmin |
+| LOYAL | Kookmin |
+
+**Key**
+
+{class}
+
+**Functional Dependencies**
+
+{class} → {bank_name}
+
+| **account_num** | **account_id** | **class** | **ratio** | **empl_id** |
+| --- | --- | --- | --- | --- |
+| 010-9231-1121 | A11 | BRONZE | 0.1 | E1 |
+| 102-992-180125 | A12 | SILVER | 0.2 | E1 |
+| 010-9231-1121 | A13 | LOYAL | 0.7 | E1 |
+| 010-1221-1732 | A21 | LOYAL | 1 | E2 |
+
+**Key**
+
+{account_id}
+
+**Functional Dependencies**
+
+{account_id} → {account_num, class, ratio, empl_id}
+
 # Problem Solving (Algorithm & SQL)
 
 ### **BOJ 2917** 늑대 사냥꾼
