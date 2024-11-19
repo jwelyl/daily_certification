@@ -60,4 +60,10 @@ BOJ 2917 늑대 사냥꾼 (Multisource BFS, Parametric Search, Dijkstra), Databa
 BOJ 1184 귀농 (Prefix Sum, Bruteforcing, HashMap)
 
 ### [2024.11.18](https://github.com/jwelyl/daily_certification/blob/main/2024/11/18/24_11_18_daily_certification.md)
-BOJ 11997 Load Balancing (Silver) Prefix Sum, Bruteforcing, Coordinate Compression
+BOJ 11997 Load Balancing (Silver) (Prefix Sum, Bruteforcing, Coordinate Compression)
+
+### [2024.11.19](https://github.com/jwelyl/daily_certification/blob/main/2024/11/19/24_11_19_daily_certification.md)
+BOJ 1687 행렬 찾기 (Prefix Sum, Bruteforcing)
+
+### [2024.11.20](https://github.com/jwelyl/daily_certification/blob/main/2024/11/20/24_11_20_daily_certification.md)
+BOJ 2829 아름다운 행렬 (Prefix Sum, Bruteforcing)
