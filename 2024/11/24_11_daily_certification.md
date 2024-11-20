@@ -67,3 +67,6 @@ BOJ 1687 행렬 찾기 (Prefix Sum, Bruteforcing)
 
 ### [2024.11.20](https://github.com/jwelyl/daily_certification/blob/main/2024/11/20/24_11_20_daily_certification.md)
 BOJ 2829 아름다운 행렬 (Prefix Sum, Bruteforcing)
+
+### [2024.11.21](https://github.com/jwelyl/daily_certification/blob/main/2024/11/21/24_11_21_daily_certification.md)
+BOJ 24620 Sleeping in Class (Prefix Sum, Bruteforcing, Number Theory)
