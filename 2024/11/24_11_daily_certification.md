@@ -70,3 +70,6 @@ BOJ 2829 아름다운 행렬 (Prefix Sum, Bruteforcing)
 
 ### [2024.11.21](https://github.com/jwelyl/daily_certification/blob/main/2024/11/21/24_11_21_daily_certification.md)
 BOJ 24620 Sleeping in Class (Prefix Sum, Bruteforcing, Number Theory)
+
+### [2024.11.22](https://github.com/jwelyl/daily_certification/blob/main/2024/11/22/24_11_22_daily_certification.md)
+BOJ 4092 삼각형의 값 (Implementation, Prefix Sum, Bruteforcing)
