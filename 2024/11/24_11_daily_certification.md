@@ -73,3 +73,6 @@ BOJ 24620 Sleeping in Class (Prefix Sum, Bruteforcing, Number Theory)
 
 ### [2024.11.22](https://github.com/jwelyl/daily_certification/blob/main/2024/11/22/24_11_22_daily_certification.md)
 BOJ 4092 삼각형의 값 (Implementation, Prefix Sum, Bruteforcing)
+
+### [2024.11.23](https://github.com/jwelyl/daily_certification/blob/main/2024/11/23/24_11_23_daily_certification.md)
+BOJ 8983 사냥꾼 (Binary Search, Lower/Upperbound)
