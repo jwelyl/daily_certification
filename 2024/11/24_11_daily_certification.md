@@ -76,3 +76,8 @@ BOJ 4092 삼각형의 값 (Implementation, Prefix Sum, Bruteforcing)
 
 ### [2024.11.23](https://github.com/jwelyl/daily_certification/blob/main/2024/11/23/24_11_23_daily_certification.md)
 BOJ 8983 사냥꾼 (Binary Search, Lower/Upperbound)
+
+## 2024.11.24.sun ~ 2024.11.30.sat 데일리 인증
+
+### [2024.11.24](https://github.com/jwelyl/daily_certification/blob/main/2024/11/24/24_11_24_daily_certification.md)
+BOJ 24450 国土分割 (Land Division) (Prefix Sum, Bruteforcing, Number Theory)
