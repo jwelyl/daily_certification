@@ -84,3 +84,9 @@ BOJ 24450 国土分割 (Land Division) (Prefix Sum, Bruteforcing, Number Theory)
 
 ### [2024.11.25](https://github.com/jwelyl/daily_certification/blob/main/2024/11/25/24_11_25_daily_certification.md)
 BOJ 17179 케이크 자르기 (Binary Search, Parametric Search)
+
+### [2024.11.25](https://github.com/jwelyl/daily_certification/blob/main/2024/11/25/24_11_25_daily_certification.md)
+BOJ 17179 케이크 자르기 (Binary Search, Parametric Search)
+
+### [2024.11.26](https://github.com/jwelyl/daily_certification/blob/main/2024/11/26/24_11_26_daily_certification.md)
+BOJ 16472 고냥이 (Two-Pointer), BOJ 3967 매직 스타 (Bruteforcing, Backtracking)
