@@ -90,3 +90,6 @@ BOJ 17179 케이크 자르기 (Binary Search, Parametric Search)
 
 ### [2024.11.26](https://github.com/jwelyl/daily_certification/blob/main/2024/11/26/24_11_26_daily_certification.md)
 BOJ 16472 고냥이 (Two-Pointer), BOJ 3967 매직 스타 (Bruteforcing, Backtracking)
+
+### [2024.11.27](https://github.com/jwelyl/daily_certification/blob/main/2024/11/27/24_11_27_daily_certification.md)
+BOJ 17951 흩날리는 시험지 속에서 내 평점이 느껴진거야 (Parametric Search, Prefix Sum)
