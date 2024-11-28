@@ -93,3 +93,6 @@ BOJ 16472 고냥이 (Two-Pointer), BOJ 3967 매직 스타 (Bruteforcing, Backtra
 
 ### [2024.11.27](https://github.com/jwelyl/daily_certification/blob/main/2024/11/27/24_11_27_daily_certification.md)
 BOJ 17951 흩날리는 시험지 속에서 내 평점이 느껴진거야 (Parametric Search, Prefix Sum)
+
+### [2024.11.28](https://github.com/jwelyl/daily_certification/blob/main/2024/11/28/24_11_28_daily_certification.md)
+BOJ 18783 Swapity Swapity Swap (Sparse Matrix)
