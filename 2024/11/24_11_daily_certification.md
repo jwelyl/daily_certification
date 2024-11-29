@@ -96,3 +96,6 @@ BOJ 17951 흩날리는 시험지 속에서 내 평점이 느껴진거야 (Parame
 
 ### [2024.11.28](https://github.com/jwelyl/daily_certification/blob/main/2024/11/28/24_11_28_daily_certification.md)
 BOJ 18783 Swapity Swapity Swap (Sparse Matrix)
+
+### [2024.11.29](https://github.com/jwelyl/daily_certification/blob/main/2024/11/29/24_11_29_daily_certification.md)
+SQL JOIN, AGGREGATE FUNCTION
