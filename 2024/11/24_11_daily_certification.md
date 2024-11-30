@@ -99,3 +99,6 @@ BOJ 18783 Swapity Swapity Swap (Sparse Matrix)
 
 ### [2024.11.29](https://github.com/jwelyl/daily_certification/blob/main/2024/11/29/24_11_29_daily_certification.md)
 SQL JOIN, AGGREGATE FUNCTION
+
+### [2024.11.29](https://github.com/jwelyl/daily_certification/blob/main/2024/11/29/24_11_29_daily_certification.md)
+LeetCode 2. add-two-numbers (Linked List, Overflow, Implemetation)
