@@ -13,3 +13,7 @@ LeetCode 743. Network Delay Time (Floyd-Warshall), LeetCode 1038. Binary Search 
 
 ### [2024.12.04](https://github.com/jwelyl/daily_certification/blob/main/2024/12/04/24_12_04_daily_certification.md)
 LeetCode 78. Subsets (Bruteforcing, Backtracking, Bit Manipulation), LeetCode 234. Palindrome Linked List (Singly Linked List), LeetCode 39. Combination Sum (Backtracking, Stack), LeetCode 543. Diameter of Binary Tree (DFS, Binary Tree)
+
+### [2024.12.05](https://github.com/jwelyl/daily_certification/blob/main/2024/12/05/24_12_05_daily_certification.md)
+LeetCode 706. Design HashMap (HashMap), LeetCode 3. Longest Substring Without Repeating Characters (Two-Pointer, HashSet),
+- LeetCode 208. Implement Trie (Prefix Tree) (Trie)
