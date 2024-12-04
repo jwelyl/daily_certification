@@ -10,3 +10,6 @@ LeetCode 455. Assign Cookies (Greedy, Sorting), LeetCode 704. Binary Search (Bin
 
 ### [2024.12.03](https://github.com/jwelyl/daily_certification/blob/main/2024/12/03/24_12_03_daily_certification.md)
 LeetCode 743. Network Delay Time (Floyd-Warshall), LeetCode 1038. Binary Search Tree to Greater Sum Tree (Binary Search Tree, Reverse Inorder (RVL), Prefix Sum)
+
+### [2024.12.04](https://github.com/jwelyl/daily_certification/blob/main/2024/12/04/24_12_04_daily_certification.md)
+LeetCode 78. Subsets (Bruteforcing, Backtracking, Bit Manipulation), LeetCode 234. Palindrome Linked List (Singly Linked List), LeetCode 39. Combination Sum (Backtracking, Stack), LeetCode 543. Diameter of Binary Tree (DFS, Binary Tree)
