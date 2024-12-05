@@ -16,4 +16,4 @@ LeetCode 78. Subsets (Bruteforcing, Backtracking, Bit Manipulation), LeetCode 23
 
 ### [2024.12.05](https://github.com/jwelyl/daily_certification/blob/main/2024/12/05/24_12_05_daily_certification.md)
 LeetCode 706. Design HashMap (HashMap), LeetCode 3. Longest Substring Without Repeating Characters (Two-Pointer, HashSet),
-- LeetCode 208. Implement Trie (Prefix Tree) (Trie)
+LeetCode 208. Implement Trie (Prefix Tree) (Trie) LeetCode 461. Hamming Distance (Bit Manipulation )
