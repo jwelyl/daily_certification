@@ -22,4 +22,4 @@ LeetCode 208. Implement Trie (Prefix Tree) (Trie) LeetCode 461. Hamming Distance
 LeetCode 198. House Robber (Dynamic Programming), LeetCode 297. Serialize and Deserialize Binary Tree (BFS, String, Parsing)
 
 ### [2024.12.07](https://github.com/jwelyl/daily_certification/blob/main/2024/12/07/24_12_07_daily_certification.md)
-LeetCode 179. Largest Number (Custom Sorting), LeetCode 110. Balanced Binary Tree (DFS, Binary Tree, Height-Balanced)
+LeetCode 179. Largest Number (Custom Sorting), LeetCode 110. Balanced Binary Tree (DFS, Binary Tree, Height-Balanced), LeetCode 121. Best Time to Buy and Sell Stock (Monotonic Stack, Deque), LeetCode 49. Group Anagrams (String, Sorting)

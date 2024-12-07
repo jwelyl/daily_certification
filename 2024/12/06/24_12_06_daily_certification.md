@@ -1,16 +1,5 @@
 # 24_12_06_daily_certification
 
-```
-[#341 koreii] 데일리인증 20241206
-1. Operating System
-1-1. Deadlock Avoidance Algorithm
-	- Resource Allocation Graph Algorithm
-	- Banker's Algorithm
-2. 코딩 테스트 대비 알고리즘 학습
-- Dynamic Programming (LeetCode 198. House Robber)
-- BFS, String, Parsing (LeetCode 297. Serialize and Deserialize Binary Tree)
-```
-
 ![image.png](24_12_06_daily_certification%20153154b2a3b880b5b619d508411147c9/image.png)
 
 ![image.png](24_12_06_daily_certification%20153154b2a3b880b5b619d508411147c9/image%201.png)
