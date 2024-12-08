@@ -23,3 +23,8 @@ LeetCode 198. House Robber (Dynamic Programming), LeetCode 297. Serialize and De
 
 ### [2024.12.07](https://github.com/jwelyl/daily_certification/blob/main/2024/12/07/24_12_07_daily_certification.md)
 LeetCode 179. Largest Number (Custom Sorting), LeetCode 110. Balanced Binary Tree (DFS, Binary Tree, Height-Balanced), LeetCode 121. Best Time to Buy and Sell Stock (Monotonic Stack, Deque), LeetCode 49. Group Anagrams (String, Sorting)
+
+## 2024.12.08.sun ~ 2024.12.14.sat 데일리 인증
+
+### [2024.12.08](https://github.com/jwelyl/daily_certification/blob/main/2024/12/08/24_12_08_daily_certification.md)
+BOJ 16973 직사각형 탈출 (BFS, Prefix Sum)
