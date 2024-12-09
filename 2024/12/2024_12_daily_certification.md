@@ -28,3 +28,6 @@ LeetCode 179. Largest Number (Custom Sorting), LeetCode 110. Balanced Binary Tre
 
 ### [2024.12.08](https://github.com/jwelyl/daily_certification/blob/main/2024/12/08/24_12_08_daily_certification.md)
 BOJ 16973 직사각형 탈출 (BFS, Prefix Sum)
+
+### [2024.12.09](https://github.com/jwelyl/daily_certification/blob/main/2024/12/09/24_12_09_daily_certification.md)
+LeetCode 17. Letter Combinations of a Phone Number (String, Backtracking), LeetCode 347. Top K Frequent Elements (Priority Queue, HashSet)
