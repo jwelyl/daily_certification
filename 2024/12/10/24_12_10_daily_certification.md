@@ -1,6 +1,113 @@
 # 24_12_10_daily_certification
 
+```
+[#345 koreii] 데일리인증 20241210
+1. Operating System
+1-1. Paging
+	- Page Table
+	- Address Translation
+	- TLB
+1-2. Multilevel Page Table
+1-3. Memory Protection
+	- Protection bit
+	- Valid(v) / Invalid(i) Bit
+1-4. Inverted Page Table
+1-5. Shared Page
+2. 코딩 테스트 대비 알고리즘 학습
+- Stack, Queue (LeetCode 232. Implement Queue using Stacks)
+- Circular Queue (LeetCode 622. Design Circular Queue)
+- Circular Deque (LeetCode 641. Design Circular Deque)
+- Deque, Linked List (LeetCode 1670. Design Front Middle Back Queue)
+```
+
+```
+[#345 koreii] 데일리인증 20241210
+1. OS Paging
+2. 코딩 테스트 대비 알고리즘 학습
+- Stack, Queue (LeetCode 232. Implement Queue using Stacks)
+- Circular Queue (LeetCode 622. Design Circular Queue)
+- Circular Deque (LeetCode 641. Design Circular Deque)
+- Deque, Linked List (LeetCode 1670. Design Front Middle Back Queue)
+```
+
+![image.png](24_12_10_daily_certification%20157154b2a3b880449225ca8cffcd2135/image.png)
+
+![image.png](24_12_10_daily_certification%20157154b2a3b880449225ca8cffcd2135/image%201.png)
+
+![image.png](24_12_10_daily_certification%20157154b2a3b880449225ca8cffcd2135/image%202.png)
+
+![image.png](24_12_10_daily_certification%20157154b2a3b880449225ca8cffcd2135/image%203.png)
+
+![image.png](24_12_10_daily_certification%20157154b2a3b880449225ca8cffcd2135/image%204.png)
+
+![image.png](24_12_10_daily_certification%20157154b2a3b880449225ca8cffcd2135/image%205.png)
+
+![image.png](24_12_10_daily_certification%20157154b2a3b880449225ca8cffcd2135/image%206.png)
+
+![image.png](24_12_10_daily_certification%20157154b2a3b880449225ca8cffcd2135/image%207.png)
+
+![image.png](24_12_10_daily_certification%20157154b2a3b880449225ca8cffcd2135/image%208.png)
+
+![image.png](24_12_10_daily_certification%20157154b2a3b880449225ca8cffcd2135/image%209.png)
+
+![image.png](24_12_10_daily_certification%20157154b2a3b880449225ca8cffcd2135/image%2010.png)
+
+![image.png](24_12_10_daily_certification%20157154b2a3b880449225ca8cffcd2135/image%2011.png)
+
+![image.png](24_12_10_daily_certification%20157154b2a3b880449225ca8cffcd2135/image%2012.png)
+
 # Problem Solving (Algorithm & SQL)
+
+### LeetCode **Implement Queue using Stacks**
+
+[Implement Queue using Stacks - LeetCode](https://leetcode.com/problems/implement-queue-using-stacks/description/)
+
+```java
+class MyQueue {
+    private final Stack<Integer> stack1;
+    private final Stack<Integer> stack2;
+
+    public MyQueue() {
+        stack1 = new Stack<>();
+        stack2 = new Stack<>();
+    }
+    
+    public void push(int x) {
+        stack1.push(x);
+    }
+    
+    public int pop() {
+        if(stack2.isEmpty()) {  //  stack2가 비었을 경우
+            while(!stack1.isEmpty())    //  stack1이 빌 떄까지
+                stack2.push(stack1.pop());  //  stack1의 원소를 stack2로 옮김
+        }
+
+        return stack2.pop();
+    }
+    
+    public int peek() {
+        if(stack2.isEmpty()) {  //  stack2가 비었을 경우
+            while(!stack1.isEmpty())    //  stack1이 빌 떄까지
+                stack2.push(stack1.pop());  //  stack1의 원소를 stack2로 옮김
+        }
+
+        return stack2.peek();
+    }
+    
+    public boolean empty() {
+        return stack1.isEmpty() && stack2.isEmpty();
+    }
+}
+
+/**
+ * Your MyQueue object will be instantiated and called as such:
+ * MyQueue obj = new MyQueue();
+ * obj.push(x);
+ * int param_2 = obj.pop();
+ * int param_3 = obj.peek();
+ * boolean param_4 = obj.empty();
+ */
+```
 
 ### LeetCode **Design Circular Queue**
 

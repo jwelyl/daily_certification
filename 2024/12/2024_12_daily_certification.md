@@ -33,4 +33,4 @@ BOJ 16973 직사각형 탈출 (BFS, Prefix Sum)
 LeetCode 17. Letter Combinations of a Phone Number (String, Backtracking), LeetCode 347. Top K Frequent Elements (Priority Queue, HashSet), LeetCode 21. Merge Two Sorted Lists (Singly Linked List, Merge Sort), LeetCode 239. Sliding Window Maximum (Sliding Window, TreeMap)
 
 ### [2024.12.10](https://github.com/jwelyl/daily_certification/blob/main/2024/12/10/24_12_10_daily_certification.md)
-LeetCode 622. Design Circular Queue (Circular Queue), LeetCode 641. Design Circular Deque (Circular Deque), LeetCode 1670. Design Front Middle Back Queue (Deque, Linked List)
+LeetCode 232. Implement Queue using Stacks (Stack, Queue), LeetCode 622. Design Circular Queue (Circular Queue), LeetCode 641. Design Circular Deque (Circular Deque), LeetCode 1670. Design Front Middle Back Queue (Deque, Linked List)
