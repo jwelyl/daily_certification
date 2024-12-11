@@ -34,3 +34,6 @@ LeetCode 17. Letter Combinations of a Phone Number (String, Backtracking), LeetC
 
 ### [2024.12.10](https://github.com/jwelyl/daily_certification/blob/main/2024/12/10/24_12_10_daily_certification.md)
 LeetCode 232. Implement Queue using Stacks (Stack, Queue), LeetCode 622. Design Circular Queue (Circular Queue), LeetCode 641. Design Circular Deque (Circular Deque), LeetCode 1670. Design Front Middle Back Queue (Deque, Linked List)
+
+### [2024.12.11](https://github.com/jwelyl/daily_certification/blob/main/2024/12/11/24_12_11_daily_certification.md)
+LeetCode 53. Maximum Subarray (Divide And Conquer DP, Kadane's Algorithm), LeetCode 167. Two Sum II - Input Array Is Sorted (Binary Search), LeetCode LeetCode 226. Invert Binary Tree (Binary Tree, Postorder), LeetCode 108. Convert Sorted Array to Binary Search Tree (Binary Search Tree)
