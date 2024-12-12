@@ -40,3 +40,6 @@ LeetCode 53. Maximum Subarray (Divide And Conquer DP, Kadane's Algorithm), LeetC
 
 ### [2024.12.12](https://github.com/jwelyl/daily_certification/blob/main/2024/12/12/24_12_12_daily_certification.md)
 BOJ 3425 고스택 (Stack, Implementation), LeetCode 136. Single Number (Bit Manipulation), LeetCode 783. Minimum Distance Between BST Nodes (DFS, Binary Search Tree), LeetCode 207. Course Schedule (Topological Sort), LeetCode 819. Most Common Word (HashSet, HashMap), LeetCode 617. Merge Two Binary Trees (DFS, Binary Tree)
+
+### [2024.12.12](https://github.com/jwelyl/daily_certification/blob/main/2024/12/12/24_12_12_daily_certification.md)
+LeetCode 1. Two Sum (Bruteforcing, Binary Search, HashMap)
