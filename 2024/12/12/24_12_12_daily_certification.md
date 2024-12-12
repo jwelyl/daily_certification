@@ -1,5 +1,31 @@
 # 24_12_12_daily_certification
 
+![image.png](24_12_12_daily_certification%20159154b2a3b880af87aedb0e761ccedb/image.png)
+
+![image.png](24_12_12_daily_certification%20159154b2a3b880af87aedb0e761ccedb/image%201.png)
+
+![image.png](24_12_12_daily_certification%20159154b2a3b880af87aedb0e761ccedb/image%202.png)
+
+Circular Linked List로 구현
+
+사각형이 Physical Memory의 Page Frame
+
+Reference bit = 1이라는 것은 해당 Page가 최근에 참조된 적이 있다는 뜻이다. 시계 바늘이 1인 Page Frame을 가리킬 경우 Ref bit = 0으로 세팅하고 시계바늘이 한칸 움직인다.
+
+(Ref bit = 1인 것은 시계 바늘이 움직이는 동안 적어도 한번은 참조되었다는 뜻이다.)
+
+Ref bit = 0이라는 것은 시계 바늘이 접근할때까지 해당 Page Frame이 참조되지 않았다는 것을 나타낸다. 해당 Page Frame을 쫓아낸다.
+
+H/W가 페이지들을 참조할때 ref bit=1로 설정하는 역할을 한다. OS는 어떤 페이지를 쫓아낼지 결정할때 1인 페이지는 0으로 변경하고 0인 페이지를 쫓아낸다.
+
+Modified Bit (Dirty Bit) : 최근에 변경될 경우 1로 세팅, Ref bit = 0이여서 쫓겨날 페이지가 Mod bit = 0이면 Write가 없었으므로 그냥 메모리에서 제거하면 된다. 하지만 Mod bit = 1이면 메모리에 올라온 이후 Write가 있었으므로 Disk Backing Store에 수정된 부분을 write해야 한다.
+
+Ref bit = 0인 페이지 중 Mod bit = 0인 것을 우선 쫓아내면 write가 없으므로 좀 더 빠르게 쫓아낼 수 있다.
+
+![image.png](24_12_12_daily_certification%20159154b2a3b880af87aedb0e761ccedb/image%203.png)
+
+![image.png](24_12_12_daily_certification%20159154b2a3b880af87aedb0e761ccedb/image%204.png)
+
 # Problem Solving (Algorithm & SQL)
 
 ### **BOJ 3425** **고스택**
