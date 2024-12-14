@@ -47,3 +47,8 @@ LeetCode 1. Two Sum (Bruteforcing, Binary Search, HashMap)
 
 ### [2024.12.14](https://github.com/jwelyl/daily_certification/blob/main/2024/12/14/24_12_14_daily_certification.md)
 LeetCode 70. Climbing Stairs (DP), LeetCode 739. Daily Temperatures (Monotonic Stack), LeetCode 242. Valid Anagram (String, Counting), LeetCode 75. Sort Colors, (Counting Sort, In-place sort)
+
+## 2024.12.15.sun ~ 2024.12.21.sat 데일리 인증
+
+### [2024.12.15](https://github.com/jwelyl/daily_certification/blob/main/2024/12/15/24_12_15_daily_certification.md)
+LeetCode 5. Longest Palindromic Substring (DP), LeetCode 147. Insertion Sort List (Sorting, Singly Linked List)
