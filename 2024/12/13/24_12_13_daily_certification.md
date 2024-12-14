@@ -1,11 +1,5 @@
 # 24_12_13_daily_certification
 
-```
-[#347 koreii] 데일리인증 20241212
-1. 코딩 테스트 대비 알고리즘 학습
-- Bruteforcing, Binary Search, HashMap (LeetCode 1. Two Sum)
-```
-
 # Problem Solving (Algorithm & SQL)
 
 ### LeetCode Two Sum
