@@ -1,14 +1,5 @@
 # 24_12_14_daily_certification
 
-```
-[#348 koreii] 데일리인증 20241213
-1. 코딩 테스트 대비 알고리즘 학습
-- DP (LeetCode 70. Climbing Stairs)
-- Monotonic Stack (LeetCode 739. Daily Temperatures)
-- String, Counting (LeetCode 242. Valid Anagram)
-- Counting Sort, In-place sort (LeetCode 75. Sort Colors)
-```
-
 # Problem Solving (Algorithm & SQL)
 
 ### LeetCode **Climbing Stairs**
