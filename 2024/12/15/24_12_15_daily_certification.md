@@ -1,11 +1,51 @@
 # 24_12_15_daily_certification
 
-```
-[#350 koreii] 데일리인증 20241215
-1. 코딩 테스트 대비 알고리즘 학습
-- DP (LeetCode 5. Longest Palindromic Substring)
-- Sorting, Singly Linked List (LeetCode 147. Insertion Sort List)
-```
+![image.png](24_12_15_daily_certification%2015c154b2a3b881569544e512250a416d/image.png)
+
+![image.png](24_12_15_daily_certification%2015c154b2a3b881569544e512250a416d/image%201.png)
+
+각 sector는 logical block data(512 bytes) + 부가적인 데이터(Error Correcting Code (hash function 같은 느낌), address mapping을 위한 sector number) (header, trailer)
+
+Booting
+
+- CPU는 Memory에만 접근 가능, HDD에는 접근 부분
+- 메모리의 ROM (non-volatile)에 있는 small bootstrap loader를 실행
+
+![image.png](24_12_15_daily_certification%2015c154b2a3b881569544e512250a416d/image%202.png)
+
+Access Time의 대부분은 Seek Time임, Transfer Time은 미미함
+
+![image.png](24_12_15_daily_certification%2015c154b2a3b881569544e512250a416d/image%203.png)
+
+![image.png](24_12_15_daily_certification%2015c154b2a3b881569544e512250a416d/image%204.png)
+
+![image.png](24_12_15_daily_certification%2015c154b2a3b881569544e512250a416d/image%205.png)
+
+현재 head 위치에서 가장 가까운 요청을 먼저 처리
+
+![image.png](24_12_15_daily_certification%2015c154b2a3b881569544e512250a416d/image%206.png)
+
+![image.png](24_12_15_daily_certification%2015c154b2a3b881569544e512250a416d/image%207.png)
+
+![image.png](24_12_15_daily_certification%2015c154b2a3b881569544e512250a416d/image%208.png)
+
+Circular SCAN
+
+![image.png](24_12_15_daily_certification%2015c154b2a3b881569544e512250a416d/image%209.png)
+
+![image.png](24_12_15_daily_certification%2015c154b2a3b881569544e512250a416d/image%2010.png)
+
+![image.png](24_12_15_daily_certification%2015c154b2a3b881569544e512250a416d/image%2011.png)
+
+![image.png](24_12_15_daily_certification%2015c154b2a3b881569544e512250a416d/image%2012.png)
+
+![image.png](24_12_15_daily_certification%2015c154b2a3b881569544e512250a416d/image%2013.png)
+
+File System : 512 byte의 Sector 단위 (공간 효율성 중시)
+
+Swap Area : Physical Memory의 연장선상, 빠른 read/write 필요, seek time 줄여야 함, 속도 효율성 512KB 단위 대용량으로 올리고 내림. 어쨋든 더 큰 단위로 올리고 내린다는게 중요
+
+![image.png](24_12_15_daily_certification%2015c154b2a3b881569544e512250a416d/image%2014.png)
 
 # Problem Solving (Algorithm & SQL)
 
@@ -101,6 +141,61 @@ class Solution {
         }
 
         return head.next;
+    }
+}
+```
+
+### LeetCode **Longest Univalue Path**
+
+[Longest Univalue Path - LeetCode](https://leetcode.com/problems/longest-univalue-path/description/)
+
+```java
+/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode() {}
+ *     TreeNode(int val) { this.val = val; }
+ *     TreeNode(int val, TreeNode left, TreeNode right) {
+ *         this.val = val;
+ *         this.left = left;
+ *         this.right = right;
+ *     }
+ * }
+ */
+class Solution {
+    private int maxLength = 0;
+
+    public int longestUnivaluePath(TreeNode root) {
+        dfs(root);
+
+        return maxLength;
+    }
+
+    private int[] dfs(TreeNode root) {
+        if(root == null)
+            return null;
+        
+        int[] res = {0, 0};
+
+        if(root.left != null) {
+            int[] left = dfs(root.left);
+
+            if(root.val == root.left.val)
+                res[0] = Math.max(left[0], left[1]) + 1;
+        }
+        if(root.right != null) {
+            int[] right = dfs(root.right);
+
+            if(root.val == root.right.val)
+                res[1] = Math.max(right[0], right[1]) + 1;
+        }
+
+        maxLength = Math.max(maxLength, res[0] + res[1]);
+
+        return res;
     }
 }
 ```

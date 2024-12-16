@@ -51,4 +51,4 @@ LeetCode 70. Climbing Stairs (DP), LeetCode 739. Daily Temperatures (Monotonic S
 ## 2024.12.15.sun ~ 2024.12.21.sat 데일리 인증
 
 ### [2024.12.15](https://github.com/jwelyl/daily_certification/blob/main/2024/12/15/24_12_15_daily_certification.md)
-LeetCode 5. Longest Palindromic Substring (DP), LeetCode 147. Insertion Sort List (Sorting, Singly Linked List)
+LeetCode 5. Longest Palindromic Substring (DP), LeetCode 147. Insertion Sort List (Sorting, Singly Linked List), LeetCode 687. Longest Univalue Path (Binary Tree, DFS )
