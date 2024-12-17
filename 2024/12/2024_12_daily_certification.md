@@ -54,4 +54,7 @@ LeetCode 70. Climbing Stairs (DP), LeetCode 739. Daily Temperatures (Monotonic S
 LeetCode 5. Longest Palindromic Substring (DP), LeetCode 147. Insertion Sort List (Sorting, Singly Linked List), LeetCode 687. Longest Univalue Path (Binary Tree, DFS )
 
 ### [2024.12.16](https://github.com/jwelyl/daily_certification/blob/main/2024/12/16/24_12_16_daily_certification.md)
-LeetCode 15. 3Sum (Binary Search, HashSet, Two Pointer )
+LeetCode 15. 3Sum (Binary Search, HashSet, Two Pointer)
+
+### [2024.12.17](https://github.com/jwelyl/daily_certification/blob/main/2024/12/17/24_12_17_daily_certification.md)
+LeetCode 23. Merge k Sorted Lists (Singly Linked List, Priority Queue, DNC, Merge Sort)
