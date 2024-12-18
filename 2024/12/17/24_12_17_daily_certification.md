@@ -175,3 +175,51 @@ class Solution {
     }
 }
 ```
+
+### LeetCode Merge Intervals
+
+[Merge Intervals - LeetCode](https://leetcode.com/problems/merge-intervals/description/)
+
+```java
+class Solution {
+    public int[][] merge(int[][] intervals) {
+        List<int[]> ansList = new ArrayList<>();
+        int[][] answer = null;
+
+        Arrays.sort(intervals, new Comparator<int[]>() {
+            @Override
+            public int compare(int[] i1, int[] i2) {
+                if(i1[0] == i2[0])
+                    return Integer.compare(i1[1], i2[1]);
+
+                return Integer.compare(i1[0], i2[0]);
+            }
+        });
+
+        int start = intervals[0][0];
+        int end = intervals[0][1];
+
+        for(int i = 1; i < intervals.length; i++) {
+            int[] interval = intervals[i];
+
+            if(interval[0] <= end)
+                end = Math.max(end, interval[1]);
+            else {
+                ansList.add(new int[] {start, end});
+                start = interval[0];
+                end = interval[1];
+            }
+        }
+
+        ansList.add(new int[] {start, end});
+
+        answer = new int[ansList.size()][2];
+        for(int i = 0; i < answer.length; i++) {
+            answer[i][0] = ansList.get(i)[0];
+            answer[i][1] = ansList.get(i)[1];
+        }
+
+        return answer;
+    }
+}
+```
