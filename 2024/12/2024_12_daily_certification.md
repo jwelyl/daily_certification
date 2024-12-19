@@ -59,5 +59,8 @@ LeetCode 15. 3Sum (Binary Search, HashSet, Two Pointer)
 ### [2024.12.17](https://github.com/jwelyl/daily_certification/blob/main/2024/12/17/24_12_17_daily_certification.md)
 LeetCode 23. Merge k Sorted Lists (Singly Linked List, Priority Queue, DNC, Merge Sort), LeetCode 56. Merge Intervals (Sorting)
 
-### [2024.12.18](https://github.com/jwelyl/daily_certification/blob/main/2024/12/18/24_12_19_daily_certification.md)
+### [2024.12.18](https://github.com/jwelyl/daily_certification/blob/main/2024/12/18/24_12_18_daily_certification.md)
 LeetCode 225. Implement Stack using Queues (Stack, Queue), LeetCode 310. Minimum Height Trees (DFS(Tree Diameter), Topological Sort)
+
+### [2024.12.19](https://github.com/jwelyl/daily_certification/blob/main/2024/12/19/24_12_19_daily_certification.md)
+BOJ 25826 2차원 배열 다중 업데이트 단일 합, 프로그래머스 파괴되지 않은 건물 (Prefix Sum, imos), BOJ 18114 블랙 프라이데이 (Two Pointer, Binary Search)
