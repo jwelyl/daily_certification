@@ -64,3 +64,6 @@ LeetCode 225. Implement Stack using Queues (Stack, Queue), LeetCode 310. Minimum
 
 ### [2024.12.19](https://github.com/jwelyl/daily_certification/blob/main/2024/12/19/24_12_19_daily_certification.md)
 BOJ 25826 2차원 배열 다중 업데이트 단일 합, 프로그래머스 파괴되지 않은 건물 (Prefix Sum, imos), BOJ 18114 블랙 프라이데이 (Two Pointer, Binary Search)
+
+### [2024.12.20](https://github.com/jwelyl/daily_certification/blob/main/2024/12/20/24_12_20_daily_certification.md)
+BOJ 25978 2차원 배열 다중 업데이트 다중 합 (Prefix Sum, imos)
