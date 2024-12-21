@@ -67,3 +67,6 @@ BOJ 25826 2차원 배열 다중 업데이트 단일 합, 프로그래머스 파�
 
 ### [2024.12.20](https://github.com/jwelyl/daily_certification/blob/main/2024/12/20/24_12_20_daily_certification.md)
 BOJ 25978 2차원 배열 다중 업데이트 다중 합 (Prefix Sum, imos), BOJ 5536 물고기의 서식 범위 (3D Prefix Sum, Coordinate Compression)
+
+### [2024.12.21](https://github.com/jwelyl/daily_certification/blob/main/2024/12/21/24_12_21_daily_certification.md)
+BOJ 5536 물고기의 서식 범위 (3D Prefix Sum, Coordinate Compression)
