@@ -70,3 +70,8 @@ BOJ 25978 2차원 배열 다중 업데이트 다중 합 (Prefix Sum, imos), BOJ 
 
 ### [2024.12.21](https://github.com/jwelyl/daily_certification/blob/main/2024/12/21/24_12_21_daily_certification.md)
 BOJ 5536 물고기의 서식 범위 (3D Prefix Sum, Coordinate Compression)
+
+## 2024.12.22.sun ~ 2024.12.28.sat 데일리 인증
+
+### [2024.12.22](https://github.com/jwelyl/daily_certification/blob/main/2024/12/22/24_12_22_daily_certification.md)
+BOJ 24042 횡단보도 (Dijkstra)
