@@ -81,3 +81,6 @@ BOJ 2398 3인통화 (Dijkstra, Shortest Path Tree)
 
 ### [2024.12.24](https://github.com/jwelyl/daily_certification/blob/main/2024/12/24/24_12_24_daily_certification.md)
 BOJ 17940 지하철 (Dijkstra)
+
+### [2024.12.25](https://github.com/jwelyl/daily_certification/blob/main/2024/12/25/24_12_25_daily_certification.md)
+BOJ 20440 (Prefix Sum, Coordinate Compression)
