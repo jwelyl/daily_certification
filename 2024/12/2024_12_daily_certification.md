@@ -84,3 +84,6 @@ BOJ 17940 지하철 (Dijkstra)
 
 ### [2024.12.25](https://github.com/jwelyl/daily_certification/blob/main/2024/12/25/24_12_25_daily_certification.md)
 BOJ 20440 (Prefix Sum, Coordinate Compression)
+
+### [2024.12.26](https://github.com/jwelyl/daily_certification/blob/main/2024/12/26/24_12_26_daily_certification.md)
+BOJ 1400 화물차 (BFS, Dijkstra), BOJ 17822 원판 돌리기 (BFS, Implementation, Simulation, Modulo Operation)
