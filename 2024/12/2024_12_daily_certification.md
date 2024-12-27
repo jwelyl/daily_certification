@@ -87,3 +87,6 @@ BOJ 20440 (Prefix Sum, Coordinate Compression)
 
 ### [2024.12.26](https://github.com/jwelyl/daily_certification/blob/main/2024/12/26/24_12_26_daily_certification.md)
 BOJ 1400 화물차 (BFS, Dijkstra), BOJ 17822 원판 돌리기 (BFS, Implementation, Simulation, Modulo Operation)
+
+### [2024.12.27](https://github.com/jwelyl/daily_certification/blob/main/2024/12/27/24_12_27_daily_certification.md)
+BOJ 8757 Bubu (Dijkstra (Multisource))
