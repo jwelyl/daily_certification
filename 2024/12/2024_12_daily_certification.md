@@ -93,3 +93,8 @@ BOJ 8757 Bubu (Dijkstra (Multisource))
 
 ### [2024.12.28](https://github.com/jwelyl/daily_certification/blob/main/2024/12/28/24_12_27_daily_certification.md)
 BOJ 13168 내일로 여행 (Floyd-Warshall, HashMap)
+
+## 2024.12.29.sun ~ 2024.12.31.tue 데일리 인증
+
+### [2024.12.29](https://github.com/jwelyl/daily_certification/blob/main/2024/12/29/24_12_29_daily_certification.md)
+BOJ 14712 넴모넴모 (Easy) (Bruteforcing, Backtracking)
