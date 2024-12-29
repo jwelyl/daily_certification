@@ -90,3 +90,6 @@ BOJ 1400 화물차 (BFS, Dijkstra), BOJ 17822 원판 돌리기 (BFS, Implementat
 
 ### [2024.12.27](https://github.com/jwelyl/daily_certification/blob/main/2024/12/27/24_12_27_daily_certification.md)
 BOJ 8757 Bubu (Dijkstra (Multisource))
+
+### [2024.12.28](https://github.com/jwelyl/daily_certification/blob/main/2024/12/28/24_12_27_daily_certification.md)
+BOJ 13168 내일로 여행 (Floyd-Warshall, HashMap)
