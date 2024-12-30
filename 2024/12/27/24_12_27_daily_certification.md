@@ -1,16 +1,5 @@
 # 24_12_27_daily_certification
 
-```
-[#362 koreii] 데일리인증 20241227
-1. Spring DB
-1-1. QueryDSL
-1-2. Service, Repository
-- DI, OCP
-- Abstraction
-2. 코딩 테스트 대비 알고리즘 학습
-- Dijkstra (Multisource) (BOJ 8757 Bubu)
-```
-
 ### **BOJ 8757 Bubu**
 
 [8757번: Bubu](https://boj.ma/8757/t)
