@@ -101,3 +101,6 @@ BOJ 14712 넴모넴모 (Easy) (Bruteforcing, Backtracking)
 
 ### [2024.12.30](https://github.com/jwelyl/daily_certification/blob/main/2024/12/30/24_12_30_daily_certification.md)
 BOJ 9885 Claws (DFS, Tree)
+
+### [2024.12.30](https://github.com/jwelyl/daily_certification/blob/main/2024/12/31/24_12_31_daily_certification.md)
+BOJ 20057 마법사 상어와 토네이도 (Implementation, Simulation)
