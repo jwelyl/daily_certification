@@ -1,17 +1,5 @@
 # 25_01_01_daily_certification
 
-```
-[#001 koreii] 데일리인증 20250101
-0. 2025년 목표 설정
-- 1월 주요 과제 선정
-1. BE 프로젝트 리팩토링
-- 프로젝트 구조 파악
-  - 주요 도메인 파악
-2. 코딩 테스트 대비 알고리즘 학습
-- Implementation, Simulation (BOJ 21610 마법사 상어와 비바라기)
-- Prefix Sum, imos (BOJ 17037 Painting the Barn (Silver))
-```
-
 ### **BOJ 21610 마법사 상어와 비바라기**
 
 [21610번: 마법사 상어와 비바라기](https://boj.ma/21610/t)
