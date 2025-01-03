@@ -9,11 +9,6 @@
 - Prefix Sum, Sliding Window(BOJ 13422 도둑)
 - Implementation (BOJ 14890 경사로)
 - Implementation, Simulation, Rotation (BOJ 23291 어항 정리)
-```
-
-# Project Refactoring
-
-[알고오리 2025.01.03](https://www.notion.so/2025-01-03-170154b2a3b880339316d72937ea65bf?pvs=21)
 
 # Problem Solving (Algorithm & SQL)
 
@@ -409,24 +404,24 @@ public class Main {
 		}
 	}
 	
-	//	orig 배열을 시계방향으로 90도 회전시킨 배열 반환
-	private static int[][] rotate90(int[][] orig) {
-		int row = orig.length;
-		int col = orig[0].length;
+	//	detached 배열을 시계방향으로 90도 회전시킨 배열 반환
+	private static int[][] rotate90(int[][] detached) {
+		int row = detached.length;
+		int col = detached[0].length;
 		int[][] res = new int[col][row];
 		
 		for(int y = 0; y < row; y++) {
 			for(int x = 0; x < col; x++)
-				res[x][row - y - 1] = orig[y][x];
+				res[x][row - y - 1] = detached[y][x];
 		}
 		
 		return res;
 	}
 	
-	//	orig 배열을 180도 회전시킨 배열 반환
-	private static int[][] rotate180(int[][] orig) {
-		int row = orig.length;
-		int col = orig[0].length;
+	//	detached 배열을 180도 회전시킨 배열 반환
+	private static int[][] rotate180(int[][] detached) {
+		int row = detached.length;
+		int col = detached[0].length;
 		int[][] res = new int[row][col];
 		
 		for(int y = 0; y < row; y++) {
@@ -434,7 +429,7 @@ public class Main {
 				int yy = row - y - 1;
 				int xx = col - x - 1;
 				
-				res[yy][xx] = orig[y][x];
+				res[yy][xx] = detached[y][x];
 			}
 		}
 		
