@@ -1,13 +1,6 @@
 # 25_01_02_daily_certification
 
-```
-[#002 koreii] 데일리인증 20250102
-1. 2025년 목표 설정
-- 1월 주요 과제 선정
-2. 코딩 테스트 대비 알고리즘 학습
-- Implementation, Simulation, Bruteforcing (BOJ 15683 감시)
-- Implementation, Simulation, BFS (BOJ 16234 인구 이동)
-```
+# Problem Solving (Algorithm & SQL)
 
 ### **BOJ** 15683 감시
 

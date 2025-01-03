@@ -1,5 +1,7 @@
 # 25_01_01_daily_certification
 
+# Problem Solving (Algorithm & SQL)
+
 ### **BOJ 21610 마법사 상어와 비바라기**
 
 [21610번: 마법사 상어와 비바라기](https://boj.ma/21610/t)
