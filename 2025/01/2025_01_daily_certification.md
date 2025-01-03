@@ -7,3 +7,6 @@ BOJ 21610 마법사 상어와 비바라기 (Implementation, Simulation), BOJ 170
 
 ### [2025.01.02](https://github.com/jwelyl/daily_certification/blob/main/2024/01/02/24_01_02_daily_certification.md)
 BOJ 15683 감시 (Implementation, Simulation, Bruteforcing), BOJ 16234 인구 이동 (Implementation, Simulation, BFS)
+
+### [2025.01.03](https://github.com/jwelyl/daily_certification/blob/main/2024/01/03/24_01_03_daily_certification.md)
+BOJ 13422 도둑 (Prefix Sum, Sliding Window), BOJ 14890 경사로 (Implementation), BOJ 23291 어항 정리 (Implementation, Simulation)
