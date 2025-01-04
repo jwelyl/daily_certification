@@ -10,3 +10,6 @@ BOJ 15683 감시 (Implementation, Simulation, Bruteforcing), BOJ 16234 인구 �
 
 ### [2025.01.03](https://github.com/jwelyl/daily_certification/blob/main/2024/01/03/24_01_03_daily_certification.md)
 BOJ 13422 도둑 (Prefix Sum, Sliding Window), BOJ 14890 경사로 (Implementation), BOJ 23291 어항 정리 (Implementation, Simulation)
+
+### [2025.01.04](https://github.com/jwelyl/daily_certification/blob/main/2024/01/04/24_01_04_daily_certification.md)
+BOJ 22862 가장 긴 짝수 연속한 부분 수열 (large) (Two Pointer)
