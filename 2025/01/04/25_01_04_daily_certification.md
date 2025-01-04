@@ -59,368 +59,242 @@ public class Main {
 }	//	Main-class-end
 ```
 
-### **BOJ** 14890 경사로
+### **BOJ 21609** 상어 중학교
 
-[14890번: 경사로](https://boj.ma/14890/t)
+[21609번: 상어 중학교](https://boj.ma/21609/t)
 
 ```java
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class Main {
+	private static final int BLACK = -1;					//	검은색 블록
+	private static final int RAINBOW = 0;					//	무지개 색 블록
+	private static final int NONE = Integer.MAX_VALUE;		//	블록 없음
+	
 	private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	private static StringTokenizer st;
 	
-	private static int N;
-	private static int L;
-	private static int[][] map;
+	private static int N;	//	블록 그룹 수
+	private static int M;	//	일반 블록 색 (1 ~ M)
+	
+	private static int[][] board;			//	격자
+	private static boolean[][] visited;		//	여러번 bfs 시 중복 bfs 방지 위한 전역 방문 처리 배열
+	private static int[] selected;			//	선택받은 블록 그룹
 	
 	private static int answer = 0;
 	
 	public static void main(String[] args) throws IOException {
 		st = new StringTokenizer(br.readLine());
 		N = Integer.parseInt(st.nextToken());
-		L = Integer.parseInt(st.nextToken());
+		M = Integer.parseInt(st.nextToken());
 		
-		map = new int[N][N];
+		board = new int[N][N];
 		for(int y = 0; y < N; y++) {
 			st = new StringTokenizer(br.readLine());
 			for(int x = 0; x < N; x++)
-				map[y][x] = Integer.parseInt(st.nextToken());
+				board[y][x] = Integer.parseInt(st.nextToken());
 		}
-
-		for(int y = 0; y < N; y++) 
-			checkRow(y);
-		for(int x = 0; x < N; x++)
-			checkCol(x);
-		
-		System.out.println(answer);
-	}	//	main-end
-	
-	private static boolean check(List<Chunk> chunks) {
-		for(int i = 0; i < chunks.size() - 1; i++) {
-			Chunk cur = chunks.get(i);
-			Chunk next = chunks.get(i + 1);
-			
-			if(cur.height > next.height) {	//	next 쪽에 경사로를 놓아야 할 경우
-				if(next.length < L)	//	경사로를 놓을 칸이 부족할 경우
-					return false;
-				next.decrease();
-			}
-			else {	//	cur 쪽에 경사로를 놓아야 할 경우
-				if(cur.length < L)	//	경사로를 놓을 칸이 부족할 경우
-					return false;
-				cur.decrease();
-			}
-		}
-		
-		return true;
-	}
-	
-	private static void checkRow(int row) {
-		List<Chunk> chunks = new ArrayList<>();
-		
-		Chunk cur = new Chunk(map[row][0]);
-		
-		for(int x = 1; x < N; x++) {
-			if(map[row][x] == cur.height)	//	현재 chunk와 높이가 같을 경우
-				cur.increase();	//	현재 chunk 길이 1 증가
-			else {	//	현재 chunk와 높이가 다를 경우
-				if(Math.abs(map[row][x] - cur.height) > 1)	//	인접한 두 칸의 높이 차이가 1보다 클 경우, 경사로를 놓을 수 없음
-					return;
-				
-				chunks.add(cur);	//	현재 chunk 끝, 저장
-				cur = new Chunk(map[row][x]);	//	새로운 chunk 생성
-			}
-		}
-		chunks.add(cur);	//	마지막 chunk 저장
-		
-		if(check(chunks))	//	경사로를 놓을 수 있을 경우
-			answer++;
-	}
-	
-	private static void checkCol(int col) {
-		List<Chunk> chunks = new ArrayList<>();
-		
-		Chunk cur = new Chunk(map[0][col]);
-		
-		for(int y = 1; y < N; y++) {
-			if(map[y][col] == cur.height)	//	현재 chunk와 높이가 같을 경우
-				cur.increase();	//	현재 chunk 길이 1 증가
-			else {	//	현재 chunk와 높이가 다를 경우
-				if(Math.abs(map[y][col] - cur.height) > 1)	//	인접한 두 칸의 높이 차이가 1보다 클 경우, 경사로를 놓을 수 없음
-					return;
-				
-				chunks.add(cur);	//	현재 chunk 끝, 저장
-				cur = new Chunk(map[y][col]);	//	새로운 chunk 생성
-			}
-		}
-		chunks.add(cur);	//	마지막 chunk 저장
-
-		if(check(chunks))
-			answer++;
-	}
-	
-	//	높이가 같은 연속한 칸들을 Chunking한 결과 
-	private static class Chunk {
-		public int height;		//	높이가 같은 연속한 칸들의 높이
-		public int length;		//	높이가 같은 칸들의 개수, Chunk 길이
-		
-		public Chunk(int height) {
-			this.height = height;
-			this.length = 1;
-		}
-		
-		public void increase() {	//	높이가 같은 칸 추가 시 Chunk 길이 1 증가
-			this.length++;
-		}
-		
-		public void decrease() {
-			this.length -= L;
-		}
-	}
-}	//	Main-class-end
-```
-
-### **BOJ 23291** 어항 정리
-
-[23291번: 어항 정리](https://boj.ma/23291/t)
-
-```java
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.StringTokenizer;
-
-public class Main {
-	private static final int NONE = 0;	//	어항이 아님
-	
-	private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	private static StringTokenizer st;
-	
-	private static int N;
-	private static int K;
-	
-	private static int[][] bowls;
-	
-	private static int answer = 0;	//	어항 정리 횟수
-	
-	public static void main(String[] args) throws IOException {
-		st = new StringTokenizer(br.readLine());
-		N = Integer.parseInt(st.nextToken());
-		K = Integer.parseInt(st.nextToken());
-		
-		bowls = new int[N][N];
-		
-		st = new StringTokenizer(br.readLine());
-		for(int x = 0; x < N; x++)
-			bowls[N - 1][x] = Integer.parseInt(st.nextToken());
 		
 		while(true) {
-			if(step1()) {	//	더 이상 정리할 필요가 없을 경우
+			visited = new boolean[N][N];
+			selected = null;	//	선택받은 블록 그룹
+			
+			step1();	//	가장 우선순위가 높은 블록 그룹 선택
+			
+			if(selected == null) {	//	블록 그룹이 더 이상 없을 경우
 				System.out.println(answer);
 				break;
 			}
 			
-			answer++;	//	정리가 필요할 경우, 정리 횟수 1 증가
-			step2();
-			step3();
+			step2();	//	step1에서 선택받은 블록 그룹 제거
+			step3();					//	중력 작용 후 반시계방향 90도 회전 후 다시 중력 작용
 		}
 	}	//	main-end
 	
-	private static boolean step1() {
-		int min = Integer.MAX_VALUE;	//	물고기가 가장 적은 어항의 물고기 수
-		int max = Integer.MIN_VALUE;	//	물고기가 가장 많은 어항의 물고기 수
-		List<Integer> minPos = new ArrayList<>();
-		
-		for(int x = 0; x < N; x++) {
-			max = Math.max(max, bowls[N - 1][x]);
-			
-			if(bowls[N - 1][x] < min) {
-				min = bowls[N - 1][x];
-				minPos.clear();
-				minPos.add(x);
+	private static void step1() {
+		for(int y = 0; y < N; y++) {
+			for(int x = 0; x < N; x++) {
+				if(1 <= board[y][x] && board[y][x] <= M && !visited[y][x]) {	//	(y, x)칸이 일반 블록이고 아직 방문하지 않았을 경우
+					int[] group = bfs(y, x);
+					
+					if(group != null)	// 블록 그룹이 존재할 경우
+						compare(group);
+				}
 			}
-			else if(bowls[N - 1][x] == min)
-				minPos.add(x);
 		}
-		
-		for(int x : minPos)	//	물고기가 가장 적은 칸의 물고기 수 1 증가
-			bowls[N - 1][x]++;
-		
-		return max - min <= K;	//	최댓값 - 최솟값 <= K일 경우 정리할 필요 없음
 	}
 	
-	private static void step2() {
-		int row = 1;
-		int col = 1;	//	bowls에서 떼낼 부분 배열 크기
-		int ey = N - 1;
-		int sx = 0;			//	떼낼 부분 배열의 좌하단 좌표 (ey, sx) 
+	//	(y, x)에 있는 일반 블록을 기준 블록으로 하는 블록 그룹 반환
+	//	존재할 경우 해당 블록 그룹 반환, 존재하지 않을 경우, null 반환
+	private static int[] bfs(int y, int x) {
+		int[] res = {1, 0, y, x};	//	{일반 블록 수, 무지개블록 수, 기준 블록 y 좌표, 기준 블록 x 좌표}
+		boolean[][] checked = new boolean[N][N];	//	bfs 함수 내에서 중복 방문 방지 위한 방문 배열
 		
-		for(int rot = 0; ; rot++) {
-			int sy = ey - row + 1;
-			int ex = sx + col - 1;	//	떼낼 배열 (sy, sx) - (ey, ex)
-			
-			if(ex + row  >= N)	//	배열을 떼내서 회전시킨 다음에 올렸을 때, 범위를 벗어날 경우, 즉 떼낼 수 없을 경우
-				break;
-			
-			int[][] detached = detach(sy, sx, ey, ex);	//	떼낸 배열
-			int[][] rotated = rotate90(detached);		//	떼낸 배열을 시계방향으로 90도 회전시킨 배열
-			paste(rotated, N - 2, ex + 1);					//	회전시킨 배열을 (1, ex + 1)에 붙임
-			
-			if(rot % 2 == 0)	//	다음에 떼어낼 배열 크기 결정
-				row++;
-			else
-				col++;
-			
-			sx = ex + 1;
-		}
+		Queue<int[]> queue = new LinkedList<>();
+		visited[y][x] = true;
+		checked[y][x] = true;
+		queue.offer(new int[] {y, x});
 		
-		adjust();
-		flatten();
-	}
-	
-	private static void step3() {
-		int[][] detached = detach(N - 1, 0, N - 1, N / 2 - 1);	//	일렬로 놓인 N개 어항 중 왼쪽 절반을 떼어냄
-		int[][] rotated = rotate180(detached);					//	떼어낸 어항을 180도 회전시킴
-		paste(rotated, N - 2, N / 2);	//	회전시킨 어항을 다시 붙임
-		detached = detach(N - 2, N / 2, N - 1, 3 * N / 4 - 1);
-		rotated = rotate180(detached);
-		paste(rotated, N - 3, 3 * N / 4);
-		
-		adjust();
-		flatten();
-	}
-	
-	//	모든 인접한 두 어항 사이의 물고기 수 조절
-	private static void adjust() {
-		int[][] diffs = new int[N][N];	//	diff[y][x] : (y, x) 칸의 증감량
-		
-		for(int y = N - 1; y >= 0; y--) {
-			for(int x = N - 1; x >= 0; x--) {
-				if(bowls[y][x] == NONE)	//	(y, x)가 어항이 아닐 경우
+		while(!queue.isEmpty()) {
+			int[] cur = queue.poll();
+			int cy = cur[0];
+			int cx = cur[1];
+			
+			for(int d = 0; d < 4; d++) {
+				int ny = cy + dy[d];
+				int nx = cx + dx[d];	//	인접한 칸
+				
+				//	인접한 칸이 범위를 벗어날 경우
+				if(!isIn(ny, nx))
 					continue;
 				
-				for(int dir = 0; dir < 2; dir++) {
-					int ny = y + dy[dir];
-					int nx = x + dx[dir];
-					
-					if(isIn(ny, nx) && bowls[ny][nx] != NONE) {
-						int d = Math.abs(bowls[ny][nx] - bowls[y][x]) / 5;
+				//	같은 색의 일반 블록이거나 무지개색 블록일 경우
+				if(board[ny][nx] == board[y][x] || board[ny][nx] == RAINBOW) {
+					if(!checked[ny][nx]) {	//	해당 bfs에서 아직 방문 안했을 경우
+						checked[ny][nx] = true;	//	해당 bfs에서 다시 방문하지 않도록
+						visited[ny][nx] = true;	//	다음 bfs에서 (ny, nx)에서 시작하는 일 없도록
+						if(board[ny][nx] == board[y][x])	//	일반 블록일 경우
+							res[0]++;
+						else								//	무지개색 블록일 경우
+							res[1]++;
 						
-						if(d != 0) {
-							if(bowls[ny][nx] > bowls[y][x]) {
-								diffs[ny][nx] -= d;
-								diffs[y][x] += d;
-							}
-							else {
-								diffs[ny][nx] += d;
-								diffs[y][x] -= d;
-							}
-						}
+						queue.offer(new int[] {ny, nx});
 					}
 				}
 			}
 		}
 		
-		for(int y = 0; y < N; y++) {
-			for(int x = 0; x < N; x++)
-				bowls[y][x] += diffs[y][x];
-		}
-	}
-	
-	//	어항을 다시 일렬로 평평하게 배치
-	private static void flatten() {
-		int[][] tmp = new int[N][N];
-		
-		int xpos = 0;
-		
-		for(int x = 0; x < N; x++) {
-			int y = N - 1;
-
-			while(y >= 0 && bowls[y][x] != NONE) {
-				tmp[N - 1][xpos++] = bowls[y][x];
-				y--;
-			}
-		}
-		
-		bowls = tmp;
-	}
-	
-	//	bowls에서 좌상단이 (sy, sx), 우하단이 (ey, ex)인 부분 배열을 떼서 배열로 만듬
-	//	bowls에서 떼낸 부분은 0으로 변경
-	private static int[][] detach(int sy, int sx, int ey, int ex) {
-		int row = ey - sy + 1;
-		int col = ex - sx + 1;
-		int[][] res = new int[row][col];
-		
-		for(int y = sy; y <= ey; y++) {
-			for(int x = sx; x <= ex; x++) {
-				res[y - sy][x - sx] = bowls[y][x];
-				bowls[y][x] = NONE;	//	(y, x)를 떼냈으므로 (y, x)는 어항이 아님
-			}
-		}
+		if(res[0] + res[1] < 2)	//	전체 블록 개수가 2개보다 적을 경우
+			return null;
 		
 		return res;
 	}
 	
-	//	회전된 배열을 다시 bowls의 (ey, sx)를 좌하단으로 해서 붙임
-	private static void paste(int[][] rotated, int ey, int sx) {
-		int row = rotated.length;
-		int col = rotated[0].length;
+	//	선택받은 블록 그룹을 제거
+	private static void step2() {
+		int y = selected[2];
+		int x = selected[3];		//	제거할 블록 그룹의 기준 블록 좌표
+		int check = board[y][x];	//	해당 블록 그룹의 표식
 		
-		int sy = ey - row + 1;
-		int ex = sx + col - 1;
-		
-		for(int y = 0; y < row; y++) {
-			for(int x = 0; x < col; x++)
-				bowls[sy + y][sx + x] = rotated[y][x];
-		}
+		delete(y, x, check);
+		answer += (selected[0] + selected[1]) * (selected[0] + selected[1]);	//	블록 그룹 크기^2만큼 점수 추가
 	}
 	
-	//	detached 배열을 시계방향으로 90도 회전시킨 배열 반환
-	private static int[][] rotate90(int[][] detached) {
-		int row = detached.length;
-		int col = detached[0].length;
-		int[][] res = new int[col][row];
+	//	(y, x)를 시작으로 도달 가능한 같은 색 일반 블록, 무지개 블록 제거
+	private static void delete(int y, int x, int check) {
+		Queue<int[]> queue = new LinkedList<>();
+		boolean[][] checked = new boolean[N][N];	//	delete 함수 내에서 중복 방문 방지 위한 방문 배열
+		board[y][x] = NONE;
+		checked[y][x] = true;
+		queue.offer(new int[] {y, x});
 		
-		for(int y = 0; y < row; y++) {
-			for(int x = 0; x < col; x++)
-				res[x][row - y - 1] = detached[y][x];
-		}
-		
-		return res;
-	}
-	
-	//	detached 배열을 180도 회전시킨 배열 반환
-	private static int[][] rotate180(int[][] detached) {
-		int row = detached.length;
-		int col = detached[0].length;
-		int[][] res = new int[row][col];
-		
-		for(int y = 0; y < row; y++) {
-			for(int x = 0; x < col; x++) {
-				int yy = row - y - 1;
-				int xx = col - x - 1;
+		while(!queue.isEmpty()) {
+			int[] cur = queue.poll();
+			int cy = cur[0];
+			int cx = cur[1];
+			
+			for(int d = 0; d < 4; d++) {
+				int ny = cy + dy[d];
+				int nx = cx + dx[d];	//	인접한 칸
 				
-				res[yy][xx] = detached[y][x];
+				if(isIn(ny, nx) && (board[ny][nx] == RAINBOW || board[ny][nx] == check) && !checked[ny][nx]) {	//	범위를 벗어나지 않고 같은 그룹의 블록일 경우
+					checked[ny][nx] = false;
+					board[ny][nx] = NONE;
+					queue.offer(new int[] {ny, nx});
+				}
 			}
 		}
-		
-		return res;
 	}
 	
-	private static final int[] dy = {0, -1};
-	private static final int[] dx = {-1, 0};
+	private static void step3() {
+		gravity();	//	중력 작용
+		turn90();	//	반시계방향 90도 회전
+		gravity();	//	중력 작용
+	}
+	
+	private static void gravity() {
+		for(int x = 0; x < N; x++) {	//	모든 열에 대해서 진행
+			for(int ey = 0; ey <= N - 2; ey++) {	//	떨어질 가장 위에 있는 블록의 y 좌표
+				for(int y = N - 2; y >= ey; y--) {
+					if(board[y][x] == NONE || board[y][x] == BLACK || board[y + 1][x] != NONE)	//	해당 칸이 빈칸이거나 검은 블록일경우, 또는 아랫칸에 이미 블록이 존재할 경우
+						continue;
+					
+					board[y + 1][x] = board[y][x];	//	(y, x)에 있던 블록이 한칸 내려감
+					board[y][x] = NONE;				//	(y, x)는 빈칸으로 변경
+				}
+			}
+		}
+	}
+	
+	//	selected와 group을 비교
+	private static void compare(int[] group) {
+		if(selected == null) {
+			selected = group;
+			return;
+		}
+		
+		int selectedSize = selected[0] + selected[1];
+		int groupSize = group[0] + group[1];
+		
+		if(selectedSize < groupSize) {	//	크기가 더 클 경우
+			selected = group;	//	대체
+			return;
+		}
+		
+		if(selectedSize > groupSize)	//	크기가 더 작을 경우 탈락
+			return;
+		
+		//	둘의 크기가 같을 경우
+		int selectedRainbows = selected[1];
+		int groupRainbows = group[1];
+		
+		if(selectedRainbows < groupRainbows) {	//	무지개블록이 더 많을 경우
+			selected = group;	//	대체
+			return;
+		}
+		
+		if(selectedRainbows > groupRainbows)	//	크기가 더 작을 경우 탈락
+			return;
+		
+		int sy = selected[2];
+		int sx = selected[3];
+		int gy = group[2];
+		int gx = group[3];
+		
+		if(sy < gy) {
+			selected = group;	//	대체
+			return;
+		}
+		
+		if(sy > gy)	//	기준 블록 y 좌표가 더 작을 경우
+			return;
+		
+		if(sx < gx)	//	대체
+			selected = group;
+	}
+	
+	private static final int[] dy = {0, 1, 0, -1};
+	private static final int[] dx = {1, 0, -1, 0};
 	
 	private static boolean isIn(int y, int x) {
 		return (0 <= y && y < N) && (0 <= x && x < N);
+	}
+	
+	//	board를 반시계 방향으로 90도로 돌림
+	private static void turn90() {
+		int[][] tmp = new int[N][N];
+		
+		for(int y = 0; y < N; y++) {
+			for(int x = 0; x < N; x++)
+				tmp[N - x - 1][y] = board[y][x];
+		}
+		
+		board = tmp;
 	}
 }	//	Main-class-end
 ```
