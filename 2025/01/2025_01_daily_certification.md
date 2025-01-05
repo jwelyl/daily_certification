@@ -13,3 +13,8 @@ BOJ 13422 도둑 (Prefix Sum, Sliding Window), BOJ 14890 경사로 (Implementati
 
 ### [2025.01.04](https://github.com/jwelyl/daily_certification/blob/main/2024/01/04/24_01_04_daily_certification.md)
 BOJ 22862 가장 긴 짝수 연속한 부분 수열 (large) (Two Pointer)
+
+## 2025.01.05.wed ~ 2024.01.11.sat 데일리 인증
+
+### [2025.01.05](https://github.com/jwelyl/daily_certification/blob/main/2024/01/05/24_01_05_daily_certification.md)
+BOJ 17143 낚시왕 (Implementation, Simulation), BOJ 17135 캐슬 디펜스 (Implementation, Simulation, Bruteforcing)
