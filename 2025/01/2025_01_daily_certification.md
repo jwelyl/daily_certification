@@ -20,4 +20,7 @@ BOJ 22862 가장 긴 짝수 연속한 부분 수열 (large) (Two Pointer)
 BOJ 17143 낚시왕 (Implementation, Simulation), BOJ 17135 캐슬 디펜스 (Implementation, Simulation, Bruteforcing)
 
 ### [2025.01.06](https://github.com/jwelyl/daily_certification/blob/main/2024/01/06/24_01_06_daily_certification.md)
-BOJ 12100 2048 (Easy) (Implementation, Simulation, Bruteforcing, Backtracking), BOJ BOJ BOJ 17144 미세먼지 안녕! (Implementation, Simulation)
+BOJ 12100 2048 (Easy) (Implementation, Simulation, Bruteforcing, Backtracking), BOJ BOJ 17144 미세먼지 안녕! (Implementation, Simulation)
+
+### [2025.01.07](https://github.com/jwelyl/daily_certification/blob/main/2024/01/07/24_01_07_daily_certification.md)
+BOJ 12100 2048 (Easy) (Implementation, Simulation, Bruteforcing, Backtracking), BOJ BOJ 21611 마법사 상어와 블리자드 (Implementation, Simulation)
