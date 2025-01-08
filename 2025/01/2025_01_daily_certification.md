@@ -23,4 +23,7 @@ BOJ 17143 낚시왕 (Implementation, Simulation), BOJ 17135 캐슬 디펜스 (Im
 BOJ 12100 2048 (Easy) (Implementation, Simulation, Bruteforcing, Backtracking), BOJ BOJ 17144 미세먼지 안녕! (Implementation, Simulation)
 
 ### [2025.01.07](https://github.com/jwelyl/daily_certification/blob/main/2024/01/07/24_01_07_daily_certification.md)
-BOJ 12100 2048 (Easy) (Implementation, Simulation, Bruteforcing, Backtracking), BOJ BOJ 21611 마법사 상어와 블리자드 (Implementation, Simulation)
+BOJ 12100 2048 (Easy) (Implementation, Simulation, Bruteforcing, Backtracking), BOJ  21611 마법사 상어와 블리자드 (Implementation, Simulation)
+
+### [2025.01.08](https://github.com/jwelyl/daily_certification/blob/main/2024/01/08/24_01_08_daily_certification.md)
+BOJ 14499 주사위 굴리기 (Implementation, Simulation), BOJ 13460 구슬 탈출 2 (Implementation, Simulation, BFS, Bruteforcing, Backtracking), BOJ 10776 제국 (Shortest Path, Dijkstra)
