@@ -1,5 +1,16 @@
 # 25_01_07_daily_certification
 
+```
+[#007 koreii] 데일리인증 20250107
+1. 프로젝트 리팩토링
+- DB 테이블 구현 진행
+- Index
+- README 갱신
+2. 코딩 테스트 대비 알고리즘 학습
+- Implementation, Simulation (BOJ 21611 마법사 상어와 블리자드)
+- Shortest Path, Dijkstra (BOJ 15422 Bumped!)
+```
+
 # Problem Solving (Algorithm & SQL)
 
 ### **BOJ 21611** 마법사 상어와 블리자드
@@ -260,6 +271,151 @@ public class Main {
 	
 	private static boolean isIn(int y, int x) {
 		return (0 <= y && y < N) && (0 <= x && x < N);
+	}
+}	//	Main-class-end
+```
+
+### **BOJ 15422** Bumped!
+
+[15422번: Bumped!](https://boj.ma/15422/t)
+
+```java
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.PriorityQueue;
+import java.util.StringTokenizer;
+
+public class Main {
+	private static final long INF = 150_000L * 50_000L + 1; 
+	
+	private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	private static StringTokenizer st;
+	
+	private static int N;	//	정점 개수
+	private static int M;	//	간선 개수
+	private static int F;	//	항공편 개수
+	private static int S;	//	출발점
+	private static int T;	//	도착점
+	
+	private static List<Edge>[] graph;
+	
+	public static void main(String[] args) throws IOException {
+		st = new StringTokenizer(br.readLine());
+		N = Integer.parseInt(st.nextToken());
+		M = Integer.parseInt(st.nextToken());
+		F = Integer.parseInt(st.nextToken());
+		S = Integer.parseInt(st.nextToken());
+		T = Integer.parseInt(st.nextToken());
+		
+		graph = new ArrayList[N];
+		for(int v = 0; v < N; v++)
+			graph[v] = new ArrayList<>();
+		
+		for(int e = 0; e < M; e++) {
+			st = new StringTokenizer(br.readLine());
+			int v1 = Integer.parseInt(st.nextToken());
+			int v2 = Integer.parseInt(st.nextToken());
+			int c = Integer.parseInt(st.nextToken());
+			
+			graph[v1].add(new Edge(v2, c, false));
+			graph[v2].add(new Edge(v1, c, false));
+		}
+		
+		for(int e = 0; e < F; e++) {
+			st = new StringTokenizer(br.readLine());
+			int v1 = Integer.parseInt(st.nextToken());
+			int v2 = Integer.parseInt(st.nextToken());
+			graph[v1].add(new Edge(v2, 0, true));
+		}
+		
+		System.out.println(dijkstra());
+	}	//	main-end
+	
+	private static long dijkstra() {
+		PriorityQueue<Node> pq = new PriorityQueue<>();
+		long[][] dist = new long[2][N];
+		Arrays.fill(dist[0], INF);
+		Arrays.fill(dist[1], INF);
+		
+		dist[0][S] = 0;
+		dist[1][S] = 0;
+		pq.offer(new Node(S, dist[0][S], false));
+		
+		while(!pq.isEmpty()) {
+			Node cur = pq.poll();
+			int cv = cur.vertex;
+			long cc = cur.cost;
+			boolean cIsFlight = cur.isFlight;
+			
+			if((!cIsFlight && (dist[0][cv] < cc)) || (cIsFlight && (dist[1][cv] < cc)))
+				continue;
+			
+			for(Edge edge : graph[cv]) {
+				int nv = edge.vertex;
+				long nc = cc + edge.cost;
+				boolean isFlight = edge.isFlight;
+				
+				if(cIsFlight) {	//	이미 항공편을 1회 이용해서 cv까지 온경우
+					if(isFlight)	//	항공편을 또 이용할 수 없음
+						continue;
+					else {
+						if(nc < dist[1][nv]) {
+							dist[1][nv] = nc;
+							pq.offer(new Node(nv, dist[1][nv], true));
+						}
+					}
+				}
+				else {	//	아직 항공편을 이용하지 않은 경우
+					if(isFlight) {	//	항공편을 이용할 수 있음
+						if(nc < dist[1][nv]) {
+							dist[1][nv] = nc;
+							pq.offer(new Node(nv, dist[1][nv], true));
+						}
+					}
+					else {
+						if(nc < dist[0][nv]) {
+							dist[0][nv] = nc;
+							pq.offer(new Node(nv, dist[0][nv], false));
+						}
+					}
+				}
+			}
+		}
+		
+		return Math.min(dist[0][T], dist[1][T]);
+	}
+	
+	private static class Edge {
+		public int vertex;
+		public int cost;
+		public boolean isFlight;
+		
+		public Edge(int vertex, int cost, boolean isFlight) {
+			this.vertex = vertex;
+			this.cost = cost;
+			this.isFlight = isFlight;
+		}
+	}
+	
+	private static class Node implements Comparable<Node> {
+		public int vertex;
+		public long cost;
+		public boolean isFlight;	//	vertex까지 오는데 비행기를 한번이라도 탔으면 true
+		
+		public Node(int vertex, long cost, boolean isFlight) {
+			this.vertex = vertex;
+			this.cost = cost;
+			this.isFlight = isFlight;
+		}
+		
+		@Override
+		public int compareTo(Node other) {
+			return Long.compare(this.cost, other.cost);
+		}
 	}
 }	//	Main-class-end
 ```
