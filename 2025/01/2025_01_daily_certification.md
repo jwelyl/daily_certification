@@ -27,3 +27,6 @@ BOJ 12100 2048 (Easy) (Implementation, Simulation, Bruteforcing, Backtracking), 
 
 ### [2025.01.08](https://github.com/jwelyl/daily_certification/blob/main/2024/01/08/24_01_08_daily_certification.md)
 BOJ 14499 주사위 굴리기 (Implementation, Simulation), BOJ 13460 구슬 탈출 2 (Implementation, Simulation, BFS, Bruteforcing, Backtracking), BOJ 10776 제국 (Shortest Path, Dijkstra)
+
+### [2025.01.09](https://github.com/jwelyl/daily_certification/blob/main/2024/01/09/24_01_09_daily_certification.md)
+BOJ 16681 등산 (Shortest Path, Dijkstra, Undirected Graph)
