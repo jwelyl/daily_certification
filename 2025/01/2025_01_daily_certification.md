@@ -30,3 +30,6 @@ BOJ 14499 주사위 굴리기 (Implementation, Simulation), BOJ 13460 구슬 탈
 
 ### [2025.01.09](https://github.com/jwelyl/daily_certification/blob/main/2024/01/09/24_01_09_daily_certification.md)
 BOJ 16681 등산 (Shortest Path, Dijkstra, Undirected Graph)
+
+### [2025.01.10](https://github.com/jwelyl/daily_certification/blob/main/2024/01/10/24_01_10_daily_certification.md)
+BOJ 10715 JOI 고ㅇ원 (Shortest Path, Dijkstra)
