@@ -36,3 +36,8 @@ BOJ 10715 JOI 공원 (Shortest Path, Dijkstra)
 
 ### [2025.01.11](https://github.com/jwelyl/daily_certification/blob/main/2024/01/1/24_01_11_daily_certification.md)
 BOJ 19237 어른 상어 (Implementation, Simulation)
+
+## 2025.01.12.wed ~ 2024.01.18.sat 데일리 인증
+
+### [2025.01.12](https://github.com/jwelyl/daily_certification/blob/main/2024/01/12/24_01_12_daily_certification.md)
+BOJ 15684 사다리 조작 (Implementation, Bruteforcing, Backtracking), BOJ 20061 모노미노도미노 2 (Implementation, Simulation), BOJ 10217 KCM Travel (Dijkstra, DP)
