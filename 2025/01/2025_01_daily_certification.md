@@ -41,3 +41,6 @@ BOJ 19237 어른 상어 (Implementation, Simulation)
 
 ### [2025.01.12](https://github.com/jwelyl/daily_certification/blob/main/2024/01/12/24_01_12_daily_certification.md)
 BOJ 15684 사다리 조작 (Implementation, Bruteforcing, Backtracking), BOJ 20061 모노미노도미노 2 (Implementation, Simulation), BOJ 10217 KCM Travel (Dijkstra, DP)
+
+### [2025.01.13](https://github.com/jwelyl/daily_certification/blob/main/2024/01/13/24_01_13_daily_certification.md)
+BOJ 17837 새로운 게임 2 (Implementation, Bruteforcing, Backtracking), BOJ 1162 도로포장 (Dijkstra, DP)
