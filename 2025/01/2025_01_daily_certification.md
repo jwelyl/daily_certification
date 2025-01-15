@@ -44,3 +44,9 @@ BOJ 15684 사다리 조작 (Implementation, Bruteforcing, Backtracking), BOJ 200
 
 ### [2025.01.13](https://github.com/jwelyl/daily_certification/blob/main/2024/01/13/24_01_13_daily_certification.md)
 BOJ 17837 새로운 게임 2 (Implementation, Bruteforcing, Backtracking), BOJ 1162 도로포장 (Dijkstra, DP)
+
+### [2025.01.14](https://github.com/jwelyl/daily_certification/blob/main/2024/01/14/24_01_14_daily_certification.md)
+BOJ 17142 연구소 3 (Bruteforcing, BFS), BOJ 13308 주유소 (Dijkstra, DP)
+
+### [2025.01.15](https://github.com/jwelyl/daily_certification/blob/main/2024/01/15/24_01_15_daily_certification.md)
+BOJ 16235 나무 재테크 (Implementation, Simulation, Deque), BOJ 2325 개코전쟁 (Dijkstra, Shorest Path Tree)
