@@ -50,3 +50,6 @@ BOJ 17142 연구소 3 (Bruteforcing, BFS), BOJ 13308 주유소 (Dijkstra, DP)
 
 ### [2025.01.15](https://github.com/jwelyl/daily_certification/blob/main/2024/01/15/24_01_15_daily_certification.md)
 BOJ 16235 나무 재테크 (Implementation, Simulation, Deque), BOJ 2325 개코전쟁 (Dijkstra, Shorest Path Tree)
+
+### [2025.01.16](https://github.com/jwelyl/daily_certification/blob/main/2024/01/16/24_01_16_daily_certification.md)
+BOJ 14285 간선 끊어가기 (Dijkstra, Undirected Graph), BOJ 2632 피자판매 (Prefix Sum, Binary Search)
