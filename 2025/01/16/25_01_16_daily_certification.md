@@ -1,16 +1,5 @@
 # 25_01_16_daily_certification
 
-```
-[#016 koreii] 데일리인증 20250116
-1. 프로젝트 리팩토링
-- 회원 관련 기능 명세 확정
-- 회원 관련 Repository 인터페이스 작성 완료 + 개선 방향 검토
-- 회원 관련 데이터베이스 테이블, 인덱스 변경 고려
-2. 코딩 테스트 대비 알고리즘 학습
-- Dijkstra, Undirected Graph (BOJ 14285 간선 끊어가기)
-- Prefix Sum, Binary Search (BOJ 2632 피자판매)
-```
-
 # Problem Solving (Algorithm & SQL)
 
 ### **BOJ 14285** 간선 끊어가기
