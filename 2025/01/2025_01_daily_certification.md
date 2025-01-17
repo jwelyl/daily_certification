@@ -53,3 +53,6 @@ BOJ 16235 나무 재테크 (Implementation, Simulation, Deque), BOJ 2325 개코�
 
 ### [2025.01.16](https://github.com/jwelyl/daily_certification/blob/main/2024/01/16/24_01_16_daily_certification.md)
 BOJ 14285 간선 끊어가기 (Dijkstra, Undirected Graph), BOJ 2632 피자판매 (Prefix Sum, Binary Search)
+
+### [2025.01.17](https://github.com/jwelyl/daily_certification/blob/main/2024/01/17/24_01_17_daily_certification.md)
+BOJ 13907 세금 (Dijkstra, DP)
