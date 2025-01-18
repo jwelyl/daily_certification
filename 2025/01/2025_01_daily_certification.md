@@ -56,3 +56,6 @@ BOJ 14285 간선 끊어가기 (Dijkstra, Undirected Graph), BOJ 2632 피자판�
 
 ### [2025.01.17](https://github.com/jwelyl/daily_certification/blob/main/2024/01/17/24_01_17_daily_certification.md)
 BOJ 13907 세금 (Dijkstra, DP)
+
+### [2025.01.18](https://github.com/jwelyl/daily_certification/blob/main/2024/01/18/24_01_18_daily_certification.md)
+BOJ 14611 월요병 (Dijkstra)
