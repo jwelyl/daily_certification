@@ -59,3 +59,8 @@ BOJ 13907 세금 (Dijkstra, DP)
 
 ### [2025.01.18](https://github.com/jwelyl/daily_certification/blob/main/2024/01/18/24_01_18_daily_certification.md)
 BOJ 14611 월요병 (Dijkstra)
+
+## 2025.01.19.wed ~ 2024.01.25.sat 데일리 인증
+
+### [2025.01.19](https://github.com/jwelyl/daily_certification/blob/main/2024/01/19/24_01_19_daily_certification.md)
+BOJ 18262 Milk Pumping (Dijkstra)
