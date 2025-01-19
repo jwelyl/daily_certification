@@ -1,17 +1,5 @@
 # 25_01_19_daily_certification
 
-```
-[#019 koreii] 데일리인증 20250119
-1. 프로젝트 리팩토링
-- bugfix
-- 진행상황 정리
-2. 코딩 테스트 대비 알고리즘 학습
-- Dijkstra (BOJ 18262 Milk Pumping)
-3. 정보처리기사 필기 (프로그래밍 언어 활용)
-- 서버 프로그램 구현, 프레임워크, 취약성 공격
-- 프로그래밍 언어 활용, 파이썬 자료형, C 포인터, 연산자 우선순위
-```
-
 # Problem Solving (Algorithm & SQL)
 
 ### **BOJ** 18262 Milk Pumping
