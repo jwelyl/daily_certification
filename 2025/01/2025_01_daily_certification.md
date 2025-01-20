@@ -64,3 +64,6 @@ BOJ 14611 월요병 (Dijkstra)
 
 ### [2025.01.19](https://github.com/jwelyl/daily_certification/blob/main/2024/01/19/24_01_19_daily_certification.md)
 BOJ 18262 Milk Pumping (Dijkstra)
+
+### [2025.01.20](https://github.com/jwelyl/daily_certification/blob/main/2024/01/20/24_01_20_daily_certification.md)
+BOJ 22959 신촌 수열과 쿼리 (Binary Search, Segment Tree)
