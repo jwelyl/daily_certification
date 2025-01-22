@@ -67,3 +67,6 @@ BOJ 18262 Milk Pumping (Dijkstra)
 
 ### [2025.01.20](https://github.com/jwelyl/daily_certification/blob/main/2024/01/20/24_01_20_daily_certification.md)
 BOJ 22959 신촌 수열과 쿼리 (Binary Search, Segment Tree)
+
+### [2025.01.21](https://github.com/jwelyl/daily_certification/blob/main/2024/01/21/24_01_21_daily_certification.md)
+BOJ 31932 나는 북극곰입니다 (Dijkstra, Parametric Search)
