@@ -73,3 +73,6 @@ BOJ 31932 나는 북극곰입니다 (Dijkstra, Parametric Search)
 
 ### [2025.01.22](https://github.com/jwelyl/daily_certification/blob/main/2024/01/22/24_01_22_daily_certification.md)
 BOJ 18128 치삼이의 징검다리 건너기 (Dijkstra, 0-1 BFS, Parametric Search)
+
+### [2025.01.23](https://github.com/jwelyl/daily_certification/blob/main/2024/01/23/24_01_23_daily_certification.md)
+BOJ 27651 벌레컷 (Prefix Sum, Two-pointer, Binary Search)
