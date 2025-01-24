@@ -76,3 +76,6 @@ BOJ 18128 치삼이의 징검다리 건너기 (Dijkstra, 0-1 BFS, Parametric Sea
 
 ### [2025.01.23](https://github.com/jwelyl/daily_certification/blob/main/2024/01/23/24_01_23_daily_certification.md)
 BOJ 27651 벌레컷 (Prefix Sum, Two-pointer, Binary Search)
+
+### [2025.01.24](https://github.com/jwelyl/daily_certification/blob/main/2024/01/24/24_01_24_daily_certification.md)
+BOJ 12003 Diamond Collector (Silver) (Prefix Sum, DP, Binary Search )
