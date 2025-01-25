@@ -79,3 +79,6 @@ BOJ 27651 벌레컷 (Prefix Sum, Two-pointer, Binary Search)
 
 ### [2025.01.24](https://github.com/jwelyl/daily_certification/blob/main/2024/01/24/24_01_24_daily_certification.md)
 BOJ 12003 Diamond Collector (Silver) (Prefix Sum, DP, Binary Search )
+
+### [2025.01.25](https://github.com/jwelyl/daily_certification/blob/main/2024/01/25/24_01_25_daily_certification.md)
+BOJ 5465 곰돌이 (BFS, Binary Search )
