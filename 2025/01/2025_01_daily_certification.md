@@ -14,7 +14,7 @@ BOJ 13422 도둑 (Prefix Sum, Sliding Window), BOJ 14890 경사로 (Implementati
 ### [2025.01.04](https://github.com/jwelyl/daily_certification/blob/main/2024/01/04/24_01_04_daily_certification.md)
 BOJ 22862 가장 긴 짝수 연속한 부분 수열 (large) (Two Pointer)
 
-## 2025.01.05.wed ~ 2024.01.11.sat 데일리 인증
+## 2025.01.05.sun ~ 2024.01.11.sat 데일리 인증
 
 ### [2025.01.05](https://github.com/jwelyl/daily_certification/blob/main/2024/01/05/24_01_05_daily_certification.md)
 BOJ 17143 낚시왕 (Implementation, Simulation), BOJ 17135 캐슬 디펜스 (Implementation, Simulation, Bruteforcing)
@@ -37,7 +37,7 @@ BOJ 10715 JOI 공원 (Shortest Path, Dijkstra)
 ### [2025.01.11](https://github.com/jwelyl/daily_certification/blob/main/2024/01/1/24_01_11_daily_certification.md)
 BOJ 19237 어른 상어 (Implementation, Simulation)
 
-## 2025.01.12.wed ~ 2024.01.18.sat 데일리 인증
+## 2025.01.12.sun ~ 2024.01.18.sat 데일리 인증
 
 ### [2025.01.12](https://github.com/jwelyl/daily_certification/blob/main/2024/01/12/24_01_12_daily_certification.md)
 BOJ 15684 사다리 조작 (Implementation, Bruteforcing, Backtracking), BOJ 20061 모노미노도미노 2 (Implementation, Simulation), BOJ 10217 KCM Travel (Dijkstra, DP)
@@ -60,7 +60,7 @@ BOJ 13907 세금 (Dijkstra, DP)
 ### [2025.01.18](https://github.com/jwelyl/daily_certification/blob/main/2024/01/18/24_01_18_daily_certification.md)
 BOJ 14611 월요병 (Dijkstra)
 
-## 2025.01.19.wed ~ 2024.01.25.sat 데일리 인증
+## 2025.01.19.sun ~ 2024.01.25.sat 데일리 인증
 
 ### [2025.01.19](https://github.com/jwelyl/daily_certification/blob/main/2024/01/19/24_01_19_daily_certification.md)
 BOJ 18262 Milk Pumping (Dijkstra)
@@ -82,3 +82,8 @@ BOJ 12003 Diamond Collector (Silver) (Prefix Sum, DP, Binary Search )
 
 ### [2025.01.25](https://github.com/jwelyl/daily_certification/blob/main/2024/01/25/24_01_25_daily_certification.md)
 BOJ 5465 곰돌이 (BFS, Binary Search )
+
+## 2025.01.26.sun ~ 2024.01.25.sat 데일리 인증
+
+### [2025.01.26](https://github.com/jwelyl/daily_certification/blob/main/2024/01/26/24_01_26_daily_certification.md)
+BOJ 2585 경비행기 (BFS, Parametric Search)
