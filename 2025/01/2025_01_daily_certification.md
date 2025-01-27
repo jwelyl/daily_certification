@@ -87,3 +87,6 @@ BOJ 5465 곰돌이 (BFS, Binary Search )
 
 ### [2025.01.26](https://github.com/jwelyl/daily_certification/blob/main/2024/01/26/24_01_26_daily_certification.md)
 BOJ 2585 경비행기 (BFS, Parametric Search)
+
+### [2025.01.27](https://github.com/jwelyl/daily_certification/blob/main/2024/01/27/24_01_27_daily_certification.md)
+BOJ 1450 냅색문제 (Meet In The Middle, Binary Search, Subset)
