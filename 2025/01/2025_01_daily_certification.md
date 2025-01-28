@@ -93,3 +93,6 @@ BOJ 1450 냅색문제 (Meet In The Middle, Binary Search, Subset)
 
 ### [2025.01.28](https://github.com/jwelyl/daily_certification/blob/main/2024/01/28/24_01_28_daily_certification.md)
 BOJ 1561 놀이 공원 (Binary Search, Parametric Search)
+
+### [2025.01.29](https://github.com/jwelyl/daily_certification/blob/main/2024/01/29/24_01_29_daily_certification.md)
+BOJ 33230 Bitcoin Bubble (Segment Tree, Divide and Conquer)
