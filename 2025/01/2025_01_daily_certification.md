@@ -96,3 +96,6 @@ BOJ 1561 놀이 공원 (Binary Search, Parametric Search)
 
 ### [2025.01.29](https://github.com/jwelyl/daily_certification/blob/main/2024/01/29/24_01_29_daily_certification.md)
 BOJ 33230 Bitcoin Bubble (Segment Tree, Divide and Conquer)
+
+### [2025.01.30](https://github.com/jwelyl/daily_certification/blob/main/2024/01/30/24_01_30_daily_certification.md)
+BOJ 1777 순열복원 (Segment Tree, Binary Search)
