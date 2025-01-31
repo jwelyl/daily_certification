@@ -99,3 +99,6 @@ BOJ 33230 Bitcoin Bubble (Segment Tree, Divide and Conquer)
 
 ### [2025.01.30](https://github.com/jwelyl/daily_certification/blob/main/2024/01/30/24_01_30_daily_certification.md)
 BOJ 1777 순열복원 (Segment Tree, Binary Search)
+
+### [2025.01.31](https://github.com/jwelyl/daily_certification/blob/main/2024/01/31/24_01_31_daily_certification.md)
+BOJ 16933 벽 부수고 이동하기 3 (BFS), BOJ 1396 크루스칼의 공 (Disjoint Set, MST, DFS, Forest, LCA)
