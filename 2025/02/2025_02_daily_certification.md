@@ -12,3 +12,6 @@ BOJ 16947 서울 지하철 2호선 (DFS, Cycle Detection, Multisource BFS), BOJ 
 
 ### [2025.02.03](https://github.com/jwelyl/daily_certification/blob/main/2024/02/03/25_02_03_daily_certification.md)
 BOJ 23288 주사위 굴리기 2 (Implementation, Simulation, BFS), BOJ 2696 중앙값 구하기 (Priority Queue)
+
+### [2025.02.04](https://github.com/jwelyl/daily_certification/blob/main/2024/02/04/25_02_04_daily_certification.md)
+BOJ 15573 채굴 (BFS, Parametric Search)
