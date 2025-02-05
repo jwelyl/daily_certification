@@ -15,3 +15,6 @@ BOJ 23288 주사위 굴리기 2 (Implementation, Simulation, BFS), BOJ 2696 중�
 
 ### [2025.02.04](https://github.com/jwelyl/daily_certification/blob/main/2024/02/04/25_02_04_daily_certification.md)
 BOJ 15573 채굴 (BFS, Parametric Search)
+
+### [2025.02.05](https://github.com/jwelyl/daily_certification/blob/main/2024/02/05/25_02_05_daily_certification.md)
+BOJ 14990 Crowd Control (DFS, Parametric Search)
