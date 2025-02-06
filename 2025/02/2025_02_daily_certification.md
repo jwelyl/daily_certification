@@ -18,3 +18,6 @@ BOJ 15573 채굴 (BFS, Parametric Search)
 
 ### [2025.02.05](https://github.com/jwelyl/daily_certification/blob/main/2024/02/05/25_02_05_daily_certification.md)
 BOJ 14990 Crowd Control (DFS, Parametric Search)
+
+### [2025.02.05](https://github.com/jwelyl/daily_certification/blob/main/2024/02/05/25_02_05_daily_certification.md)
+BOJ 16724 피리 부는 사나이 (DFS, Cycle Detection)
