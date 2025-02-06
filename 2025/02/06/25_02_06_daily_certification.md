@@ -1,15 +1,5 @@
 # 25_02_06_daily_certification
 
-```
-[#037 koreii] 데일리인증 20250206
-0. 구직 활동
-- 서류 마감
-1. 코딩 테스트 대비 복습문제 풀이
-- DFS, Cycle Detection (BOJ 16724 피리 부는 사나이)
-2. 정보처리기사 필기, CS
-- 프로그래밍 언어 활용 (Scheduling, Subnet, IP Header, Routing Protocol)
-```
-
 # Problem Solving (Algorithm & SQL)
 
 ### BOJ 16724 피리 부는 사나이
