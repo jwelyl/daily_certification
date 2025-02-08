@@ -24,3 +24,6 @@ BOJ 16724 피리 부는 사나이 (DFS, Cycle Detection)
 
 ### [2025.02.07](https://github.com/jwelyl/daily_certification/blob/main/2024/02/07/25_02_07_daily_certification.md)
 BOJ 22345 누적 거리 (Mathematics, Sorting, Prefix Sum, Binary Search), BOJ 14948 군대탈출하기 (BFS, Parametric Search)
+
+### [2025.02.08](https://github.com/jwelyl/daily_certification/blob/main/2024/02/08/25_02_08_daily_certification.md)
+BOJ 16971 배열 B의 값 (Prefix Sum, Greedy)
