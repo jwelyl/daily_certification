@@ -15,3 +15,6 @@ BOJ 7579 앱 (DP, Knapsack), BOJ 17404 RGB거리 2 (DP)
 
 ### [2025.02.11](https://github.com/jwelyl/daily_certification/blob/main/2024/02/11/25_02_11_daily_certification.md)
 BOJ 4781 사탕 가게 (DP, 1-dim Knapsack, Floating Point), BOJ 2703 수도배관공사 (DP, 1-dim Knapsack)
+
+### [2025.02.12](https://github.com/jwelyl/daily_certification/blob/main/2024/02/12/25_02_12_daily_certification.md)
+BOJ 24426/7 알고리즘 수업 - 행렬 경로 문제 3/4 (DP)
