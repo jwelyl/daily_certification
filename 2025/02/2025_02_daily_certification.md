@@ -18,3 +18,6 @@ BOJ 4781 사탕 가게 (DP, 1-dim Knapsack, Floating Point), BOJ 2703 수도배�
 
 ### [2025.02.12](https://github.com/jwelyl/daily_certification/blob/main/2024/02/12/25_02_12_daily_certification.md)
 BOJ 24426/7 알고리즘 수업 - 행렬 경로 문제 3/4 (DP)
+
+### [2025.02.13](https://github.com/jwelyl/daily_certification/blob/main/2024/02/13/25_02_13_daily_certification.md)
+BOJ 2624 동전 바꿔기 (DP)
