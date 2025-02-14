@@ -24,3 +24,6 @@ BOJ 2624 동전 바꿔주기 (DP)
 
 ### [2025.02.14](https://github.com/jwelyl/daily_certification/blob/main/2024/02/14/25_02_14_daily_certification.md)
 BOJ 3114 사과와 바나나 (DP, Prefix Sum), BOJ 2662 기업투자 (DP, Knapsack)
+
+### [2025.02.15](https://github.com/jwelyl/daily_certification/blob/main/2024/02/15/25_02_15_daily_certification.md)
+BOJ 1153 네 개의 소수 (Number Theory, Primality Test, Sieve of Eratosthenes)
