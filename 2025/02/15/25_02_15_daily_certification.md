@@ -1,18 +1,5 @@
 # 25_02_15_daily_certification
 
-```
-[#045 koreii] 데일리인증 20250214
-0. 프로젝트
-- 멀티쓰레드, 동시성 컬렉션
-- @Transactional
-1. 코딩 테스트 대비 알고리즘 학습
-- Number Theory, Primality Test, Sieve of Eratosthenes (BOJ 1153 네 개의 소수)
-2. 코딩 테스트 대비 복습문제 풀이
-- DP, Knapsack (BOJ 2662 기업투자)
-3. 자격증
-- ADsP 데이터 분석 교재 학습 + 요약 강의
-```
-
 # Problem Solving (Algorithm & SQL)
 
 ### BOJ 1153 네 개의 소수
