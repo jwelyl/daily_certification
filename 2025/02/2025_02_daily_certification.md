@@ -27,3 +27,8 @@ BOJ 3114 사과와 바나나 (DP, Prefix Sum), BOJ 2662 기업투자 (DP, Knapsa
 
 ### [2025.02.15](https://github.com/jwelyl/daily_certification/blob/main/2024/02/15/25_02_15_daily_certification.md)
 BOJ 1153 네 개의 소수 (Number Theory, Primality Test, Sieve of Eratosthenes)
+
+## 2025.02.16.sun ~ 2025.02.22.sat 데일리 인증
+
+### [2025.02.16](https://github.com/jwelyl/daily_certification/blob/main/2024/02/16/25_02_16_daily_certification.md)
+BOJ 2342 Dance Dance Revolution (DP)
