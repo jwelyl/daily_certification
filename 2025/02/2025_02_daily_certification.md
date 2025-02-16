@@ -31,4 +31,4 @@ BOJ 1153 네 개의 소수 (Number Theory, Primality Test, Sieve of Eratosthenes
 ## 2025.02.16.sun ~ 2025.02.22.sat 데일리 인증
 
 ### [2025.02.16](https://github.com/jwelyl/daily_certification/blob/main/2024/02/16/25_02_16_daily_certification.md)
-BOJ 2342 Dance Dance Revolution (DP)
+BOJ 2342 Dance Dance Revolution (DP), BOJ 1103 게임 (DFS, DP, Cycle Detection)

@@ -1,18 +1,10 @@
 # 25_02_16_daily_certification
 
-```
-[#047 koreii] 데일리인증 20250216
-1. 코딩 테스트 대비 알고리즘 학습
-- DP (BOJ 2342 Dance Dance Revolution)
-2. 자격증
-- ADsP 데이터 분석 교재 학습 (통계, 회귀분석)
-```
-
 # Problem Solving (Algorithm & SQL)
 
-### BOJ 1153 네 개의 소수
+### BOJ 2342 Dance Dance Revolution
 
-[1153번: 네 개의 소수](http://boj.ma/1153/t)
+[2342번: Dance Dance Revolution](http://boj.ma/2342/t)
 
 ```java
 import java.io.BufferedReader;
@@ -85,5 +77,89 @@ public class Main {
     	
     	System.out.println(answer);
     }    //    main-end
+}    //    Main-class-end
+```
+
+### BOJ 1103 게임
+
+[1103번: 게임](http://boj.ma/1103/t)
+
+```java
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Main {
+	private static final int NONE = Integer.MIN_VALUE;
+	private static final int INF = Integer.MAX_VALUE;
+	
+    private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    private static StringTokenizer st;
+    
+    private static int N;
+    private static int M;
+    
+    private static char[][] board;
+    private static boolean[][] visited;
+    private static long[][] dp;
+    
+    public static void main(String[] args) throws IOException {
+    	st = new StringTokenizer(br.readLine());
+    	N = Integer.parseInt(st.nextToken());
+    	M = Integer.parseInt(st.nextToken());
+    	
+    	board = new char[N][M];
+    	visited = new boolean[N][M];
+    	dp = new long[N][M];
+    	
+    	for(int y = 0; y < N; y++) {
+    		board[y] = br.readLine().toCharArray();
+    		for(int x = 0; x < M; x++)
+    			dp[y][x] = NONE;
+    	}
+    	
+    	dp(0, 0);
+    	
+    	System.out.println(dp[0][0] >= INF ? -1 : dp[0][0]);
+    }    //    main-end
+    
+    private static long dp(int y, int x) {
+    	if(dp[y][x] != NONE)
+    		return dp[y][x];
+    	
+    	visited[y][x] = true;
+    	
+    	if(board[y][x] == 'H')	//	(y, x)가 구멍이면 더 나아갈 수 없음
+    		dp[y][x] = 0;
+    	else {
+    		dp[y][x] = 1;		//	(y, x)가 구멍이 아니라면 일단 한번은 움직일 수 있음
+    		
+    		for(int d = 0; d < 4; d++) {
+    			int ny = y + dy[d] * (board[y][x] - '0');
+    			int nx = x + dx[d] * (board[y][x] - '0');	//	다음에 이동할 칸 (ny, nx)
+    			
+    			if(isIn(ny, nx)) {
+	    			if(visited[ny][nx]) {	//	이미 방문한 칸을 또 방문하게 되는 경우, 사이클 발생
+	    				dp[y][x] = INF;		//	무한히 움직일 수 있음
+	    				break;
+	    			}
+	    			
+	    			//	(ny, nx)까지 이동한 후 (ny, nx)에서 최대로 이동할 수 있는 횟수를 더함
+	    			dp[y][x] =	Math.max(dp[y][x], 1L + dp(ny, nx));
+    			}
+    		}
+    	}
+    	
+    	visited[y][x] = false;
+    	return dp[y][x];
+    }
+    
+    private static final int[] dy = {0, 1, 0, -1};
+    private static final int[] dx = {1, 0, -1, 0};
+    
+    private static boolean isIn(int y, int x) {
+    	return (0 <= y && y < N) && (0 <= x && x < M);
+    }
 }    //    Main-class-end
 ```
