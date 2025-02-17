@@ -32,3 +32,6 @@ BOJ 1153 네 개의 소수 (Number Theory, Primality Test, Sieve of Eratosthenes
 
 ### [2025.02.16](https://github.com/jwelyl/daily_certification/blob/main/2024/02/16/25_02_16_daily_certification.md)
 BOJ 2342 Dance Dance Revolution (DP), BOJ 1103 게임 (DFS, DP, Cycle Detection)
+
+### [2025.02.17](https://github.com/jwelyl/daily_certification/blob/main/2024/02/17/25_02_17_daily_certification.md)
+BOJ 3673 나눌 수 있는 부분 수열 (Prefix Sum, Mathematics), BOJ 1509 팰린드롬 분할 (DP)
