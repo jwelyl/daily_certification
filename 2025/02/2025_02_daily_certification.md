@@ -35,3 +35,6 @@ BOJ 2342 Dance Dance Revolution (DP), BOJ 1103 게임 (DFS, DP, Cycle Detection)
 
 ### [2025.02.17](https://github.com/jwelyl/daily_certification/blob/main/2024/02/17/25_02_17_daily_certification.md)
 BOJ 3673 나눌 수 있는 부분 수열 (Prefix Sum, Mathematics), BOJ 1509 팰린드롬 분할 (DP)
+
+### [2025.02.18](https://github.com/jwelyl/daily_certification/blob/main/2024/02/18/25_02_18_daily_certification.md)
+BOJ 20500 (DP, Number Theory), BOJ 2602 돌다리 건너기 (DP)
