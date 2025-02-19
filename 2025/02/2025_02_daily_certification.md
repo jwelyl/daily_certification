@@ -38,3 +38,6 @@ BOJ 3673 나눌 수 있는 부분 수열 (Prefix Sum, Mathematics), BOJ 1509 팰
 
 ### [2025.02.18](https://github.com/jwelyl/daily_certification/blob/main/2024/02/18/25_02_18_daily_certification.md)
 BOJ 20500 (DP, Number Theory), BOJ 2602 돌다리 건너기 (DP)
+
+### [2025.02.19](https://github.com/jwelyl/daily_certification/blob/main/2024/02/19/25_02_19_daily_certification.md)
+BOJ 2229 조 짜 (DP)
