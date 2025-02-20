@@ -40,4 +40,7 @@ BOJ 3673 나눌 수 있는 부분 수열 (Prefix Sum, Mathematics), BOJ 1509 팰
 BOJ 20500 (DP, Number Theory), BOJ 2602 돌다리 건너기 (DP)
 
 ### [2025.02.19](https://github.com/jwelyl/daily_certification/blob/main/2024/02/19/25_02_19_daily_certification.md)
-BOJ 2229 조 짜 (DP)
+BOJ 2229 조 짜기 (DP)
+
+### [2025.02.20](https://github.com/jwelyl/daily_certification/blob/main/2024/02/20/25_02_20_daily_certification.md)
+BOJ 14905 소수 4개의 합 (Number Theory, Primality Test)
