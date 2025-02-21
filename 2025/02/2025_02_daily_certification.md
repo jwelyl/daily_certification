@@ -44,3 +44,6 @@ BOJ 2229 조 짜기 (DP)
 
 ### [2025.02.20](https://github.com/jwelyl/daily_certification/blob/main/2024/02/20/25_02_20_daily_certification.md)
 BOJ 14905 소수 4개의 합 (Number Theory, Primality Test)
+
+### [2025.02.21](https://github.com/jwelyl/daily_certification/blob/main/2024/02/21/25_02_21_daily_certification.md)
+BOJ 14476 초ㅣ대공약수 하나 빼기 (Prefix Sum, Euclidean Algorithm)
