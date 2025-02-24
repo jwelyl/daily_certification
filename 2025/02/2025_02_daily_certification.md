@@ -55,3 +55,6 @@ BOJ 23634 미안하다 이거 보여주려고 어그로 끌었다 (BFS, Disjoint
 
 ### [2025.02.23](https://github.com/jwelyl/daily_certification/blob/main/2024/02/23/25_02_23_daily_certification.md)
 BOJ 26076 곰곰이의 식단 관리 2 (0-1 BFS, Dijkstra)
+
+### [2025.02.24](https://github.com/jwelyl/daily_certification/blob/main/2024/02/24/25_02_24_daily_certification.md)
+BOJ 26615 다오의 행사 계획하기 (LCA, Prefix Sum(imos))
