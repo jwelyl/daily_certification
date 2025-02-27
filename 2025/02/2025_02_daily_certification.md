@@ -64,3 +64,6 @@ BOJ 26615 다오의 행사 계획하기 (LCA, Prefix Sum(imos))
 
 ### [2025.02.26](https://github.com/jwelyl/daily_certification/blob/main/2024/02/26/25_02_26_daily_certification.md)
 LeetCode 18. 4Sum (Sorting, Binary Search, HashSet)
+
+### [2025.02.27](https://github.com/jwelyl/daily_certification/blob/main/2024/02/27/25_02_27_daily_certification.md)
+프로그래머스 미로탈출 (BFS), 프로그래머스 가장 긴 팰린드롬 (DP)
