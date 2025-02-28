@@ -67,3 +67,6 @@ LeetCode 18. 4Sum (Sorting, Binary Search, HashSet)
 
 ### [2025.02.27](https://github.com/jwelyl/daily_certification/blob/main/2024/02/27/25_02_27_daily_certification.md)
 프로그래머스 미로탈출 (BFS), 프로그래머스 가장 긴 팰린드롬 (DP)
+
+### [2025.02.28](https://github.com/jwelyl/daily_certification/blob/main/2024/02/28/25_02_28_daily_certification.md)
+프로그래머스 광물 캐기 (Greedy, Sorting), 프로그래머스 전력망을 둘로 나누기 (DFS, Tree, Tree DP)
