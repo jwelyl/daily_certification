@@ -9,3 +9,6 @@
 
 ### [2025.03.02](https://github.com/jwelyl/daily_certification/blob/main/2024/03/02/25_03_02_daily_certification.md)
 프로그래머스 연속 펄스 부분 수열의 합 (DP(Kadane), DNC)
+
+### [2025.03.03](https://github.com/jwelyl/daily_certification/blob/main/2024/03/03/25_03_03_daily_certification.md)
+프로그래머스 코딩 테스트 공ㅜ (DP)
