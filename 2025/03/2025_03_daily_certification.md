@@ -11,4 +11,7 @@
 프로그래머스 연속 펄스 부분 수열의 합 (DP(Kadane), DNC)
 
 ### [2025.03.03](https://github.com/jwelyl/daily_certification/blob/main/2024/03/03/25_03_03_daily_certification.md)
-프로그래머스 코딩 테스트 공ㅜ (DP)
+프로그래머스 코딩 테스트 공부 (DP)
+
+### [2025.03.04](https://github.com/jwelyl/daily_certification/blob/main/2024/03/04/25_03_04_daily_certification.md)
+프로그래머스 최적의 행렬 곱셈 (DP)
