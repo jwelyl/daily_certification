@@ -15,3 +15,6 @@
 
 ### [2025.03.04](https://github.com/jwelyl/daily_certification/blob/main/2024/03/04/25_03_04_daily_certification.md)
 프로그래머스 최적의 행렬 곱셈 (DP)
+
+### [2025.03.05](https://github.com/jwelyl/daily_certification/blob/main/2024/03/05/25_03_05_daily_certification.md)
+프로그래머스 등산코스 정하기 (Dijkstra, Parametric Search)
