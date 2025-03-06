@@ -18,3 +18,6 @@
 
 ### [2025.03.05](https://github.com/jwelyl/daily_certification/blob/main/2024/03/05/25_03_05_daily_certification.md)
 프로그래머스 등산코스 정하기 (Dijkstra, Parametric Search)
+
+### [2025.03.06](https://github.com/jwelyl/daily_certification/blob/main/2024/03/06/25_03_06_daily_certification.md)
+프로그래머스 미로 탈출 명령어 (DFS, Stack)
