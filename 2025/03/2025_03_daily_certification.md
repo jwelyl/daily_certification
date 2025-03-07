@@ -21,3 +21,6 @@
 
 ### [2025.03.06](https://github.com/jwelyl/daily_certification/blob/main/2024/03/06/25_03_06_daily_certification.md)
 프로그래머스 미로 탈출 명령어 (DFS, Stack)
+
+### [2025.03.07](https://github.com/jwelyl/daily_certification/blob/main/2024/03/07/25_03_07_daily_certification.md)
+프로그래머스 표 병합 (Disjoin Set, Implementation)
