@@ -24,3 +24,6 @@
 
 ### [2025.03.07](https://github.com/jwelyl/daily_certification/blob/main/2024/03/07/25_03_07_daily_certification.md)
 프로그래머스 표 병합 (Disjoin Set, Implementation)
+
+### [2025.03.08](https://github.com/jwelyl/daily_certification/blob/main/2024/03/08/25_03_08_daily_certification.md)
+프로그래머스 표현 가능한 이진트리 (Binary Tree, Postorder)
