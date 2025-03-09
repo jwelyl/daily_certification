@@ -27,3 +27,6 @@
 
 ### [2025.03.08](https://github.com/jwelyl/daily_certification/blob/main/2024/03/08/25_03_08_daily_certification.md)
 프로그래머스 표현 가능한 이진트리 (Binary Tree, Postorder)
+
+### [2025.03.09](https://github.com/jwelyl/daily_certification/blob/main/2024/03/09/25_03_09_daily_certification.md)
+프로그래머스 조회수가 가장 많은 중고거래 게시판의 첨부파일 조회하기 (CONCAT)
