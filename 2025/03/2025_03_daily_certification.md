@@ -37,4 +37,7 @@
 프로그래머스 다단계 칫솔 판매 (Tree, HashMap)
 
 ### [2025.03.11](https://github.com/jwelyl/daily_certification/blob/main/2024/03/11/25_03_11_daily_certification.md)
-프로그래머스 선입 선출 스케줄링 (Parametric Search), 프로그래머스 주문량이 많은 아이스크림들 조회하기 (JOIN, GROUP BY, LIMIT )
+프로그래머스 선입 선출 스케줄링 (Parametric Search), 프로그래머스 주문량이 많은 아이스크림들 조회하기 (JOIN, GROUP BY, LIMIT)
+
+### [2025.03.12](https://github.com/jwelyl/daily_certification/blob/main/2024/03/12/25_03_12_daily_certification.md)
+프로그래머스 블록 이동하기 (BFS, Implementation), 프로그래머스 자동차 대여 기록 별 대여 금액 구하기 (SUBQUERY, LEFT JOIN, DATEDIFF, COALESCE)
