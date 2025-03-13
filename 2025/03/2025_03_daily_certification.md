@@ -41,3 +41,6 @@
 
 ### [2025.03.12](https://github.com/jwelyl/daily_certification/blob/main/2024/03/12/25_03_12_daily_certification.md)
 프로그래머스 블록 이동하기 (BFS, Implementation), 프로그래머스 자동차 대여 기록 별 대여 금액 구하기 (SUBQUERY, LEFT JOIN, DATEDIFF, COALESCE)
+
+### [2025.03.13](https://github.com/jwelyl/daily_certification/blob/main/2024/03/13/25_03_13_daily_certification.md)
+프로그래머스 단속카메라 (Greedy, Sorting), 프로그래머스 보호소에서 중성화한 동물 (JOIN, LIKE), 프로그래머스 년, 월, 성별 별 상품 구매 회원 수 구하기 (GROUP BY, DISTINCT)
