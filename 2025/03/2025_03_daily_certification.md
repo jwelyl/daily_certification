@@ -44,3 +44,6 @@
 
 ### [2025.03.13](https://github.com/jwelyl/daily_certification/blob/main/2024/03/13/25_03_13_daily_certification.md)
 프로그래머스 단속카메라 (Greedy, Sorting), 프로그래머스 보호소에서 중성화한 동물 (JOIN, LIKE), 프로그래머스 년, 월, 성별 별 상품 구매 회원 수 구하기 (GROUP BY, DISTINCT)
+
+### [2025.03.14](https://github.com/jwelyl/daily_certification/blob/main/2024/03/14/25_03_14_daily_certification.md)
+코드트리 색깔 트리 (Tree, DFS(Postorder), Implementation, Simulation), 프로그래머스 우유와 요거트가 담긴 장바구니 (SUBQUERY, CASE, GROUP BY, HAVING)
