@@ -47,3 +47,6 @@
 
 ### [2025.03.14](https://github.com/jwelyl/daily_certification/blob/main/2024/03/14/25_03_14_daily_certification.md)
 코드트리 색깔 트리 (Tree, DFS(Postorder), Implementation, Simulation), 프로그래머스 우유와 요거트가 담긴 장바구니 (SUBQUERY, CASE, GROUP BY, HAVING)
+
+### [2025.03.15](https://github.com/jwelyl/daily_certification/blob/main/2024/03/15/25_03_15_daily_certification.md)
+BOJ 25332 수들의 합 8 (Prefix Sum, HashMap), 프로그래머스 멸종위기의 대장균 찾기 (Recursive CTE, WITH RECURSIVE, LEFT JOIN, GROUP BY)
