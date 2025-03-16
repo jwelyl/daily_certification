@@ -50,3 +50,8 @@
 
 ### [2025.03.15](https://github.com/jwelyl/daily_certification/blob/main/2024/03/15/25_03_15_daily_certification.md)
 BOJ 25332 수들의 합 8 (Prefix Sum, HashMap), 프로그래머스 멸종위기의 대장균 찾기 (Recursive CTE, WITH RECURSIVE, LEFT JOIN, GROUP BY)
+
+## 2025.03.16.sun ~ 2025.03.22.sat 데일리 인증
+
+### [2025.03.16](https://github.com/jwelyl/daily_certification/blob/main/2024/03/16/25_03_16_daily_certification.md)
+BOJ 20442 ㅋㅋ루ㅋㅋ (Prefix Sum, Two-Pointer), 프로그래머스 상품을 구매한 회원 비율 구하기 (Session Variable, JOIN, GROUP BY)
