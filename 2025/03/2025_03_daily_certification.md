@@ -55,3 +55,6 @@ BOJ 25332 수들의 합 8 (Prefix Sum, HashMap), 프로그래머스 멸종위기
 
 ### [2025.03.16](https://github.com/jwelyl/daily_certification/blob/main/2024/03/16/25_03_16_daily_certification.md)
 BOJ 20442 ㅋㅋ루ㅋㅋ (Prefix Sum, Two-Pointer), 프로그래머스 상품을 구매한 회원 비율 구하기 (Session Variable, JOIN, GROUP BY)
+
+### [2025.03.17](https://github.com/jwelyl/daily_certification/blob/main/2024/03/17/25_03_17_daily_certification.md)
+BOJ 24525 SKK 문자열 (Prefix Sum, DP), 프로그래머스 조건별로 분류하여 주문상태 출력하기 (CASE, IS NULL, DATE_FORMAT), 프로그래머스 대여 기록이 존재하는 자동차 리스트 구하기 (SUBQUERY, IN)
