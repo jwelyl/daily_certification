@@ -58,3 +58,6 @@ BOJ 20442 ㅋㅋ루ㅋㅋ (Prefix Sum, Two-Pointer), 프로그래머스 상품�
 
 ### [2025.03.17](https://github.com/jwelyl/daily_certification/blob/main/2024/03/17/25_03_17_daily_certification.md)
 BOJ 24525 SKK 문자열 (Prefix Sum, DP), 프로그래머스 조건별로 분류하여 주문상태 출력하기 (CASE, IS NULL, DATE_FORMAT), 프로그래머스 대여 기록이 존재하는 자동차 리스트 구하기 (SUBQUERY, IN)
+
+### [2025.03.18](https://github.com/jwelyl/daily_certification/blob/main/2024/03/18/25_03_18_daily_certification.md)
+BOJ 15554 전시회 (Greedy, Sorting, Prefix Sum), 프로그래머스 특정 조건을 만족하는 물고기별 수와 최대 길이 구하기 (GROUP BY, HAVING, SUBQUERY)
