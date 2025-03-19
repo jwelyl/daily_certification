@@ -61,3 +61,6 @@ BOJ 24525 SKK 문자열 (Prefix Sum, DP), 프로그래머스 조건별로 분류
 
 ### [2025.03.18](https://github.com/jwelyl/daily_certification/blob/main/2024/03/18/25_03_18_daily_certification.md)
 BOJ 15554 전시회 (Greedy, Sorting, Prefix Sum), 프로그래머스 특정 조건을 만족하는 물고기별 수와 최대 길이 구하기 (GROUP BY, HAVING, SUBQUERY)
+
+### [2025.03.19](https://github.com/jwelyl/daily_certification/blob/main/2024/03/19/25_03_19_daily_certification.md)
+BOJ 4179 불! (BFS)
