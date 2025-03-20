@@ -64,3 +64,6 @@ BOJ 15554 전시회 (Greedy, Sorting, Prefix Sum), 프로그래머스 특정 조
 
 ### [2025.03.19](https://github.com/jwelyl/daily_certification/blob/main/2024/03/19/25_03_19_daily_certification.md)
 BOJ 4179 불! (BFS)
+
+### [2025.03.20](https://github.com/jwelyl/daily_certification/blob/main/2024/03/20/25_03_20_daily_certification.md)
+BOJ 21939 문제 추천 시스템 Version 1 (HashMap, TreeSet(first, last, remove)), BOJ 21939 문제 추천 시스템 Version 2 (HashMap, TreeSet(first, last, ceiling, floor, remove)), BOJ 17430 가로등 (HashSet, HashMap), BOJ 2295 세 수의 합 (HashMap, MITM)
