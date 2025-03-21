@@ -67,3 +67,6 @@ BOJ 4179 불! (BFS)
 
 ### [2025.03.20](https://github.com/jwelyl/daily_certification/blob/main/2024/03/20/25_03_20_daily_certification.md)
 BOJ 21939 문제 추천 시스템 Version 1 (HashMap, TreeSet(first, last, remove)), BOJ 21939 문제 추천 시스템 Version 2 (HashMap, TreeSet(first, last, ceiling, floor, remove)), BOJ 17430 가로등 (HashSet, HashMap), BOJ 2295 세 수의 합 (HashMap, MITM)
+
+### [2025.03.21](https://github.com/jwelyl/daily_certification/blob/main/2024/03/21/25_03_21_daily_certification.md)
+BOJ 2015 수들의 합 4 (Prefix Sum, HashMap), BOJ 7662 이중 우선순위 큐 (TreeMap (firstKey, lastKey, remove)), BOJ 1107 리모컨 (Bruteforcing), BOJ 27440 1로 만들기 3 (BFS, HashSet)
