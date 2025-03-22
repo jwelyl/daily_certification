@@ -70,3 +70,6 @@ BOJ 21939 문제 추천 시스템 Version 1 (HashMap, TreeSet(first, last, remov
 
 ### [2025.03.21](https://github.com/jwelyl/daily_certification/blob/main/2024/03/21/25_03_21_daily_certification.md)
 BOJ 2015 수들의 합 4 (Prefix Sum, HashMap), BOJ 7662 이중 우선순위 큐 (TreeMap (firstKey, lastKey, remove)), BOJ 1107 리모컨 (Bruteforcing), BOJ 27440 1로 만들기 3 (BFS, HashSet)
+
+### [2025.03.22](https://github.com/jwelyl/daily_certification/blob/main/2024/03/22/25_03_22_daily_certification.md)
+BOJ 12783 가장 긴 증가하는 부분 수열 3 (Binary Search, LIS O(NlogN))
