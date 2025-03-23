@@ -73,3 +73,8 @@ BOJ 2015 수들의 합 4 (Prefix Sum, HashMap), BOJ 7662 이중 우선순위 큐
 
 ### [2025.03.22](https://github.com/jwelyl/daily_certification/blob/main/2024/03/22/25_03_22_daily_certification.md)
 BOJ 12783 가장 긴 증가하는 부분 수열 3 (Binary Search, LIS O(NlogN))
+
+## 2025.03.23.sun ~ 2025.03.29.sat 데일리 인증
+
+### [2025.03.23](https://github.com/jwelyl/daily_certification/blob/main/2024/03/23/25_03_23_daily_certification.md)
+BOJ 1818 책정리 (Binary Search, LIS O(NlogN)), BOJ 12015 가장 긴 증가하는 부분 수열 2 (Binary Search, LIS O(NlogN)), BOJ 12783 가장 긴 증가하는 부분 수열 3 (Binary Search, LIS O(NlogN))
