@@ -78,3 +78,6 @@ BOJ 12783 가장 긴 증가하는 부분 수열 3 (Binary Search, LIS O(NlogN))
 
 ### [2025.03.23](https://github.com/jwelyl/daily_certification/blob/main/2024/03/23/25_03_23_daily_certification.md)
 BOJ 1818 책정리 (Binary Search, LIS O(NlogN)), BOJ 12015 가장 긴 증가하는 부분 수열 2 (Binary Search, LIS O(NlogN)), BOJ 12783 가장 긴 증가하는 부분 수열 3 (Binary Search, LIS O(NlogN))
+
+### [2025.03.24](https://github.com/jwelyl/daily_certification/blob/main/2024/03/24/25_03_24_daily_certification.md)
+BOJ 16118 달빛 여우 (Dijkstra)
