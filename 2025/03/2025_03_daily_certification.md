@@ -81,3 +81,6 @@ BOJ 1818 책정리 (Binary Search, LIS O(NlogN)), BOJ 12015 가장 긴 증가하
 
 ### [2025.03.24](https://github.com/jwelyl/daily_certification/blob/main/2024/03/24/25_03_24_daily_certification.md)
 BOJ 16118 달빛 여우 (Dijkstra)
+
+### [2025.03.25](https://github.com/jwelyl/daily_certification/blob/main/2024/03/25/25_03_25_daily_certification.md)
+BOJ 1800 인터넷 설치 (Dijkstra, Parametric Search)
