@@ -84,3 +84,6 @@ BOJ 16118 달빛 여우 (Dijkstra)
 
 ### [2025.03.25](https://github.com/jwelyl/daily_certification/blob/main/2024/03/25/25_03_25_daily_certification.md)
 BOJ 1800 인터넷 설치 (Dijkstra, Parametric Search)
+
+### [2025.03.26](https://github.com/jwelyl/daily_certification/blob/main/2024/03/26/25_03_26_daily_certification.md)
+BOJ 14595 동방 프로젝트 (Large) (Greedy, Sorting, Sweeping)
