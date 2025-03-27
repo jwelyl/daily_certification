@@ -87,3 +87,6 @@ BOJ 1800 인터넷 설치 (Dijkstra, Parametric Search)
 
 ### [2025.03.26](https://github.com/jwelyl/daily_certification/blob/main/2024/03/26/25_03_26_daily_certification.md)
 BOJ 14595 동방 프로젝트 (Large) (Greedy, Sorting, Sweeping)
+
+### [2025.03.27](https://github.com/jwelyl/daily_certification/blob/main/2024/03/27/25_03_27_daily_certification.md)
+GROUP BY, GROUP_CONCAT
