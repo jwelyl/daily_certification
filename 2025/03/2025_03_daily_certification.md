@@ -93,3 +93,6 @@ GROUP BY, GROUP_CONCAT
 
 ### [2025.03.28](https://github.com/jwelyl/daily_certification/blob/main/2024/03/28/25_03_28_daily_certification.md)
 BOJ 26557 Bomb (Dijkstra, 0-1 bfs)
+
+### [2025.03.29](https://github.com/jwelyl/daily_certification/blob/main/2024/03/29/25_03_29_daily_certification.md)
+BOJ 24305 ОТЧЕТ (Stack), BOJ 7569 토마토 (BFS)
