@@ -90,3 +90,6 @@ BOJ 14595 동방 프로젝트 (Large) (Greedy, Sorting, Sweeping)
 
 ### [2025.03.27](https://github.com/jwelyl/daily_certification/blob/main/2024/03/27/25_03_27_daily_certification.md)
 GROUP BY, GROUP_CONCAT
+
+### [2025.03.28](https://github.com/jwelyl/daily_certification/blob/main/2024/03/28/25_03_28_daily_certification.md)
+BOJ 26557 Bomb (Dijkstra, 0-1 bfs)
