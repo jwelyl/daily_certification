@@ -96,3 +96,8 @@ BOJ 26557 Bomb (Dijkstra, 0-1 bfs)
 
 ### [2025.03.29](https://github.com/jwelyl/daily_certification/blob/main/2024/03/29/25_03_29_daily_certification.md)
 BOJ 24305 ОТЧЕТ (Stack), BOJ 7569 토마토 (BFS)
+
+## 2025.03.30.sun ~ 2025.03.31.min 데일리 인증
+
+### [2025.03.30](https://github.com/jwelyl/daily_certification/blob/main/2024/03/30/25_03_30_daily_certification.md)
+BOJ 6144 Charm Bracelet (DP, Knapsack)
