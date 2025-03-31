@@ -101,3 +101,6 @@ BOJ 24305 ОТЧЕТ (Stack), BOJ 7569 토마토 (BFS)
 
 ### [2025.03.30](https://github.com/jwelyl/daily_certification/blob/main/2024/03/30/25_03_30_daily_certification.md)
 BOJ 6144 Charm Bracelet (DP, Knapsack)
+
+### [2025.03.31](https://github.com/jwelyl/daily_certification/blob/main/2024/03/31/25_03_31_daily_certification.md)
+BOJ 16965 구간과 쿼리 (BFS), BOJ 1759 암호 만들기 (Bruteforcing, Backtracking)
