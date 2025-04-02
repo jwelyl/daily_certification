@@ -5,5 +5,5 @@
 ### [2025.04.01](https://github.com/jwelyl/daily_certification/blob/main/2024/04/01/25_04_01_daily_certification.md)
 BOJ 5430 AC (Deque, String, Parsing), BOJ 14715 (Mathematics, Number Theory)
 
-- Deque, String, Parsing (BOJ 5430 AC)
-- Mathematics, Number Theory (BOJ 14715 전생했더니 슬라임 연구자였던 건에 대하여 (Easy))
+### [2025.04.02](https://github.com/jwelyl/daily_certification/blob/main/2024/04/02/25_04_02_daily_certification.md)
+BOJ 11909 배열 탈출 (Dijkstra, DP)
