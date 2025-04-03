@@ -1,14 +1,5 @@
 # 25_04_02_daily_certification
 
-```
-[#092 koreii] 데일리인증 20250402
-0. 상반기 일자리 재창출 현황
-- 면접 대비 말하기 연습
-- 기술 관련 질문 최대한 연습하는 중
-1. 코딩 테스트 대비 복습 문제 풀이
-- Dijkstra, DP (BOJ 11909 배열 탈출)
-```
-
 # Problem Solving (Algorithm & SQL)
 
 ### BOJ 11909 배열 탈출
