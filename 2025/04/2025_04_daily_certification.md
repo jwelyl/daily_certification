@@ -10,3 +10,6 @@ BOJ 11909 배열 탈출 (Dijkstra, DP)
 
 ### [2025.04.03](https://github.com/jwelyl/daily_certification/blob/main/2024/04/03/25_04_03_daily_certification.md)
 BOJ 2011 암호코드 (DP)
+
+### [2025.04.04](https://github.com/jwelyl/daily_certification/blob/main/2024/04/04/25_04_04_daily_certification.md)
+BOJ 2228 구간 나누기 (DP, Prefix Sum)
