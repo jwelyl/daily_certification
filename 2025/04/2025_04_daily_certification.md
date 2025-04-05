@@ -13,3 +13,6 @@ BOJ 2011 암호코드 (DP)
 
 ### [2025.04.04](https://github.com/jwelyl/daily_certification/blob/main/2024/04/04/25_04_04_daily_certification.md)
 BOJ 2228 구간 나누기 (DP, Prefix Sum)
+
+### [2025.04.05](https://github.com/jwelyl/daily_certification/blob/main/2024/04/05/25_04_05_daily_certification.md)
+BOJ 2613 숫자구슬 (DP, Greedy, Binary Search, Parametric Search)
