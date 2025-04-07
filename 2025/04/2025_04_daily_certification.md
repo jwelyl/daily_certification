@@ -21,3 +21,6 @@ BOJ 2613 숫자구슬 (DP, Greedy, Binary Search, Parametric Search)
 
 ### [2025.04.06](https://github.com/jwelyl/daily_certification/blob/main/2024/04/06/25_04_06_daily_certification.md)
 BOJ 21757 나누기 (DP, Prefix Sum)
+
+### [2025.04.07](https://github.com/jwelyl/daily_certification/blob/main/2024/04/07/25_04_07_daily_certification.md)
+BOJ 24891 단어 마방진 (Bruteforcing, Backtracking)
