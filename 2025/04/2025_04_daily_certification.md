@@ -24,3 +24,6 @@ BOJ 21757 나누기 (DP, Prefix Sum)
 
 ### [2025.04.07](https://github.com/jwelyl/daily_certification/blob/main/2024/04/07/25_04_07_daily_certification.md)
 BOJ 24891 단어 마방진 (Bruteforcing, Backtracking)
+
+### [2025.04.08](https://github.com/jwelyl/daily_certification/blob/main/2024/04/08/25_04_08_daily_certification.md)
+BOJ 1099 알 수 없는 문장 (DP, String)
