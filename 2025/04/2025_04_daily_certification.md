@@ -27,3 +27,6 @@ BOJ 24891 단어 마방진 (Bruteforcing, Backtracking)
 
 ### [2025.04.08](https://github.com/jwelyl/daily_certification/blob/main/2024/04/08/25_04_08_daily_certification.md)
 BOJ 1099 알 수 없는 문장 (DP, String)
+
+### [2025.04.09](https://github.com/jwelyl/daily_certification/blob/main/2024/04/09/25_04_09_daily_certification.md)
+BOJ 2410 2의 멱수의 합 (DP)
