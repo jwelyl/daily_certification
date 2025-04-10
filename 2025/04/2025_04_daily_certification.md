@@ -30,3 +30,6 @@ BOJ 1099 알 수 없는 문장 (DP, String)
 
 ### [2025.04.09](https://github.com/jwelyl/daily_certification/blob/main/2024/04/09/25_04_09_daily_certification.md)
 BOJ 2410 2의 멱수의 합 (DP)
+
+### [2025.04.10](https://github.com/jwelyl/daily_certification/blob/main/2024/04/10/25_04_10_daily_certification.md)
+BOJ 20164 홀수 홀릭 호석 (Bruteforcing, Recursion)
