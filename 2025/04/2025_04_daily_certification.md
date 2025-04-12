@@ -36,3 +36,6 @@ BOJ 20164 홀수 홀릭 호석 (Bruteforcing, Recursion)
 
 ### [2025.04.11](https://github.com/jwelyl/daily_certification/blob/main/2024/04/11/25_04_11_daily_certification.md)
 [PCCP 모의고사 #1] 4번 - 운영체제 (Priority Queue, Implementation)
+
+### [2025.04.12](https://github.com/jwelyl/daily_certification/blob/main/2024/04/12/25_04_12_daily_certification.md)
+BOJ 16434 드래곤 앤 던전 (Implementation, Binary Search, Parametric Search)
