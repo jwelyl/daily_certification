@@ -40,5 +40,10 @@ BOJ 20164 홀수 홀릭 호석 (Bruteforcing, Recursion)
 ### [2025.04.12](https://github.com/jwelyl/daily_certification/blob/main/2024/04/12/25_04_12_daily_certification.md)
 BOJ 16434 드래곤 앤 던전 (Implementation, Binary Search, Parametric Search)
 
+## 2025.04.13.sun ~ 04.19.sat 데일리 인증
+
 ### [2025.04.13](https://github.com/jwelyl/daily_certification/blob/main/2024/04/13/25_04_13_daily_certification.md)
 [PCCP 모의고사 #1] 4번 - 운영체제 (Sorting, Priority Queue, Implementation)
+
+### [2025.04.14](https://github.com/jwelyl/daily_certification/blob/main/2024/04/14/25_04_14_daily_certification.md)
+BOJ 10429 QUENTO (DFS, Bruteforcing)
