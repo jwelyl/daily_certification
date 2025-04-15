@@ -47,3 +47,6 @@ BOJ 16434 드래곤 앤 던전 (Implementation, Binary Search, Parametric Search
 
 ### [2025.04.14](https://github.com/jwelyl/daily_certification/blob/main/2024/04/14/25_04_14_daily_certification.md)
 BOJ 10429 QUENTO (DFS, Bruteforcing)
+
+### [2025.04.15](https://github.com/jwelyl/daily_certification/blob/main/2024/04/15/25_04_15_daily_certification.md)
+BOJ 24461 그래프의 줄기 (Topological Sorting)
