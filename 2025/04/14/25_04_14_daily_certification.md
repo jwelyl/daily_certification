@@ -2,7 +2,7 @@
 
 # Problem Solving (Algorithm & SQL)
 
-### 10429 QUENTO
+### BOJ 10429 QUENTO
 
 [10429번: QUENTO](http://boj.ma/10429/t)
 
