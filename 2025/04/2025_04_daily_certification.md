@@ -53,3 +53,6 @@ BOJ 24461 그래프의 줄기 (Topological Sorting)
 
 ### [2025.04.16](https://github.com/jwelyl/daily_certification/blob/main/2024/04/16/25_04_16_daily_certification.md)
 BOJ 24513 좀비 바이러스 (BFS)
+
+### [2025.04.17](https://github.com/jwelyl/daily_certification/blob/main/2024/04/17/25_04_17_daily_certification.md)
+BOJ 2266 금고 테스트 (DP)
