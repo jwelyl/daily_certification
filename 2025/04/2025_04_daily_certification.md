@@ -56,3 +56,6 @@ BOJ 24513 좀비 바이러스 (BFS)
 
 ### [2025.04.17](https://github.com/jwelyl/daily_certification/blob/main/2024/04/17/25_04_17_daily_certification.md)
 BOJ 2266 금고 테스트 (DP)
+
+### [2025.04.18](https://github.com/jwelyl/daily_certification/blob/main/2024/04/18/25_04_18_daily_certification.md)
+BOJ 2169 로봇 조종하기 (DP)
