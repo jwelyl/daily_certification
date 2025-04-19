@@ -59,3 +59,6 @@ BOJ 2266 금고 테스트 (DP)
 
 ### [2025.04.18](https://github.com/jwelyl/daily_certification/blob/main/2024/04/18/25_04_18_daily_certification.md)
 BOJ 2169 로봇 조종하기 (DP)
+
+### [2025.04.19](https://github.com/jwelyl/daily_certification/blob/main/2024/04/19/25_04_19_daily_certification.md)
+BOJ 23040 누텔라 트리 (Easy) (Tree, DFS, Disjoint Set)
