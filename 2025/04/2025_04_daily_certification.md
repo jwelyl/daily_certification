@@ -63,5 +63,10 @@ BOJ 2169 로봇 조종하기 (DP)
 ### [2025.04.19](https://github.com/jwelyl/daily_certification/blob/main/2024/04/19/25_04_19_daily_certification.md)
 BOJ 23040 누텔라 트리 (Easy) (Tree, DFS, Disjoint Set)
 
+## 2025.04.20.sun ~ 04.26.sat 데일리 인증
+
 ### [2025.04.20](https://github.com/jwelyl/daily_certification/blob/main/2024/04/20/25_04_20_daily_certification.md)
 BOJ 28303 자석 (Prefix Sum, Mathematics)
+
+### [2025.04.21](https://github.com/jwelyl/daily_certification/blob/main/2024/04/21/25_04_21_daily_certification.md)
+BOJ 23327 리그전 오브 레전드 (Prefix Sum, Mathematics), BOJ 1068 트리 (Tree, DFS)
