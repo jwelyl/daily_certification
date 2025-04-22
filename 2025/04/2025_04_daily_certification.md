@@ -70,3 +70,6 @@ BOJ 28303 자석 (Prefix Sum, Mathematics)
 
 ### [2025.04.21](https://github.com/jwelyl/daily_certification/blob/main/2024/04/21/25_04_21_daily_certification.md)
 BOJ 23327 리그전 오브 레전드 (Prefix Sum, Mathematics), BOJ 1068 트리 (Tree, DFS)
+
+### [2025.04.22](https://github.com/jwelyl/daily_certification/blob/main/2024/04/22/25_04_22_daily_certification.md)
+BOJ 1797 균형잡힌 줄서기 (Prefix Sum, Sorting, HashMap)
