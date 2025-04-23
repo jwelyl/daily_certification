@@ -73,3 +73,6 @@ BOJ 23327 리그전 오브 레전드 (Prefix Sum, Mathematics), BOJ 1068 트리 
 
 ### [2025.04.22](https://github.com/jwelyl/daily_certification/blob/main/2024/04/22/25_04_22_daily_certification.md)
 BOJ 1797 균형잡힌 줄서기 (Prefix Sum, Sorting, HashMap)
+
+### [2025.04.23](https://github.com/jwelyl/daily_certification/blob/main/2024/04/23/25_04_23_daily_certification.md)
+BOJ 5557 1학년 (DP), BOJ 22861 폴더 정리 (large) 풀이 중 (DFS, Tree, HashMap)
