@@ -76,3 +76,6 @@ BOJ 1797 균형잡힌 줄서기 (Prefix Sum, Sorting, HashMap)
 
 ### [2025.04.23](https://github.com/jwelyl/daily_certification/blob/main/2024/04/23/25_04_23_daily_certification.md)
 BOJ 5557 1학년 (DP), BOJ 22861 폴더 정리 (large) 풀이 중 (DFS, Tree, HashMap)
+
+### [2025.04.24](https://github.com/jwelyl/daily_certification/blob/main/2024/04/24/25_04_24_daily_certification.md)
+BOJ 22861 폴더 정리 (large) (DFS, Tree, HashMap, DP, String, Parsing)
