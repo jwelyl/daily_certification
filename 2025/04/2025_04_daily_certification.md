@@ -79,3 +79,6 @@ BOJ 5557 1학년 (DP), BOJ 22861 폴더 정리 (large) 풀이 중 (DFS, Tree, Ha
 
 ### [2025.04.24](https://github.com/jwelyl/daily_certification/blob/main/2024/04/24/25_04_24_daily_certification.md)
 BOJ 22861 폴더 정리 (large) (DFS, Tree, HashMap, DP, String, Parsing)
+
+### [2025.04.25](https://github.com/jwelyl/daily_certification/blob/main/2024/04/25/25_04_25_daily_certification.md)
+BOJ 2819 상근이의 로봇 (Prefix Sum, Sorting, Binary Search)
