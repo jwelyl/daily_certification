@@ -1,15 +1,5 @@
 # 25_04_25_daily_certification
 
-```
-[#115 koreii] 데일리인증 20250425
-0. 상반기 현황
-- 코딩테스트
-1. 프로젝트
-- 도커라이징 공부
-2. 코딩 테스트 대비 문제 풀이
-- Prefix Sum, Sorting, Binary Search (BOJ 22861 폴더 정리 (large)) 
-```
-
 # Problem Solving (Algorithm & SQL)
 
 ### BOJ 2819 상근이의 로봇
