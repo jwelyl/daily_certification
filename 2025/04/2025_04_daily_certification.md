@@ -84,4 +84,9 @@ BOJ 22861 폴더 정리 (large) (DFS, Tree, HashMap, DP, String, Parsing)
 BOJ 2819 상근이의 로봇 (Prefix Sum, Sorting, Binary Search)
 
 ### [2025.04.26](https://github.com/jwelyl/daily_certification/blob/main/2024/04/26/25_04_26_daily_certification.md)
-BOJ 3050 집들ㅣ (Prefix Sum)
+BOJ 3050 집들이 (Prefix Sum)
+
+## 2025.04.27.sun ~ 04.30.wed 데일리 인증
+
+### [2025.04.27](https://github.com/jwelyl/daily_certification/blob/main/2024/04/27/25_04_27_daily_certification.md)
+BOJ 2900 프로그램 (Prefix Sum, imos, Mathematics)
