@@ -90,3 +90,6 @@ BOJ 3050 집들이 (Prefix Sum)
 
 ### [2025.04.27](https://github.com/jwelyl/daily_certification/blob/main/2024/04/27/25_04_27_daily_certification.md)
 BOJ 2900 프로그램 (Prefix Sum, imos, Mathematics)
+
+### [2025.04.28](https://github.com/jwelyl/daily_certification/blob/main/2024/04/28/25_04_28_daily_certification.md)
+BOJ 1765번: 닭싸움 팀 정하기 (Disjoint Set)
