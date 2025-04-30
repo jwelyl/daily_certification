@@ -96,3 +96,6 @@ BOJ 1765 닭싸움 팀 정하기 (Disjoint Set)
 
 ### [2025.04.29](https://github.com/jwelyl/daily_certification/blob/main/2024/04/29/25_04_29_daily_certification.md)
 BOJ 2610 회의준비 (Floyd Warshall, DFS, Disjoint Set)
+
+### [2025.04.30](https://github.com/jwelyl/daily_certification/blob/main/2024/04/30/25_04_30_daily_certification.md)
+BOJ 17619 개구리 점프 (Sorting, Sweeping, Disjoint Set)
