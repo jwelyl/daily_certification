@@ -18,3 +18,6 @@ BOJ 16957 체스판 위의 공 (DP, Disjoint Set)
 
 ### [2025.05.05](https://github.com/jwelyl/daily_certification/blob/main/2025/05/05/25_05_05_daily_certification.md)
 BOJ 18267 Milk Visits (Tree, Disjoint Set)
+
+### [2025.05.06](https://github.com/jwelyl/daily_certification/blob/main/2025/05/06/25_05_06_daily_certification.md)
+BOJ 10888 두 섬간의 이동 (Mathematics, Disjoint Set, String.format)
