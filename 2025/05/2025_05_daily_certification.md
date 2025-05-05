@@ -15,3 +15,6 @@ BOJ 15789 CTP 왕국은 한솔 왕국을 이길 수 있을까? (Sorting, Disjoin
 
 ### [2025.05.04](https://github.com/jwelyl/daily_certification/blob/main/2025/05/04/25_05_04_daily_certification.md)
 BOJ 16957 체스판 위의 공 (DP, Disjoint Set)
+
+### [2025.05.05](https://github.com/jwelyl/daily_certification/blob/main/2025/05/05/25_05_05_daily_certification.md)
+BOJ 18267 Milk Visits (Tree, Disjoint Set)
