@@ -27,3 +27,6 @@ BOJ 2350 대운하 (MST, BFS)
 
 ### [2025.05.08](https://github.com/jwelyl/daily_certification/blob/main/2025/05/08/25_05_08_daily_certification.md)
 BOJ 5846 Tractor (Parametric Search, Disjoint Set, DFS)
+
+### [2025.05.09](https://github.com/jwelyl/daily_certification/blob/main/2025/05/09/25_05_09_daily_certification.md)
+BOJ 18921 Cost Of Subtree (Greedy, Sorting, Disjoint Set)
