@@ -30,3 +30,6 @@ BOJ 5846 Tractor (Parametric Search, Disjoint Set, DFS)
 
 ### [2025.05.09](https://github.com/jwelyl/daily_certification/blob/main/2025/05/09/25_05_09_daily_certification.md)
 BOJ 18921 Cost Of Subtree (Greedy, Sorting, Disjoint Set)
+
+### [2025.05.10](https://github.com/jwelyl/daily_certification/blob/main/2025/05/10/25_05_10_daily_certification.md)
+BOJ 22954 그래프 트리 분할 (Case Work, Disjoint Set, DFS)
