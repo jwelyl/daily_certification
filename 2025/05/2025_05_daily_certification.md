@@ -33,3 +33,8 @@ BOJ 18921 Cost Of Subtree (Greedy, Sorting, Disjoint Set)
 
 ### [2025.05.10](https://github.com/jwelyl/daily_certification/blob/main/2025/05/10/25_05_10_daily_certification.md)
 BOJ 22954 그래프 트리 분할 (Case Work, Disjoint Set, DFS)
+
+## 2025.05.11.thu ~ 05.17.sat 데일리 인증
+
+### [2025.05.11](https://github.com/jwelyl/daily_certification/blob/main/2025/05/11/25_05_11_daily_certification.md)
+BOJ 32203 연락 (Disjoin Set, Mathematics)
