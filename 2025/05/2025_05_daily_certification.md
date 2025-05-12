@@ -38,3 +38,6 @@ BOJ 22954 그래프 트리 분할 (Case Work, Disjoint Set, DFS)
 
 ### [2025.05.11](https://github.com/jwelyl/daily_certification/blob/main/2025/05/11/25_05_11_daily_certification.md)
 BOJ 32203 연락 (Disjoin Set, Mathematics)
+
+### [2025.05.12](https://github.com/jwelyl/daily_certification/blob/main/2025/05/12/25_05_12_daily_certification.md)
+BOJ 23818 원수의 원수 (Bipartite Graph, DFS)
