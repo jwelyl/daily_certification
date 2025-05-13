@@ -41,3 +41,6 @@ BOJ 32203 연락 (Disjoin Set, Mathematics)
 
 ### [2025.05.12](https://github.com/jwelyl/daily_certification/blob/main/2025/05/12/25_05_12_daily_certification.md)
 BOJ 23818 원수의 원수 (Bipartite Graph, DFS)
+
+### [2025.05.13](https://github.com/jwelyl/daily_certification/blob/main/2025/05/13/25_05_13_daily_certification.md)
+BOJ 20166 문자열 지옥에 빠진 호석 (DFS, HashMap), BOJ 5588 별자리 찾기 (uteforcing, HashSet (equals/hashCode))
