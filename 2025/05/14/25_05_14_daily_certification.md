@@ -74,106 +74,63 @@ public class Main {
 	private static final int[] dx = {1, 1, 0, -1, -1, -1, 0, 1};	
 }	//	Main-class-end
 ```
+```sql
 
-### BOJ 5588 별자리 찾기
+create table employee (
+	empl_id int primary key,
+  	empl_name varchar(200),
+  	salary int,
+  	dept_id int,
+  	job_id varchar(2)
+);
 
-[5588번: 별자리 찾기](http://boj.ma/5588/t)
+create table department (
+	dept_id int primary key,
+  	dept_name varchar(200),
+  	region varchar(200)
+);
 
-```java
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.HashSet;
-import java.util.Set;
-import java.util.StringTokenizer;
+create table hr (
+	dept_id int,
+  	job_id varchar(2),
+  	primary key(dept_id, job_id)
+);
 
-public class Main {
-	private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-	private static StringTokenizer st;
+insert into employee (empl_id, empl_name, salary, dept_id, job_id)
+values (101, 'Jane', 5000, 10, 'J1'),
+	   (102, 'Charles', 6000, 20, 'J2'),
+       (103, 'Zzit', 4000, 10, 'J1'),
+       (104, 'Hang', 7000, 30, 'J3');
+       
+insert into department (dept_id, dept_name, region)
+values (10, 'Design', 'Seoul'),
+	   (20, 'Develop', 'Busan'),
+       (30, 'Marketing', 'Seoul');
+       
+insert into hr (dept_id, job_id)
+values (10, 'J1'),
+       (30, 'J3');
+       
+select empl_name, salary 
+from employee
+where salary > (select avg(salary) from employee);
 
-	private static int N; 
-	private static int M;
-	private static int K;
+select empl_name
+from employee
+where (dept_id, job_id)
+in (select dept_id, job_id from hr);
+       
+select empl_name
+from employee
+where dept_id in (select dept_id from department where region = 'Seoul');
 
-	private static int[] parents;
-	private static int[] dsSizes;
-	private static int dsCnts;	//	분리집합 개수
-	
-	private static final Set<Integer> dsSet = new HashSet<>();
-	private static int[] dsArr;
-	private static boolean[][] dp;
-	
-	public static void main(String[] args) throws IOException {
-		st = new StringTokenizer(br.readLine());
-		N = Integer.parseInt(st.nextToken());
-		M = Integer.parseInt(st.nextToken());
-		K = Integer.parseInt(st.nextToken());
-		
-		parents = new int[N + 1];
-		dsSizes = new int[N + 1];
-		dsCnts = N;
-		
-		for(int v = 1; v <= N; v++) {
-			parents[v] = v;
-			dsSizes[v] = 1;
-		}
-		
-		for(int e = 0; e < M; e++) {
-			st = new StringTokenizer(br.readLine());
-			int v1 = Integer.parseInt(st.nextToken());
-			int v2 = Integer.parseInt(st.nextToken());
-			
-			union(v1, v2);
-		}
-		
-		dsArr = new int[dsCnts + 1];
-		dp = new boolean[dsCnts + 1][K + 1];
-		dp[0][0] = true;
-		
-		int idx = 1;
-		for(int v = 1; v <= N; v++) {
-			int ds = find(v);
-			
-			if(!dsSet.contains(ds)) {
-				dsArr[idx] = ds;
-				dsSet.add(ds);
-				idx++;
-			}
-		}
-		
-		for(int i = 1; i <= dsCnts; i++) {
-			int ds = dsArr[i];
-			int dsSize = dsSizes[ds];
-			
-			for(int j = 0; j <= K; j++) {
-				if(dsSize > j)
-					dp[i][j] = dp[i - 1][j];
-				else
-					dp[i][j] = dp[i - 1][j] || dp[i - 1][j - dsSize];
-				
-				if(j == K && dp[i][j]) {
-					System.out.println("SAFE");
-					return;
-				}
-			}
-		}
-		
-		System.out.println("DOOMED");
-	}	//	main-end
-	private static int find(int v) {
-		return v == parents[v] ? v : (parents[v] = find(parents[v]));
-	}
-	
-	private static void union(int v1, int v2) {
-		v1 = find(v1);
-		v2 = find(v2);
-		
-		if(v1 != v2) {
-			parents[v2] = v1;
-			dsSizes[v1] += dsSizes[v2];
-			dsSizes[v2] = 0;
-			dsCnts--;
-		}
-	}
-}	//	Main-class-end
+select empl_name, (select dept_name from department D where D.dept_id = E.dept_id) as department_name
+from employee E;
+
+select e.empl_name, d.dept_name
+from employee e, (select dept_id, dept_name from department where region = 'Seoul') d
+where e.dept_id = d.dept_id;
+
+select e1.empl_name, e1.salary from employee e1
+where e1.salary < (select max(e2.salary) from employee e2 where e2.dept_id = e1.dept_id);
 ```
