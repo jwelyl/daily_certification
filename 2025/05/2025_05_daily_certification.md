@@ -47,3 +47,6 @@ BOJ 20166 문자열 지옥에 빠진 호석 (DFS, HashMap), BOJ 5588 별자리 �
 
 ### [2025.05.14](https://github.com/jwelyl/daily_certification/blob/main/2025/05/14/25_05_14_daily_certification.md)
 BOJ 15509 Xayahh-Rakann at Moloco (Hard) (Disjoint Set, Knapsack)
+
+### [2025.05.15](https://github.com/jwelyl/daily_certification/blob/main/2025/05/15/25_05_15_daily_certification.md)
+BOJ 23324 어려운 모든 정점 쌍 최단 거리 (Disjoint Set)
