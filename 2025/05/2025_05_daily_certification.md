@@ -51,5 +51,8 @@ BOJ 15509 Xayahh-Rakann at Moloco (Hard) (Disjoint Set, Knapsack)
 ### [2025.05.15](https://github.com/jwelyl/daily_certification/blob/main/2025/05/15/25_05_15_daily_certification.md)
 BOJ 23324 어려운 모든 정점 쌍 최단 거리 (Disjoint Set)
 
-### [2025.05.16](https://github.com/jwelyl/daily_certification/blob/main/2025/05/16/25_06_15_daily_certification.md)
+### [2025.05.16](https://github.com/jwelyl/daily_certification/blob/main/2025/05/16/25_05_16_daily_certification.md)
 BOJ 14171 Cities and States (HashMap)
+
+### [2025.05.17](https://github.com/jwelyl/daily_certification/blob/main/2025/05/17/25_05_17_daily_certification.md)
+BOJ 26591 Rain Boots (Dijkstra, 0-1 BFS)
