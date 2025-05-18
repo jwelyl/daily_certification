@@ -56,3 +56,8 @@ BOJ 14171 Cities and States (HashMap)
 
 ### [2025.05.17](https://github.com/jwelyl/daily_certification/blob/main/2025/05/17/25_05_17_daily_certification.md)
 BOJ 26591 Rain Boots (Dijkstra, 0-1 BFS)
+
+## 2025.05.18.thu ~ 05.24.sat 데일리 인증
+
+### [2025.05.18](https://github.com/jwelyl/daily_certification/blob/main/2025/05/18/25_05_18_daily_certification.md)
+BOJ 15508 Xayahh-Rakann at Moloco (Easy) (Disjoint Set, Subset)
