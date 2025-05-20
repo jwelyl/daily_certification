@@ -64,3 +64,6 @@ BOJ 15508 Xayahh-Rakann at Moloco (Easy) (Disjoint Set, Subset)
 
 ### [2025.05.19](https://github.com/jwelyl/daily_certification/blob/main/2025/05/19/25_05_19_daily_certification.md)
 BOJ 14941 호기심 (Sieve Of Eratosthenes, Binary Search, Prefix Sum)
+
+### [2025.05.20](https://github.com/jwelyl/daily_certification/blob/main/2025/05/20/25_05_20_daily_certification.md)
+BOJ 16854 편안한 문자열 (DP, Prefix Sum)
