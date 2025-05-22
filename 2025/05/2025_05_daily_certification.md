@@ -73,3 +73,6 @@ BOJ 19538 루머 (BFS)
 
 ### [2025.05.22](https://github.com/jwelyl/daily_certification/blob/main/2025/05/22/25_05_22_daily_certification.md)
 BOJ 25587 배수로 (Disjoint Set)
+
+### [2025.05.23](https://github.com/jwelyl/daily_certification/blob/main/2025/05/23/25_05_23_daily_certification.md)
+BOJ 17038 The Great Revegetation (Silver) (DFS, Bipartite Graph)
