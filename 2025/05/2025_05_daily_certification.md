@@ -70,3 +70,6 @@ BOJ 16854 편안한 문자열 (DP, Prefix Sum)
 
 ### [2025.05.21](https://github.com/jwelyl/daily_certification/blob/main/2025/05/21/25_05_21_daily_certification.md)
 BOJ 19538 루머 (BFS)
+
+### [2025.05.22](https://github.com/jwelyl/daily_certification/blob/main/2025/05/22/25_05_22_daily_certification.md)
+BOJ 25587 배수로 (Disjoint Set)
