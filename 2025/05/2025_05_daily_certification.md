@@ -79,3 +79,8 @@ BOJ 17038 The Great Revegetation (Silver) (DFS, Bipartite Graph)
 
 ### [2025.05.24](https://github.com/jwelyl/daily_certification/blob/main/2025/05/24/25_05_24_daily_certification.md)
 BOJ 3108 로고 (Disjoint Set, Geometry)
+
+## 2025.05.25.thu ~ 05.31.sat 데일리 인증
+
+### [2025.05.25](https://github.com/jwelyl/daily_certification/blob/main/2025/05/25/25_05_25_daily_certification.md)
+BOJ 22956 소나기 (Disjoint Set)
