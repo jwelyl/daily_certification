@@ -84,3 +84,6 @@ BOJ 3108 로고 (Disjoint Set, Geometry)
 
 ### [2025.05.25](https://github.com/jwelyl/daily_certification/blob/main/2025/05/25/25_05_25_daily_certification.md)
 BOJ 22956 소나기 (Disjoint Set)
+
+### [2025.05.26](https://github.com/jwelyl/daily_certification/blob/main/2025/05/26/25_05_26_daily_certification.md)
+BOJ 23326 홍익 투어리스트 (TreeSet, Binary Search)
