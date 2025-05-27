@@ -87,3 +87,6 @@ BOJ 22956 소나기 (Disjoint Set)
 
 ### [2025.05.26](https://github.com/jwelyl/daily_certification/blob/main/2025/05/26/25_05_26_daily_certification.md)
 BOJ 23326 홍익 투어리스트 (TreeSet, Binary Search)
+
+### [2025.05.27](https://github.com/jwelyl/daily_certification/blob/main/2025/05/27/25_05_27_daily_certification.md)
+BOJ 12906 새로운 하노이 탑 (BFS, HashSet)
