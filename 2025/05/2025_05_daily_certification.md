@@ -93,3 +93,6 @@ BOJ 12906 새로운 하노이 탑 (BFS, HashSet)
 
 ### [2025.05.28](https://github.com/jwelyl/daily_certification/blob/main/2025/05/28/25_05_28_daily_certification.md)
 BOJ 13502 단어퍼즐 2 (Trie, DFS, Backtracking, HashSet, Precomputation)
+
+### [2025.05.29](https://github.com/jwelyl/daily_certification/blob/main/2025/05/29/25_05_29_daily_certification.md)
+BOJ 12757 전설의 JBNU (TreeMap)
