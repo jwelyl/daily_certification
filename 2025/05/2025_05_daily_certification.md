@@ -96,3 +96,6 @@ BOJ 13502 단어퍼즐 2 (Trie, DFS, Backtracking, HashSet, Precomputation)
 
 ### [2025.05.29](https://github.com/jwelyl/daily_certification/blob/main/2025/05/29/25_05_29_daily_certification.md)
 BOJ 12757 전설의 JBNU (TreeMap)
+
+### [2025.05.30](https://github.com/jwelyl/daily_certification/blob/main/2025/05/30/25_05_30_daily_certification.md)
+BOJ 18085 Firetrucks Are Red (Disjoint Set, MST, HashMap)
