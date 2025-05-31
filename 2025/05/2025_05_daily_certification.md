@@ -99,3 +99,6 @@ BOJ 12757 전설의 JBNU (TreeMap)
 
 ### [2025.05.30](https://github.com/jwelyl/daily_certification/blob/main/2025/05/30/25_05_30_daily_certification.md)
 BOJ 18085 Firetrucks Are Red (Disjoint Set, MST, HashMap)
+
+### [2025.05.31](https://github.com/jwelyl/daily_certification/blob/main/2025/05/31/25_05_31_daily_certification.md)
+BOJ 26077 서커스 나이트 (Disjoint Set, Sieve Of Eratosthenes)
