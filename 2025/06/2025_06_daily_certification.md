@@ -10,3 +10,6 @@ BOJ 28251 나도리합 (Disjoint Set, Mathematics)
 
 ### [2025.06.03](https://github.com/jwelyl/daily_certification/blob/main/2025/06/03/25_06_03_daily_certification.md)
 BOJ 15458 Barn Painting (Tree DP, Traceback), BOJ 25542 약속 장소 (String, Bruteforcing)
+
+### [2025.06.04](https://github.com/jwelyl/daily_certification/blob/main/2025/06/04/25_06_04_daily_certification.md)
+BOJ 20119 클레어와 물약 (DAG, Topological Sorting), 프로그래머스 등산코스 정하기 (Parametric Search, Dijkstra)
