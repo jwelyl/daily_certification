@@ -19,3 +19,6 @@ BOJ 14867 물통 (BFS, HashSet(equals, hashCode)), BOJ 1863 스카이라인 쉬�
 
 ### [2025.06.06](https://github.com/jwelyl/daily_certification/blob/main/2025/06/06/25_06_06_daily_certification.md)
 BOJ 16134 조합 (Combination) (Exponentiation By Squaring, FIT)
+
+### [2025.06.07](https://github.com/jwelyl/daily_certification/blob/main/2025/06/07/25_06_07_daily_certification.md)
+BOJ 25685 좋은 노드 집합 찾기 (tree dp)
