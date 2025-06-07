@@ -14,5 +14,8 @@ BOJ 15458 Barn Painting (Tree DP, Traceback), BOJ 25542 약속 장소 (String, B
 ### [2025.06.04](https://github.com/jwelyl/daily_certification/blob/main/2025/06/04/25_06_04_daily_certification.md)
 BOJ 20119 클레어와 물약 (DAG, Topological Sorting), 프로그래머스 등산코스 정하기 (Parametric Search, Dijkstra)
 
-### [2025.06.05](https://github.com/jwelyl/daily_certification/blob/main/2025/06/04/25_06_05_daily_certification.md)
+### [2025.06.05](https://github.com/jwelyl/daily_certification/blob/main/2025/06/05/25_06_05_daily_certification.md)
 BOJ 14867 물통 (BFS, HashSet(equals, hashCode)), BOJ 1863 스카이라인 쉬운거 (Stack (Monotone Stack))
+
+### [2025.06.06](https://github.com/jwelyl/daily_certification/blob/main/2025/06/06/25_06_06_daily_certification.md)
+BOJ 16134 조합 (Combination) (Exponentiation By Squaring, FIT)
