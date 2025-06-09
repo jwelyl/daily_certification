@@ -27,3 +27,6 @@ BOJ 25685 좋은 노드 집합 찾기 (tree dp)
 
 ### [2025.06.08](https://github.com/jwelyl/daily_certification/blob/main/2025/06/08/25_06_08_daily_certification.md)
 BOJ 15586 MooTube (Gold) (Disjoint Set, Sorting, Offline Queries)
+
+### [2025.06.09](https://github.com/jwelyl/daily_certification/blob/main/2025/06/09/25_06_09_daily_certification.md)
+BOJ 17469 트리의 색깔과 쿼리 (Disjoint Set, Offline Queries, Smaller To Large)
