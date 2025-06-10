@@ -33,3 +33,6 @@ BOJ 17469 트리의 색깔과 쿼리 (Disjoint Set, Offline Queries, Smaller To 
 
 ### [2025.06.10](https://github.com/jwelyl/daily_certification/blob/main/2025/06/10/25_06_10_daily_certification.md)
 BOJ 2629 양팔저울 (DP, DFS, Knapsack)
+
+### [2025.06.11](https://github.com/jwelyl/daily_certification/blob/main/2025/06/11/25_06_11_daily_certification.md)
+BOJ 12764 싸지방에 간 준하 (Sorting, Priority Queue, Set/Map)
