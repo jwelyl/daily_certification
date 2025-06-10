@@ -30,3 +30,6 @@ BOJ 15586 MooTube (Gold) (Disjoint Set, Sorting, Offline Queries)
 
 ### [2025.06.09](https://github.com/jwelyl/daily_certification/blob/main/2025/06/09/25_06_09_daily_certification.md)
 BOJ 17469 트리의 색깔과 쿼리 (Disjoint Set, Offline Queries, Smaller To Large)
+
+### [2025.06.10](https://github.com/jwelyl/daily_certification/blob/main/2025/06/10/25_06_10_daily_certification.md)
+BOJ 2629 양팔저울 (DP, DFS, Knapsack)
