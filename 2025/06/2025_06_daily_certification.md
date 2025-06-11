@@ -36,3 +36,6 @@ BOJ 2629 양팔저울 (DP, DFS, Knapsack)
 
 ### [2025.06.11](https://github.com/jwelyl/daily_certification/blob/main/2025/06/11/25_06_11_daily_certification.md)
 BOJ 12764 싸지방에 간 준하 (Sorting, Priority Queue, Set/Map)
+
+### [2025.06.12](https://github.com/jwelyl/daily_certification/blob/main/2025/06/12/25_06_12_daily_certification.md)
+BOJ 2593 엘리베이터 (0-1 BFS, Dijkstra)
