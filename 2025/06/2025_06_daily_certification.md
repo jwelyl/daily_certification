@@ -39,3 +39,6 @@ BOJ 12764 싸지방에 간 준하 (Sorting, Priority Queue, Set/Map)
 
 ### [2025.06.12](https://github.com/jwelyl/daily_certification/blob/main/2025/06/12/25_06_12_daily_certification.md)
 BOJ 2593 엘리베이터 (0-1 BFS, Dijkstra)
+
+### [2025.06.13](https://github.com/jwelyl/daily_certification/blob/main/2025/06/13/25_06_13_daily_certification.md)
+BOJ 2481 해밍 경로 (BFS, Bitmasking, HashMap, Traceback)
