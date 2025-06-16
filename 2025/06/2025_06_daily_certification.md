@@ -50,3 +50,6 @@ BOJ 9015 정사각형 (HashSet, Geometry, Bruteforcing)
 
 ### [2025.06.15](https://github.com/jwelyl/daily_certification/blob/main/2025/06/15/25_06_15_daily_certification.md)
 BOJ 28277 뭉쳐야 산다 (HashSet, Smaller To Larger Technique)
+
+### [2025.06.16](https://github.com/jwelyl/daily_certification/blob/main/2025/06/16/25_06_16_daily_certification.md)
+BOJ 9177 단어 섞기 (DP)
