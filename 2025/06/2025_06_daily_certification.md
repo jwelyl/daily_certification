@@ -56,3 +56,6 @@ BOJ 9177 단어 섞기 (DP)
 
 ### [2025.06.17](https://github.com/jwelyl/daily_certification/blob/main/2025/06/17/25_06_17_daily_certification.md)
 BOJ 1035 조각 움직이기 (Bruteforcing, BFS, Bitmasking)
+
+### [2025.06.18](https://github.com/jwelyl/daily_certification/blob/main/2025/06/18/25_06_18_daily_certification.md)
+BOJ 5022 연결 (BFS)
