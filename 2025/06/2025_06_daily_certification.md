@@ -59,3 +59,6 @@ BOJ 1035 조각 움직이기 (Bruteforcing, BFS, Bitmasking)
 
 ### [2025.06.18](https://github.com/jwelyl/daily_certification/blob/main/2025/06/18/25_06_18_daily_certification.md)
 BOJ 5022 연결 (BFS)
+
+### [2025.06.19](https://github.com/jwelyl/daily_certification/blob/main/2025/06/19/25_06_19_daily_certification.md)
+BOJ 16989 Baaaaaaaaaduk2 (Hard) (BFS, HashSet/HashMap, Implementation)
