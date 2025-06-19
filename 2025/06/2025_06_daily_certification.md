@@ -62,3 +62,6 @@ BOJ 5022 연결 (BFS)
 
 ### [2025.06.19](https://github.com/jwelyl/daily_certification/blob/main/2025/06/19/25_06_19_daily_certification.md)
 BOJ 16989 Baaaaaaaaaduk2 (Hard) (BFS, HashSet/HashMap, Implementation)
+
+### [2025.06.20](https://github.com/jwelyl/daily_certification/blob/main/2025/06/20/25_06_20_daily_certification.md)
+BOJ 22866 탑 보기 (Stack, Monotone Stack)
