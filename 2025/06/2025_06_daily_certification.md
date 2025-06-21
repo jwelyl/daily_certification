@@ -65,3 +65,6 @@ BOJ 16989 Baaaaaaaaaduk2 (Hard) (BFS, HashSet/HashMap, Implementation)
 
 ### [2025.06.20](https://github.com/jwelyl/daily_certification/blob/main/2025/06/20/25_06_20_daily_certification.md)
 BOJ 22866 탑 보기 (Stack, Monotone Stack)
+
+### [2025.06.21](https://github.com/jwelyl/daily_certification/blob/main/2025/06/21/25_06_21_daily_certification.md)
+BOJ 2098/16991 외판원 순회 1/3 (DP, Bitmasking, TSP)
