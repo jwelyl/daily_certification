@@ -73,3 +73,6 @@ BOJ 2098/16991 외판원 순회 1/3 (DP, Bitmasking, TSP)
 
 ### [2025.06.22](https://github.com/jwelyl/daily_certification/blob/main/2025/06/22/25_06_22_daily_certification.md)
 BOJ 16571 알파 틱택토 (Backtracking, Game Theory)
+
+### [2025.06.23](https://github.com/jwelyl/daily_certification/blob/main/2025/06/23/25_06_23_daily_certification.md)
+BOJ 30242 N-Queen (Easy) (Backtracking)
