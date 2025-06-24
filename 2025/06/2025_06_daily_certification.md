@@ -76,3 +76,6 @@ BOJ 16571 알파 틱택토 (Backtracking, Game Theory)
 
 ### [2025.06.23](https://github.com/jwelyl/daily_certification/blob/main/2025/06/23/25_06_23_daily_certification.md)
 BOJ 30242 N-Queen (Easy) (Backtracking)
+
+### [2025.06.24](https://github.com/jwelyl/daily_certification/blob/main/2025/06/24/25_06_24_daily_certification.md)
+BOJ 20541 앨범정리 (Implementation, String, TreeMap, DFS)
