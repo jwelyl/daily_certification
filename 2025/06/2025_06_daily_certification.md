@@ -79,3 +79,6 @@ BOJ 30242 N-Queen (Easy) (Backtracking)
 
 ### [2025.06.24](https://github.com/jwelyl/daily_certification/blob/main/2025/06/24/25_06_24_daily_certification.md)
 BOJ 20541 앨범정리 (Implementation, String, TreeMap, DFS)
+
+### [2025.06.25](https://github.com/jwelyl/daily_certification/blob/main/2025/06/25/25_06_25_daily_certification.md)
+BOJ 2138 전구와 스위치 (BFS, Implementation)
