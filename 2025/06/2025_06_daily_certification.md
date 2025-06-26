@@ -82,3 +82,6 @@ BOJ 20541 앨범정리 (Implementation, String, TreeMap, DFS)
 
 ### [2025.06.25](https://github.com/jwelyl/daily_certification/blob/main/2025/06/25/25_06_25_daily_certification.md)
 BOJ 2138 전구와 스위치 (BFS, Implementation)
+
+### [2025.06.26](https://github.com/jwelyl/daily_certification/blob/main/2025/06/26/25_06_26_daily_certification.md)
+BOJ 1623 신년 파티 (Tree DP)
