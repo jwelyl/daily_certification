@@ -85,3 +85,6 @@ BOJ 2138 전구와 스위치 (BFS, Implementation)
 
 ### [2025.06.26](https://github.com/jwelyl/daily_certification/blob/main/2025/06/26/25_06_26_daily_certification.md)
 BOJ 1623 신년 파티 (Tree DP)
+
+### [2025.06.27](https://github.com/jwelyl/daily_certification/blob/main/2025/06/27/25_06_27_daily_certification.md)
+BOJ 1473 미로 탈출 (BFS, Bitmasking)
