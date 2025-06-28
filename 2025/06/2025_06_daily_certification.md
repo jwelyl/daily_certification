@@ -88,3 +88,6 @@ BOJ 1623 신년 파티 (Tree DP)
 
 ### [2025.06.27](https://github.com/jwelyl/daily_certification/blob/main/2025/06/27/25_06_27_daily_certification.md)
 BOJ 1473 미로 탈출 (BFS, Bitmasking)
+
+### [2025.06.28](https://github.com/jwelyl/daily_certification/blob/main/2025/06/28/25_06_28_daily_certification.md)
+BOJ 2478 자물쇠 (Implementation)
