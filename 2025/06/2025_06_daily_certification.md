@@ -96,3 +96,6 @@ BOJ 2478 자물쇠 (Implementation)
 
 ### [2025.06.29](https://github.com/jwelyl/daily_certification/blob/main/2025/06/29/25_06_29_daily_certification.md)
 BOJ 2140 지뢰찾기 (Implementation, Greedy)
+
+### [2025.06.30](https://github.com/jwelyl/daily_certification/blob/main/2025/06/30/25_06_30_daily_certification.md)
+BOJ 17831 대기업 승범이네 (Tree DP)
