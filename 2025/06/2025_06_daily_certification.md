@@ -91,3 +91,8 @@ BOJ 1473 미로 탈출 (BFS, Bitmasking)
 
 ### [2025.06.28](https://github.com/jwelyl/daily_certification/blob/main/2025/06/28/25_06_28_daily_certification.md)
 BOJ 2478 자물쇠 (Implementation)
+
+## 2025.06.29.sun ~ 06.30.mon 데일리 인증
+
+### [2025.06.29](https://github.com/jwelyl/daily_certification/blob/main/2025/06/29/25_06_29_daily_certification.md)
+BOJ 2140 지뢰찾기 (Implementation, Greedy)
