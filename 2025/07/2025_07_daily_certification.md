@@ -10,3 +10,6 @@ BOJ 22942 데이터 체커 (Sorting, Sweeping, Stack)
 
 ### [2025.07.03](https://github.com/jwelyl/daily_certification/blob/main/2025/07/03/25_07_03_daily_certification.md)
 BOJ 5904 Moo 게임 (DNC, Recursion), BOJ 2411 아이템 먹기 (DP, TreeMap)
+
+### [2025.07.04](https://github.com/jwelyl/daily_certification/blob/main/2025/07/04/25_07_04_daily_certification.md)
+BOJ 32028 이진 검색 트리 복원하기 (TreeSet/Map, Binary Search Tree)
