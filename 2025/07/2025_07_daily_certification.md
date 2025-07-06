@@ -16,3 +16,8 @@ BOJ 32028 이진 검색 트리 복원하기 (TreeSet/Map, Binary Search Tree)
 
 ### [2025.07.05](https://github.com/jwelyl/daily_certification/blob/main/2025/07/05/25_07_05_daily_certification.md)
 BOJ 17831 대기업 승범이네 (Tree DP)
+
+## 2025.07.06.sun ~ 07.12.sat 데일리 인증
+
+### [2025.07.06](https://github.com/jwelyl/daily_certification/blob/main/2025/07/06/25_07_06_daily_certification.md)
+BOJ 17942 알고리즘 공부 (TreeSet, Greedy, Graph)
