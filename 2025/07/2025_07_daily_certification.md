@@ -21,3 +21,6 @@ BOJ 17831 대기업 승범이네 (Tree DP)
 
 ### [2025.07.06](https://github.com/jwelyl/daily_certification/blob/main/2025/07/06/25_07_06_daily_certification.md)
 BOJ 17942 알고리즘 공부 (TreeSet, Greedy, Graph)
+
+### [2025.07.07](https://github.com/jwelyl/daily_certification/blob/main/2025/07/07/25_07_07_daily_certification.md)
+BOJ 17470 배열 돌리기 5 (Implementation)
