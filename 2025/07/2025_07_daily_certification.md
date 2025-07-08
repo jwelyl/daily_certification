@@ -24,3 +24,6 @@ BOJ 17942 알고리즘 공부 (TreeSet, Greedy, Graph)
 
 ### [2025.07.07](https://github.com/jwelyl/daily_certification/blob/main/2025/07/07/25_07_07_daily_certification.md)
 BOJ 17470 배열 돌리기 5 (Implementation)
+
+### [2025.07.08](https://github.com/jwelyl/daily_certification/blob/main/2025/07/08/25_07_08_daily_certification.md)
+BOJ 8111 0과 1 (BFS, Modulo)
