@@ -27,3 +27,6 @@ BOJ 17470 배열 돌리기 5 (Implementation)
 
 ### [2025.07.08](https://github.com/jwelyl/daily_certification/blob/main/2025/07/08/25_07_08_daily_certification.md)
 BOJ 8111 0과 1 (BFS, Modulo)
+
+### [2025.07.09](https://github.com/jwelyl/daily_certification/blob/main/2025/07/09/25_07_09_daily_certification.md)
+BOJ 8452 그래프와 쿼리 (BFS, Offline Queries)
