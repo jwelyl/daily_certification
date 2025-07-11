@@ -33,3 +33,6 @@ BOJ 8452 그래프와 쿼리 (BFS, Offline Queries)
 
 ### [2025.07.10](https://github.com/jwelyl/daily_certification/blob/main/2025/07/10/25_07_10_daily_certification.md)
 BOJ 17081 RPG Extreme (Implementation, Simulation)
+
+### [2025.07.11](https://github.com/jwelyl/daily_certification/blob/main/2025/07/11/25_07_11_daily_certification.md)
+BOJ 8112 0과 1 - 2 (BFS, Modulo, Traceback)
