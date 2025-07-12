@@ -36,3 +36,6 @@ BOJ 17081 RPG Extreme (Implementation, Simulation)
 
 ### [2025.07.11](https://github.com/jwelyl/daily_certification/blob/main/2025/07/11/25_07_11_daily_certification.md)
 BOJ 8112 0과 1 - 2 (BFS, Modulo, Traceback)
+
+### [2025.07.12](https://github.com/jwelyl/daily_certification/blob/main/2025/07/12/25_07_12_daily_certification.md)
+BOJ 2045 마방진 (Implementation, Bruteforcing)
