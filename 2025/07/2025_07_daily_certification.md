@@ -40,5 +40,10 @@ BOJ 8112 0과 1 - 2 (BFS, Modulo, Traceback)
 ### [2025.07.12](https://github.com/jwelyl/daily_certification/blob/main/2025/07/12/25_07_12_daily_certification.md)
 BOJ 2045 마방진 (Implementation, Bruteforcing)
 
+## 2025.07.13.sun ~ 07.19.sat 데일리 인증
+
 ### [2025.07.13](https://github.com/jwelyl/daily_certification/blob/main/2025/07/13/25_07_13_daily_certification.md)
 BOJ 2505 두 번 뒤집기 (Implementation, Ad-hoc)
+
+### [2025.07.14](https://github.com/jwelyl/daily_certification/blob/main/2025/07/14/25_07_14_daily_certification.md)
+BOJ 2452 그리드 게임 (BFS, Optimization)
