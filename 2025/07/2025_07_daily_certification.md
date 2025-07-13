@@ -39,3 +39,6 @@ BOJ 8112 0과 1 - 2 (BFS, Modulo, Traceback)
 
 ### [2025.07.12](https://github.com/jwelyl/daily_certification/blob/main/2025/07/12/25_07_12_daily_certification.md)
 BOJ 2045 마방진 (Implementation, Bruteforcing)
+
+### [2025.07.13](https://github.com/jwelyl/daily_certification/blob/main/2025/07/13/25_07_13_daily_certification.md)
+BOJ 2505 두 번 뒤집기 (Implementation, Ad-hoc)
