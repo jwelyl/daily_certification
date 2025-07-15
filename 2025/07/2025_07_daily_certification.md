@@ -47,3 +47,6 @@ BOJ 2505 두 번 뒤집기 (Implementation, Ad-hoc)
 
 ### [2025.07.14](https://github.com/jwelyl/daily_certification/blob/main/2025/07/14/25_07_14_daily_certification.md)
 BOJ 2452 그리드 게임 (BFS, Optimization)
+
+### [2025.07.15](https://github.com/jwelyl/daily_certification/blob/main/2025/07/15/25_07_15_daily_certification.md)
+BOJ 11037 중복 없는 수 (Backtracking)
