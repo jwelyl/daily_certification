@@ -50,3 +50,6 @@ BOJ 2452 그리드 게임 (BFS, Optimization)
 
 ### [2025.07.15](https://github.com/jwelyl/daily_certification/blob/main/2025/07/15/25_07_15_daily_certification.md)
 BOJ 11037 중복 없는 수 (Backtracking)
+
+### [2025.07.16](https://github.com/jwelyl/daily_certification/blob/main/2025/07/16/25_07_16_daily_certification.md)
+BOJ 15883 First In Last Out (Bruteforcing, Backtracking)
