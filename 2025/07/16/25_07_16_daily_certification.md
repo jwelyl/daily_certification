@@ -80,5 +80,3 @@ public class Main {
 	}
 }	//	Main-class-end
 ```
-
-憼順
