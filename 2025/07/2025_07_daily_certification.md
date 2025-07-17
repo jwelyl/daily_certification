@@ -53,3 +53,6 @@ BOJ 11037 중복 없는 수 (Backtracking)
 
 ### [2025.07.16](https://github.com/jwelyl/daily_certification/blob/main/2025/07/16/25_07_16_daily_certification.md)
 BOJ 15883 First In Last Out (Bruteforcing, Backtracking)
+
+### [2025.07.17](https://github.com/jwelyl/daily_certification/blob/main/2025/07/17/25_07_17_daily_certification.md)
+BOJ 17370 육각형 우리 속의 개미  (DFS, Backtracking)
