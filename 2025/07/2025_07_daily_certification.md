@@ -59,3 +59,6 @@ BOJ 17370 육각형 우리 속의 개미  (DFS, Backtracking)
 
 ### [2025.07.18](https://github.com/jwelyl/daily_certification/blob/main/2025/07/18/25_07_18_daily_certification.md)
 BOJ 15811 복면산?!  (Bruteforcing, Backtracking)
+
+### [2025.07.19](https://github.com/jwelyl/daily_certification/blob/main/2025/07/19/25_07_19_daily_certification.md)
+BOJ 15811 복면산?!  (Bruteforcing, Backtracking)
