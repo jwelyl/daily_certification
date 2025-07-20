@@ -67,3 +67,6 @@ BOJ 22944 죽음의 비  (BFS, Backtracking)
 
 ### [2025.07.20](https://github.com/jwelyl/daily_certification/blob/main/2025/07/20/25_07_20_daily_certification.md)
 BOJ 1443 망가진 계산기  (Backtracking, HashSet)
+
+### [2025.07.20](https://github.com/jwelyl/daily_certification/blob/main/2025/07/20/25_07_20_daily_certification.md)
+BOJ 2026 소풍  (Backtracking)
