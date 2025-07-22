@@ -58,15 +58,19 @@ BOJ 15883 First In Last Out (Bruteforcing, Backtracking)
 BOJ 17370 육각형 우리 속의 개미  (DFS, Backtracking)
 
 ### [2025.07.18](https://github.com/jwelyl/daily_certification/blob/main/2025/07/18/25_07_18_daily_certification.md)
-BOJ 15811 복면산?!  (Bruteforcing, Backtracking)
+BOJ 15811 복면산?! (Bruteforcing, Backtracking)
 
 ### [2025.07.19](https://github.com/jwelyl/daily_certification/blob/main/2025/07/19/25_07_19_daily_certification.md)
-BOJ 22944 죽음의 비  (BFS, Backtracking)
+BOJ 22944 죽음의 비 (BFS, Backtracking)
 
 ## 2025.07.20.sun ~ 07.26.sat 데일리 인증
 
 ### [2025.07.20](https://github.com/jwelyl/daily_certification/blob/main/2025/07/20/25_07_20_daily_certification.md)
-BOJ 1443 망가진 계산기  (Backtracking, HashSet)
+BOJ 1443 망가진 계산기 (Backtracking, HashSet)
 
 ### [2025.07.20](https://github.com/jwelyl/daily_certification/blob/main/2025/07/20/25_07_20_daily_certification.md)
-BOJ 2026 소풍  (Backtracking)
+BOJ 2026 소풍 (Backtracking)
+
+### [2025.07.21](https://github.com/jwelyl/daily_certification/blob/main/2025/07/21/25_07_21_daily_certification.md)
+BOJ 20927 Degree Bounded Minumum Spanning Tree (Disjoint Set, MST, Bruteforcing, Backtracking)
+
