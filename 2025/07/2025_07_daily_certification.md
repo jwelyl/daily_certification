@@ -68,9 +68,11 @@ BOJ 22944 죽음의 비 (BFS, Backtracking)
 ### [2025.07.20](https://github.com/jwelyl/daily_certification/blob/main/2025/07/20/25_07_20_daily_certification.md)
 BOJ 1443 망가진 계산기 (Backtracking, HashSet)
 
-### [2025.07.20](https://github.com/jwelyl/daily_certification/blob/main/2025/07/20/25_07_20_daily_certification.md)
+### [2025.07.21](https://github.com/jwelyl/daily_certification/blob/main/2025/07/21/25_07_21_daily_certification.md)
 BOJ 2026 소풍 (Backtracking)
 
-### [2025.07.21](https://github.com/jwelyl/daily_certification/blob/main/2025/07/21/25_07_21_daily_certification.md)
+### [2025.07.22](https://github.com/jwelyl/daily_certification/blob/main/2025/07/22/25_07_22_daily_certification.md)
 BOJ 20927 Degree Bounded Minumum Spanning Tree (Disjoint Set, MST, Bruteforcing, Backtracking)
 
+### [2025.07.23](https://github.com/jwelyl/daily_certification/blob/main/2025/07/23/25_07_23_daily_certification.md)
+BOJ 32207 꿀잼 루비 문제 (Greedy, Sorting, Bruteforcing, Backtracking)
