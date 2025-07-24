@@ -1,18 +1,5 @@
 # 25_07_25_daily_certification
 
-# To Do List
-
-```
-[#206 koreii] 데일리인증 20250725
-1. 알고리즘 문제 풀이
-- Bruteforcing, Backtracking, String (BOJ 8913 문자열 뽑기)
-```
-
-```
-[#025] 데일리인증 20250725 (206/365)
-1. 알고리즘 문제 풀이- Bruteforcing, Backtracking, String (BOJ 8913 문자열 뽑기)
-```
-
 # Problem Solving (Algorithm & SQL)
 
 ### BOJ 8913 문자열 뽑기
