@@ -81,4 +81,7 @@ BOJ 32207 꿀잼 루비 문제 (Greedy, Sorting, Bruteforcing, Backtracking)
 BOJ 10725 빛의 왕과 거울의 미로 1 (Bruteforcing, Backtracking, Implementation, Simulation, Case Work)
 
 ### [2025.07.25](https://github.com/jwelyl/daily_certification/blob/main/2025/07/25/25_07_25_daily_certification.md)
-BOJ 8913 문자열 뽑기 (Bruteforcing, Backtracking, String )
+BOJ 8913 문자열 뽑기 (Bruteforcing, Backtracking, String)
+
+### [2025.07.26](https://github.com/jwelyl/daily_certification/blob/main/2025/07/26/25_07_26_daily_certification.md)
+BOJ 16638 괄호 추가하기 2 (Implementation, Bruteforcing, Backtracking)
