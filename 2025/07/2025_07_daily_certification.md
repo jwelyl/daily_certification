@@ -85,3 +85,8 @@ BOJ 8913 문자열 뽑기 (Bruteforcing, Backtracking, String)
 
 ### [2025.07.26](https://github.com/jwelyl/daily_certification/blob/main/2025/07/26/25_07_26_daily_certification.md)
 BOJ 16638 괄호 추가하기 2 (Implementation, Bruteforcing, Backtracking)
+
+## 2025.07.27.sun ~ 07.31.thu 데일리 인증
+
+### [2025.07.27](https://github.com/jwelyl/daily_certification/blob/main/2025/07/27/25_07_27_daily_certification.md)
+BOJ 6079 Checkers (Implementation, Bruteforcing, Backtracking)
