@@ -90,3 +90,6 @@ BOJ 16638 괄호 추가하기 2 (Implementation, Bruteforcing, Backtracking)
 
 ### [2025.07.27](https://github.com/jwelyl/daily_certification/blob/main/2025/07/27/25_07_27_daily_certification.md)
 BOJ 6079 Checkers (Implementation, Bruteforcing, Backtracking)
+
+### [2025.07.28](https://github.com/jwelyl/daily_certification/blob/main/2025/07/28/25_07_28_daily_certification.md)
+BOJ 1687 행렬 찾기 (Bruteforcing, Prefix Sum), BOJ 14863 서울에서 경산까지 (DP, Knapsack)
