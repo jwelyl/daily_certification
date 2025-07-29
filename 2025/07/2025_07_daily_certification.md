@@ -93,3 +93,6 @@ BOJ 6079 Checkers (Implementation, Bruteforcing, Backtracking)
 
 ### [2025.07.28](https://github.com/jwelyl/daily_certification/blob/main/2025/07/28/25_07_28_daily_certification.md)
 BOJ 1687 행렬 찾기 (Bruteforcing, Prefix Sum), BOJ 14863 서울에서 경산까지 (DP, Knapsack)
+
+### [2025.07.29](https://github.com/jwelyl/daily_certification/blob/main/2025/07/29/25_07_29_daily_certification.md)
+BOJ 15961 회전 초밥 (Two-pointer, Sliding Window), BOJ 15817 배수 공사 (DP, Knapsack)
