@@ -98,4 +98,4 @@ BOJ 1687 행렬 찾기 (Bruteforcing, Prefix Sum), BOJ 14863 서울에서 경�
 BOJ 15961 회전 초밥 (Two-pointer, Sliding Window), BOJ 15817 배수 공사 (DP, Knapsack)
 
 ### [2025.07.30](https://github.com/jwelyl/daily_certification/blob/main/2025/07/30/25_07_30_daily_certification.md)
-BOJ 11967 불켜기 (BFS)
+BOJ 11967 불켜기 (BFS), BOJ 14628 입 챌린저 (DP, Knapsack)

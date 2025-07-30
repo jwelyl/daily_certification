@@ -114,3 +114,69 @@ public class Main {
     }
 }    //    Main-class-end
 ```
+
+### BOJ 14628 입 챌린저
+
+[14628번: 입 챌린저](http://boj.ma/14628/t)
+
+```java
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.util.StringTokenizer;
+import java.util.Arrays;
+
+public class Main {
+    private static final int MAX = 1_000 * 1_000 * 1_000;
+    
+    private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    private static StringTokenizer st;
+    
+    private static int N;    //    스킬 개수
+    private static int M;    //    적의 체력
+    private static int K;    //    스킬을 한 번 사용할때마다 추가되는 마나 비용
+    
+    private static int[][] skills;    //    skills[i] : i번째 스킬의 {기본 마나 코스트, 데미지}
+    
+    //    dp[i][j] : 1 ~ j번 스킬 중에서 사용해서 적에게 정확히 j의 데미지를 주기 위해 필요한 최소 마나
+    private static int[][] dp;
+    
+    public static void main(String[] args) throws IOException {
+        st = new StringTokenizer(br.readLine());
+        N = Integer.parseInt(st.nextToken());
+        M = Integer.parseInt(st.nextToken());
+        K = Integer.parseInt(st.nextToken());
+        
+        skills = new int[N + 1][2];
+        dp = new int[N + 1][M + 1];
+        for(int i = 0; i <= N; i++) {
+            Arrays.fill(dp[i], MAX);
+            dp[i][0] = 0;
+        }
+        
+        for(int i = 1; i <= N; i++) {
+            st = new StringTokenizer(br.readLine());
+            skills[i][0] = Integer.parseInt(st.nextToken());
+            skills[i][1] = Integer.parseInt(st.nextToken());
+        }
+        
+        for(int i = 1; i <= N; i++) {
+            int[] skill = skills[i];
+            
+            for(int j = 1; j <= M; j++) {
+                for(int k = 0; ; k++) {
+                    int cost = k == 0 ? 0 : k * skill[0] + k * (k - 1) * K / 2;    //    i번째 스킬을 k번 사용했을 때 필요한 누적 마나
+                    int damage = k * skill[1];                                     //    i번째 스킬을 k번 사용했을 때 줄 수 있는 데미지
+                
+                    if(damage > j)
+                        break;
+                    
+                    dp[i][j] = Math.min(dp[i][j], dp[i - 1][j - damage] + cost);
+                }
+            }
+        }
+        
+        System.out.println(dp[N][M]);    
+    }    //    main-end
+}    //    Main-class-end
+```
