@@ -99,3 +99,6 @@ BOJ 15961 회전 초밥 (Two-pointer, Sliding Window), BOJ 15817 배수 공사 
 
 ### [2025.07.30](https://github.com/jwelyl/daily_certification/blob/main/2025/07/30/25_07_30_daily_certification.md)
 BOJ 11967 불켜기 (BFS), BOJ 14628 입 챌린저 (DP, Knapsack)
+
+### [2025.07.31](https://github.com/jwelyl/daily_certification/blob/main/2025/07/31/25_07_31_daily_certification.md)
+BOJ 24526 전화 돌리기 (Topological Sort)
