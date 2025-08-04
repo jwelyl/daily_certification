@@ -12,3 +12,6 @@ BOJ 13164 행복 유치원 (Greedy, Sorting), BOJ 21758 꿀 따기 (Greedy, Pref
 
 ### [2025.08.03](https://github.com/jwelyl/daily_certification/blob/main/2025/08/03/25_08_03_daily_certification.md)
 BOJ 3178 코코스 (String, Trie), BOJ 25542 약속 장소 (String, Bruteforcing)
+
+### [2025.08.04](https://github.com/jwelyl/daily_certification/blob/main/2025/08/04/25_08_04_daily_certification.md)
+BOJ 14229 DNA 문자열 (Bruteforcing, Trie, Ad-hoc), BOJ 10888 두 섬간의 이동 (Disjoint Set, Mathematics)
