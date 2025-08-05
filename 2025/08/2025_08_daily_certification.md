@@ -15,3 +15,6 @@ BOJ 3178 코코스 (String, Trie), BOJ 25542 약속 장소 (String, Bruteforcing
 
 ### [2025.08.04](https://github.com/jwelyl/daily_certification/blob/main/2025/08/04/25_08_04_daily_certification.md)
 BOJ 14229 DNA 문자열 (Bruteforcing, Trie, Ad-hoc), BOJ 10888 두 섬간의 이동 (Disjoint Set, Mathematics)
+
+### [2025.08.05](https://github.com/jwelyl/daily_certification/blob/main/2025/08/05/25_08_05_daily_certification.md)
+코드트리 민트 초코 우유 (BFS, Simulation, Bitmasking), BOJ 17179 케이크 자르기 (Parametric Search)
