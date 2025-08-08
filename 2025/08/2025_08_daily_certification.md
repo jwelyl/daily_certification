@@ -24,3 +24,6 @@ BOJ 14229 DNA 문자열 (Bruteforcing, Trie, Ad-hoc), BOJ 10888 두 섬간의 �
 
 ### [2025.08.07](https://github.com/jwelyl/daily_certification/blob/main/2025/08/07/25_08_07_daily_certification.md)
 코드트리 미생물 연구 (BFS, Simulation)
+
+### [2025.08.08](https://github.com/jwelyl/daily_certification/blob/main/2025/08/08/25_08_08_daily_certification.md)
+코드트리 코드트리 투어(Simulation, Dijkstra, TreeSet)
