@@ -27,3 +27,6 @@ BOJ 14229 DNA 문자열 (Bruteforcing, Trie, Ad-hoc), BOJ 10888 두 섬간의 �
 
 ### [2025.08.08](https://github.com/jwelyl/daily_certification/blob/main/2025/08/08/25_08_08_daily_certification.md)
 코드트리 코드트리 투어(Simulation, Dijkstra, TreeSet)
+
+### [2025.08.09](https://github.com/jwelyl/daily_certification/blob/main/2025/08/09/25_08_09_daily_certification.md)
+BOJ 1261 알고스팟, BOJ 9376 탈옥 (0-1 BFS)
