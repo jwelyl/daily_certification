@@ -30,3 +30,8 @@ BOJ 14229 DNA 문자열 (Bruteforcing, Trie, Ad-hoc), BOJ 10888 두 섬간의 �
 
 ### [2025.08.09](https://github.com/jwelyl/daily_certification/blob/main/2025/08/09/25_08_09_daily_certification.md)
 BOJ 1261 알고스팟, BOJ 9376 탈옥 (0-1 BFS)
+
+## 2025.08.10.sun ~ 08.16.sat 데일리 인증
+
+### [2025.08.10](https://github.com/jwelyl/daily_certification/blob/main/2025/08/10/25_08_10_daily_certification.md)
+코드트리 술래잡기(Implementation, Simulation)
