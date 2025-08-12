@@ -38,3 +38,6 @@ BOJ 1261 알고스팟, BOJ 9376 탈옥 (0-1 BFS)
 
 ### [2025.08.11](https://github.com/jwelyl/daily_certification/blob/main/2025/08/11/25_08_11_daily_certification.md)
 BOJ 9576 책 나눠주기 (Greedy, Bipartite Matching)
+
+### [2025.08.12](https://github.com/jwelyl/daily_certification/blob/main/2025/08/12/25_08_12_daily_certification.md)
+BOJ 2629 양팔저울 (DFS, DP, Knapsack)
