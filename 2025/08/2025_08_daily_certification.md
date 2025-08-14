@@ -44,3 +44,6 @@ BOJ 2629 양팔저울 (DFS, DP, Knapsack)
 
 ### [2025.08.13](https://github.com/jwelyl/daily_certification/blob/main/2025/08/13/25_08_13_daily_certification.md)
 코드트리 코드트리 빵 (BFS, Implementation, Simulation)
+
+### [2025.08.14](https://github.com/jwelyl/daily_certification/blob/main/2025/08/14/25_08_14_daily_certification.md)
+코드트리 여왕 개미 (Greedy, Parametric Search)
