@@ -47,3 +47,6 @@ BOJ 2629 양팔저울 (DFS, DP, Knapsack)
 
 ### [2025.08.14](https://github.com/jwelyl/daily_certification/blob/main/2025/08/14/25_08_14_daily_certification.md)
 코드트리 여왕 개미 (Greedy, Parametric Search)
+
+### [2025.08.15](https://github.com/jwelyl/daily_certification/blob/main/2025/08/15/25_08_15_daily_certification.md)
+BOJ 6091 핑크 플로이드 (MST), BOJ 24041 성싶당 밀키트 (Sorting, Greedy, Parametric Search)
