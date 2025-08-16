@@ -50,3 +50,6 @@ BOJ 2629 양팔저울 (DFS, DP, Knapsack)
 
 ### [2025.08.15](https://github.com/jwelyl/daily_certification/blob/main/2025/08/15/25_08_15_daily_certification.md)
 BOJ 6091 핑크 플로이드 (MST), BOJ 24041 성싶당 밀키트 (Sorting, Greedy, Parametric Search)
+
+### [2025.08.16](https://github.com/jwelyl/daily_certification/blob/main/2025/08/16/25_08_16_daily_certification.md)
+BOJ 2266 공 (DP), BOJ 1670 정상 회담 2 (DP)
