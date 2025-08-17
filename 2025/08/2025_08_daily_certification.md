@@ -53,3 +53,8 @@ BOJ 6091 핑크 플로이드 (MST), BOJ 24041 성싶당 밀키트 (Sorting, Gree
 
 ### [2025.08.16](https://github.com/jwelyl/daily_certification/blob/main/2025/08/16/25_08_16_daily_certification.md)
 BOJ 2266 공 (DP), BOJ 1670 정상 회담 2 (DP)
+
+## 2025.08.17.sun ~ 08.23.sat 데일리 인증
+
+### [2025.08.17](https://github.com/jwelyl/daily_certification/blob/main/2025/08/17/25_08_17_daily_certification.md)
+BOJ 3197 백조의 호수 (BFS, Disjoint Set)
