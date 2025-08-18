@@ -58,3 +58,6 @@ BOJ 2266 공 (DP), BOJ 1670 정상 회담 2 (DP)
 
 ### [2025.08.17](https://github.com/jwelyl/daily_certification/blob/main/2025/08/17/25_08_17_daily_certification.md)
 BOJ 3197 백조의 호수 (BFS, Disjoint Set)
+
+### [2025.08.18](https://github.com/jwelyl/daily_certification/blob/main/2025/08/18/25_08_18_daily_certification.md)
+BOJ 1700 멀티탭 스케줄링 (Greedy, OPT)
