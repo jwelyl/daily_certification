@@ -52,7 +52,7 @@ BOJ 2629 양팔저울 (DFS, DP, Knapsack)
 BOJ 6091 핑크 플로이드 (MST), BOJ 24041 성싶당 밀키트 (Sorting, Greedy, Parametric Search)
 
 ### [2025.08.16](https://github.com/jwelyl/daily_certification/blob/main/2025/08/16/25_08_16_daily_certification.md)
-BOJ 2266 공 (DP), BOJ 1670 정상 회담 2 (DP)
+BOJ 2266 금고 테스트 (DP), BOJ 1670 정상 회담 2 (DP)
 
 ## 2025.08.17.sun ~ 08.23.sat 데일리 인증
 
@@ -61,3 +61,6 @@ BOJ 3197 백조의 호수 (BFS, Disjoint Set)
 
 ### [2025.08.18](https://github.com/jwelyl/daily_certification/blob/main/2025/08/18/25_08_18_daily_certification.md)
 BOJ 1700 멀티탭 스케줄링 (Greedy, OPT)
+
+### [2025.08.19](https://github.com/jwelyl/daily_certification/blob/main/2025/08/19/25_08_19_daily_certification.md)
+BOJ 2695 공 (DP)
