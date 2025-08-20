@@ -64,3 +64,6 @@ BOJ 1700 멀티탭 스케줄링 (Greedy, OPT)
 
 ### [2025.08.19](https://github.com/jwelyl/daily_certification/blob/main/2025/08/19/25_08_19_daily_certification.md)
 BOJ 2695 공 (DP)
+
+### [2025.08.20](https://github.com/jwelyl/daily_certification/blob/main/2025/08/20/25_08_20_daily_certification.md)
+BOJ 26302 Japanski Junak (Implementation)
