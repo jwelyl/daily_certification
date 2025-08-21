@@ -67,3 +67,6 @@ BOJ 2695 공 (DP)
 
 ### [2025.08.20](https://github.com/jwelyl/daily_certification/blob/main/2025/08/20/25_08_20_daily_certification.md)
 BOJ 26302 Japanski Junak (Implementation)
+
+### [2025.08.21](https://github.com/jwelyl/daily_certification/blob/main/2025/08/21/25_08_21_daily_certification.md)
+BOJ 2842 집배원 한상덕 (Sorting, Two-Pointer/Parametric Search, BFS)
