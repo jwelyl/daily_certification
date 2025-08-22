@@ -70,3 +70,6 @@ BOJ 26302 Japanski Junak (Implementation)
 
 ### [2025.08.21](https://github.com/jwelyl/daily_certification/blob/main/2025/08/21/25_08_21_daily_certification.md)
 BOJ 2842 집배원 한상덕 (Sorting, Two-Pointer/Parametric Search, BFS)
+
+### [2025.08.22](https://github.com/jwelyl/daily_certification/blob/main/2025/08/22/25_08_22_daily_certification.md)
+BOJ 12900 Cheating a Boolean Tree (Tree DP), BOJ 1184 귀농 (Bruteforcing, Prefix Sum, HashMap)
