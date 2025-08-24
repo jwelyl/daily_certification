@@ -76,3 +76,8 @@ BOJ 12900 Cheating a Boolean Tree (Tree DP), BOJ 1184 귀농 (Bruteforcing, Pref
 
 ### [2025.08.23](https://github.com/jwelyl/daily_certification/blob/main/2025/08/23/25_08_23_daily_certification.md)
 BOJ 25545 Liquid Cats (Disjoint Set, Parametric Search), BOJ 16974 레벨 햄버거 (Mathematics, Recursion)
+
+## 2025.08.24.sun ~ 08.30.sat 데일리 인증
+
+### [2025.08.24](https://github.com/jwelyl/daily_certification/blob/main/2025/08/24/25_08_24_daily_certification.md)
+BOJ 25978 2차원 배열 다중 업데이트 다중 합 (Prefix Sum, Difference Array)
