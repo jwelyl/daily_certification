@@ -81,3 +81,6 @@ BOJ 25545 Liquid Cats (Disjoint Set, Parametric Search), BOJ 16974 레벨 햄버
 
 ### [2025.08.24](https://github.com/jwelyl/daily_certification/blob/main/2025/08/24/25_08_24_daily_certification.md)
 BOJ 25978 2차원 배열 다중 업데이트 다중 합 (Prefix Sum, Difference Array)
+
+### [2025.08.25](https://github.com/jwelyl/daily_certification/blob/main/2025/08/25/25_08_25_daily_certification.md)
+BOJ 1854 K번째 최단경로 찾기 (Dijkstra, Priority Queue)
