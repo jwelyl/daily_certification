@@ -87,3 +87,6 @@ BOJ 1854 K번째 최단경로 찾기 (Dijkstra, Priority Queue)
 
 ### [2025.08.26](https://github.com/jwelyl/daily_certification/blob/main/2025/08/26/25_08_26_daily_certification.md)
 BOJ 2579 계단 오르기, BOJ 2156 포도주 시식, BOJ 9465 스티커 (DP)
+
+### [2025.08.27](https://github.com/jwelyl/daily_certification/blob/main/2025/08/27/25_08_27_daily_certification.md)
+BOJ 9097 Quad Trees (DNC, Recursion, BFS, String)
