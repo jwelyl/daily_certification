@@ -90,3 +90,6 @@ BOJ 2579 계단 오르기, BOJ 2156 포도주 시식, BOJ 9465 스티커 (DP)
 
 ### [2025.08.27](https://github.com/jwelyl/daily_certification/blob/main/2025/08/27/25_08_27_daily_certification.md)
 BOJ 9097 Quad Trees (DNC, Recursion, BFS, String)
+
+### [2025.08.28](https://github.com/jwelyl/daily_certification/blob/main/2025/08/28/25_08_28_daily_certification.md)
+BOJ 9997 폰트 (Recursion, Bruteforcing, Backtracking, Bitmasking)
