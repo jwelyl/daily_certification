@@ -96,3 +96,6 @@ BOJ 9997 폰트 (Recursion, Bruteforcing, Backtracking, Bitmasking)
 
 ### [2025.08.29](https://github.com/jwelyl/daily_certification/blob/main/2025/08/29/25_08_29_daily_certification.md)
 BOJ 10273 고대 동굴 탐사 (DP, DAG, BFS), BOJ 1030 프렉탈 평면 (Recursion, DNC)
+
+### [2025.08.30](https://github.com/jwelyl/daily_certification/blob/main/2025/08/30/25_08_30_daily_certification.md)
+BOJ 1022 소용돌이 예쁘게 출력하기 (Implementation)
