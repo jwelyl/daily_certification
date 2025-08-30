@@ -93,3 +93,6 @@ BOJ 9097 Quad Trees (DNC, Recursion, BFS, String)
 
 ### [2025.08.28](https://github.com/jwelyl/daily_certification/blob/main/2025/08/28/25_08_28_daily_certification.md)
 BOJ 9997 폰트 (Recursion, Bruteforcing, Backtracking, Bitmasking)
+
+### [2025.08.29](https://github.com/jwelyl/daily_certification/blob/main/2025/08/29/25_08_29_daily_certification.md)
+BOJ 10273 고대 동굴 탐사 (DP, DAG, BFS), BOJ 1030 프렉탈 평면 (Recursion, DNC)
