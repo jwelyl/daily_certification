@@ -99,3 +99,8 @@ BOJ 10273 고대 동굴 탐사 (DP, DAG, BFS), BOJ 1030 프렉탈 평면 (Recurs
 
 ### [2025.08.30](https://github.com/jwelyl/daily_certification/blob/main/2025/08/30/25_08_30_daily_certification.md)
 BOJ 1022 소용돌이 예쁘게 출력하기 (Implementation)
+
+## 2025.08.31.sun 데일리 인증
+
+### [2025.08.31](https://github.com/jwelyl/daily_certification/blob/main/2025/08/31/25_08_31_daily_certification.md)
+BOJ 2836 수상 택시 (Sorting, Sweeping), BOJ 1464 뒤집기 3 (Greedy, Deque)
