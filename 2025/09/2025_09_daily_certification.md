@@ -16,3 +16,6 @@ BOJ 20926 얼음 미로 (Dijkstra)
 
 ### [2025.09.05](https://github.com/jwelyl/daily_certification/blob/main/2025/09/05/25_09_05_daily_certification.md)
 BOJ 16137 견우와 직녀 (Implementation, BFS)
+
+### [2025.09.06](https://github.com/jwelyl/daily_certification/blob/main/2025/09/06/25_09_06_daily_certification.md)
+BOJ 5213 과외맨 (Implementation, BFS, 0-1 BFS)
