@@ -480,22 +480,193 @@ public class Main {
 } // Main-class-end
 ```
 
-### 물고기 종류 별 대어 찾기
+### BOJ 1944 복제 로봇
 
-[](https://school.programmers.co.kr/learn/courses/30/lessons/293261#)
+[1944번: 복제 로봇](http://boj.ma/1944/t)
+
+```java
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
+import java.util.StringTokenizer;
+
+public class Main {
+	private static final int WALL = Integer.MAX_VALUE;
+	
+	private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	private static StringTokenizer st;
+
+	private static int N;
+	private static int M;
+
+	private static int[][] map;
+	
+	private static int[][] numToPos;
+	private static int num = 0;
+	
+	private static int[][] dist;
+	private static int[] parents;
+	
+	private static final List<Edge> edgeList = new ArrayList<>();
+	
+	public static void main(String[] args) throws IOException {
+		st = new StringTokenizer(br.readLine());
+		N = Integer.parseInt(st.nextToken());
+		M = Integer.parseInt(st.nextToken());
+		
+		map = new int[N][N];
+		numToPos = new int[M + 2][2];
+		dist = new int[M + 2][M + 2];
+		parents = new int[M + 2];
+		
+		for(int v = 0; v <= M + 1; v++) {
+			Arrays.fill(dist[v], WALL);
+			dist[v][v] = 0;
+			parents[v] = v;
+		}
+		
+		for(int y = 0; y < N; y++) {
+			String input = br.readLine();
+			for(int x = 0; x < N; x++) {
+				char ch = input.charAt(x);
+				
+				if(ch == '1')	//	벽일 경우
+					map[y][x] = WALL;
+				else if(ch == 'S' || ch == 'K') {
+					map[y][x] = ++num;
+					numToPos[num][0] = y;
+					numToPos[num][1] = x;
+				}
+			}
+		}
+		
+		for(int v = 1; v <= M + 1; v++)
+			bfs(v);
+		
+		for(int v1 = 1; v1 <= M; v1++) {
+			for(int v2 = v1 + 1; v2 <= M + 1; v2++) {
+				if(dist[v1][v2] != WALL)
+					edgeList.add(new Edge(v1, v2, dist[v1][v2]));
+			}
+		}
+		
+		System.out.println(kruskal());
+	} // main-end
+	
+	private static void bfs(int start) {
+		int sy = numToPos[start][0];
+		int sx = numToPos[start][1];
+		boolean[][] visited = new boolean[N][N];
+		Queue<int[]> queue = new LinkedList<>();
+		
+		visited[sy][sx] = true;
+		queue.offer(new int[] {sy, sx, 0});
+		
+		while(!queue.isEmpty()) {
+			int[] cur = queue.poll();
+			int cy = cur[0];
+			int cx = cur[1];
+			int cc = cur[2];
+			
+			for(int d = 0; d < 4; d++) {
+				int ny = cy + dy[d];
+				int nx = cx + dx[d];
+				
+				if(map[ny][nx] != WALL && !visited[ny][nx]) {
+					if(1 <= map[ny][nx] && map[ny][nx] <= M + 1)
+						dist[start][map[ny][nx]] = cc + 1;
+					
+					visited[ny][nx] = true;
+					queue.offer(new int[] {ny, nx, cc + 1});
+				}
+			}
+		}
+	}
+	
+	private static final int[] dy = {0, 1, 0, -1};
+	private static final int[] dx = {1, 0, -1, 0};
+	
+	public static int find(int v) {
+		return v == parents[v] ? v : (parents[v] = find(parents[v]));
+	}
+	
+	private static void union(int v1, int v2) {
+		if(v1 != v2)
+			parents[v2] = v1;
+	}
+	
+	private static int kruskal() {
+		int mstCost = 0;
+		int edgeCnt = 0;
+		Collections.sort(edgeList);
+		
+		for(Edge edge : edgeList) {
+			int v1 = find(edge.v1);
+			int v2 = find(edge.v2);
+			int cost = edge.cost;
+			
+			if(v1 != v2) {
+				union(v1, v2);
+				mstCost += cost;
+				edgeCnt++;
+				
+				if(edgeCnt == M)
+					break;
+			}
+		}
+		
+		return edgeCnt == M ? mstCost : -1;
+	}
+	
+	private static class Edge implements Comparable<Edge> {
+		public int v1;
+		public int v2;
+		public int cost;
+		
+		public Edge(int v1, int v2, int cost) {
+			this.v1 = v1;
+			this.v2 = v2;
+			this.cost = cost;
+		}
+		
+		@Override
+		public int compareTo(Edge other) {
+			return Integer.compare(this.cost, other.cost);
+		}
+	}
+} // Main-class-end
+```
+
+### 오랜 기간 보호한 동물(1)
+
+[](https://school.programmers.co.kr/learn/courses/30/lessons/59044)
 
 ```sql
-select t1.id, t3.fish_name, t2.length
-from
-fish_info as t1
-inner join
-(
-    select fish_type, max(length) as length 
-    from fish_info
-    group by fish_type
-) as t2 on t1.fish_type = t2.fish_type and t1.length = t2.length
-inner join
-fish_name_info as t3
-on t1.fish_type = t3.fish_type
-order by t1.id;
+select t1.name, t1.datetime
+from animal_ins t1 left outer join animal_outs t2
+on t1.animal_id = t2.animal_id
+where t2.animal_id is null
+order by t1.datetime asc;
+```
+
+### 대장균의 크기에 따라 분류하기 1
+
+[](https://school.programmers.co.kr/learn/courses/30/lessons/299307)
+
+```sql
+select id, (
+    case
+        when size_of_colony <= 100 then 'LOW'
+        when size_of_colony <= 1000 then 'MEDIUM'
+        else 'HIGH'
+    end
+) as size
+from ecoli_data
+order by id;
 ```

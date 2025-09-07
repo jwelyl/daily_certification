@@ -23,4 +23,4 @@ BOJ 5213 과외맨 (Implementation, BFS, 0-1 BFS)
 ## 2025.09.07.mon ~ 09.13.sat 데일리 인증
 
 ### [2025.09.07](https://github.com/jwelyl/daily_certification/blob/main/2025/09/07/25_09_07_daily_certification.md)
-BOJ 23289 온풍기 안녕!, 코드트리 냉방 시스템 (BFS, Implementation, Simulation)
+BOJ 23289 온풍기 안녕!, 코드트리 냉방 시스템 (BFS, Implementation, Simulation), BOJ 1944 복제 로봇 (BFS, MST)
