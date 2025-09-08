@@ -26,4 +26,4 @@ BOJ 5213 과외맨 (Implementation, BFS, 0-1 BFS)
 BOJ 23289 온풍기 안녕!, 코드트리 냉방 시스템 (BFS, Implementation, Simulation), BOJ 1944 복제 로봇 (BFS, MST)
 
 ### [2025.09.08](https://github.com/jwelyl/daily_certification/blob/main/2025/09/08/25_09_08_daily_certification.md)
-BOJ 1175 배달(BFS)
+BOJ 1175 배달(BFS), 코드트리 메두사와 전사들 (BFS, Implementation, Simulation)
