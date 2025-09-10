@@ -30,3 +30,6 @@ BOJ 1175 배달(BFS), 코드트리 메두사와 전사들 (BFS, Implementation, 
 
 ### [2025.09.09](https://github.com/jwelyl/daily_certification/blob/main/2025/09/09/25_09_09_daily_certification.md)
 BOJ 1033 칵테일 (DFS, Euclidean Algorithm)
+
+### [2025.09.10](https://github.com/jwelyl/daily_certification/blob/main/2025/09/10/25_09_10_daily_certification.md)
+코드트리 미지의 공간 탈출 (BFS, Implementation)
