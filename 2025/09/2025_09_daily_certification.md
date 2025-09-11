@@ -33,3 +33,6 @@ BOJ 1033 칵테일 (DFS, Euclidean Algorithm)
 
 ### [2025.09.10](https://github.com/jwelyl/daily_certification/blob/main/2025/09/10/25_09_10_daily_certification.md)
 코드트리 미지의 공간 탈출 (BFS, Implementation)
+
+### [2025.09.11](https://github.com/jwelyl/daily_certification/blob/main/2025/09/11/25_09_11_daily_certification.md)
+프로그래머스 가사 검색 (DFS, HashMap, Trie)
