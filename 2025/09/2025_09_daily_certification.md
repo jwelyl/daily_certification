@@ -36,3 +36,6 @@ BOJ 1033 칵테일 (DFS, Euclidean Algorithm)
 
 ### [2025.09.11](https://github.com/jwelyl/daily_certification/blob/main/2025/09/11/25_09_11_daily_certification.md)
 프로그래머스 가사 검색 (DFS, HashMap, Trie)
+
+### [2025.09.12](https://github.com/jwelyl/daily_certification/blob/main/2025/09/12/25_09_12_daily_certification.md)
+BOJ 6493 Slurpys (String, Recursion, Regular Expression)
