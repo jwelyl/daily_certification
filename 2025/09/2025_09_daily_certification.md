@@ -20,7 +20,7 @@ BOJ 16137 견우와 직녀 (Implementation, BFS)
 ### [2025.09.06](https://github.com/jwelyl/daily_certification/blob/main/2025/09/06/25_09_06_daily_certification.md)
 BOJ 5213 과외맨 (Implementation, BFS, 0-1 BFS)
 
-## 2025.09.07.mon ~ 09.13.sat 데일리 인증
+## 2025.09.07.sun ~ 09.13.sat 데일리 인증
 
 ### [2025.09.07](https://github.com/jwelyl/daily_certification/blob/main/2025/09/07/25_09_07_daily_certification.md)
 BOJ 23289 온풍기 안녕!, 코드트리 냉방 시스템 (BFS, Implementation, Simulation), BOJ 1944 복제 로봇 (BFS, MST)
@@ -42,3 +42,8 @@ BOJ 6493 Slurpys (String, Recursion, Regular Expression), 프로그래머스 주
 
 ### [2025.09.13](https://github.com/jwelyl/daily_certification/blob/main/2025/09/13/25_09_13_daily_certification.md)
 BOJ 2302 극장 좌석 (DP), BOJ 1344 축구 (DP, Probability Theory)
+
+## 2025.09.14.sun ~ 09.20.sat 데일리 인증
+
+### [2025.09.14](https://github.com/jwelyl/daily_certification/blob/main/2025/09/14/25_09_14_daily_certification.md)
+BOJ 2591 숫자카드 (DP)
