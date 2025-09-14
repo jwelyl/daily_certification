@@ -47,3 +47,6 @@ BOJ 2302 극장 좌석 (DP), BOJ 1344 축구 (DP, Probability Theory)
 
 ### [2025.09.14](https://github.com/jwelyl/daily_certification/blob/main/2025/09/14/25_09_14_daily_certification.md)
 BOJ 2591 숫자카드 (DP)
+
+### [2025.09.15](https://github.com/jwelyl/daily_certification/blob/main/2025/09/15/25_09_15_daily_certification.md)
+SW Expert Academy 1767. 프로세서 연결하기 (Backtracking)
