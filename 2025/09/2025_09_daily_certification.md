@@ -50,3 +50,6 @@ BOJ 2591 숫자카드 (DP)
 
 ### [2025.09.15](https://github.com/jwelyl/daily_certification/blob/main/2025/09/15/25_09_15_daily_certification.md)
 SW Expert Academy 1767. 프로세서 연결하기 (Backtracking)
+
+### [2025.09.16](https://github.com/jwelyl/daily_certification/blob/main/2025/09/16/25_09_16_daily_certification.md)
+SW Expert Academy 2112. 보호 필름 (Backtracking), BOJ 34079 좋아하는 다이아몬드가 안경을 깜빡했다 (BFS, Shortest Path, Traceback)
