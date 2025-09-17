@@ -56,3 +56,6 @@ SW Expert Academy 2112. 보호 필름 (Backtracking), BOJ 34079 좋아하는 다
 
 ### [2025.09.17](https://github.com/jwelyl/daily_certification/blob/main/2025/09/17/25_09_17_daily_certification.md)
 SW Expert Academy 4193. 수영대회 결승전 (BFS), BOJ 1943 동전 분배 (DP, Knapsack)
+
+### [2025.09.18](https://github.com/jwelyl/daily_certification/blob/main/2025/09/18/25_09_18_daily_certification.md)
+BOJ 9347 울타리 (0-1 BFS)
