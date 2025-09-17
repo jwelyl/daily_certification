@@ -53,3 +53,6 @@ SW Expert Academy 1767. 프로세서 연결하기 (Backtracking)
 
 ### [2025.09.16](https://github.com/jwelyl/daily_certification/blob/main/2025/09/16/25_09_16_daily_certification.md)
 SW Expert Academy 2112. 보호 필름 (Backtracking), BOJ 34079 좋아하는 다이아몬드가 안경을 깜빡했다 (BFS, Shortest Path, Traceback)
+
+### [2025.09.17](https://github.com/jwelyl/daily_certification/blob/main/2025/09/17/25_09_17_daily_certification.md)
+SW Expert Academy 4193. 수영대회 결승전 (BFS), BOJ 1943 동전 분배 (DP, Knapsack)
