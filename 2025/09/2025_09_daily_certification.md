@@ -62,3 +62,6 @@ BOJ 9347 울타리 (0-1 BFS)
 
 ### [2025.09.19](https://github.com/jwelyl/daily_certification/blob/main/2025/09/19/25_09_19_daily_certification.md)
 BOJ 1045 도로 (Greedy, MST)
+
+### [2025.09.20](https://github.com/jwelyl/daily_certification/blob/main/2025/09/20/25_09_20_daily_certification.md)
+BOJ 23743 방탈출 (MST)
