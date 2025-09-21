@@ -70,3 +70,6 @@ BOJ 23743 방탈출 (MST)
 
 ### [2025.09.21](https://github.com/jwelyl/daily_certification/blob/main/2025/09/21/25_09_21_daily_certification.md)
 BOJ 20335 Generators (MST)
+
+### [2025.09.22](https://github.com/jwelyl/daily_certification/blob/main/2025/09/22/25_09_22_daily_certification.md)
+BOJ 11521 Boggle (Bruteforcing, Backtracking, String, DFS)
