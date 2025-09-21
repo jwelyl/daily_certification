@@ -65,3 +65,8 @@ BOJ 1045 도로 (Greedy, MST)
 
 ### [2025.09.20](https://github.com/jwelyl/daily_certification/blob/main/2025/09/20/25_09_20_daily_certification.md)
 BOJ 23743 방탈출 (MST)
+
+## 2025.09.21.sun ~ 09.27.sat 데일리 인증
+
+### [2025.09.21](https://github.com/jwelyl/daily_certification/blob/main/2025/09/21/25_09_21_daily_certification.md)
+BOJ 20335 Generators (MST)
