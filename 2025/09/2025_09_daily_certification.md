@@ -73,3 +73,6 @@ BOJ 20335 Generators (MST)
 
 ### [2025.09.22](https://github.com/jwelyl/daily_certification/blob/main/2025/09/22/25_09_22_daily_certification.md)
 BOJ 11521 Boggle (Bruteforcing, Backtracking, String, DFS)
+
+### [2025.09.23](https://github.com/jwelyl/daily_certification/blob/main/2025/09/23/25_09_23_daily_certification.md)
+BOJ 14673 Crush Fever (Implementation, Bruteforcing, Backtracking, BFS)
