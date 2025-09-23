@@ -76,3 +76,6 @@ BOJ 11521 Boggle (Bruteforcing, Backtracking, String, DFS)
 
 ### [2025.09.23](https://github.com/jwelyl/daily_certification/blob/main/2025/09/23/25_09_23_daily_certification.md)
 BOJ 14673 Crush Fever (Implementation, Bruteforcing, Backtracking, BFS)
+
+### [2025.09.24](https://github.com/jwelyl/daily_certification/blob/main/2025/09/24/25_09_24_daily_certification.md)
+BOJ 2035 증가수열 (Backtracking)
