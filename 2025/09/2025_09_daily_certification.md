@@ -79,3 +79,6 @@ BOJ 14673 Crush Fever (Implementation, Bruteforcing, Backtracking, BFS)
 
 ### [2025.09.24](https://github.com/jwelyl/daily_certification/blob/main/2025/09/24/25_09_24_daily_certification.md)
 BOJ 2035 증가수열 (Backtracking)
+
+### [2025.09.25](https://github.com/jwelyl/daily_certification/blob/main/2025/09/25/25_09_25_daily_certification.md)
+BOJ 27591 Three Dice (Backtracking)
