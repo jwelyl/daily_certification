@@ -82,3 +82,6 @@ BOJ 2035 증가수열 (Backtracking)
 
 ### [2025.09.25](https://github.com/jwelyl/daily_certification/blob/main/2025/09/25/25_09_25_daily_certification.md)
 BOJ 27591 Three Dice (Backtracking)
+
+### [2025.09.26](https://github.com/jwelyl/daily_certification/blob/main/2025/09/26/25_09_26_daily_certification.md)
+BOJ 1329 증가 수열 (Backtracking)
