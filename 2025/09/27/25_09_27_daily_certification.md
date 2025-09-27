@@ -142,3 +142,105 @@ public class Main {
     }
 }    //    Main-class-end
 ```
+
+### BOJ 17178 줄서기
+
+[](https://www.acmicpc.net/problem/17178)
+
+```java
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.util.StringTokenizer;
+import java.util.PriorityQueue;
+import java.util.Deque;
+import java.util.ArrayDeque;
+
+public class Main {
+    private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    private static StringTokenizer st;
+    
+    private static int N;    //    줄 수
+    private static Ticket[] tickets;
+    private static final PriorityQueue<Ticket> pq = new PriorityQueue<>();    //    입장 순서 나타내는 pq
+    private static final Deque<Ticket> stack = new ArrayDeque<>();            //    대기 스택
+    private static int order = 0;
+    
+    public static void main(String[] args) throws IOException {
+        N = Integer.parseInt(br.readLine());
+        tickets = new Ticket[N * 5];
+        for(int i = 0; i < N; i++) {
+            st = new StringTokenizer(br.readLine());
+            for(int j = 0; j < 5; j++) {
+                tickets[i * 5 + j] = new Ticket(st.nextToken());
+                pq.offer(tickets[i * 5 + j]);
+            }
+        }
+        
+        while(!pq.isEmpty()) {    //    아직 입장해야 할 티켓이 남은 경우
+            Ticket now = pq.peek();    //    현재 입장해야 할 티켓
+
+            if(order < N * 5) {    //    아직 밖에서 대기하고 있는 티켓이 있을 경우
+                Ticket out = tickets[order];    //    현재 밖에서 대기 중인 티켓 중 가장 빠른 순서
+                
+                if(out == now) {    //    지금 들어갈 타이밍인 경우
+                    order++;
+                    pq.poll();      //    입장함
+                }
+                else {
+                    if(!stack.isEmpty()) {    //    대기열도 확인해보기
+                        Ticket wait = stack.peekFirst();    //    가장 마지막에 대기열에 들어간 티켓
+                        
+                        if(now == wait) {            //    마침 들어갈 타이밍일 경우
+                            stack.pollFirst();       //    대기열에서 꺼냄
+                            pq.poll();               //    입장함
+                            continue;
+                        }
+                    }
+                    //    밖에서 대기하고 있던 티켓을 대기열에 넣기
+                    stack.offerFirst(out);
+                    order++;
+                }
+            }
+            else {    //    밖에서 대기하고 있는 티켓은 없을 경우
+                if(!stack.isEmpty()) {
+                    Ticket wait = stack.peekFirst();    //    가장 마지막에 대기열에 들어간 티켓
+
+                    if(now == wait) {            //    마침 들어갈 타이밍일 경우
+                        stack.pollFirst();       //    대기열에서 꺼냄
+                        pq.poll();               //    입장함
+                    }
+                    else {
+                        System.out.println("BAD");    //    순서가 꼬임
+                        return;
+                    }
+                }
+            }
+        }
+        
+        System.out.println("GOOD");    //    모두 입장한 경우
+    }    //    main-end
+    
+    private static class Ticket implements Comparable<Ticket> {
+        public char alph;
+        public int num;
+        
+        public Ticket(String ticket) {
+            StringTokenizer st = new StringTokenizer(ticket, "-");
+            this.alph = st.nextToken().charAt(0);
+            this.num = Integer.parseInt(st.nextToken());
+        }
+        
+        @Override
+        public int compareTo(Ticket other) {
+            //    알파벳 빠른 순으로
+            int res = Integer.compare(this.alph, other.alph);
+            
+            if(res == 0)    //    알파벳이 같다면
+                res = Integer.compare(this.num, other.num);    //    숫자가 작은 순서로
+            
+            return res;
+        }
+    }
+}    //    Main-class-end
+```

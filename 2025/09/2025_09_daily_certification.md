@@ -87,4 +87,4 @@ BOJ 27591 Three Dice (Backtracking)
 BOJ 1329 증가 수열 (Backtracking)
 
 ### [2025.09.27](https://github.com/jwelyl/daily_certification/blob/main/2025/09/27/25_09_27_daily_certification.md)
-BOJ 10852 Carpets (Implementation, Backtracking, Recursion)
+BOJ 10852 Carpets (Implementation, Backtracking, Recursion), BOJ 17178 줄서기 (Implementation, Simulation, Priority Queue, Stack)
