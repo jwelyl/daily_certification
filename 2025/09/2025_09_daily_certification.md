@@ -89,7 +89,7 @@ BOJ 1329 증가 수열 (Backtracking)
 ### [2025.09.27](https://github.com/jwelyl/daily_certification/blob/main/2025/09/27/25_09_27_daily_certification.md)
 BOJ 10852 Carpets (Implementation, Backtracking, Recursion), BOJ 17178 줄서기 (Implementation, Simulation, Priority Queue, Stack)
 
-## 2025.09.28.sun ~ 09.30.tue데일리 인증
+## 2025.09.28.sun ~ 09.30.tue 데일리 인증
 
 ### [2025.09.28](https://github.com/jwelyl/daily_certification/blob/main/2025/09/28/25_09_28_daily_certification.md)
 BOJ 17612 쇼핑몰 (Priority Queue)
