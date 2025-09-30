@@ -96,3 +96,6 @@ BOJ 17612 쇼핑몰 (Priority Queue)
 
 ### [2025.09.29](https://github.com/jwelyl/daily_certification/blob/main/2025/09/29/25_09_29_daily_certification.md)
 BOJ 2461 대표 선수 (Sorting, Two Pointer), BOJ 24511 queuestack (Stack, Queue)
+
+### [2025.09.30](https://github.com/jwelyl/daily_certification/blob/main/2025/09/30/25_09_30_daily_certification.md)
+BOJ 21942 부품 대여장 (Parsing, HashMap)
