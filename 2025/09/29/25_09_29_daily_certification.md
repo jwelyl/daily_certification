@@ -1,27 +1,5 @@
 # 25_09_29_daily_certification
 
-```
-[#272 koreii] 데일리인증 20250929
-0. 10시간 채우기 (0/10)
-1. 취업
-- 서류 1 작성 중
-- 면접 준비
-2. 알고리즘 문제 풀이
-- BOJ 2461 대표 선수 (Sorting, Two Pointer)
-- BOJ 24511 queuestack (Stack, Queue)
-```
-
-```
-[#90] 데일리인증 20250928 (271 / 365)
-0. 8시간 채우기 (8/8)
-1. 취업
-- 서류 1 작성 중
-- 면접 준비
-2. 알고리즘 문제 풀이
-- BOJ 2461 대표 선수 (Sorting, Two Pointer)
-- BOJ 24511 queuestack (Stack, Queue)
-```
-
 # Problem Solving (Algorithm & SQL)
 
 ### BOJ 2461 대표 선수
