@@ -1,6 +1,111 @@
 # 25_10_02_daily_certification
- 
+
 # Problem Solving (Algorithm & SQL)
+
+### BOJ 1933 스카이라인
+
+[1933번: 스카이라인](http://boj.ma/1933/t)
+
+```java
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.PriorityQueue;
+import java.util.StringTokenizer;
+import java.util.TreeMap;
+
+public class Main {
+	private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	private static final StringBuilder sb = new StringBuilder();
+	private static StringTokenizer st;
+
+	private static int N;	//	빌딩 수
+	//	빌딩 x 좌표 순, 
+	private static final PriorityQueue<Building> pq = new PriorityQueue<>();
+	private static final TreeMap<Integer, Integer> heightMap = new TreeMap<>(Collections.reverseOrder());
+	
+	private static int prev;
+	private static final List<Building> answer = new ArrayList<>();
+	
+	public static void main(String[] args) throws IOException {
+		N = Integer.parseInt(br.readLine());
+		for(int i = 0; i < N; i++) {
+			st = new StringTokenizer(br.readLine());
+			int leftX = Integer.parseInt(st.nextToken());
+			int height = Integer.parseInt(st.nextToken());
+			int rightX = Integer.parseInt(st.nextToken());
+			
+			pq.offer(new Building(leftX, height));
+			pq.offer(new Building(rightX, -height));
+		}
+		
+		while(!pq.isEmpty()) {
+			Building now = pq.poll();
+			
+			if(now.height > 0)	//	왼쪽 좌표, 새로운 빌딩 시작일 경우
+				heightMap.put(now.height, heightMap.getOrDefault(now.height, 0) + 1);
+			else {	//	오른쪽 좌표, 어떤 빌딩의 끝일 경우
+				int height = -now.height;
+				int cnt = heightMap.get(height);
+				
+				//	해당 건물 제거
+				if(cnt == 1)
+					heightMap.remove(height);
+				else
+					heightMap.put(height, cnt - 1);
+			}
+			
+			if(heightMap.isEmpty()) {
+				answer.add(new Building(now.x, 0));
+				continue;
+			}
+			
+			answer.add(new Building(now.x, heightMap.firstKey()));
+		}
+		
+		sb.append(answer.get(0)).append(" ");
+		prev = answer.get(0).height;
+		
+		for(int i = 0; i < answer.size(); i++) {
+			if(prev != answer.get(i).height) {
+				sb.append(answer.get(i)).append(" ");
+				prev = answer.get(i).height;
+			}
+ 		}
+		
+		System.out.println(sb);
+	} //	main-end
+	
+	private static class Building implements Comparable<Building> {
+		public int x;		//	빌딩의 x 좌표
+		public int height;		//	빌딩의 높이 (음수일 경우, 빌딩의 오른쪽 x 좌표임)
+		
+		public Building(int x, int height) {
+			this.x = x;
+			this.height = height;
+		}
+		
+		@Override
+		public int compareTo(Building other) {
+			//	빌딩의 x 좌표로 오름차순 정렬
+			int res = Integer.compare(this.x, other.x);
+			
+			if(res == 0)	//	빌딩의 x 좌표가 같을 경우
+				res = Integer.compare(other.height, this.height);	//	빌딩 높이 순으로 내림차순 정렬, 자연스레 오른쪽 x 좌표는 뒤로 밀림
+			
+			return res;
+		}
+		
+		@Override
+		public String toString() {
+			return new StringBuilder().append(this.x).append(" ").append(this.height).toString();
+		}
+	}
+} //	Main-class-end
+```
 
 ### BOJ 14622 소수 게임
 
