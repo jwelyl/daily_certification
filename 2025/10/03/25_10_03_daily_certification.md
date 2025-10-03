@@ -4,7 +4,7 @@
 
 ### BOJ 13146 같은 수로 만들기 2
 
-[1933번: 스카이라인](http://boj.ma/1933/t)
+[13146: 같은 수로 만들기 2](http://boj.ma/13146/t)
 
 ```java
 import java.io.BufferedReader;
