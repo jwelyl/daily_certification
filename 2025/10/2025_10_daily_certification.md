@@ -18,3 +18,6 @@ BOJ 6549 히스토그램에서 가장 큰 사각형, BOJ 11873 최대 직사각�
 
 ### [2025.10.05](https://github.com/jwelyl/daily_certification/blob/main/2025/10/05/25_10_05_daily_certification.md)
 BOJ 3830 교수님은 기다리지 않는다 (Disjoint Set)
+
+### [2025.10.06](https://github.com/jwelyl/daily_certification/blob/main/2025/10/06/25_10_06_daily_certification.md)
+BOJ 3089 네잎 클로버를 찾아서 (HashMap, TreeSet)
