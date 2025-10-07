@@ -21,3 +21,6 @@ BOJ 3830 교수님은 기다리지 않는다 (Disjoint Set)
 
 ### [2025.10.06](https://github.com/jwelyl/daily_certification/blob/main/2025/10/06/25_10_06_daily_certification.md)
 BOJ 3089 네잎 클로버를 찾아서 (HashMap, TreeSet)
+
+### [2025.10.07](https://github.com/jwelyl/daily_certification/blob/main/2025/10/07/25_10_07_daily_certification.md)
+BOJ 2065 나룻배 (Queue, Simulation)
