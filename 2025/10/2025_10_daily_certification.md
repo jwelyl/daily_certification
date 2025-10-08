@@ -24,3 +24,6 @@ BOJ 3089 네잎 클로버를 찾아서 (HashMap, TreeSet)
 
 ### [2025.10.07](https://github.com/jwelyl/daily_certification/blob/main/2025/10/07/25_10_07_daily_certification.md)
 BOJ 2065 나룻배 (Queue, Simulation)
+
+### [2025.10.08](https://github.com/jwelyl/daily_certification/blob/main/2025/10/08/25_10_08_daily_certification.md)
+BOJ 16209 수열 섞기 (Greedy, Deque, Constructive)
