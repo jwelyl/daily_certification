@@ -30,3 +30,6 @@ BOJ 16209 수열 섞기 (Greedy, Deque, Constructive)
 
 ### [2025.10.09](https://github.com/jwelyl/daily_certification/blob/main/2025/10/09/25_10_09_daily_certification.md)
 BOJ 21943 연산 최대로 (Greedy, Bruteforcing, Backtracking)
+
+### [2025.10.10](https://github.com/jwelyl/daily_certification/blob/main/2025/10/10/25_10_10_daily_certification.md)
+BOJ 27081 Dessert (Bruteforcing, Backtracking)
