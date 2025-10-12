@@ -36,3 +36,8 @@ BOJ 27081 Dessert (Bruteforcing, Backtracking)
 
 ### [2025.10.11](https://github.com/jwelyl/daily_certification/blob/main/2025/10/11/25_10_11_daily_certification.md)
 BOJ 31719 UDP 스택 (Simulation, Greedy, Stack, Queue)
+
+## 2025.10.12.sun ~ 10.18.sat 데일리 인증
+
+### [2025.10.12](https://github.com/jwelyl/daily_certification/blob/main/2025/10/12/25_10_12_daily_certification.md)
+BOJ 7662 이중 우선순위 큐 (TreeMap)
