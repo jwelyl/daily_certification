@@ -44,3 +44,9 @@ BOJ 7662 이중 우선순위 큐 (TreeMap)
 
 ### [2025.10.13](https://github.com/jwelyl/daily_certification/blob/main/2025/10/13/25_10_13_daily_certification.md)
 BOJ 24492 Cow Frisbee (Stack)
+
+### [2025.10.14](https://github.com/jwelyl/daily_certification/blob/main/2025/10/14/25_10_14_daily_certification.md)
+BOJ 22863 원상 복구 (Large) (Sparse Table)
+
+### [2025.10.15](https://github.com/jwelyl/daily_certification/blob/main/2025/10/15/25_10_15_daily_certification.md)
+BOJ 1888 곰팡이 (BFS, Disjoint Set), BOJ 10800 컬러볼 (Sorting, Two Pointer, Prefix Sum)
