@@ -8,58 +8,79 @@
 
 ```java
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.IOException;
 import java.util.StringTokenizer;
-import java.util.TreeMap;
+import java.util.Deque;
+import java.util.ArrayDeque;
+import java.util.Arrays;
 
 public class Main {
+    private static final int NONE = -1;
+    
     private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-    private static final StringBuilder sb = new StringBuilder();
     private static StringTokenizer st;
     
-    private static int T;
-    private static int K;
+    private static final Deque<Element> stack = new ArrayDeque<>();
     
-    private static final TreeMap<Integer, Integer> dualPq = new TreeMap<>();
+    private static int N;
+    private static int[] heights;
+    //    leftLargers[i] : j > i일 때, heights[j] > heights[i]가 되는 최소 j, 없으면 NONE
+    private static int[] leftLargers;
+    //    rightLargers[i] : i < j일 때, heights[j] > heights[i]가 되는 최대 j, 없으면 NONE
+    private static int[] rightLargers;
+    
+    private static long answer = 0;
     
     public static void main(String[] args) throws IOException {
-        T = Integer.parseInt(br.readLine());
+        N = Integer.parseInt(br.readLine());
         
-        for(int tc = 1; tc <= T; tc++) {
-            dualPq.clear();
+        heights = new int[N];
+        leftLargers = new int[N];
+        rightLargers = new int[N];
+        Arrays.fill(leftLargers, NONE);
+        Arrays.fill(rightLargers, NONE);
+        
+        st = new StringTokenizer(br.readLine());
+        for(int i = 0; i < N; i++)
+            heights[i] = Integer.parseInt(st.nextToken());
+        
+        for(int i = 0; i < N; i++) {
+            while(!stack.isEmpty() && stack.peekLast().height < heights[i])
+                stack.pollLast();
             
-            K = Integer.parseInt(br.readLine());
+            if(!stack.isEmpty())
+                leftLargers[i] = stack.peekLast().idx;
+            stack.offerLast(new Element(heights[i], i));
+        }
+        stack.clear();
+        for(int i = N - 1; i >= 0; i--) {
+            while(!stack.isEmpty() && stack.peekLast().height < heights[i])
+                stack.pollLast();
             
-            for(int k = 0; k < K; k++) {
-                st = new StringTokenizer(br.readLine());
-                
-                char opt = st.nextToken().charAt(0);
-                int num = Integer.parseInt(st.nextToken());
-                
-                if(opt == 'I')
-                	dualPq.put(num, dualPq.getOrDefault(num, 0) + 1);
-                else {
-                	if(dualPq.isEmpty())
-                        continue;
-                	
-                	int out = num == -1 ? dualPq.firstKey() : dualPq.lastKey();
-                	int cnt = dualPq.get(out);
-                	
-                	if(cnt == 1)
-                		dualPq.remove(out);
-                	else
-                		dualPq.put(out, cnt - 1);
-                }
-            }
-            
-            if(dualPq.isEmpty())
-            	sb.append("EMPTY\n");
-            else
-            	sb.append(dualPq.lastKey()).append(" ").append(dualPq.firstKey()).append("\n");
+            if(!stack.isEmpty())
+                rightLargers[i] = stack.peekLast().idx;
+            stack.offerLast(new Element(heights[i], i));
         }
         
-        System.out.print(sb);
+        for(int i = 0; i < N; i++) {
+            if(leftLargers[i] != NONE)
+                answer += (i - leftLargers[i] + 1);
+            if(rightLargers[i] != NONE)
+                answer += (rightLargers[i] - i + 1);
+        }
+        
+        System.out.println(answer);
     }    //    main-end
+    
+    private static class Element {
+        public int height;
+        public int idx;
+        
+        public Element(int height, int idx) {
+            this.height = height;
+            this.idx = idx;
+        }
+    }
 }    //    Main-class-end
 ```
