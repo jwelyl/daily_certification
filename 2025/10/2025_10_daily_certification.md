@@ -53,3 +53,6 @@ BOJ 1888 곰팡이 (BFS, Disjoint Set), BOJ 10800 컬러볼 (Sorting, Two Pointe
 
 ### [2025.10.16](https://github.com/jwelyl/daily_certification/blob/main/2025/10/16/25_10_16_daily_certification.md)
 BOJ 5829 Luxury River Cruise (DFS, Cycle Detection, Sparse Table), BOJ 24524 아름다운 문자열 (String, Greedy, Queue)
+
+### [2025.10.17](https://github.com/jwelyl/daily_certification/blob/main/2025/10/17/25_10_17_daily_certification.md)
+BOJ 23848 등비수열의 합 (Bruteforcing, Mathematics)
