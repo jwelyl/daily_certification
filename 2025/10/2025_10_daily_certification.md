@@ -56,3 +56,6 @@ BOJ 5829 Luxury River Cruise (DFS, Cycle Detection, Sparse Table), BOJ 24524 아
 
 ### [2025.10.17](https://github.com/jwelyl/daily_certification/blob/main/2025/10/17/25_10_17_daily_certification.md)
 BOJ 23848 등비수열의 합 (Bruteforcing, Mathematics)
+
+### [2025.10.18](https://github.com/jwelyl/daily_certification/blob/main/2025/10/18/25_10_18_daily_certification.md)
+BOJ 1960 행렬만들기 (Greedy, Priority Queue)
