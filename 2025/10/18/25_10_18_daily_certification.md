@@ -2,9 +2,9 @@
 
 # Problem Solving (Algorithm & SQL)
 
-### BOJ 23848 등비수열의 합
+### BOJ 1960 행렬만들기
 
-[23848번: 등비수열의 합](http://boj.ma/23848/t)
+[1960번: 행렬만들기](http://boj.ma/1960/t)
 
 ```java
 import java.io.BufferedReader;
