@@ -64,3 +64,6 @@ BOJ 1960 행렬만들기 (Greedy, Priority Queue)
 
 ### [2025.10.19](https://github.com/jwelyl/daily_certification/blob/main/2025/10/19/25_10_19_daily_certification.md)
 프로그래머스 가장 큰 수 (Greedy, Sorting, String), BOJ 16496 큰 수 만들기 (Greedy, Sorting, String)
+
+### [2025.10.20](https://github.com/jwelyl/daily_certification/blob/main/2025/10/20/25_10_20_daily_certification.md)
+프로그래머스 2개 이하로 다른 비트 (Bit Operation, Java bitCount), 프로그래머스 고고학 최고의 발견 (Bruteforcing, Greedy)
