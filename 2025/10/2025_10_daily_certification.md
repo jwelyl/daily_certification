@@ -67,3 +67,6 @@ BOJ 1960 행렬만들기 (Greedy, Priority Queue)
 
 ### [2025.10.20](https://github.com/jwelyl/daily_certification/blob/main/2025/10/20/25_10_20_daily_certification.md)
 프로그래머스 2개 이하로 다른 비트 (Bit Operation, Java bitCount), 프로그래머스 고고학 최고의 발견 (Bruteforcing, Greedy)
+
+### [2025.10.21](https://github.com/jwelyl/daily_certification/blob/main/2025/10/21/25_10_21_daily_certification.md)
+BOJ 14628 입 챌린저 (DP, Knapsack), BOJ 1976 여행 가자 (DFS, BFS, Floyd Warshall, Disjoint Set),프로그래머스 최고의 집합 (Greedy?)
