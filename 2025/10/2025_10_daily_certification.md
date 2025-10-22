@@ -70,3 +70,6 @@ BOJ 1960 행렬만들기 (Greedy, Priority Queue)
 
 ### [2025.10.21](https://github.com/jwelyl/daily_certification/blob/main/2025/10/21/25_10_21_daily_certification.md)
 BOJ 14628 입 챌린저 (DP, Knapsack), BOJ 1976 여행 가자 (DFS, BFS, Floyd Warshall, Disjoint Set),프로그래머스 최고의 집합 (Greedy?)
+
+### [2025.10.22](https://github.com/jwelyl/daily_certification/blob/main/2025/10/22/25_10_22_daily_certification.md)
+프로그래머스 2차원 동전 뒤집기 (Bruteforcing, Bitmasking)
