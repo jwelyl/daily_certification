@@ -73,3 +73,6 @@ BOJ 14628 입 챌린저 (DP, Knapsack), BOJ 1976 여행 가자 (DFS, BFS, Floyd 
 
 ### [2025.10.22](https://github.com/jwelyl/daily_certification/blob/main/2025/10/22/25_10_22_daily_certification.md)
 프로그래머스 2차원 동전 뒤집기 (Bruteforcing, Bitmasking)
+
+### [2025.10.23](https://github.com/jwelyl/daily_certification/blob/main/2025/10/23/25_10_23_daily_certification.md)
+프로그래머스 표 편집 (DLL, Stack)
