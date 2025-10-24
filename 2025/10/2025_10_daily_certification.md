@@ -76,3 +76,6 @@ BOJ 14628 입 챌린저 (DP, Knapsack), BOJ 1976 여행 가자 (DFS, BFS, Floyd 
 
 ### [2025.10.23](https://github.com/jwelyl/daily_certification/blob/main/2025/10/23/25_10_23_daily_certification.md)
 프로그래머스 표 편집 (DLL, Stack)
+
+### [2025.10.24](https://github.com/jwelyl/daily_certification/blob/main/2025/10/24/25_10_24_daily_certification.md)
+프로그래머스 모두 0으로 만들기 (DFS, Tree DP)
