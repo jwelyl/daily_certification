@@ -83,3 +83,6 @@ BOJ 14628 입 챌린저 (DP, Knapsack), BOJ 1976 여행 가자 (DFS, BFS, Floyd 
 ## 2025.10.26.sun ~ 10.31.fri 데일리 인증
 ### [2025.10.26](https://github.com/jwelyl/daily_certification/blob/main/2025/10/26/25_10_26_daily_certification.md)
 BOJ 22942 데이터 체커 (Stack, Sorting, Sweeping) 
+
+### [2025.10.27](https://github.com/jwelyl/daily_certification/blob/main/2025/10/27/25_10_27_daily_certification.md)
+프로그래머스 기지국 설치 (Implementation)
