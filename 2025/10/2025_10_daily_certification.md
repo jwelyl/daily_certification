@@ -86,3 +86,6 @@ BOJ 22942 데이터 체커 (Stack, Sorting, Sweeping)
 
 ### [2025.10.27](https://github.com/jwelyl/daily_certification/blob/main/2025/10/27/25_10_27_daily_certification.md)
 프로그래머스 기지국 설치 (Implementation)
+
+### [2025.10.28](https://github.com/jwelyl/daily_certification/blob/main/2025/10/28/25_10_28_daily_certification.md)
+BOJ 2812 크게 만들기 (Stack, Greedy)
