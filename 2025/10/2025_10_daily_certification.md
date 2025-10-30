@@ -89,3 +89,9 @@ BOJ 22942 데이터 체커 (Stack, Sorting, Sweeping)
 
 ### [2025.10.28](https://github.com/jwelyl/daily_certification/blob/main/2025/10/28/25_10_28_daily_certification.md)
 BOJ 2812 크게 만들기 (Stack, Greedy)
+
+### [2025.10.29](https://github.com/jwelyl/daily_certification/blob/main/2025/10/29/25_10_29_daily_certification.md)
+BOJ 16821 Low Range-Sum Matrix (Backtracking, Prefix Sum, Kadane's Algorithm?)
+
+### [2025.10.30](https://github.com/jwelyl/daily_certification/blob/main/2025/10/30/25_10_30_daily_certification.md)
+BOJ 31219 세계 일주 (Bruteforcing, Backtracking, Line Segment Intersection Check)
