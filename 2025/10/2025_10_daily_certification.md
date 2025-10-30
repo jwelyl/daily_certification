@@ -95,3 +95,6 @@ BOJ 16821 Low Range-Sum Matrix (Backtracking, Prefix Sum, Kadane's Algorithm?)
 
 ### [2025.10.30](https://github.com/jwelyl/daily_certification/blob/main/2025/10/30/25_10_30_daily_certification.md)
 BOJ 31219 세계 일주 (Bruteforcing, Backtracking, Line Segment Intersection Check)
+
+### [2025.10.31](https://github.com/jwelyl/daily_certification/blob/main/2025/10/31/25_10_31_daily_certification.md)
+BOJ 16202 MST 게임 (MST)
