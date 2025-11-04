@@ -12,3 +12,6 @@ BOJ 26009 험난한 등굣길 (BFS)
 
 ### [2025.11.03](https://github.com/jwelyl/daily_certification/blob/main/2025/11/03/25_11_03_daily_certification.md)
 25498번: 핸들 뭘로 하지 (BFS, Greedy)
+
+### [2025.11.04](https://github.com/jwelyl/daily_certification/blob/main/2025/11/04/25_11_04_daily_certification.md)
+BOJ 4716 풍선 (Greedy, Sorting)
