@@ -9,3 +9,6 @@ BOJ 2021 최소 환승 경로 (BFS)
 
 ### [2025.11.02](https://github.com/jwelyl/daily_certification/blob/main/2025/11/02/25_11_02_daily_certification.md)
 BOJ 26009 험난한 등굣길 (BFS)
+
+### [2025.11.03](https://github.com/jwelyl/daily_certification/blob/main/2025/11/03/25_11_03_daily_certification.md)
+25498번: 핸들 뭘로 하지 (BFS, Greedy)
