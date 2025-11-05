@@ -15,3 +15,6 @@ BOJ 26009 험난한 등굣길 (BFS)
 
 ### [2025.11.04](https://github.com/jwelyl/daily_certification/blob/main/2025/11/04/25_11_04_daily_certification.md)
 BOJ 4716 풍선 (Greedy, Sorting)
+
+### [2025.11.05](https://github.com/jwelyl/daily_certification/blob/main/2025/11/05/25_11_05_daily_certification.md)
+BOJ 14938 서강그라운드 (Floyd Warshall)
