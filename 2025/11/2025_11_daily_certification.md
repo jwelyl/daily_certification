@@ -18,3 +18,6 @@ BOJ 4716 풍선 (Greedy, Sorting)
 
 ### [2025.11.05](https://github.com/jwelyl/daily_certification/blob/main/2025/11/05/25_11_05_daily_certification.md)
 BOJ 14938 서강그라운드 (Floyd Warshall)
+
+### [2025.11.06](https://github.com/jwelyl/daily_certification/blob/main/2025/11/06/25_11_06_daily_certification.md)
+BOJ 2879 코딩은 예쁘게 (Greedy)
