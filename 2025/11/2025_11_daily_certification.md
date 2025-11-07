@@ -21,3 +21,6 @@ BOJ 14938 서강그라운드 (Floyd Warshall)
 
 ### [2025.11.06](https://github.com/jwelyl/daily_certification/blob/main/2025/11/06/25_11_06_daily_certification.md)
 BOJ 2879 코딩은 예쁘게 (Greedy)
+
+### [2025.11.07](https://github.com/jwelyl/daily_certification/blob/main/2025/11/07/25_11_07_daily_certification.md)
+BOJ 1508 레이스 (Parametric Search, Greedy)
