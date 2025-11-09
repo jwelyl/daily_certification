@@ -27,3 +27,8 @@ BOJ 1508 레이스 (Parametric Search, Greedy)
 
 ### [2025.11.08](https://github.com/jwelyl/daily_certification/blob/main/2025/11/08/25_11_08_daily_certification.md)
 BOJ 6988 타일 밟기 (DP, HashMap, Bruteforcing)
+
+## 2025.11.09.sun ~ 11.15.sat 데일리 인증
+
+### [2025.11.09](https://github.com/jwelyl/daily_certification/blob/main/2025/11/09/25_11_09_daily_certification.md)
+BOJ 22868 산책 (small) (BFS, Traceback)
