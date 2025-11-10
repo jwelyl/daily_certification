@@ -32,3 +32,6 @@ BOJ 6988 타일 밟기 (DP, HashMap, Bruteforcing)
 
 ### [2025.11.09](https://github.com/jwelyl/daily_certification/blob/main/2025/11/09/25_11_09_daily_certification.md)
 BOJ 22868 산책 (small) (BFS, Traceback)
+
+### [2025.11.10](https://github.com/jwelyl/daily_certification/blob/main/2025/11/10/25_11_10_daily_certification.md)
+BOJ 22870 산책 (Large) (Dijkstra, DFS, Traceback)
