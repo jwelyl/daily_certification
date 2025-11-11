@@ -35,3 +35,6 @@ BOJ 22868 산책 (small) (BFS, Traceback)
 
 ### [2025.11.10](https://github.com/jwelyl/daily_certification/blob/main/2025/11/10/25_11_10_daily_certification.md)
 BOJ 22870 산책 (Large) (Dijkstra, DFS, Traceback)
+
+### [2025.11.11](https://github.com/jwelyl/daily_certification/blob/main/2025/11/11/25_11_11_daily_certification.md)
+BOJ 15732 도토리 숨기기 (Parametric Search)
