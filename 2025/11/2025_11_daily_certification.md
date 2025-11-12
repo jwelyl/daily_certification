@@ -41,3 +41,6 @@ BOJ 15732 도토리 숨기기 (Parametric Search)
 
 ### [2025.11.12](https://github.com/jwelyl/daily_certification/blob/main/2025/11/12/25_11_12_daily_certification.md)
 BOJ 2655 가장높은탑쌓기 (Bruteforcing, DFS, DP, Sorting, Traceback)
+
+### [2025.11.13](https://github.com/jwelyl/daily_certification/blob/main/2025/11/13/25_11_13_daily_certification.md)
+LeetCode 995. Minimum Number of K Consecutive Bit Flips (Prefix Sum, Sliding Window)
