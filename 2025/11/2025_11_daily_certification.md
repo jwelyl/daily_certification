@@ -44,3 +44,6 @@ BOJ 2655 가장높은탑쌓기 (Bruteforcing, DFS, DP, Sorting, Traceback)
 
 ### [2025.11.13](https://github.com/jwelyl/daily_certification/blob/main/2025/11/13/25_11_13_daily_certification.md)
 LeetCode 995. Minimum Number of K Consecutive Bit Flips (Prefix Sum, Sliding Window)
+
+### [2025.11.14](https://github.com/jwelyl/daily_certification/blob/main/2025/11/14/25_11_14_daily_certification.md)
+BOJ 30023 전구 상태 바꾸기 (Greedy)
