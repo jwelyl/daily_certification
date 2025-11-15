@@ -47,3 +47,6 @@ LeetCode 995. Minimum Number of K Consecutive Bit Flips (Prefix Sum, Sliding Win
 
 ### [2025.11.14](https://github.com/jwelyl/daily_certification/blob/main/2025/11/14/25_11_14_daily_certification.md)
 BOJ 30023 전구 상태 바꾸기 (Greedy)
+
+### [2025.11.15](https://github.com/jwelyl/daily_certification/blob/main/2025/11/15/25_11_15_daily_certification.md)
+BOJ 4792 4792 레드 블루 스패닝 트리 (MST, Disjoint Set)
