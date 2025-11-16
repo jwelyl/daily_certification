@@ -50,3 +50,8 @@ BOJ 30023 전구 상태 바꾸기 (Greedy)
 
 ### [2025.11.15](https://github.com/jwelyl/daily_certification/blob/main/2025/11/15/25_11_15_daily_certification.md)
 BOJ 4792 4792 레드 블루 스패닝 트리 (MST, Disjoint Set)
+
+## 2025.11.16.sun ~ 11.22.sat 데일리 인증
+
+### [2025.11.16](https://github.com/jwelyl/daily_certification/blob/main/2025/11/16/25_11_16_daily_certification.md)
+BOJ 2820 자동차 공장 (Segment Tree (Lazy Propagation), Euler Tour Technique)
