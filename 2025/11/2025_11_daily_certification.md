@@ -55,3 +55,6 @@ BOJ 4792 4792 레드 블루 스패닝 트리 (MST, Disjoint Set)
 
 ### [2025.11.16](https://github.com/jwelyl/daily_certification/blob/main/2025/11/16/25_11_16_daily_certification.md)
 BOJ 2820 자동차 공장 (Segment Tree (Lazy Propagation), Euler Tour Technique)
+
+### [2025.11.17](https://github.com/jwelyl/daily_certification/blob/main/2025/11/17/25_11_17_daily_certification.md)
+BOJ 23295 스터디 시간 정하기 1 (Difference Array, Prefix Sum, Sliding Window)
