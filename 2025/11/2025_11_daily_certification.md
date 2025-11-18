@@ -58,3 +58,6 @@ BOJ 2820 자동차 공장 (Segment Tree (Lazy Propagation), Euler Tour Technique
 
 ### [2025.11.17](https://github.com/jwelyl/daily_certification/blob/main/2025/11/17/25_11_17_daily_certification.md)
 BOJ 23295 스터디 시간 정하기 1 (Difference Array, Prefix Sum, Sliding Window)
+
+### [2025.11.18](https://github.com/jwelyl/daily_certification/blob/main/2025/11/18/25_11_18_daily_certification.md)
+BOJ 34060 로봇 청소기 (Greedy, HashMap, Disjoint Set)
