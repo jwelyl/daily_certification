@@ -61,3 +61,6 @@ BOJ 23295 스터디 시간 정하기 1 (Difference Array, Prefix Sum, Sliding Wi
 
 ### [2025.11.18](https://github.com/jwelyl/daily_certification/blob/main/2025/11/18/25_11_18_daily_certification.md)
 BOJ 34060 로봇 청소기 (Greedy, HashMap, Disjoint Set)
+
+### [2025.11.19](https://github.com/jwelyl/daily_certification/blob/main/2025/11/19/25_11_19_daily_certification.md)
+BOJ 12767 Ceiling Function (BST, Preorder, HashSet, HashMap)
