@@ -4,7 +4,7 @@
 
 ### BOJ 34060 로봇 청소기
 
-[23295번: 스터디 시간 정하기 1](http://boj.ma/23295/t)
+[34060번: 로봇 청소기] (http://boj.ma/34060/t)
 
 ```java
 import java.io.BufferedReader;
