@@ -67,3 +67,6 @@ BOJ 12767 Ceiling Function (BST, Preorder, HashSet, HashMap)
 
 ### [2025.11.20](https://github.com/jwelyl/daily_certification/blob/main/2025/11/20/25_11_20_daily_certification.md)
 BOJ 23090 난민 (Priority Queue, Median PQ)
+
+### [2025.11.21](https://github.com/jwelyl/daily_certification/blob/main/2025/11/21/25_11_21_daily_certification.md)
+BOJ 32036 수열과 쿼리 45 (Priority Queue, Median PQ)
