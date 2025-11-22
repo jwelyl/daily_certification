@@ -70,3 +70,6 @@ BOJ 23090 난민 (Priority Queue, Median PQ)
 
 ### [2025.11.21](https://github.com/jwelyl/daily_certification/blob/main/2025/11/21/25_11_21_daily_certification.md)
 BOJ 32036 수열과 쿼리 45 (Priority Queue, Median PQ)
+
+### [2025.11.22](https://github.com/jwelyl/daily_certification/blob/main/2025/11/22/25_11_22_daily_certification.md)
+BOJ 14452 Cow Dance Show (Parametric Search, Priority Queue), BOJ 5624 좋은 수 (HashSet, Meet in the middle)
