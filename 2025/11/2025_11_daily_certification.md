@@ -81,3 +81,6 @@ BOJ 32322 Hotel Rooms (Segment Tree)
 
 ### [2025.11.24](https://github.com/jwelyl/daily_certification/blob/main/2025/11/24/25_11_24_daily_certification.md)
 BOJ 26086 어려운 스케줄링 (Deque, Offline Queries, Sorting)
+
+### [2025.11.25](https://github.com/jwelyl/daily_certification/blob/main/2025/11/25/25_11_25_daily_certification.md)
+BOJ 1833 고속철도 설계하기 (MST)
