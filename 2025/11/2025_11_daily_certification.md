@@ -84,3 +84,6 @@ BOJ 26086 어려운 스케줄링 (Deque, Offline Queries, Sorting)
 
 ### [2025.11.25](https://github.com/jwelyl/daily_certification/blob/main/2025/11/25/25_11_25_daily_certification.md)
 BOJ 1833 고속철도 설계하기 (MST)
+
+### [2025.11.26](https://github.com/jwelyl/daily_certification/blob/main/2025/11/26/25_11_26_daily_certification.md)
+BOJ 10840 구간 성분 (Hash Set, Hashing, Prefix Sum)
