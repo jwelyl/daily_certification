@@ -87,3 +87,6 @@ BOJ 1833 고속철도 설계하기 (MST)
 
 ### [2025.11.26](https://github.com/jwelyl/daily_certification/blob/main/2025/11/26/25_11_26_daily_certification.md)
 BOJ 10840 구간 성분 (Hash Set, Hashing, Prefix Sum)
+
+### [2025.11.27](https://github.com/jwelyl/daily_certification/blob/main/2025/11/27/25_11_27_daily_certification.md)
+BOJ 15487 A[j]-A[i]+A[l]-A[k] (DP, prefix/suffix sum), BOJ 31963 두 배 (Greedy, Mathematics)
