@@ -90,3 +90,6 @@ BOJ 10840 구간 성분 (Hash Set, Hashing, Prefix Sum)
 
 ### [2025.11.27](https://github.com/jwelyl/daily_certification/blob/main/2025/11/27/25_11_27_daily_certification.md)
 BOJ 15487 A[j]-A[i]+A[l]-A[k] (DP, prefix/suffix sum), BOJ 31963 두 배 (Greedy, Mathematics)
+
+### [2025.11.28](https://github.com/jwelyl/daily_certification/blob/main/2025/11/28/25_11_28_daily_certification.md)
+코드트리 2019 하반기 오전 1번 문제 종전 (Implementation, Bruteforcing, Simulation)
