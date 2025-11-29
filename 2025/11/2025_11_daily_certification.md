@@ -96,3 +96,8 @@ BOJ 15487 A[j]-A[i]+A[l]-A[k] (DP, prefix/suffix sum), BOJ 31963 두 배 (Greedy
 
 ### [2025.11.29](https://github.com/jwelyl/daily_certification/blob/main/2025/11/29/25_11_29_daily_certification.md)
 BOJ 31501 DP (Small) (DP, LIS(O(N^2)))
+
+## 2025.11.30.sun 데일리 인증
+
+### [2025.11.30](https://github.com/jwelyl/daily_certification/blob/main/2025/11/30/25_11_30_daily_certification.md)
+BOJ 3045 이중 연결 리스트 (Doubly Linked List, LIS (O(NlogN)), Traceback)
