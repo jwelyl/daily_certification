@@ -93,3 +93,6 @@ BOJ 15487 A[j]-A[i]+A[l]-A[k] (DP, prefix/suffix sum), BOJ 31963 두 배 (Greedy
 
 ### [2025.11.28](https://github.com/jwelyl/daily_certification/blob/main/2025/11/28/25_11_28_daily_certification.md)
 코드트리 2019 하반기 오전 1번 문제 종전 (Implementation, Bruteforcing, Simulation)
+
+### [2025.11.29](https://github.com/jwelyl/daily_certification/blob/main/2025/11/29/25_11_29_daily_certification.md)
+BOJ 31501 DP (Small) (DP, LIS(O(N^2)))
