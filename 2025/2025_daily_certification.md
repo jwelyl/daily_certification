@@ -21,3 +21,5 @@
 ## [2025.10. 데일리 인증 목록](https://github.com/jwelyl/daily_certification/blob/main/2025/10/2025_10_daily_certification.md)
 
 ## [2025.11. 데일리 인증 목록](https://github.com/jwelyl/daily_certification/blob/main/2025/11/2025_11_daily_certification.md)
+
+## [2025.12. 데일리 인증 목록](https://github.com/jwelyl/daily_certification/blob/main/2025/12/2025_12_daily_certification.md)
