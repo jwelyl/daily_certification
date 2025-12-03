@@ -10,3 +10,6 @@ BOJ 2612 DNA 유사도 (DP, Traceback, LCS)
 
 ### [2025.12.03](https://github.com/jwelyl/daily_certification/blob/main/2025/12/03/25_12_03_daily_certification.md)
 BOJ 11962 Counting Haybales (Segment Tree with Lazy Propagation)
+
+### [2025.12.04](https://github.com/jwelyl/daily_certification/blob/main/2025/12/04/25_12_04_daily_certification.md)
+BOJ 18135 겨울나기 (Segment Tree with Lazy Propagation)
