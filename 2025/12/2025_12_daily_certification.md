@@ -7,3 +7,6 @@ BOJ 8017 Parcel (Stack, Disjoint Set)
 
 ### [2025.12.02](https://github.com/jwelyl/daily_certification/blob/main/2025/12/02/25_12_02_daily_certification.md)
 BOJ 2612 DNA 유사도 (DP, Traceback, LCS)
+
+### [2025.12.03](https://github.com/jwelyl/daily_certification/blob/main/2025/12/03/25_12_03_daily_certification.md)
+BOJ 11962 Counting Haybales (Segment Tree with Lazy Propagation)
