@@ -142,3 +142,149 @@ public class Main {
   }
 } //	Main-class-end
 ```
+
+### BOJ 2733 **Brainf*ck**
+
+[2733번: Brainf*ck](http://boj.ma/2733/t)
+
+```java
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Deque;
+import java.util.List;
+
+public class Main {
+  private static final BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+  private static final StringBuilder sb = new StringBuilder();
+
+  private static final int MAX_POINTER = (1 << 15);
+  private static final char MAX_VALUE = 256;
+  private static final int MAX_LEN = 128_000;
+
+  private static final char DUMMY = '0';
+
+  private static final char[] MEMORY = new char[MAX_POINTER];
+  private static final Deque<Integer> STACK = new ArrayDeque<>(); //  컴파일 에러 확인하기 위한 스택
+  private static final List<Character> CODE = new ArrayList<>();    //  코드
+  //  Key : '[' 또는 ']'의 위치, Value : 대응되는 ']' 또는 '['의 우치ㅣ
+  private static final int[] PAIR_MAP = new int[MAX_LEN];
+
+  private static int pointer = 0;
+
+  public static void main(String[] args) throws IOException {
+    int t = Integer.parseInt(br.readLine());  //  프로그램 개수
+
+    for(int tc = 1; tc <= t; tc++) {
+      reset();
+      sb.append("PROGRAM #").append(tc).append(":\n");
+
+      boolean error = false;
+
+      int idx = 0;
+      while(true) {
+        String input = br.readLine();
+
+        if(input.equals("end"))
+          break;
+
+        boolean isDummy = false;
+        for(int i = 0; i < input.length(); i++) {
+          char cmd = input.charAt(i);
+
+          if (cmd == '%') {   //  주석 시작
+            isDummy = true;
+            CODE.add(DUMMY);
+            idx++;
+            continue;
+          }
+
+          if(isDummy) { //  주석 등장 이후 코드일 경우, 주석 처리
+            CODE.add(DUMMY);
+            idx++;
+            continue;
+          }
+
+          if(!isValid(cmd)) { //  올바르지 않은 문자일 경우
+            CODE.add(DUMMY);
+            idx++;
+            continue;
+          }
+
+          if(cmd == '[')
+            STACK.offerLast(idx);
+          else if(cmd == ']') {
+            if(STACK.isEmpty()) {
+              error = true;
+              break;
+            }
+
+            int left = STACK.pollLast();
+            PAIR_MAP[left] = idx;
+            PAIR_MAP[idx] = left;
+          }
+
+          CODE.add(cmd);
+          idx++;
+        }
+
+        if(error)
+          break;
+      }
+
+      if(error || !STACK.isEmpty()) {
+        sb.append("COMPILE ERROR\n");
+        continue;
+      }
+
+      idx = 0;
+      while(idx < CODE.size()) {
+          char cmd = CODE.get(idx);
+
+          if(cmd == '>')  //  포인터 증가
+            pointer = (pointer + 1) % MAX_POINTER;
+          else if(cmd == '<') //  포인터 감소
+            pointer = (pointer - 1 + MAX_POINTER) % MAX_POINTER;
+          else if(cmd == '+') //  포인터가 가리키는 값 1 증가
+            MEMORY[pointer] = (char)((MEMORY[pointer] + 1) % MAX_VALUE);
+          else if(cmd == '-') //  포인터가 가리키는 값 1 감소
+            MEMORY[pointer] = (char)((MEMORY[pointer] - 1 + MAX_VALUE) % MAX_VALUE);
+          else if(cmd == '.') //  출력
+            sb.append(MEMORY[pointer]);
+          else if(cmd == '[') {
+            if(MEMORY[pointer] == 0) {
+              idx = PAIR_MAP[idx];
+              continue;
+            }
+          }
+          else if(cmd == ']') {
+            if(MEMORY[pointer] != 0) {
+              idx = PAIR_MAP[idx];
+              continue;
+            }
+          }
+
+          idx++;
+      }
+      sb.append("\n");
+    }
+
+    System.out.print(sb);
+  }    //    main-end
+
+  private static boolean isValid(char cmd) {
+    return cmd == '>' || cmd == '<' || cmd == '+' || cmd == '-' || cmd == '.' || cmd == '[' || cmd == ']';
+  }
+
+  private static void reset() {
+    Arrays.fill(MEMORY, (char)0);
+    Arrays.fill(PAIR_MAP, 0);
+    STACK.clear();
+    CODE.clear();
+    pointer = 0;
+  }
+}    //    Main-class-end
+```
