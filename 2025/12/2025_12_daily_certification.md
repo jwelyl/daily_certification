@@ -13,3 +13,6 @@ BOJ 11962 Counting Haybales (Segment Tree with Lazy Propagation)
 
 ### [2025.12.04](https://github.com/jwelyl/daily_certification/blob/main/2025/12/04/25_12_04_daily_certification.md)
 BOJ 18135 겨울나기 (Segment Tree with Lazy Propagation), BOJ 2733 Brainf*ck (Implementation, Simulation, String, Stack)
+
+### [2025.12.05](https://github.com/jwelyl/daily_certification/blob/main/2025/12/05/25_12_05_daily_certification.md)
+BOJ 12895 화려한 마을 (Segment Tree with Lazy Propagation, Bitmask)
