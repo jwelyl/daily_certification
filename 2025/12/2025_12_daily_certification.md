@@ -16,3 +16,6 @@ BOJ 18135 겨울나기 (Segment Tree with Lazy Propagation), BOJ 2733 Brainf*ck 
 
 ### [2025.12.05](https://github.com/jwelyl/daily_certification/blob/main/2025/12/05/25_12_05_daily_certification.md)
 BOJ 12895 화려한 마을 (Segment Tree with Lazy Propagation, Bitmask)
+
+### [2025.12.06](https://github.com/jwelyl/daily_certification/blob/main/2025/12/06/25_12_06_daily_certification.md)
+BOJ 14288 회사 문화 4 (Segment Tree, Segment Tree with Lazy Propagation, Euler Tour Technique)
