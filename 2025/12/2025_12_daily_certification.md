@@ -24,3 +24,6 @@ BOJ 14288 회사 문화 4 (Segment Tree, Segment Tree with Lazy Propagation, Eul
 
 ### [2025.12.07](https://github.com/jwelyl/daily_certification/blob/main/2025/12/07/25_12_07_daily_certification.md)
 BOJ 3954 Brainf**k 인터프리터 (Implementation, Simulation, Stack)
+
+### [2025.12.08](https://github.com/jwelyl/daily_certification/blob/main/2025/12/08/25_12_08_daily_certification.md)
+BOJ 2878 캔디캔디 (Sorting, Greedy)
