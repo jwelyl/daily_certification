@@ -33,3 +33,6 @@ BOJ 1998 이미지 압축 (Recursion, DNC, Tree, HashMap)
 
 ### [2025.12.10](https://github.com/jwelyl/daily_certification/blob/main/2025/12/10/25_12_10_daily_certification.md)
 BOJ 15926 현욱은 괄호왕이야!! (Stack)
+
+### [2025.12.11](https://github.com/jwelyl/daily_certification/blob/main/2025/12/11/25_12_11_daily_certification.md)
+BOJ 6051 시간 여행 (Tree, Linked List)
