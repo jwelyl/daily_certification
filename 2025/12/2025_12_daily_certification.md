@@ -36,3 +36,6 @@ BOJ 15926 현욱은 괄호왕이야!! (Stack)
 
 ### [2025.12.11](https://github.com/jwelyl/daily_certification/blob/main/2025/12/11/25_12_11_daily_certification.md)
 BOJ 6051 시간 여행 (Tree, Linked List)
+
+### [2025.12.12](https://github.com/jwelyl/daily_certification/blob/main/2025/12/12/25_12_12_daily_certification.md)
+BOJ 3217 malloc (Implementation, Linked List, HashMap)
