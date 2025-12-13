@@ -39,3 +39,6 @@ BOJ 6051 시간 여행 (Tree, Linked List)
 
 ### [2025.12.12](https://github.com/jwelyl/daily_certification/blob/main/2025/12/12/25_12_12_daily_certification.md)
 BOJ 3217 malloc (Implementation, Linked List, HashMap)
+
+### [2025.12.13](https://github.com/jwelyl/daily_certification/blob/main/2025/12/13/25_12_13_daily_certification.md)
+BOJ 11812 K진 트리 (Mathematics, Tree, LCA)
