@@ -50,3 +50,6 @@ BOJ 2087 암호문 (HashSet, Bitmask, MITM)
 
 ### [2025.12.15](https://github.com/jwelyl/daily_certification/blob/main/2025/12/15/25_12_15_daily_certification.md)
 BOJ 2233 사과나무 (Stack, Tree, LCA)
+
+### [2025.12.16](https://github.com/jwelyl/daily_certification/blob/main/2025/12/16/25_12_16_daily_certification.md)
+BOJ 18321 Wormhole Sor (Parametric Search, Disjoint Set)
