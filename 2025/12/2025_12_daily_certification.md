@@ -56,3 +56,6 @@ BOJ 18321 Wormhole Sor (Parametric Search, Disjoint Set)
 
 ### [2025.12.17](https://github.com/jwelyl/daily_certification/blob/main/2025/12/17/25_12_17_daily_certification.md)
 BOJ 16347 Alloc (Implementation, Linked List, HashMap)
+
+### [2025.12.18](https://github.com/jwelyl/daily_certification/blob/main/2025/12/18/25_12_18_daily_certification.md)
+BOJ 34560 브레인롯 챔피언십 (Topological Sorting, DAG)
