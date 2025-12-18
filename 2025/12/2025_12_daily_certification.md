@@ -59,3 +59,6 @@ BOJ 16347 Alloc (Implementation, Linked List, HashMap)
 
 ### [2025.12.18](https://github.com/jwelyl/daily_certification/blob/main/2025/12/18/25_12_18_daily_certification.md)
 BOJ 34560 브레인롯 챔피언십 (Topological Sorting, DAG)
+
+### [2025.12.19](https://github.com/jwelyl/daily_certification/blob/main/2025/12/19/25_12_19_daily_certification.md)
+BOJ 34896 폭탄의 악마 (Greedy, Sorting, Parametric Search)
