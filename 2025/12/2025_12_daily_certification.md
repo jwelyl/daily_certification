@@ -62,3 +62,6 @@ BOJ 34560 브레인롯 챔피언십 (Topological Sorting, DAG)
 
 ### [2025.12.19](https://github.com/jwelyl/daily_certification/blob/main/2025/12/19/25_12_19_daily_certification.md)
 BOJ 34896 폭탄의 악마 (Greedy, Sorting, Parametric Search)
+
+### [2025.12.20](https://github.com/jwelyl/daily_certification/blob/main/2025/12/20/25_12_20_daily_certification.md)
+BOJ 32156 Minimum Spanning Arborescence (Greedy, DAG)
