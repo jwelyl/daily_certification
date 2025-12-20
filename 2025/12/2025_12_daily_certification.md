@@ -65,3 +65,8 @@ BOJ 34896 폭탄의 악마 (Greedy, Sorting, Parametric Search)
 
 ### [2025.12.20](https://github.com/jwelyl/daily_certification/blob/main/2025/12/20/25_12_20_daily_certification.md)
 BOJ 32156 Minimum Spanning Arborescence (Greedy, DAG)
+
+## 2025.12.21.sun ~ 12.27.sat 데일리 인증
+
+### [2025.12.21](https://github.com/jwelyl/daily_certification/blob/main/2025/12/21/25_12_21_daily_certification.md)
+BOJ 9712 Prefix Free Subsets (Trie, Combinatorics)
