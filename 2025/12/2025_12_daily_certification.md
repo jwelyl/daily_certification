@@ -70,3 +70,6 @@ BOJ 32156 Minimum Spanning Arborescence (Greedy, DAG)
 
 ### [2025.12.21](https://github.com/jwelyl/daily_certification/blob/main/2025/12/21/25_12_21_daily_certification.md)
 BOJ 9712 Prefix Free Subsets (Trie, Combinatorics)
+
+### [2025.12.22](https://github.com/jwelyl/daily_certification/blob/main/2025/12/22/25_12_22_daily_certification.md)
+BOJ 16903 수열과 쿼리 20 (Trie, Bit Operation (XOR))
