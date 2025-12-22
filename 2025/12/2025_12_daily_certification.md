@@ -73,3 +73,6 @@ BOJ 9712 Prefix Free Subsets (Trie, Combinatorics)
 
 ### [2025.12.22](https://github.com/jwelyl/daily_certification/blob/main/2025/12/22/25_12_22_daily_certification.md)
 BOJ 16903 수열과 쿼리 20 (Trie, Bit Operation (XOR))
+
+### [2025.12.23](https://github.com/jwelyl/daily_certification/blob/main/2025/12/23/25_12_23_daily_certification.md)
+BOJ 16903 수열과 쿼리 20 (Trie, Bit Operation (XOR))
