@@ -1,4 +1,4 @@
-# 25_12_23_daily_certification
+# 25_12_24_daily_certification
 
 # Problem Solving (Algorithm & SQL)
 

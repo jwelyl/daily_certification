@@ -75,7 +75,10 @@ BOJ 9712 Prefix Free Subsets (Trie, Combinatorics)
 BOJ 16903 수열과 쿼리 20 (Trie, Bit Operation (XOR))
 
 ### [2025.12.23](https://github.com/jwelyl/daily_certification/blob/main/2025/12/23/25_12_23_daily_certification.md)
-20919 XOR 자료구조 (Trie, Bit Operation (XOR))
+BOJ 20919 XOR 자료구조 (Trie, Bit Operation (XOR))
 
 ### [2025.12.24](https://github.com/jwelyl/daily_certification/blob/main/2025/12/24/25_12_24_daily_certification.md)
-20919 XOR 자료구조 (Trie, Bit Operation (XOR))
+BOJ 20919 XOR 자료구조 (Trie, Bit Operation (XOR))
+
+### [2025.12.25](https://github.com/jwelyl/daily_certification/blob/main/2025/12/25/25_12_25_daily_certification.md)
+BOJ 13147 Dwarves (DAG, Topological Sorting)
