@@ -85,3 +85,6 @@ BOJ 13147 Dwarves (DAG, Topological Sorting)
 
 ### [2025.12.26](https://github.com/jwelyl/daily_certification/blob/main/2025/12/26/25_12_26_daily_certification.md)
 BOJ 5446 용량 부족 (String, Trie)
+
+### [2025.12.27](https://github.com/jwelyl/daily_certification/blob/main/2025/12/27/)
+BOJ 13504 XOR 합 (Trie, Bit Operation (XOR), Prefix Sum)
