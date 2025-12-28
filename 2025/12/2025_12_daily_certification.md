@@ -93,3 +93,6 @@ BOJ 13504 XOR 합 (Trie, Bit Operation (XOR), Prefix Sum)
 
 ### [2025.12.28](https://github.com/jwelyl/daily_certification/blob/main/2025/12/28/)
 BOJ 24397 말해 xor NO! (Trie, Bitmasking, DFS)
+
+### [2025.12.29](https://github.com/jwelyl/daily_certification/blob/main/2025/12/29/)
+BOJ 1810 징검다리 달리기 2 (Binary Search, Dijkstra)
