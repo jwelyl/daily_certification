@@ -88,3 +88,8 @@ BOJ 5446 용량 부족 (String, Trie)
 
 ### [2025.12.27](https://github.com/jwelyl/daily_certification/blob/main/2025/12/27/)
 BOJ 13504 XOR 합 (Trie, Bit Operation (XOR), Prefix Sum)
+
+## 2025.12.28.sun ~ 12.31.wed 데일리 인증
+
+### [2025.12.28](https://github.com/jwelyl/daily_certification/blob/main/2025/12/28/)
+BOJ 24397 말해 xor NO! (Trie, Bitmasking, DFS)
