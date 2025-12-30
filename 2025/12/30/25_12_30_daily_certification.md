@@ -10,190 +10,113 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
 public class Main {
-  private static final double INF = Double.MAX_VALUE;
+  private static final int MAX_LEN = 20;
+  private static String K_BINARY;
 
   public static void main(String[] args) throws IOException {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     StringTokenizer st = new StringTokenizer(br.readLine());
 
-    int n = Integer.parseInt(st.nextToken()); //  징검다리 개수
-    int f = Integer.parseInt(st.nextToken()); //  결승선 y 좌표
+    Trie trie = new Trie();
+    int[] xorPrefixSum;
+    long answer = 0;  //  K보다 작은 부분 수열 XOR 개수
 
-    int[][] posArr = new int[n + 1][2];
-    //  xPosList[y] : y 좌표가 y인 징검다리의 x 좌표 리스트 (정렬 상태 유지)
-    List<Pos>[] xPosList = new ArrayList[f + 1];
+    int n = Integer.parseInt(st.nextToken()); //  수열 길이
+    K_BINARY = xorToBinary(Integer.parseInt(st.nextToken())); //  부분 수열 XOR 상한
 
-    List<Edge>[] graph = new ArrayList[n + 1];
-    for (int y = 0; y <= f; y++)
-      xPosList[y] = new ArrayList<>();
+    xorPrefixSum = new int[n + 1];
 
-    for (int num = 0; num <= n; num++)
-      graph[num] = new ArrayList<>();
+    trie.insert(xorToBinary(0));
 
-    xPosList[0].add(new Pos(0, 0));
+    st = new StringTokenizer(br.readLine());
+    for(int i = 1; i <= n; i++)
+      xorPrefixSum[i] = xorPrefixSum[i - 1] ^ Integer.parseInt(st.nextToken());
 
-    for (int num = 1; num <= n; num++) {
-      st = new StringTokenizer(br.readLine());
-      int x = Integer.parseInt(st.nextToken());
-      int y = Integer.parseInt(st.nextToken());
-
-      posArr[num][0] = x;
-      posArr[num][1] = y;
-      xPosList[y].add(new Pos(num, x));
+    //  ai^ai+1^ai+^...^aj-1^aj = (a1^a2^a3+^...^aj-1^aj) ^ (a1^a2^a3+^...^ai-1)
+    for(int i = 1; i <= n; i++) {
+      String psBinary = xorToBinary(xorPrefixSum[i]); //   누적 xor 값
+      answer += trie.getCount(psBinary);  //  이전에 trie에 저장된 누적 xor 값 중 psBinary와 xor해서 K 미만인 것의 개수
+      trie.insert(psBinary);
     }
 
-    for (int y = 0; y <= f; y++)
-      Collections.sort(xPosList[y]);
-
-    makeGraph(n, f, posArr, xPosList, graph);
-
-    System.out.println(dijkstra(n, f, posArr, graph));
+    System.out.println(answer);
   } //	main-end
 
-  private static int dijkstra(int n, int f, int[][] posArr, List<Edge>[] graph) {
-    PriorityQueue<Node> pq = new PriorityQueue<>();
-    double[] dist = new double[n + 1];
-    double answer = INF;
+  private static String xorToBinary(int xor) {
+    String xorBinary = Integer.toBinaryString(xor);
+    StringBuilder sb = new StringBuilder();
 
-    Arrays.fill(dist, INF);
-    pq.offer(new Node(0, 0));
+    for(int i = 0; i < MAX_LEN - xorBinary.length(); i++)
+      sb.append('0');
 
-    while(!pq.isEmpty()) {
-      Node cur = pq.poll();
-      int cnum = cur.num;
-      double ccost = cur.cost;
+    sb.append(xorBinary);
 
-      if(dist[cnum] < ccost)
-        continue;
-      for(Edge next : graph[cnum]) {
-        int nnum = next.num;
-        double ncost = ccost + next.weight;
+    return sb.toString();
+  }
 
-        if(ncost < dist[nnum]) {
-          dist[nnum] = ncost;
-          pq.offer(new Node(nnum, dist[nnum]));
-        }
+  private static class TrieNode {
+    public TrieNode[] children;
+    public int count;
+
+    public TrieNode() {
+      this.children = new TrieNode[2];
+      this.count = 0;
+    }
+  }
+
+  private static class Trie {
+    private final TrieNode root = new TrieNode();
+
+    //  xor prefix sum을 트라이에 삽입
+    public void insert(String xorBinary) {
+      TrieNode cur = this.root;
+
+      for(int i = 0; i < xorBinary.length(); i++) {
+        int bit = xorBinary.charAt(i) - '0';
+
+        if(cur.children[bit] == null) //  cur 노드의 자식 중 bit로 이어지는 자식이 없을 경우
+          cur.children[bit] = new TrieNode();
+
+        cur = cur.children[bit];
+        cur.count++;
       }
     }
 
-    for(int num = 1; num <= n; num++) {
-      if (posArr[num][1] == f)
-        answer = Math.min(answer, dist[num]);
+    public long getCount(String xorBinary) {
+      return dfs(this.root, xorBinary, 0, true);
     }
 
-    return answer == INF ? -1 : (int)Math.round(answer);
-  }
+    private long dfs(TrieNode cur, String numBinary, int idx, boolean tie) {
+      if(cur == null)
+        return 0;
 
-  private static void makeGraph(int n, int f, int[][] posArr, List<Pos>[] xPosList, List<Edge>[] graph) {
-    for (int num = 0; num <= n; num++) {
-      int[] pos = posArr[num];
-      int x = pos[0];
-      int y = pos[1];
+      if (!tie) // 이미 xor < K 가 확정된 상태
+        return cur.count;
 
-      for (int yy = Math.max(0, y - 2); yy <= Math.min(f, y + 2); yy++) {
-        List<Pos> posList = xPosList[yy];
+      if (idx == MAX_LEN) //  xor == K인 상태, 조건 위반
+        return 0;
 
-        //  posList에 저장된 pos들 중 x 좌표가 x - 2 이상인 pos 중 가장 왼쪽에 존재하는 pos의 idx
-        int idx1 = binarySearch(x - 2, posList, true);
-        //  posList에 저장된 pos들 중 x 좌표가 x + 2 이하인 pos 중 가장 오른쪽
-        int idx2 = binarySearch(x + 2, posList, false);
+      long res = 0;
+      int numBit = numBinary.charAt(idx) - '0';
+      int kBit = K_BINARY.charAt(idx) - '0';
 
-        if(idx1 == -1 || idx2 == -1)
+      for (int bit = 0; bit < 2; bit++) {
+        TrieNode next = cur.children[bit];
+        if (next == null)
           continue;
 
-        for (int i = idx1; i <= idx2; i++) {
-          Pos npos = posList.get(i);
-          int nnum = npos.num;
+        int xor = bit ^ numBit;
 
-          if (num == nnum)
-            continue;
-
-          double weight = weight(x, y, posArr[nnum][0], posArr[nnum][1]);
-          graph[num].add(new Edge(nnum, weight));
-        }
+        if (xor < kBit)
+          res += next.count;
+        else if (xor == kBit)
+          res += dfs(next, numBinary, idx + 1, true);
       }
-    }
-  }
 
-  private static double weight(int x1, int y1, int x2, int y2) {
-    return Math.sqrt(((long) x1 - x2) * (x1 - x2) + ((long) y1 - y2) * (y1 - y2));
-  }
-
-  private static int binarySearch(int target, List<Pos> posList, boolean lowerBound) {
-    int start = 0;
-    int end = posList.size() - 1;
-    int res = -1;
-
-    while (start <= end) {
-      int mid = (start + end) / 2;
-      int x = posList.get(mid).x;
-
-      if(lowerBound) {    //  target 이상인 것중 가장 왼쪽에 있는 것을 찾는 경우
-        if(x >= target) {
-          res = mid;
-          end = mid - 1;
-        }
-        else
-          start = mid + 1;
-      }
-      else {  //  target 이하인 것중 가장 오른쪽에 있는 것을 찾는 경우
-        if(x <= target) {
-          res = mid;
-          start = mid + 1;
-        }
-        else
-          end = mid - 1;
-      }
-    }
-
-    return res;
-  }
-
-  private static class Pos implements Comparable<Pos> {
-    public final int num; //  징검다리 번호
-    public final int x;   //  해당 징검다리 x 좌표
-
-    public Pos(int num, int x) {
-      this.num = num;
-      this.x = x;
-    }
-
-    @Override
-    public int compareTo(Pos other) {
-      return Integer.compare(this.x, other.x);
-    }
-  }
-
-  private static class Edge {
-    public final int num;
-    public final double weight;
-
-    public Edge(int num, double weight) {
-      this.num = num;
-      this.weight = weight;
-    }
-  }
-
-  private static class Node implements Comparable<Node> {
-    public final int num;
-    public final double cost;
-
-    public Node(int num, double cost) {
-      this.num = num;
-      this.cost = cost;
-    }
-
-    @Override
-    public int compareTo(Node other) {
-      return Double.compare(this.cost, other.cost);
+      return res;
     }
   }
 } //	Main-class-end
