@@ -99,3 +99,6 @@ BOJ 1810 징검다리 달리기 2 (Binary Search, Dijkstra)
 
 ### [2025.12.30](https://github.com/jwelyl/daily_certification/blob/main/2025/12/30/)
 BOJ 13445 부분 수열 XOR (Trie, Prefix Sum, Bit Operation(XOR), DFS)
+
+### [2025.12.31](https://github.com/jwelyl/daily_certification/blob/main/2025/12/31/)
+BOJ 16906 욱제어 (Trie, Sorting, DFS)
