@@ -3,6 +3,10 @@
 <br>
 1일 1 알고리즘 문제 풀이부터 Database, Computer Network, Spring, JPA 등 다양한 학습 내용들을 정리하여 올리고 있습니다.
 
+## [2026. 데일리 인증](https://github.com/jwelyl/daily_certification/blob/main/2026/2026_daily_certification.md)
+
+### [2026.01. 데일리 인증 목록](https://github.com/jwelyl/daily_certification/blob/main/2026/01/2025_01_daily_certification.md)
+
 ## [2025. 데일리 인증](https://github.com/jwelyl/daily_certification/blob/main/2025/2025_daily_certification.md)
 
 ### [2025.12. 데일리 인증 목록](https://github.com/jwelyl/daily_certification/blob/main/2025/12/2025_12_daily_certification.md)
