@@ -7,3 +7,6 @@ BOJ 16906 욱제어 (Trie, Sorting, DFS)
 
 ### [2025.01.02](https://github.com/jwelyl/daily_certification/blob/main/2025/01/02/26_01_02_daily_certification.md)
 BOJ 34060 로봇 청소기 (Greedy, HashMap, Disjoint Set)
+
+### [2025.01.03](https://github.com/jwelyl/daily_certification/blob/main/2025/01/03/26_01_03_daily_certification.md)
+BOJ 25948 Island Tour (Topological Sort)
