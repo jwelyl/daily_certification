@@ -1,15 +1,5 @@
 # 26_01_02_daily_certification
 
-```
-[#002 koreii] 데일리인증 20260102
-1. CS 스터디 준비
-- Python GIL
-- Celery
-2. Spring Batch
-3. 알고리즘 문제 풀이
-- BOJ 34060 로봇 청소기 (Greedy, HashMap, Disjoint Set)
-```
-
 # Problem Solving (Algorithm & SQL)
 
 ### BOJ 34060 로봇 청소기
