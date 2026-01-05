@@ -18,3 +18,6 @@ BOJ 23632 쿠키런 킹덤 (Topological Sort)
 
 ### [2025.01.05](https://github.com/jwelyl/daily_certification/blob/main/2025/01/05/26_01_05_daily_certification.md)
 BOJ 5467 Type Printer (Trie, Sorting, DFS), BOJ 10654 Cow Jog (Stack)
+
+### [2025.01.06](https://github.com/jwelyl/daily_certification/blob/main/2025/01/06/26_01_06_daily_certification.md)
+BOJ 31501 DP (Small) (DP, LIS(O(N^2))), BOJ 29728 실버와 소수는 둘다 S로 시작한 (Implementation, Sieve Of Eratosthenes, Deque)
