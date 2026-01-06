@@ -21,3 +21,6 @@ BOJ 5467 Type Printer (Trie, Sorting, DFS), BOJ 10654 Cow Jog (Stack)
 
 ### [2025.01.06](https://github.com/jwelyl/daily_certification/blob/main/2025/01/06/26_01_06_daily_certification.md)
 BOJ 31501 DP (Small) (DP, LIS(O(N^2))), BOJ 29728 실버와 소수는 둘다 S로 시작한 (Implementation, Sieve Of Eratosthenes, Deque)
+
+### [2025.01.07](https://github.com/jwelyl/daily_certification/blob/main/2025/01/07/26_01_07_daily_certification.md)
+BOJ 1833 고속철도 설계하기 (MST)
