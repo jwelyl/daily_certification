@@ -24,3 +24,6 @@ BOJ 31501 DP (Small) (DP, LIS(O(N^2))), BOJ 29728 실버와 소수는 둘다 S�
 
 ### [2025.01.07](https://github.com/jwelyl/daily_certification/blob/main/2025/01/07/26_01_07_daily_certification.md)
 BOJ 1833 고속철도 설계하기 (MST)
+
+### [2025.01.08](https://github.com/jwelyl/daily_certification/blob/main/2025/01/08/26_01_08_daily_certification.md)
+BOJ 26086 어려운 스케줄링 (Deque, Offline Queries, Sorting)
