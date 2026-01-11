@@ -35,4 +35,6 @@ BOJ 10840 구간 성분 (Hash Set, Hashing, Prefix Sum)
 BOJ 25341 인공 신경망 (Mathematics, Aritmetic, Implemenation)
 
 ## 2026.01.11.sun ~ 01.17.sat 데일리 인증
-BOJ 34896 폭탄의 악마 (Greedy, Sorting, Parametric Search, Disjoint Set), BOJ 12842 튀김 소보루 (Priority Queue)
+
+### [2025.01.11](https://github.com/jwelyl/daily_certification/blob/main/2025/01/11/26_01_11_daily_certification.md)
+BOJ 10256 돌연변이 (Aho-corasick), BOJ 34896 폭탄의 악마 (Greedy, Sorting, Parametric Search, Disjoint Set), BOJ 12842 튀김 소보루 (Priority Queue)
