@@ -38,3 +38,6 @@ BOJ 25341 인공 신경망 (Mathematics, Aritmetic, Implemenation)
 
 ### [2025.01.11](https://github.com/jwelyl/daily_certification/blob/main/2025/01/11/26_01_11_daily_certification.md)
 BOJ 10256 돌연변이 (Aho-corasick), BOJ 34896 폭탄의 악마 (Greedy, Sorting, Parametric Search, Disjoint Set), BOJ 12842 튀김 소보루 (Priority Queue)
+
+### [2025.01.12](https://github.com/jwelyl/daily_certification/blob/main/2025/01/12/26_01_11_daily_certification.md)
+BOJ 9250 문자열 집합 판별 (Aho-corasick)
