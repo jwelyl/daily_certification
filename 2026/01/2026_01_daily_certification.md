@@ -46,4 +46,4 @@ BOJ 9250 문자열 집합 판별 (Aho-corasick)
 BOJ 1893 시저 암호 (KMP)
 
 ### [2026.01.14](https://github.com/jwelyl/daily_certification/blob/main/2026/01/14/26_01_14_daily_certification.md)
-BOJ 10986 나머지 합 (Prefix Sum, Modulo)
+BOJ 10986 나머지 합 (Prefix Sum, Modulo), BOJ 5735 Emoticons :-) (Aho-corasick)
