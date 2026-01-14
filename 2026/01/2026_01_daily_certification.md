@@ -47,3 +47,6 @@ BOJ 1893 시저 암호 (KMP)
 
 ### [2026.01.14](https://github.com/jwelyl/daily_certification/blob/main/2026/01/14/26_01_14_daily_certification.md)
 BOJ 10986 나머지 합 (Prefix Sum, Modulo), BOJ 5735 Emoticons :-) (Aho-corasick)
+
+### [2026.01.15](https://github.com/jwelyl/daily_certification/blob/main/2026/01/15/26_01_15_daily_certification.md)
+BOJ 16724 피리 부는 사나이 (DFS, Cycle Detection)
