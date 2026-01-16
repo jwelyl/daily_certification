@@ -52,4 +52,4 @@ BOJ 10986 나머지 합 (Prefix Sum, Modulo), BOJ 5735 Emoticons :-) (Aho-corasi
 BOJ 16724 피리 부는 사나이 (DFS, Cycle Detection)
 
 ### [2026.01.16](https://github.com/jwelyl/daily_certification/blob/main/2026/01/16/26_01_16_daily_certification.md)
-BOJ 20160 야쿠르트 아줌마 야쿠르트 주세요 (Dijkstra)
+BOJ 8044 Viruses (Aho-corasick, Cycle Detection), BOJ 20160 야쿠르트 아줌마 야쿠르트 주세요 (Dijkstra)
