@@ -53,3 +53,6 @@ BOJ 16724 피리 부는 사나이 (DFS, Cycle Detection)
 
 ### [2026.01.16](https://github.com/jwelyl/daily_certification/blob/main/2026/01/16/26_01_16_daily_certification.md)
 BOJ 8044 Viruses (Aho-corasick, Cycle Detection), BOJ 20160 야쿠르트 아줌마 야쿠르트 주세요 (Dijkstra)
+
+### [2026.01.17](https://github.com/jwelyl/daily_certification/blob/main/2026/01/17/26_01_17_daily_certification.md)
+BOJ 8044 Viruses (Aho-corasick, Cycle Detection), BOJ 2250 트리의 높이와 너비 (Tree, DFS, Inorder)
