@@ -56,3 +56,8 @@ BOJ 8044 Viruses (Aho-corasick, Cycle Detection), BOJ 20160 야쿠르트 아줌�
 
 ### [2026.01.17](https://github.com/jwelyl/daily_certification/blob/main/2026/01/17/26_01_17_daily_certification.md)
 BOJ 8044 Viruses (Aho-corasick, Cycle Detection), BOJ 2250 트리의 높이와 너비 (Tree, DFS, Inorder)
+
+## 2026.01.18.sun ~ 01.24.sat 데일리 인증
+
+### [2026.01.18](https://github.com/jwelyl/daily_certification/blob/main/2026/01/18/26_01_18_daily_certification.md)
+BOJ 17501 수식 트리 (Tree, DFS, Greedy, Sorting)
