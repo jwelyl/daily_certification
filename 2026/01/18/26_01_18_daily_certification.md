@@ -1,13 +1,5 @@
 # 26_01_18_daily_certification
 
-```
-[#018 koreii] 데일리인증 20260118
-1. CS
-- FastAPI API 구현
-2. 알고리즘 (복습) 문제 풀이
-- BOJ 17501 수식 트리 (Tree, DFS, Greedy, Sorting)
-```
-
 # Problem Solving (Algorithm & SQL)
 
 ### BOJ 17501 수식 트리
