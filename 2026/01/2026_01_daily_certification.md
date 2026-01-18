@@ -61,3 +61,6 @@ BOJ 8044 Viruses (Aho-corasick, Cycle Detection), BOJ 2250 트리의 높이와 �
 
 ### [2026.01.18](https://github.com/jwelyl/daily_certification/blob/main/2026/01/18/26_01_18_daily_certification.md)
 BOJ 17501 수식 트리 (Tree, DFS, Greedy, Sorting)
+
+### [2026.01.19](https://github.com/jwelyl/daily_certification/blob/main/2026/01/19/26_01_19_daily_certification.md)
+BOJ 30414 투스타 춘배 (Tree, DFS, Tree DP)
