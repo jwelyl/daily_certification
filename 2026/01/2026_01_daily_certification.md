@@ -64,3 +64,6 @@ BOJ 17501 수식 트리 (Tree, DFS, Greedy, Sorting)
 
 ### [2026.01.19](https://github.com/jwelyl/daily_certification/blob/main/2026/01/19/26_01_19_daily_certification.md)
 BOJ 30414 투스타 춘배 (Tree, DFS, Tree DP)
+
+### [2026.01.20](https://github.com/jwelyl/daily_certification/blob/main/2026/01/20/26_01_20_daily_certification.md)
+BOJ 20366 같이 눈사람 만들래? (Sorting, Two Pointer)
