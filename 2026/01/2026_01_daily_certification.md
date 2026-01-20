@@ -67,3 +67,6 @@ BOJ 30414 투스타 춘배 (Tree, DFS, Tree DP)
 
 ### [2026.01.20](https://github.com/jwelyl/daily_certification/blob/main/2026/01/20/26_01_20_daily_certification.md)
 BOJ 20366 같이 눈사람 만들래? (Sorting, Two Pointer)
+
+### [2026.01.21](https://github.com/jwelyl/daily_certification/blob/main/2026/01/21/26_01_21_daily_certification.md)
+BOJ 5624 좋은 수 (HashSet, Meet in the middle)
