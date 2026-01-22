@@ -71,5 +71,8 @@ BOJ 20366 같이 눈사람 만들래? (Sorting, Two Pointer)
 ### [2026.01.21](https://github.com/jwelyl/daily_certification/blob/main/2026/01/21/26_01_21_daily_certification.md)
 BOJ 5624 좋은 수 (HashSet, Meet in the middle)
 
-### [2026.01.21](https://github.com/jwelyl/daily_certification/blob/main/2026/01/22/26_01_22_daily_certification.md)
+### [2026.01.22](https://github.com/jwelyl/daily_certification/blob/main/2026/01/22/26_01_22_daily_certification.md)
 BOJ 34513 룩의 이동 (0-1 BFS)
+
+### [2026.01.23](https://github.com/jwelyl/daily_certification/blob/main/2026/01/23/26_01_23_daily_certification.md)
+BOJ 33907 투명 스프레이 (0-1 BFS, Parametric Search)
