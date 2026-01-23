@@ -76,3 +76,6 @@ BOJ 34513 룩의 이동 (0-1 BFS)
 
 ### [2026.01.23](https://github.com/jwelyl/daily_certification/blob/main/2026/01/23/26_01_23_daily_certification.md)
 BOJ 33907 투명 스프레이 (0-1 BFS, Parametric Search)
+
+### [2026.01.24](https://github.com/jwelyl/daily_certification/blob/main/2026/01/24/26_01_24_daily_certification.md)
+BOJ 23295 스터디 시간 정하기 (Prefix Sum, Sweeping, Sliding Window, Difference Array)
