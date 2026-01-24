@@ -79,3 +79,8 @@ BOJ 33907 투명 스프레이 (0-1 BFS, Parametric Search)
 
 ### [2026.01.24](https://github.com/jwelyl/daily_certification/blob/main/2026/01/24/26_01_24_daily_certification.md)
 BOJ 23295 스터디 시간 정하기 (Prefix Sum, Sweeping, Sliding Window, Difference Array)
+
+## 2026.01.25.sun ~ 01.31.sat 데일리 인증
+
+### [2026.01.25](https://github.com/jwelyl/daily_certification/blob/main/2026/01/25/26_01_25_daily_certification.md)
+BOJ 16900 이름 정하기 (KMP)
