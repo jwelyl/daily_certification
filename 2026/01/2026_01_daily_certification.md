@@ -84,3 +84,6 @@ BOJ 23295 스터디 시간 정하기 (Prefix Sum, Sweeping, Sliding Window, Diff
 
 ### [2026.01.25](https://github.com/jwelyl/daily_certification/blob/main/2026/01/25/26_01_25_daily_certification.md)
 BOJ 16900 이름 정하기 (KMP)
+
+### [2026.01.26](https://github.com/jwelyl/daily_certification/blob/main/2026/01/26/26_01_26_daily_certification.md)
+BOJ 4568 LRU Caching (String, LinkedHashMap)
