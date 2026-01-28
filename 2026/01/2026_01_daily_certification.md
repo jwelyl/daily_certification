@@ -93,3 +93,6 @@ BOJ 32387 충전하기 (TreeSet)
 
 ### [2026.01.28](https://github.com/jwelyl/daily_certification/blob/main/2026/01/28/26_01_28_daily_certification.md)
 BOJ 1516 게임 개발 (DP, DAG, Topological Sorting)
+
+### [2026.01.29](https://github.com/jwelyl/daily_certification/blob/main/2026/01/29/26_01_29_daily_certification.md)
+BOJ 1600 말이 되고픈 원숭이 (BFS)
