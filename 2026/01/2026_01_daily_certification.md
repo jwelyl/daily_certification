@@ -99,3 +99,6 @@ BOJ 1600 말이 되고픈 원숭이 (BFS)
 
 ### [2026.01.30](https://github.com/jwelyl/daily_certification/blob/main/2026/01/30/26_01_30_daily_certification.md)
 BOJ 16985 Maaaaaaaaaze (BFS, Bruteforcing)
+
+### [2026.01.31](https://github.com/jwelyl/daily_certification/blob/main/2026/01/31/26_01_31_daily_certification.md)
+BOJ 2900 프로그램 (Prefix Sum, imos, Mathematics)
