@@ -7,3 +7,6 @@ BOJ 5827 What's Up With Gravity (0-1 BFS, Simulation)
 
 ### [2026.02.02](https://github.com/jwelyl/daily_certification/blob/main/2026/02/02/26_02_02_daily_certification.md)
 BOJ 17090 미로 탈출하기 (DP, DFS) 
+
+### [2026.02.03](https://github.com/jwelyl/daily_certification/blob/main/2026/02/03/26_02_03_daily_certification.md)
+BOJ 2211 네트워크 복구 (Dijkstra, Traceback) 
