@@ -16,3 +16,6 @@ BOJ 5542 JOI 국가의 행사 (Dijkstra, Disjoint Set)
 
 ### [2026.02.05](https://github.com/jwelyl/daily_certification/blob/main/2026/02/05/26_02_05_daily_certification.md)
 BOJ 14863 서울에서 경산까지 (DP, Knapsack) 
+
+### [2026.02.06](https://github.com/jwelyl/daily_certification/blob/main/2026/02/06/26_02_06_daily_certification.md)
+BOJ 24041 성싶당 밀키트 (Sorting, Greedy, Parametric Search)
