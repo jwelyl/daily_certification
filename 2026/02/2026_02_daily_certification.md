@@ -19,3 +19,6 @@ BOJ 14863 서울에서 경산까지 (DP, Knapsack)
 
 ### [2026.02.06](https://github.com/jwelyl/daily_certification/blob/main/2026/02/06/26_02_06_daily_certification.md)
 BOJ 24041 성싶당 밀키트 (Sorting, Greedy, Parametric Search)
+
+### [2026.02.07](https://github.com/jwelyl/daily_certification/blob/main/2026/02/07/26_02_07_daily_certification.md)
+BOJ 1891 사분면 (Recursion, DNC)
