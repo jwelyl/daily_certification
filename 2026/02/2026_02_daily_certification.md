@@ -27,3 +27,6 @@ BOJ 1891 사분면 (Recursion, DNC)
 
 ### [2026.02.08](https://github.com/jwelyl/daily_certification/blob/main/2026/02/08/26_02_08_daily_certification.md)
 BOJ 16986 인싸들의 가위바위보 (Implementation, Bruteforcing, Backtracking)
+
+### [2026.02.09](https://github.com/jwelyl/daily_certification/blob/main/2026/02/09/26_02_09_daily_certification.md)
+BOJ 27068 이미지 보정 작업 (BFS, Parametric Search)
