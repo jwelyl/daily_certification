@@ -22,3 +22,8 @@ BOJ 24041 성싶당 밀키트 (Sorting, Greedy, Parametric Search)
 
 ### [2026.02.07](https://github.com/jwelyl/daily_certification/blob/main/2026/02/07/26_02_07_daily_certification.md)
 BOJ 1891 사분면 (Recursion, DNC)
+
+## 2026.02.08.sun ~ 02.14.sat 데일리 인증
+
+### [2026.02.08](https://github.com/jwelyl/daily_certification/blob/main/2026/02/08/26_02_08_daily_certification.md)
+BOJ 16986 인싸들의 가위바위보 (Implementation, Bruteforcing, Backtracking)
