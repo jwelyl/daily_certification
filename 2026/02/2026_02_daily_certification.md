@@ -33,3 +33,6 @@ BOJ 27068 이미지 보정 작업 (BFS, Parametric Search)
 
 ### [2026.02.10](https://github.com/jwelyl/daily_certification/blob/main/2026/02/10/26_02_10_daily_certification.md)
 BOJ 20313 출퇴근 (Dijkstra)
+
+### [2026.02.11](https://github.com/jwelyl/daily_certification/blob/main/2026/02/11/26_02_11_daily_certification.md)
+BOJ 35184 수돗물과 게 임 (Implementation, Dijkstra)
