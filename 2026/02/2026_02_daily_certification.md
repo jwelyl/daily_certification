@@ -36,3 +36,6 @@ BOJ 20313 출퇴근 (Dijkstra)
 
 ### [2026.02.11](https://github.com/jwelyl/daily_certification/blob/main/2026/02/11/26_02_11_daily_certification.md)
 BOJ 35184 수돗물과 게 임 (Implementation, Dijkstra)
+
+### [2026.02.12](https://github.com/jwelyl/daily_certification/blob/main/2026/02/12/26_02_12_daily_certification.md)
+BOJ 7453 합이 0인 네 정수 (Sorting, Binary Search, Two-Pointer, MITM)
