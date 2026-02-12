@@ -39,3 +39,6 @@ BOJ 35184 수돗물과 게 임 (Implementation, Dijkstra)
 
 ### [2026.02.12](https://github.com/jwelyl/daily_certification/blob/main/2026/02/12/26_02_12_daily_certification.md)
 BOJ 7453 합이 0인 네 정수 (Sorting, Binary Search, Two-Pointer, MITM)
+
+### [2026.02.13](https://github.com/jwelyl/daily_certification/blob/main/2026/02/13/26_02_13_daily_certification.md)
+BOJ 9007 카누 선수 (Sorting, Binary Search, Two-Pointer, MITM)
