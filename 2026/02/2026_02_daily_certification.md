@@ -45,3 +45,8 @@ BOJ 9007 카누 선수 (Sorting, Binary Search, Two-Pointer, MITM)
 
 ### [2026.02.14](https://github.com/jwelyl/daily_certification/blob/main/2026/02/14/26_02_14_daily_certification.md)
 BOJ 22954 그래프 트리 분할 (Tree, Disjoint Set, Constructive)
+
+## 2026.02.15.sun ~ 02.21.sat 데일리 인증
+
+### [2026.02.15](https://github.com/jwelyl/daily_certification/blob/main/2026/02/15/26_02_15_daily_certification.md)
+BOJ 1432 그래프 수정 (Topological Sorting, Priority Queue)
