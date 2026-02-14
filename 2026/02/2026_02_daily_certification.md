@@ -42,3 +42,6 @@ BOJ 7453 합이 0인 네 정수 (Sorting, Binary Search, Two-Pointer, MITM)
 
 ### [2026.02.13](https://github.com/jwelyl/daily_certification/blob/main/2026/02/13/26_02_13_daily_certification.md)
 BOJ 9007 카누 선수 (Sorting, Binary Search, Two-Pointer, MITM)
+
+### [2026.02.14](https://github.com/jwelyl/daily_certification/blob/main/2026/02/14/26_02_14_daily_certification.md)
+BOJ 22954 그래프 트리 분할 (Tree, Disjoint Set, Constructive)
