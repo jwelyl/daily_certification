@@ -53,3 +53,6 @@ BOJ 1432 그래프 수정 (Topological Sorting, Priority Queue)
 
 ### [2026.02.16](https://github.com/jwelyl/daily_certification/blob/main/2026/02/16/26_02_16_daily_certification.md)
 BOJ 1036 36진수 (Implementation, Mathematics, Greedy, String)
+
+### [2026.02.17](https://github.com/jwelyl/daily_certification/blob/main/2026/02/17/26_02_17_daily_certification.md)
+BOJ 15730 수영장 사장님 (DFS, Priority Queue)
