@@ -1,11 +1,5 @@
 # 26_02_19_daily_certification
 
-```
-[#050 koreii] 데일리인증 20260219
-1 알고리즘 문제 풀이
-- Graph, Greedy, MST (BOJ 1045 도로)
-```
-
 # Problem Solving (Algorithm & SQL)
 
 ### BOJ 1045 도로
