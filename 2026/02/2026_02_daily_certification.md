@@ -59,3 +59,6 @@ BOJ 15730 수영장 사장님 (DFS, Priority Queue)
 
 ### [2026.02.18](https://github.com/jwelyl/daily_certification/blob/main/2026/02/18/26_02_18_daily_certification.md)
 BOJ 2276 물 채우기 (DFS, Priority Queue)
+
+### [2026.02.19](https://github.com/jwelyl/daily_certification/blob/main/2026/02/19/26_02_19_daily_certification.md)
+BOJ 1045 도로 (Graph, Greedy)
