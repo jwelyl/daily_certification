@@ -65,3 +65,6 @@ BOJ 1045 도로 (Greedy, MST)
 
 ### [2026.02.20](https://github.com/jwelyl/daily_certification/blob/main/2026/02/20/26_02_20_daily_certification.md)
 BOJ 14325 Rain (Large) (DFS, Priority Queue)
+
+### [2026.02.21](https://github.com/jwelyl/daily_certification/blob/main/2026/02/21/26_02_21_daily_certification.md)
+BOJ 12467 Rain Over Atlantis (Small) (Simulation, BFS, Priority Queue)
