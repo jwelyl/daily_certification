@@ -68,3 +68,8 @@ BOJ 14325 Rain (Large) (DFS, Priority Queue)
 
 ### [2026.02.21](https://github.com/jwelyl/daily_certification/blob/main/2026/02/21/26_02_21_daily_certification.md)
 BOJ 12467 Rain Over Atlantis (Small) (Simulation, BFS, Priority Queue)
+
+## 2026.02.22.sun ~ 02.28.sat 데일리 인증
+
+### [2026.02.22](https://github.com/jwelyl/daily_certification/blob/main/2026/02/22/26_02_22_daily_certification.md)
+BOJ 1432 그래프 수정 (Topological Sorting, Priority Queue)
