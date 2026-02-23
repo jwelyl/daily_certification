@@ -76,3 +76,6 @@ BOJ 1432 그래프 수정 (Topological Sorting, Priority Queue)
 
 ### [2026.02.23](https://github.com/jwelyl/daily_certification/blob/main/2026/02/23/26_02_23_daily_certification.md)
 BOJ 23059 리그 오브 레게노 (HashMap, Topological Sorting)
+
+### [2026.02.24](https://github.com/jwelyl/daily_certification/blob/main/2026/02/24/26_02_2_daily_certification.md)
+BOJ 1103 게임 (DFS, DP)
