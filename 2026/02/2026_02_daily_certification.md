@@ -81,4 +81,7 @@ BOJ 23059 리그 오브 레게노 (HashMap, Topological Sorting)
 BOJ 1103 게임 (DFS, DP)
 
 ### [2026.02.25](https://github.com/jwelyl/daily_certification/blob/main/2026/02/25/26_02_25_daily_certification.md)
-OJ 11967 불켜기 (BFS)
+BOJ 11967 불켜기 (BFS)
+
+### [2026.02.26](https://github.com/jwelyl/daily_certification/blob/main/2026/02/26/26_02_25_daily_certification.md)
+BOJ 1234 크리스마스 트리 (DP, Combinatorics)
