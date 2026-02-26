@@ -83,5 +83,8 @@ BOJ 1103 게임 (DFS, DP)
 ### [2026.02.25](https://github.com/jwelyl/daily_certification/blob/main/2026/02/25/26_02_25_daily_certification.md)
 BOJ 11967 불켜기 (BFS)
 
-### [2026.02.26](https://github.com/jwelyl/daily_certification/blob/main/2026/02/26/26_02_25_daily_certification.md)
+### [2026.02.26](https://github.com/jwelyl/daily_certification/blob/main/2026/02/26/26_02_26_daily_certification.md)
 BOJ 1234 크리스마스 트리 (DP, Combinatorics)
+
+### [2026.02.27](https://github.com/jwelyl/daily_certification/blob/main/2026/02/27/26_02_27_daily_certification.md)
+BOJ 12698 Portal (Large) (0-1 BFS, Dijkstra)
