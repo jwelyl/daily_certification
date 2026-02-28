@@ -88,3 +88,6 @@ BOJ 1234 크리스마스 트리 (DP, Combinatorics)
 
 ### [2026.02.27](https://github.com/jwelyl/daily_certification/blob/main/2026/02/27/26_02_27_daily_certification.md)
 BOJ 12698 Portal (Large) (0-1 BFS, Dijkstra)
+
+### [2026.02.28](https://github.com/jwelyl/daily_certification/blob/main/2026/02/28/26_02_28_daily_certification.md)
+BOJ 15487 A[j]-A[i]+A[l]-A[k] (DP, Prefix Sum)
