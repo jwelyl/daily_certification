@@ -15,4 +15,7 @@ BOJ 12467 Rains Over Atlantis (Small) (BFS, Priority Queue, Simulation)
 BOJ 2065 나룻배 (Simulation, Queue) 
 
 ### [2026.03.05](https://github.com/jwelyl/daily_certification/blob/main/2026/03/05/26_03_05_daily_certification.md)
-BOJ 2169 로봇 조종하기 (DP) 
+BOJ 2169 로봇 조종하기 (DP)
+
+### [2026.03.06](https://github.com/jwelyl/daily_certification/blob/main/2026/03/06/26_03_06_daily_certification.md)
+BOJ 1464 뒤집기 3 (Greedy, Deque) 
