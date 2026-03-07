@@ -18,4 +18,7 @@ BOJ 2065 나룻배 (Simulation, Queue)
 BOJ 2169 로봇 조종하기 (DP)
 
 ### [2026.03.06](https://github.com/jwelyl/daily_certification/blob/main/2026/03/06/26_03_06_daily_certification.md)
-BOJ 1464 뒤집기 3 (Greedy, Deque) 
+BOJ 1464 뒤집기 3 (Greedy, Deque)
+
+### [2026.03.07](https://github.com/jwelyl/daily_certification/blob/main/2026/03/07/26_03_07_daily_certification.md)
+BOJ 20943 카카오톡 (Combinatorics, Hash Map)
