@@ -27,3 +27,6 @@ BOJ 20943 카카오톡 (Combinatorics, Hash Map)
 
 ### [2026.03.08](https://github.com/jwelyl/daily_certification/blob/main/2026/03/08/26_03_08_daily_certification.md)
 BOJ 28137 뭐라고? 안들려 (Combinatorics, Hash Map)
+
+### [2026.03.09](https://github.com/jwelyl/daily_certification/blob/main/2026/03/09/26_03_09_daily_certification.md)
+BOJ 19640 화장실의 규칙 (Simulation, Priority Queue)
