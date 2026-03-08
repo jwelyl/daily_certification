@@ -22,3 +22,8 @@ BOJ 1464 뒤집기 3 (Greedy, Deque)
 
 ### [2026.03.07](https://github.com/jwelyl/daily_certification/blob/main/2026/03/07/26_03_07_daily_certification.md)
 BOJ 20943 카카오톡 (Combinatorics, Hash Map)
+
+## 2026.03.08.sun ~ 03.14.sat 데일리 인증
+
+### [2026.03.08](https://github.com/jwelyl/daily_certification/blob/main/2026/03/08/26_03_08_daily_certification.md)
+BOJ 28137 뭐라고? 안들려 (Combinatorics, Hash Map)
