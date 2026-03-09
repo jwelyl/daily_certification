@@ -30,3 +30,6 @@ BOJ 28137 뭐라고? 안들려 (Combinatorics, Hash Map)
 
 ### [2026.03.09](https://github.com/jwelyl/daily_certification/blob/main/2026/03/09/26_03_09_daily_certification.md)
 BOJ 19640 화장실의 규칙 (Simulation, Priority Queue)
+
+### [2026.03.10](https://github.com/jwelyl/daily_certification/blob/main/2026/03/10/26_03_10_daily_certification.md)
+BOJ 10273 고대 동굴 탐사 (DP, Topological Sorting)
