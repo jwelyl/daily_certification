@@ -33,3 +33,6 @@ BOJ 19640 화장실의 규칙 (Simulation, Priority Queue)
 
 ### [2026.03.10](https://github.com/jwelyl/daily_certification/blob/main/2026/03/10/26_03_10_daily_certification.md)
 BOJ 10273 고대 동굴 탐사 (DP, Topological Sorting)
+
+### [2026.03.11](https://github.com/jwelyl/daily_certification/blob/main/2026/03/11/26_03_11_daily_certification.md)
+BOJ 2151 거울 설치 (BFS, Dijkstra)
