@@ -36,3 +36,6 @@ BOJ 10273 고대 동굴 탐사 (DP, Topological Sorting)
 
 ### [2026.03.11](https://github.com/jwelyl/daily_certification/blob/main/2026/03/11/26_03_11_daily_certification.md)
 BOJ 2151 거울 설치 (BFS, Dijkstra)
+
+### [2026.03.12](https://github.com/jwelyl/daily_certification/blob/main/2026/03/12/26_03_12_daily_certification.md)
+BOJ 2637 장난감 조립 (DP, Topological Sorting)
