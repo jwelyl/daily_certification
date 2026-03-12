@@ -39,3 +39,6 @@ BOJ 2151 거울 설치 (BFS, Dijkstra)
 
 ### [2026.03.12](https://github.com/jwelyl/daily_certification/blob/main/2026/03/12/26_03_12_daily_certification.md)
 BOJ 2637 장난감 조립 (DP, Topological Sorting)
+
+### [2026.03.13](https://github.com/jwelyl/daily_certification/blob/main/2026/03/13/26_03_13_daily_certification.md)
+BOJ 2613 숫자구슬 (DP, Greedy, Parametric Search)
