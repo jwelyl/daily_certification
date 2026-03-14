@@ -42,3 +42,6 @@ BOJ 2637 장난감 조립 (DP, Topological Sorting)
 
 ### [2026.03.13](https://github.com/jwelyl/daily_certification/blob/main/2026/03/13/26_03_13_daily_certification.md)
 BOJ 2613 숫자구슬 (DP, Greedy, Parametric Search)
+
+### [2026.03.14](https://github.com/jwelyl/daily_certification/blob/main/2026/03/14/26_03_14_daily_certification.md)
+BOJ 1039 교환 (BFS)
