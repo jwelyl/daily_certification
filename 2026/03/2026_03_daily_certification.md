@@ -45,3 +45,8 @@ BOJ 2613 숫자구슬 (DP, Greedy, Parametric Search)
 
 ### [2026.03.14](https://github.com/jwelyl/daily_certification/blob/main/2026/03/14/26_03_14_daily_certification.md)
 BOJ 1039 교환 (BFS)
+
+## 2026.03.15.sun ~ 03.21.sat 데일리 인증
+
+### [2026.03.15](https://github.com/jwelyl/daily_certification/blob/main/2026/03/15/26_03_15_daily_certification.md)
+BOJ 1765 닭싸움 팀 정하기 (DFS, Disjoint Set)
