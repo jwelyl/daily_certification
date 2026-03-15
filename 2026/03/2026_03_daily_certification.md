@@ -50,3 +50,6 @@ BOJ 1039 교환 (BFS)
 
 ### [2026.03.15](https://github.com/jwelyl/daily_certification/blob/main/2026/03/15/26_03_15_daily_certification.md)
 BOJ 1765 닭싸움 팀 정하기 (DFS, Disjoint Set)
+
+### [2026.03.16](https://github.com/jwelyl/daily_certification/blob/main/2026/03/16/26_03_16_daily_certification.md)
+BOJ 14570 나무 위의 구슬 (Tree, DFS, Parity)
