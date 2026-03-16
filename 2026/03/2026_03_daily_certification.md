@@ -53,3 +53,6 @@ BOJ 1765 닭싸움 팀 정하기 (DFS, Disjoint Set)
 
 ### [2026.03.16](https://github.com/jwelyl/daily_certification/blob/main/2026/03/16/26_03_16_daily_certification.md)
 BOJ 14570 나무 위의 구슬 (Tree, DFS, Parity)
+
+### [2026.03.17](https://github.com/jwelyl/daily_certification/blob/main/2026/03/17/26_03_17_daily_certification.md)
+BOJ 22863 원상 복구 (large) (Sparse Table, Permutation Cycle Decomposition)
