@@ -58,4 +58,7 @@ BOJ 14570 나무 위의 구슬 (Tree, DFS, Parity)
 BOJ 22863 원상 복구 (large) (Sparse Table, Permutation Cycle Decomposition)
 
 ### [2026.03.18](https://github.com/jwelyl/daily_certification/blob/main/2026/03/18/26_03_18_daily_certification.md)
-BOJ 24042 횡단보도 (Dijkstra) 
+BOJ 24042 횡단보도 (Dijkstra)
+
+### [2026.03.19](https://github.com/jwelyl/daily_certification/blob/main/2026/03/19/26_03_19_daily_certification.md)
+BOJ 2021 최소 환승 경로 (BFS) 
