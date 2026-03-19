@@ -62,3 +62,6 @@ BOJ 24042 횡단보도 (Dijkstra)
 
 ### [2026.03.19](https://github.com/jwelyl/daily_certification/blob/main/2026/03/19/26_03_19_daily_certification.md)
 BOJ 2021 최소 환승 경로 (BFS) 
+
+### [2026.03.20](https://github.com/jwelyl/daily_certification/blob/main/2026/03/20/26_03_20_daily_certification.md)
+BOJ 24461 그래프의 줄기 (Topological Sorting) 
