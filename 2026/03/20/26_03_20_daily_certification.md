@@ -4,7 +4,7 @@
 
 ### BOJ 24461 그래프의 줄기
 
-[](http://boj.ma/224461/t)
+[](http://boj.ma/24461/t)
 
 ```java
 import java.io.BufferedReader;
