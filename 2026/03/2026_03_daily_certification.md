@@ -67,4 +67,9 @@ BOJ 2021 최소 환승 경로 (BFS)
 BOJ 24461 그래프의 줄기 (Topological Sorting) 
 
 ### [2026.03.21](https://github.com/jwelyl/daily_certification/blob/main/2026/03/21/26_03_21_daily_certification.md)
-BOJ 17835 면접보는 승범이네 (Dijkstra) 
+BOJ 17835 면접보는 승범이네 (Dijkstra)
+
+## 2026.03.22.sun ~ 03.28.sat 데일리 인증
+
+### [2026.03.15](https://github.com/jwelyl/daily_certification/blob/main/2026/03/15/26_03_15_daily_certification.md)
+BOJ 12896 스크루지 민호 (Tree, DFS, Diameter Of A Tree) 
