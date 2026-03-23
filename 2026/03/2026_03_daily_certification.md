@@ -75,4 +75,7 @@ BOJ 17835 면접보는 승범이네 (Dijkstra)
 BOJ 12896 스크루지 민호 (Tree, DFS, Diameter Of A Tree)
 
 ### [2026.03.23](https://github.com/jwelyl/daily_certification/blob/main/2026/03/23/26_03_23_daily_certification.md)
-BOJ 2176 합리적인 이동경로 (Dijkstra, DP) 
+BOJ 2176 합리적인 이동경로 (Dijkstra, DP)
+
+### [2026.03.24](https://github.com/jwelyl/daily_certification/blob/main/2026/03/24/26_03_24_daily_certification.md)
+BOJ 5859 Liars and Truth Tellers (Graph, Disjoint Set)
