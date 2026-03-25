@@ -81,4 +81,7 @@ BOJ 2176 합리적인 이동경로 (Dijkstra, DP)
 BOJ 5859 Liars and Truth Tellers (Graph, Disjoint Set)
 
 ### [2026.03.25](https://github.com/jwelyl/daily_certification/blob/main/2026/03/25/26_03_25_daily_certification.md)
-BOJ 1445 일요일 아침의 데이트 (Dijkstra) 
+BOJ 1445 일요일 아침의 데이트 (Dijkstra)
+
+### [2026.03.26](https://github.com/jwelyl/daily_certification/blob/main/2026/03/26/26_03_26_daily_certification.md)
+BOJ 16821 Low Range-Sum Matrix (Backtracking, Prefix Sum) 
