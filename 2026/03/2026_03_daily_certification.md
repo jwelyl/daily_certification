@@ -88,3 +88,6 @@ BOJ 16821 Low Range-Sum Matrix (Backtracking, Prefix Sum)
 
 ### [2026.03.27](https://github.com/jwelyl/daily_certification/blob/main/2026/03/27/26_03_27_daily_certification.md)
 BOJ 17143 낚시왕 (Implementation, Simulation)
+
+### [2026.03.28](https://github.com/jwelyl/daily_certification/blob/main/2026/03/28/26_03_28_daily_certification.md)
+BOJ 16288 Passport Control (Greedy, DP, Stack)
