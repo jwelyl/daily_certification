@@ -92,5 +92,10 @@ BOJ 17143 낚시왕 (Implementation, Simulation)
 ### [2026.03.28](https://github.com/jwelyl/daily_certification/blob/main/2026/03/28/26_03_28_daily_certification.md)
 BOJ 16288 Passport Control (Greedy, DP, Stack)
 
+## 2026.03.29.sun ~ 03.30.sat 데일리 인증
+
 ### [2026.03.29](https://github.com/jwelyl/daily_certification/blob/main/2026/03/29/26_03_29_daily_certification.md)
 BOJ 3050 집들이 (Prefix Sum)
+
+### [2026.03.30](https://github.com/jwelyl/daily_certification/blob/main/2026/03/30/26_03_30_daily_certification.md)
+BOJ 11840 XOR (Trie, Prefix Sum)
