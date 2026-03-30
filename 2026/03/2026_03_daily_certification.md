@@ -99,3 +99,6 @@ BOJ 3050 집들이 (Prefix Sum)
 
 ### [2026.03.30](https://github.com/jwelyl/daily_certification/blob/main/2026/03/30/26_03_30_daily_certification.md)
 BOJ 11840 XOR (Trie, Prefix Sum)
+
+### [2026.03.31](https://github.com/jwelyl/daily_certification/blob/main/2026/03/31/26_03_31_daily_certification.md)
+BOJ 8944 이진 검색 트리 2 ( Tree DP, Combinatorics)
