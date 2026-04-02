@@ -7,3 +7,6 @@ BOJ 8916 이진 검색 트리 (Tree DP, Combinatorics)
 
 ### [2026.04.02](https://github.com/jwelyl/daily_certification/blob/main/2026/04/02/26_04_02_daily_certification.md)
 BOJ 20926 얼음 미로 (Implementation, Dijkstra)
+
+### [2026.04.03](https://github.com/jwelyl/daily_certification/blob/main/2026/04/03/26_04_03_daily_certification.md) 
+BOJ 10775 공항 (Dijsoint Set, Path Compression)
