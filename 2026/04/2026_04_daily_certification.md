@@ -10,3 +10,6 @@ BOJ 20926 얼음 미로 (Implementation, Dijkstra)
 
 ### [2026.04.03](https://github.com/jwelyl/daily_certification/blob/main/2026/04/03/26_04_03_daily_certification.md) 
 BOJ 10775 공항 (Dijsoint Set, Path Compression)
+
+### [2026.04.04](https://github.com/jwelyl/daily_certification/blob/main/2026/04/04/26_04_04_daily_certification.md) 
+BOJ 22234 가희와 은행 (Simulation, Queue, Priority Queue)
