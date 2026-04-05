@@ -13,3 +13,8 @@ BOJ 10775 공항 (Dijsoint Set, Path Compression)
 
 ### [2026.04.04](https://github.com/jwelyl/daily_certification/blob/main/2026/04/04/26_04_04_daily_certification.md) 
 BOJ 22234 가희와 은행 (Simulation, Queue, Priority Queue)
+
+## 2026.04.05.wed ~ 04.11.sat 데일리 인증
+
+### [2026.04.05](https://github.com/jwelyl/daily_certification/blob/main/2026/04/05/26_04_05_daily_certification.md) 
+BOJ 1300 (Parametric Search)
