@@ -21,3 +21,6 @@ BOJ 1300 K번째 수 (Parametric Search)
 
 ### [2026.04.06](https://github.com/jwelyl/daily_certification/blob/main/2026/04/06/26_04_06_daily_certification.md) 
 BOJ 24492 Cow Frisbee (Stack)
+
+### [2026.04.07](https://github.com/jwelyl/daily_certification/blob/main/2026/04/07/26_04_07_daily_certification.md) 
+BOJ 17835 면접보는 승범이네 (Dijkstra)
