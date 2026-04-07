@@ -24,3 +24,6 @@ BOJ 24492 Cow Frisbee (Stack)
 
 ### [2026.04.07](https://github.com/jwelyl/daily_certification/blob/main/2026/04/07/26_04_07_daily_certification.md) 
 BOJ 17835 면접보는 승범이네 (Dijkstra)
+
+### [2026.04.08](https://github.com/jwelyl/daily_certification/blob/main/2026/04/08/26_04_08_daily_certification.md) 
+BOJ 16933 벽 부수고 이동하기 3 (BFS)
