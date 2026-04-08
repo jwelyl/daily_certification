@@ -27,3 +27,6 @@ BOJ 17835 면접보는 승범이네 (Dijkstra)
 
 ### [2026.04.08](https://github.com/jwelyl/daily_certification/blob/main/2026/04/08/26_04_08_daily_certification.md) 
 BOJ 16933 벽 부수고 이동하기 3 (BFS)
+
+### [2026.04.09](https://github.com/jwelyl/daily_certification/blob/main/2026/04/09/26_04_09_daily_certification.md) 
+BOJ 4195 친구 네트워크 (Disjoint Set, HashMap)
