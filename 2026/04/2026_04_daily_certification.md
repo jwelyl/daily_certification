@@ -30,3 +30,6 @@ BOJ 16933 벽 부수고 이동하기 3 (BFS)
 
 ### [2026.04.09](https://github.com/jwelyl/daily_certification/blob/main/2026/04/09/26_04_09_daily_certification.md) 
 BOJ 4195 친구 네트워크 (Disjoint Set, HashMap)
+
+### [2026.04.10](https://github.com/jwelyl/daily_certification/blob/main/2026/04/10/26_04_10_daily_certification.md) 
+BOJ 2450 모양 정돈 (Implementation, Bruteforcing, Greedy)
