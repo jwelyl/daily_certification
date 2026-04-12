@@ -14,7 +14,7 @@ BOJ 10775 공항 (Dijsoint Set, Path Compression)
 ### [2026.04.04](https://github.com/jwelyl/daily_certification/blob/main/2026/04/04/26_04_04_daily_certification.md) 
 BOJ 22234 가희와 은행 (Simulation, Queue, Priority Queue)
 
-## 2026.04.05.wed ~ 04.11.sat 데일리 인증
+## 2026.04.05.sun ~ 04.11.sat 데일리 인증
 
 ### [2026.04.05](https://github.com/jwelyl/daily_certification/blob/main/2026/04/05/26_04_05_daily_certification.md) 
 BOJ 1300 K번째 수 (Parametric Search)
@@ -36,3 +36,8 @@ BOJ 2450 모양 정돈 (Implementation, Bruteforcing, Greedy)
 
 ### [2026.04.11](https://github.com/jwelyl/daily_certification/blob/main/2026/04/11/26_04_11_daily_certification.md) 
 BOJ 10993 별 찍기 - 18 (Implementation, Recursion)
+
+## 2026.04.12.sun ~ 04.18.sat 데일리 인증
+
+### [2026.04.12](https://github.com/jwelyl/daily_certification/blob/main/2026/04/12/26_04_12_daily_certification.md) 
+BOJ 1079 마피아 (Bruteforcing, Backtracking)
