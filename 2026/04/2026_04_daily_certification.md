@@ -41,3 +41,6 @@ BOJ 10993 별 찍기 - 18 (Implementation, Recursion)
 
 ### [2026.04.12](https://github.com/jwelyl/daily_certification/blob/main/2026/04/12/26_04_12_daily_certification.md) 
 BOJ 1079 마피아 (Bruteforcing, Backtracking)
+
+### [2026.04.13](https://github.com/jwelyl/daily_certification/blob/main/2026/04/13/26_04_13_daily_certification.md) 
+BOJ 1368 물대기 (MST)
