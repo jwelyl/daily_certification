@@ -44,3 +44,6 @@ BOJ 1079 마피아 (Bruteforcing, Backtracking)
 
 ### [2026.04.13](https://github.com/jwelyl/daily_certification/blob/main/2026/04/13/26_04_13_daily_certification.md) 
 BOJ 1368 물대기 (MST)
+
+### [2026.04.14](https://github.com/jwelyl/daily_certification/blob/main/2026/04/14/26_04_14_daily_certification.md) 
+BOJ 2266 금고 테스트 (DP)
