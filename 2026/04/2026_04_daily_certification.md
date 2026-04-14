@@ -47,3 +47,6 @@ BOJ 1368 물대기 (MST)
 
 ### [2026.04.14](https://github.com/jwelyl/daily_certification/blob/main/2026/04/14/26_04_14_daily_certification.md) 
 BOJ 2266 금고 테스트 (DP)
+
+### [2026.04.15](https://github.com/jwelyl/daily_certification/blob/main/2026/04/15/26_04_15_daily_certification.md) 
+BOJ 4574 스도미노쿠 (Implemenation, Backtracking)
