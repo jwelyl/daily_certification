@@ -50,3 +50,6 @@ BOJ 2266 금고 테스트 (DP)
 
 ### [2026.04.15](https://github.com/jwelyl/daily_certification/blob/main/2026/04/15/26_04_15_daily_certification.md) 
 BOJ 4574 스도미노쿠 (Implemenation, Backtracking)
+
+### [2026.04.16](https://github.com/jwelyl/daily_certification/blob/main/2026/04/16/26_04_16_daily_certification.md) 
+BOJ 3197 백조의 호수 (BFS, Disjoint Set)
