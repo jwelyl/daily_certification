@@ -53,3 +53,6 @@ BOJ 4574 스도미노쿠 (Implemenation, Backtracking)
 
 ### [2026.04.16](https://github.com/jwelyl/daily_certification/blob/main/2026/04/16/26_04_16_daily_certification.md) 
 BOJ 3197 백조의 호수 (BFS, Disjoint Set)
+
+### [2026.04.17](https://github.com/jwelyl/daily_certification/blob/main/2026/04/17/26_04_17_daily_certification.md) 
+BOJ 5620 가장 가까운 두 점의 거리 (Geometric, Sweeping, DNC)
