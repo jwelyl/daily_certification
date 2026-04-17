@@ -56,3 +56,6 @@ BOJ 3197 백조의 호수 (BFS, Disjoint Set)
 
 ### [2026.04.17](https://github.com/jwelyl/daily_certification/blob/main/2026/04/17/26_04_17_daily_certification.md) 
 BOJ 5620 가장 가까운 두 점의 거리 (Geometric, Sweeping, DNC)
+
+### [2026.04.18](https://github.com/jwelyl/daily_certification/blob/main/2026/04/18/26_04_18_daily_certification.md) 
+BOJ 14288 회사 문화 4 (Segment Tree, Segment Tree with Lazy Propagation, Euler Tour Technique)
