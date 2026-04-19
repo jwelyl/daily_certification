@@ -59,3 +59,8 @@ BOJ 5620 가장 가까운 두 점의 거리 (Geometric, Sweeping, DNC)
 
 ### [2026.04.18](https://github.com/jwelyl/daily_certification/blob/main/2026/04/18/26_04_18_daily_certification.md) 
 BOJ 14288 회사 문화 4 (Segment Tree, Segment Tree with Lazy Propagation, Euler Tour Technique)
+
+## 2026.04.19.sun ~ 04.25.sat 데일리 인증
+
+### [2026.04.19](https://github.com/jwelyl/daily_certification/blob/main/2026/04/19/26_04_19_daily_certification.md) 
+BOJ 11840 XOR (Trie, Prefix Sum)
