@@ -64,3 +64,6 @@ BOJ 14288 회사 문화 4 (Segment Tree, Segment Tree with Lazy Propagation, Eul
 
 ### [2026.04.19](https://github.com/jwelyl/daily_certification/blob/main/2026/04/19/26_04_19_daily_certification.md) 
 BOJ 11840 XOR (Trie, Prefix Sum)
+
+### [2026.04.20](https://github.com/jwelyl/daily_certification/blob/main/2026/04/20/26_04_20_daily_certification.md) 
+BOJ 9007 카누 선수 (Sorting, Meet in the middie, Binary Search, Two Pointers)
