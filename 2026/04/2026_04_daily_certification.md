@@ -67,3 +67,6 @@ BOJ 11840 XOR (Trie, Prefix Sum)
 
 ### [2026.04.20](https://github.com/jwelyl/daily_certification/blob/main/2026/04/20/26_04_20_daily_certification.md) 
 BOJ 9007 카누 선수 (Sorting, Meet in the middie, Binary Search, Two Pointers)
+
+### [2026.04.21](https://github.com/jwelyl/daily_certification/blob/main/2026/04/21/26_04_21_daily_certification.md) 
+BOJ 20313 출퇴근 (Dijkstra)
