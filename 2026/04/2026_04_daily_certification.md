@@ -70,3 +70,6 @@ BOJ 9007 카누 선수 (Sorting, Meet in the middie, Binary Search, Two Pointers
 
 ### [2026.04.21](https://github.com/jwelyl/daily_certification/blob/main/2026/04/21/26_04_21_daily_certification.md) 
 BOJ 20313 출퇴근 (Dijkstra)
+
+### [2026.04.22](https://github.com/jwelyl/daily_certification/blob/main/2026/04/22/26_04_22_daily_certification.md) 
+BOJ 8916 이진 검색 트리 (Tree DP, Combinatorics)
