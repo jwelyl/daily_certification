@@ -73,3 +73,6 @@ BOJ 20313 출퇴근 (Dijkstra)
 
 ### [2026.04.22](https://github.com/jwelyl/daily_certification/blob/main/2026/04/22/26_04_22_daily_certification.md) 
 BOJ 8916 이진 검색 트리 (Tree DP, Combinatorics)
+
+### [2026.04.23](https://github.com/jwelyl/daily_certification/blob/main/2026/04/23/26_04_23_daily_certification.md) 
+BOJ 14003 가장 긴 증가하는 부분 수열 5 (LIS(O(NlogN)), Binary Search, Traceback)
