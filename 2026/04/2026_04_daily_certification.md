@@ -76,3 +76,6 @@ BOJ 8916 이진 검색 트리 (Tree DP, Combinatorics)
 
 ### [2026.04.23](https://github.com/jwelyl/daily_certification/blob/main/2026/04/23/26_04_23_daily_certification.md) 
 BOJ 14003 가장 긴 증가하는 부분 수열 5 (LIS(O(NlogN)), Binary Search, Traceback)
+
+### [2026.04.24](https://github.com/jwelyl/daily_certification/blob/main/2026/04/24/26_04_24_daily_certification.md) 
+BOJ 3045 이중 연결 리스트 (Doubly Linked List, LIS (O(NlogN)), Traceback)
