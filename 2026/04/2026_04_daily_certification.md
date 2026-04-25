@@ -79,3 +79,6 @@ BOJ 14003 가장 긴 증가하는 부분 수열 5 (LIS(O(NlogN)), Binary Search,
 
 ### [2026.04.24](https://github.com/jwelyl/daily_certification/blob/main/2026/04/24/26_04_24_daily_certification.md) 
 BOJ 3045 이중 연결 리스트 (Doubly Linked List, LIS (O(NlogN)), Traceback)
+
+### [2026.04.25](https://github.com/jwelyl/daily_certification/blob/main/2026/04/25/26_04_25_daily_certification.md) 
+BOJ 1473 미로 탈출 (BFS, Bitmasking)
