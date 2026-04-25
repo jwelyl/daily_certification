@@ -82,3 +82,8 @@ BOJ 3045 이중 연결 리스트 (Doubly Linked List, LIS (O(NlogN)), Traceback)
 
 ### [2026.04.25](https://github.com/jwelyl/daily_certification/blob/main/2026/04/25/26_04_25_daily_certification.md) 
 BOJ 1473 미로 탈출 (BFS, Bitmasking)
+
+## 2026.04.26.sun ~ 04.30.thu 데일리 인증
+
+### [2026.04.26](https://github.com/jwelyl/daily_certification/blob/main/2026/04/26/26_04_26_daily_certification.md) 
+BOJ 13016 내 왼손에는 흑염룡이 잠들어 있다 (DFS, Tree DP, Diameter Of A Tree)
