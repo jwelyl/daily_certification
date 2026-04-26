@@ -87,3 +87,6 @@ BOJ 1473 미로 탈출 (BFS, Bitmasking)
 
 ### [2026.04.26](https://github.com/jwelyl/daily_certification/blob/main/2026/04/26/26_04_26_daily_certification.md) 
 BOJ 13016 내 왼손에는 흑염룡이 잠들어 있다 (DFS, Tree DP, Diameter Of A Tree)
+
+### [2026.04.27](https://github.com/jwelyl/daily_certification/blob/main/2026/04/27/26_04_27_daily_certification.md) 
+BOJ 18251 내 생각에 A번인 단순 dfs 문제가 이 대회에서 E번이 되어버린 건에 관하여 (Easy) (DFS, Inorder Traversal, Kadane Algorithm)
