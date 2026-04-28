@@ -93,3 +93,6 @@ BOJ 18251 내 생각에 A번인 단순 dfs 문제가 이 대회에서 E번이 �
 
 ### [2026.04.28](https://github.com/jwelyl/daily_certification/blob/main/2026/04/28/26_04_28_daily_certification.md) 
 BOJ 2662 기업투자 (DP, Knapsack)
+
+### [2026.04.28](https://github.com/jwelyl/daily_certification/blob/main/2026/04/29/26_04_28_daily_certification.md) 
+BOJ 2662 기업투자 (DP, Knapsack)
